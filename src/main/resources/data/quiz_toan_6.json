@@ -1,0 +1,835 @@
+[
+  {
+    "grade_id": 6,
+    "subject_id": 1,
+    "chapter_id": 1,
+    "quiz_type_id": 1,
+    "code": "TOAN6_15_01_MD001",
+    "questions": [
+      {
+        "content": "Kết quả của phép tính \\(12 + 15\\) là bao nhiêu?",
+        "explanation": "Thực hiện phép cộng: \\(12 + 15 = 27\\)",
+        "choices": [
+          {
+            "content": "25",
+            "is_correct": false
+          },
+          {
+            "content": "26",
+            "is_correct": false
+          },
+          {
+            "content": "27",
+            "is_correct": true
+          },
+          {
+            "content": "28",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(50 - 17\\) là bao nhiêu?",
+        "explanation": "Thực hiện phép trừ: \\(50 - 17 = 33\\)",
+        "choices": [
+          {
+            "content": "32",
+            "is_correct": false
+          },
+          {
+            "content": "33",
+            "is_correct": true
+          },
+          {
+            "content": "34",
+            "is_correct": false
+          },
+          {
+            "content": "35",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(8 \\times 7\\) là bao nhiêu?",
+        "explanation": "Thực hiện phép nhân: \\(8 \\times 7 = 56\\)",
+        "choices": [
+          {
+            "content": "54",
+            "is_correct": false
+          },
+          {
+            "content": "55",
+            "is_correct": false
+          },
+          {
+            "content": "56",
+            "is_correct": true
+          },
+          {
+            "content": "57",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(81 \\div 9\\) là bao nhiêu?",
+        "explanation": "Thực hiện phép chia: \\(81 \\div 9 = 9\\)",
+        "choices": [
+          {
+            "content": "8",
+            "is_correct": false
+          },
+          {
+            "content": "9",
+            "is_correct": true
+          },
+          {
+            "content": "10",
+            "is_correct": false
+          },
+          {
+            "content": "11",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Số liền sau của \\(99\\) là số nào?",
+        "explanation": "Số liền sau của \\(99\\) là \\(100\\)",
+        "choices": [
+          {
+            "content": "99",
+            "is_correct": false
+          },
+          {
+            "content": "100",
+            "is_correct": true
+          },
+          {
+            "content": "101",
+            "is_correct": false
+          },
+          {
+            "content": "98",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 6,
+    "subject_id": 1,
+    "chapter_id": 1,
+    "quiz_type_id": 2,
+    "code": "TOAN6_30_01_MD001",
+    "questions": [
+      {
+        "content": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?",
+        "explanation": "\\(3^2 = 9\\), \\(4^2 = 16\\). Vậy \\(9 + 16 = 25\\)",
+        "choices": [
+          {
+            "content": "20",
+            "is_correct": false
+          },
+          {
+            "content": "25",
+            "is_correct": true
+          },
+          {
+            "content": "30",
+            "is_correct": false
+          },
+          {
+            "content": "35",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Số nguyên tố nhỏ nhất là số nào?",
+        "explanation": "Số nguyên tố là số tự nhiên lớn hơn 1 và chỉ có hai ước số là 1 và chính nó. Số nguyên tố nhỏ nhất là 2",
+        "choices": [
+          {
+            "content": "0",
+            "is_correct": false
+          },
+          {
+            "content": "1",
+            "is_correct": false
+          },
+          {
+            "content": "2",
+            "is_correct": true
+          },
+          {
+            "content": "3",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?",
+        "explanation": "Quy đồng mẫu số: \\(\\frac{3}{4} + \\frac{2}{4} = \\frac{5}{4} = 1\\frac{1}{4}\\)",
+        "choices": [
+          {
+            "content": "\\(\\frac{5}{4}\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(\\frac{4}{5}\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(\\frac{3}{6}\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(\\frac{1}{2}\\)",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Tìm ước chung lớn nhất của 12 và 18",
+        "explanation": "Ư(12) = {1,2,3,4,6,12}, Ư(18) = {1,2,3,6,9,18}. ƯCLN(12,18) = 6",
+        "choices": [
+          {
+            "content": "3",
+            "is_correct": false
+          },
+          {
+            "content": "4",
+            "is_correct": false
+          },
+          {
+            "content": "6",
+            "is_correct": true
+          },
+          {
+            "content": "9",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Một hình chữ nhật có chiều dài \\(8cm\\), chiều rộng \\(5cm\\). Tính chu vi hình chữ nhật",
+        "explanation": "Chu vi hình chữ nhật = (dài + rộng) × 2 = \\((8 + 5) \\times 2 = 26cm\\)",
+        "choices": [
+          {
+            "content": "\\(20cm\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(26cm\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(30cm\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(40cm\\)",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 6,
+    "subject_id": 1,
+    "chapter_id": 2,
+    "quiz_type_id": 1,
+    "code": "TOAN6_15_02_MD001",
+    "questions": [
+      {
+        "content": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?",
+        "explanation": "\\(3^2 = 9\\), \\(4^2 = 16\\). Vậy \\(9 + 16 = 25\\)",
+        "choices": [
+          {
+            "content": "20",
+            "is_correct": false
+          },
+          {
+            "content": "25",
+            "is_correct": true
+          },
+          {
+            "content": "30",
+            "is_correct": false
+          },
+          {
+            "content": "35",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Số nguyên tố nhỏ nhất là số nào?",
+        "explanation": "Số nguyên tố là số tự nhiên lớn hơn 1 và chỉ có hai ước số là 1 và chính nó. Số nguyên tố nhỏ nhất là 2",
+        "choices": [
+          {
+            "content": "0",
+            "is_correct": false
+          },
+          {
+            "content": "1",
+            "is_correct": false
+          },
+          {
+            "content": "2",
+            "is_correct": true
+          },
+          {
+            "content": "3",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?",
+        "explanation": "Quy đồng mẫu số: \\(\\frac{3}{4} + \\frac{2}{4} = \\frac{5}{4} = 1\\frac{1}{4}\\)",
+        "choices": [
+          {
+            "content": "\\(\\frac{5}{4}\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(\\frac{4}{5}\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(\\frac{3}{6}\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(\\frac{1}{2}\\)",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Tìm ước chung lớn nhất của 12 và 18",
+        "explanation": "Ư(12) = {1,2,3,4,6,12}, Ư(18) = {1,2,3,6,9,18}. ƯCLN(12,18) = 6",
+        "choices": [
+          {
+            "content": "3",
+            "is_correct": false
+          },
+          {
+            "content": "4",
+            "is_correct": false
+          },
+          {
+            "content": "6",
+            "is_correct": true
+          },
+          {
+            "content": "9",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Một hình chữ nhật có chiều dài \\(8cm\\), chiều rộng \\(5cm\\). Tính chu vi hình chữ nhật",
+        "explanation": "Chu vi hình chữ nhật = (dài + rộng) × 2 = \\((8 + 5) \\times 2 = 26cm\\)",
+        "choices": [
+          {
+            "content": "\\(20cm\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(26cm\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(30cm\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(40cm\\)",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 6,
+    "subject_id": 1,
+    "chapter_id": 2,
+    "quiz_type_id": 2,
+    "code": "TOAN6_30_02_MD001",
+    "questions": [
+      {
+        "content": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?",
+        "explanation": "\\(3^2 = 9\\), \\(4^2 = 16\\). Vậy \\(9 + 16 = 25\\)",
+        "choices": [
+          {
+            "content": "20",
+            "is_correct": false
+          },
+          {
+            "content": "25",
+            "is_correct": true
+          },
+          {
+            "content": "30",
+            "is_correct": false
+          },
+          {
+            "content": "35",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Số nguyên tố nhỏ nhất là số nào?",
+        "explanation": "Số nguyên tố là số tự nhiên lớn hơn 1 và chỉ có hai ước số là 1 và chính nó. Số nguyên tố nhỏ nhất là 2",
+        "choices": [
+          {
+            "content": "0",
+            "is_correct": false
+          },
+          {
+            "content": "1",
+            "is_correct": false
+          },
+          {
+            "content": "2",
+            "is_correct": true
+          },
+          {
+            "content": "3",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?",
+        "explanation": "Quy đồng mẫu số: \\(\\frac{3}{4} + \\frac{2}{4} = \\frac{5}{4} = 1\\frac{1}{4}\\)",
+        "choices": [
+          {
+            "content": "\\(\\frac{5}{4}\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(\\frac{4}{5}\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(\\frac{3}{6}\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(\\frac{1}{2}\\)",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Tìm ước chung lớn nhất của 12 và 18",
+        "explanation": "Ư(12) = {1,2,3,4,6,12}, Ư(18) = {1,2,3,6,9,18}. ƯCLN(12,18) = 6",
+        "choices": [
+          {
+            "content": "3",
+            "is_correct": false
+          },
+          {
+            "content": "4",
+            "is_correct": false
+          },
+          {
+            "content": "6",
+            "is_correct": true
+          },
+          {
+            "content": "9",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Một hình chữ nhật có chiều dài \\(8cm\\), chiều rộng \\(5cm\\). Tính chu vi hình chữ nhật",
+        "explanation": "Chu vi hình chữ nhật = (dài + rộng) × 2 = \\((8 + 5) \\times 2 = 26cm\\)",
+        "choices": [
+          {
+            "content": "\\(20cm\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(26cm\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(30cm\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(40cm\\)",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 6,
+    "subject_id": 1,
+    "chapter_id": 2,
+    "quiz_type_id": 2,
+    "code": "TOAN6_30_02_MD002",
+    "questions": [
+      {
+        "content": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?",
+        "explanation": "\\(3^2 = 9\\), \\(4^2 = 16\\). Vậy \\(9 + 16 = 25\\)",
+        "choices": [
+          {
+            "content": "20",
+            "is_correct": false
+          },
+          {
+            "content": "25",
+            "is_correct": true
+          },
+          {
+            "content": "30",
+            "is_correct": false
+          },
+          {
+            "content": "35",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Số nguyên tố nhỏ nhất là số nào?",
+        "explanation": "Số nguyên tố là số tự nhiên lớn hơn 1 và chỉ có hai ước số là 1 và chính nó. Số nguyên tố nhỏ nhất là 2",
+        "choices": [
+          {
+            "content": "0",
+            "is_correct": false
+          },
+          {
+            "content": "1",
+            "is_correct": false
+          },
+          {
+            "content": "2",
+            "is_correct": true
+          },
+          {
+            "content": "3",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?",
+        "explanation": "Quy đồng mẫu số: \\(\\frac{3}{4} + \\frac{2}{4} = \\frac{5}{4} = 1\\frac{1}{4}\\)",
+        "choices": [
+          {
+            "content": "\\(\\frac{5}{4}\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(\\frac{4}{5}\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(\\frac{3}{6}\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(\\frac{1}{2}\\)",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Tìm ước chung lớn nhất của 12 và 18",
+        "explanation": "Ư(12) = {1,2,3,4,6,12}, Ư(18) = {1,2,3,6,9,18}. ƯCLN(12,18) = 6",
+        "choices": [
+          {
+            "content": "3",
+            "is_correct": false
+          },
+          {
+            "content": "4",
+            "is_correct": false
+          },
+          {
+            "content": "6",
+            "is_correct": true
+          },
+          {
+            "content": "9",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Một hình chữ nhật có chiều dài \\(8cm\\), chiều rộng \\(5cm\\). Tính chu vi hình chữ nhật",
+        "explanation": "Chu vi hình chữ nhật = (dài + rộng) × 2 = \\((8 + 5) \\times 2 = 26cm\\)",
+        "choices": [
+          {
+            "content": "\\(20cm\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(26cm\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(30cm\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(40cm\\)",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 6,
+    "subject_id": 1,
+    "chapter_id": 3,
+    "quiz_type_id": 1,
+    "code": "TOAN6_15_03_MD001",
+    "questions": [
+      {
+        "content": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?",
+        "explanation": "\\(3^2 = 9\\), \\(4^2 = 16\\). Vậy \\(9 + 16 = 25\\)",
+        "choices": [
+          {
+            "content": "20",
+            "is_correct": false
+          },
+          {
+            "content": "25",
+            "is_correct": true
+          },
+          {
+            "content": "30",
+            "is_correct": false
+          },
+          {
+            "content": "35",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Số nguyên tố nhỏ nhất là số nào?",
+        "explanation": "Số nguyên tố là số tự nhiên lớn hơn 1 và chỉ có hai ước số là 1 và chính nó. Số nguyên tố nhỏ nhất là 2",
+        "choices": [
+          {
+            "content": "0",
+            "is_correct": false
+          },
+          {
+            "content": "1",
+            "is_correct": false
+          },
+          {
+            "content": "2",
+            "is_correct": true
+          },
+          {
+            "content": "3",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?",
+        "explanation": "Quy đồng mẫu số: \\(\\frac{3}{4} + \\frac{2}{4} = \\frac{5}{4} = 1\\frac{1}{4}\\)",
+        "choices": [
+          {
+            "content": "\\(\\frac{5}{4}\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(\\frac{4}{5}\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(\\frac{3}{6}\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(\\frac{1}{2}\\)",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Tìm ước chung lớn nhất của 12 và 18",
+        "explanation": "Ư(12) = {1,2,3,4,6,12}, Ư(18) = {1,2,3,6,9,18}. ƯCLN(12,18) = 6",
+        "choices": [
+          {
+            "content": "3",
+            "is_correct": false
+          },
+          {
+            "content": "4",
+            "is_correct": false
+          },
+          {
+            "content": "6",
+            "is_correct": true
+          },
+          {
+            "content": "9",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Một hình chữ nhật có chiều dài \\(8cm\\), chiều rộng \\(5cm\\). Tính chu vi hình chữ nhật",
+        "explanation": "Chu vi hình chữ nhật = (dài + rộng) × 2 = \\((8 + 5) \\times 2 = 26cm\\)",
+        "choices": [
+          {
+            "content": "\\(20cm\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(26cm\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(30cm\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(40cm\\)",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 6,
+    "subject_id": 1,
+    "chapter_id": 3,
+    "quiz_type_id": 2,
+    "code": "TOAN6_30_03_MD001",
+    "questions": [
+      {
+        "content": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?",
+        "explanation": "\\(3^2 = 9\\), \\(4^2 = 16\\). Vậy \\(9 + 16 = 25\\)",
+        "choices": [
+          {
+            "content": "20",
+            "is_correct": false
+          },
+          {
+            "content": "25",
+            "is_correct": true
+          },
+          {
+            "content": "30",
+            "is_correct": false
+          },
+          {
+            "content": "35",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Số nguyên tố nhỏ nhất là số nào?",
+        "explanation": "Số nguyên tố là số tự nhiên lớn hơn 1 và chỉ có hai ước số là 1 và chính nó. Số nguyên tố nhỏ nhất là 2",
+        "choices": [
+          {
+            "content": "0",
+            "is_correct": false
+          },
+          {
+            "content": "1",
+            "is_correct": false
+          },
+          {
+            "content": "2",
+            "is_correct": true
+          },
+          {
+            "content": "3",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?",
+        "explanation": "Quy đồng mẫu số: \\(\\frac{3}{4} + \\frac{2}{4} = \\frac{5}{4} = 1\\frac{1}{4}\\)",
+        "choices": [
+          {
+            "content": "\\(\\frac{5}{4}\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(\\frac{4}{5}\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(\\frac{3}{6}\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(\\frac{1}{2}\\)",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Tìm ước chung lớn nhất của 12 và 18",
+        "explanation": "Ư(12) = {1,2,3,4,6,12}, Ư(18) = {1,2,3,6,9,18}. ƯCLN(12,18) = 6",
+        "choices": [
+          {
+            "content": "3",
+            "is_correct": false
+          },
+          {
+            "content": "4",
+            "is_correct": false
+          },
+          {
+            "content": "6",
+            "is_correct": true
+          },
+          {
+            "content": "9",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "content": "Một hình chữ nhật có chiều dài \\(8cm\\), chiều rộng \\(5cm\\). Tính chu vi hình chữ nhật",
+        "explanation": "Chu vi hình chữ nhật = (dài + rộng) × 2 = \\((8 + 5) \\times 2 = 26cm\\)",
+        "choices": [
+          {
+            "content": "\\(20cm\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(26cm\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(30cm\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(40cm\\)",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  }
+]

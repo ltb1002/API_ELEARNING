@@ -3,7 +3,7 @@ package vn.anhtuan.demoAPI.POJO;
 import java.util.List;
 
 public class SubjectPOJO {
-    private Long id;
+    private Integer id;
     private String code;
     private String name;
     private int grade;
@@ -12,7 +12,7 @@ public class SubjectPOJO {
     public SubjectPOJO() {
     }
 
-    public SubjectPOJO(Long id, String code, String name, int grade, List<ChapterPOJO> chapters) {
+    public SubjectPOJO(Integer id, String code, String name, int grade, List<ChapterPOJO> chapters) {
         this.id = id;
         this.code = code;
         this.name = name;
@@ -20,11 +20,11 @@ public class SubjectPOJO {
         this.chapters = chapters;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

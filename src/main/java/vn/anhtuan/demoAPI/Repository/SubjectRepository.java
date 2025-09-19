@@ -6,6 +6,6 @@ import vn.anhtuan.demoAPI.Entity.Subject;
 import java.util.List;
 import java.util.Optional;
 
-public interface SubjectRepository extends JpaRepository<Subject, Long> {
+public interface SubjectRepository extends JpaRepository<Subject, Integer> {
     List<Subject> findByCodeAndGrade(String code, int grade);
 }

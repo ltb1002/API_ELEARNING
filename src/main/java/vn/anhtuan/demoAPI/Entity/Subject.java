@@ -16,7 +16,7 @@ public class Subject {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     @Column(nullable = false)
     private String code;  // toan, nguvan, tienganh
@@ -34,12 +34,19 @@ public class Subject {
     public Subject() {
     }
 
-    // Getters & Setters
-    public Long getId() {
+    public Subject(Integer id, String code, String name, int grade, List<Chapter> chapters) {
+        this.id = id;
+        this.code = code;
+        this.name = name;
+        this.grade = grade;
+        this.chapters = chapters;
+    }
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
