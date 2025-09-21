@@ -157,9 +157,32 @@ public class QuizController {
     /**
      * Lấy thống kê quiz
      */
-    @GetMapping("/{quizId}/statistics")
-    public ResponseEntity<Map<String, Object>> getQuizStatistics(@PathVariable Integer quizId) {
-        return ResponseEntity.ok(quizResultService.getQuizStatistics(quizId));
+    /**
+     * Lấy lịch sử làm bài của tất cả người dùng cho một quiz cụ thể
+     */
+    @GetMapping("/{quizId}/history")
+    public ResponseEntity<List<QuizHistoryPOJO>> getQuizHistory(
+            @PathVariable Integer quizId) {
+
+        try {
+            List<QuizResult> results = quizResultService.getQuizResultsForQuiz(quizId);
+
+            List<QuizHistoryPOJO> history = results.stream()
+                    .map(result -> new QuizHistoryPOJO(
+                            result.getAttemptNo(),
+                            result.getScore(),
+                            result.getCorrectAnswers(),
+                            result.getTotalQuestions(),
+                            result.getDurationSeconds(),
+                            result.getCompletedAt(),
+                            result.getStatus().toString()
+                    ))
+                    .collect(Collectors.toList());
+
+            return ResponseEntity.ok(history);
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body(null);
+        }
     }
 
     /**
@@ -168,5 +191,34 @@ public class QuizController {
     @GetMapping("/user/{userId}/statistics")
     public ResponseEntity<Map<String, Object>> getUserStatistics(@PathVariable Long userId) {
         return ResponseEntity.ok(quizResultService.getUserStatistics(userId));
+    }
+
+    /**
+     * Lấy lịch sử làm bài của một người dùng cho một quiz cụ thể
+     */
+    @GetMapping("/{quizId}/users/{userId}/history")
+    public ResponseEntity<List<QuizHistoryPOJO>> getQuizHistoryForUser(
+            @PathVariable Integer quizId,
+            @PathVariable Long userId) {
+
+        try {
+            List<QuizResult> results = quizResultService.getUserQuizResultsForQuiz(userId, quizId);
+
+            List<QuizHistoryPOJO> history = results.stream()
+                    .map(result -> new QuizHistoryPOJO(
+                            result.getAttemptNo(),
+                            result.getScore(),
+                            result.getCorrectAnswers(),
+                            result.getTotalQuestions(),
+                            result.getDurationSeconds(),
+                            result.getCompletedAt(),
+                            result.getStatus().toString()
+                    ))
+                    .collect(Collectors.toList());
+
+            return ResponseEntity.ok(history);
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body(null);
+        }
     }
 }
