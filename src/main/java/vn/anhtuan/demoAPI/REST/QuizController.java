@@ -11,6 +11,7 @@ import vn.anhtuan.demoAPI.POJO.*;
 import vn.anhtuan.demoAPI.Service.QuizResultService;
 import vn.anhtuan.demoAPI.Service.QuizService;
 
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -115,7 +116,6 @@ public class QuizController {
     /**
      * Nộp quiz
      */
-
     @PostMapping("/{quizId}/submit")
     public ResponseEntity<Map<String, Object>> submitQuiz(
             @PathVariable Integer quizId,
@@ -125,7 +125,8 @@ public class QuizController {
             QuizResult result = quizResultService.submitQuiz(
                     submission.getUserId(),
                     quizId,
-                    submission.getAnswers()
+                    submission.getAnswers(),
+                    submission.getDurationSeconds()
             );
 
             Map<String, Object> response = new HashMap<>();
@@ -133,7 +134,9 @@ public class QuizController {
             response.put("score", result.getScore());
             response.put("correctAnswers", result.getCorrectAnswers());
             response.put("totalQuestions", result.getTotalQuestions());
-            response.put("passed", result.getScore() >= 5.0);
+            response.put("attemptNo", result.getAttemptNo());
+            response.put("durationSeconds", result.getDurationSeconds());
+            response.put("passed", result.getScore().compareTo(new BigDecimal("5.0")) >= 0);
             response.put("completedAt", result.getCompletedAt());
 
             return ResponseEntity.ok(response);

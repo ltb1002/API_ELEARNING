@@ -7,6 +7,8 @@ import vn.anhtuan.demoAPI.Entity.*;
 import vn.anhtuan.demoAPI.Repository.QuizResultRepository;
 import vn.anhtuan.demoAPI.Repository.UserRepository;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -35,7 +37,7 @@ public class QuizResultService {
         return quizResultRepository.findByQuizId(quizId);
     }
 
-    public QuizResult getUserQuizResultForQuiz(Long userId, Integer quizId) {
+    public List<QuizResult> getUserQuizResultsForQuiz(Long userId, Integer quizId) {
         return quizResultRepository.findByUserIdAndQuizId(userId, quizId);
     }
 
@@ -52,7 +54,7 @@ public class QuizResultService {
     }
 
     @Transactional
-    public QuizResult submitQuiz(Long userId, Integer quizId, Map<Integer, List<Integer>> userAnswers) {
+    public QuizResult submitQuiz(Long userId, Integer quizId, Map<Integer, List<Integer>> userAnswers, Integer durationSeconds) {
         // Validation
         if (userId == null) {
             throw new IllegalArgumentException("User ID cannot be null");
@@ -60,6 +62,10 @@ public class QuizResultService {
 
         if (userAnswers == null) {
             throw new IllegalArgumentException("User answers cannot be null");
+        }
+
+        if (durationSeconds == null || durationSeconds < 0) {
+            throw new IllegalArgumentException("Duration must be a positive value");
         }
 
         User user = userRepository.findById(userId)
@@ -106,16 +112,28 @@ public class QuizResultService {
         }
 
         // Tính score và tránh chia cho zero
-        float score = totalQuestions > 0 ? (float) correctAnswers / totalQuestions * 10 : 0;
+        BigDecimal score = totalQuestions > 0
+                ? new BigDecimal(correctAnswers)
+                .divide(new BigDecimal(totalQuestions), 4, RoundingMode.HALF_UP)
+                .multiply(new BigDecimal("10"))
+                .setScale(2, RoundingMode.HALF_UP)
+                : BigDecimal.ZERO;
 
-        // Cập nhật hoặc tạo mới QuizResult
-        QuizResult quizResult = quizResultRepository.findByUserIdAndQuizId(userId, quizId);
-        if (quizResult == null) {
-            quizResult = new QuizResult(user, quiz, score, correctAnswers, totalQuestions,
-                    QuizResult.QuizStatus.COMPLETED);
-        } else {
-            quizResult.updateResult(score, correctAnswers, totalQuestions);
-        }
+        // Tìm attempt number tiếp theo
+        List<QuizResult> existingResults = quizResultRepository.findByUserIdAndQuizId(userId, quizId);
+        int attemptNo = existingResults.isEmpty() ? 1 : existingResults.size() + 1;
+
+        // Tạo mới QuizResult
+        QuizResult quizResult = new QuizResult(
+                user,
+                quiz,
+                attemptNo,
+                score,
+                correctAnswers,
+                totalQuestions,
+                durationSeconds,
+                QuizStatus.COMPLETED
+        );
 
         return quizResultRepository.save(quizResult);
     }
@@ -128,18 +146,27 @@ public class QuizResultService {
 
         if (!results.isEmpty()) {
             double averageScore = results.stream()
-                    .mapToDouble(QuizResult::getScore)
+                    .mapToDouble(r -> r.getScore().doubleValue())
                     .average()
                     .orElse(0.0);
             stats.put("averageScore", averageScore);
 
             long completedCount = results.stream()
-                    .filter(r -> r.getStatus() == QuizResult.QuizStatus.COMPLETED)
+                    .filter(r -> r.getStatus() == QuizStatus.COMPLETED)
                     .count();
             stats.put("completionRate", (double) completedCount / results.size() * 100);
+
+            // Thêm thông tin về số lần attempt
+            Map<Integer, Long> attemptsDistribution = results.stream()
+                    .collect(Collectors.groupingBy(
+                            QuizResult::getAttemptNo,
+                            Collectors.counting()
+                    ));
+            stats.put("attemptsDistribution", attemptsDistribution);
         } else {
             stats.put("averageScore", 0);
             stats.put("completionRate", 0);
+            stats.put("attemptsDistribution", new HashMap<>());
         }
 
         return stats;
@@ -153,13 +180,13 @@ public class QuizResultService {
 
         if (!results.isEmpty()) {
             double averageScore = results.stream()
-                    .mapToDouble(QuizResult::getScore)
+                    .mapToDouble(r -> r.getScore().doubleValue())
                     .average()
                     .orElse(0.0);
             stats.put("averageScore", averageScore);
 
             long completedCount = results.stream()
-                    .filter(r -> r.getStatus() == QuizResult.QuizStatus.COMPLETED)
+                    .filter(r -> r.getStatus() == QuizStatus.COMPLETED)
                     .count();
             stats.put("completionRate", (double) completedCount / results.size() * 100);
 
@@ -170,10 +197,19 @@ public class QuizResultService {
                 quizzesBySubject.put(subjectName, quizzesBySubject.getOrDefault(subjectName, 0L) + 1);
             }
             stats.put("quizzesBySubject", quizzesBySubject);
+
+            // Thêm thông tin về thời gian làm bài trung bình
+            double averageDuration = results.stream()
+                    .filter(r -> r.getDurationSeconds() != null)
+                    .mapToInt(QuizResult::getDurationSeconds)
+                    .average()
+                    .orElse(0.0);
+            stats.put("averageDurationSeconds", averageDuration);
         } else {
             stats.put("averageScore", 0);
             stats.put("completionRate", 0);
             stats.put("quizzesBySubject", new HashMap<>());
+            stats.put("averageDurationSeconds", 0);
         }
 
         return stats;

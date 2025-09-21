@@ -22,6 +22,10 @@ public interface QuizResultRepository extends JpaRepository<QuizResult, Integer>
     @Query("SELECT AVG(qr.score) FROM QuizResult qr WHERE qr.user.id = :userId AND qr.quiz.subject.id = :subjectId")
     Double findAverageScoreByUserIdAndSubjectId(@Param("userId") Long userId, @Param("subjectId") Integer subjectId);
 
-    @Query("SELECT qr FROM QuizResult qr WHERE qr.user.id = :userId AND qr.quiz.id = :quizId")
-    QuizResult findByUserIdAndQuizId(@Param("userId") Long userId, @Param("quizId") Integer quizId);
+    // Thêm phương thức mới
+    @Query("SELECT COALESCE(MAX(qr.attemptNo), 0) FROM QuizResult qr WHERE qr.user.id = :userId AND qr.quiz.id = :quizId")
+    Integer findMaxAttemptNoByUserAndQuiz(@Param("userId") Long userId, @Param("quizId") Integer quizId);
+
+    @Query("SELECT qr FROM QuizResult qr WHERE qr.user.id = :userId AND qr.quiz.id = :quizId ORDER BY qr.attemptNo DESC")
+    List<QuizResult> findByUserIdAndQuizId(@Param("userId") Long userId, @Param("quizId") Integer quizId);
 }

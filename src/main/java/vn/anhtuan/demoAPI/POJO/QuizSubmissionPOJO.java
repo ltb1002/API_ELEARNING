@@ -1,21 +1,23 @@
 package vn.anhtuan.demoAPI.POJO;
 
-import com.fasterxml.jackson.annotation.JsonSetter;
-
 import java.util.List;
 import java.util.Map;
 
 public class QuizSubmissionPOJO {
     private Long userId;
-    private Map<Integer, List<Integer>> answers; // questionId -> list of choiceIds
+    private Map<Integer, List<Integer>> answers;
+    private Integer durationSeconds; // Thêm trường duration
 
-    public QuizSubmissionPOJO() {}
-
-    public QuizSubmissionPOJO(Long userId, Map<Integer, List<Integer>> answers) {
-        this.userId = userId;
-        this.answers = answers;
+    public QuizSubmissionPOJO() {
     }
 
+    public QuizSubmissionPOJO(Long userId, Map<Integer, List<Integer>> answers, Integer durationSeconds) {
+        this.userId = userId;
+        this.answers = answers;
+        this.durationSeconds = durationSeconds;
+    }
+
+    // Getters and Setters
     public Long getUserId() {
         return userId;
     }
@@ -32,11 +34,11 @@ public class QuizSubmissionPOJO {
         this.answers = answers;
     }
 
-    @Override
-    public String toString() {
-        return "QuizSubmissionPOJO{" +
-                "userId=" + userId +
-                ", answers=" + answers +
-                '}';
+    public Integer getDurationSeconds() {
+        return durationSeconds;
+    }
+
+    public void setDurationSeconds(Integer durationSeconds) {
+        this.durationSeconds = durationSeconds;
     }
 }

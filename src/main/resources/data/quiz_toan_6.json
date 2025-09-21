@@ -10,110 +10,200 @@
         "content": "Kết quả của phép tính \\(12 + 15\\) là bao nhiêu?",
         "explanation": "Thực hiện phép cộng: \\(12 + 15 = 27\\)",
         "choices": [
-          {
-            "content": "25",
-            "is_correct": false
-          },
-          {
-            "content": "26",
-            "is_correct": false
-          },
-          {
-            "content": "27",
-            "is_correct": true
-          },
-          {
-            "content": "28",
-            "is_correct": false
-          }
+          { "content": "25", "is_correct": false },
+          { "content": "26", "is_correct": false },
+          { "content": "27", "is_correct": true },
+          { "content": "28", "is_correct": false }
         ]
       },
       {
         "content": "Kết quả của phép tính \\(50 - 17\\) là bao nhiêu?",
         "explanation": "Thực hiện phép trừ: \\(50 - 17 = 33\\)",
         "choices": [
-          {
-            "content": "32",
-            "is_correct": false
-          },
-          {
-            "content": "33",
-            "is_correct": true
-          },
-          {
-            "content": "34",
-            "is_correct": false
-          },
-          {
-            "content": "35",
-            "is_correct": false
-          }
+          { "content": "32", "is_correct": false },
+          { "content": "33", "is_correct": true },
+          { "content": "34", "is_correct": false },
+          { "content": "35", "is_correct": false }
         ]
       },
       {
         "content": "Kết quả của phép tính \\(8 \\times 7\\) là bao nhiêu?",
         "explanation": "Thực hiện phép nhân: \\(8 \\times 7 = 56\\)",
         "choices": [
-          {
-            "content": "54",
-            "is_correct": false
-          },
-          {
-            "content": "55",
-            "is_correct": false
-          },
-          {
-            "content": "56",
-            "is_correct": true
-          },
-          {
-            "content": "57",
-            "is_correct": false
-          }
+          { "content": "54", "is_correct": false },
+          { "content": "55", "is_correct": false },
+          { "content": "56", "is_correct": true },
+          { "content": "57", "is_correct": false }
         ]
       },
       {
         "content": "Kết quả của phép tính \\(81 \\div 9\\) là bao nhiêu?",
         "explanation": "Thực hiện phép chia: \\(81 \\div 9 = 9\\)",
         "choices": [
-          {
-            "content": "8",
-            "is_correct": false
-          },
-          {
-            "content": "9",
-            "is_correct": true
-          },
-          {
-            "content": "10",
-            "is_correct": false
-          },
-          {
-            "content": "11",
-            "is_correct": false
-          }
+          { "content": "8", "is_correct": false },
+          { "content": "9", "is_correct": true },
+          { "content": "10", "is_correct": false },
+          { "content": "11", "is_correct": false }
         ]
       },
       {
         "content": "Số liền sau của \\(99\\) là số nào?",
         "explanation": "Số liền sau của \\(99\\) là \\(100\\)",
         "choices": [
-          {
-            "content": "99",
-            "is_correct": false
-          },
-          {
-            "content": "100",
-            "is_correct": true
-          },
-          {
-            "content": "101",
-            "is_correct": false
-          },
-          {
-            "content": "98",
-            "is_correct": false
-          }
+          { "content": "99", "is_correct": false },
+          { "content": "100", "is_correct": true },
+          { "content": "101", "is_correct": false },
+          { "content": "98", "is_correct": false }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(45 + 27\\) là bao nhiêu?",
+        "explanation": "Thực hiện phép cộng: \\(45 + 27 = 72\\)",
+        "choices": [
+          { "content": "71", "is_correct": false },
+          { "content": "72", "is_correct": true },
+          { "content": "73", "is_correct": false },
+          { "content": "74", "is_correct": false }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(120 - 45\\) là bao nhiêu?",
+        "explanation": "Thực hiện phép trừ: \\(120 - 45 = 75\\)",
+        "choices": [
+          { "content": "74", "is_correct": false },
+          { "content": "75", "is_correct": true },
+          { "content": "76", "is_correct": false },
+          { "content": "77", "is_correct": false }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(9 \\times 9\\) là bao nhiêu?",
+        "explanation": "Thực hiện phép nhân: \\(9 \\times 9 = 81\\)",
+        "choices": [
+          { "content": "80", "is_correct": false },
+          { "content": "81", "is_correct": true },
+          { "content": "82", "is_correct": false },
+          { "content": "83", "is_correct": false }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(100 \\div 4\\) là bao nhiêu?",
+        "explanation": "Thực hiện phép chia: \\(100 \\div 4 = 25\\)",
+        "choices": [
+          { "content": "24", "is_correct": false },
+          { "content": "25", "is_correct": true },
+          { "content": "26", "is_correct": false },
+          { "content": "27", "is_correct": false }
+        ]
+      },
+      {
+        "content": "Số liền trước của \\(50\\) là số nào?",
+        "explanation": "Số liền trước của \\(50\\) là \\(49\\)",
+        "choices": [
+          { "content": "48", "is_correct": false },
+          { "content": "49", "is_correct": true },
+          { "content": "50", "is_correct": false },
+          { "content": "51", "is_correct": false }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(200 + 150\\) là bao nhiêu?",
+        "explanation": "Thực hiện phép cộng: \\(200 + 150 = 350\\)",
+        "choices": [
+          { "content": "348", "is_correct": false },
+          { "content": "349", "is_correct": false },
+          { "content": "350", "is_correct": true },
+          { "content": "351", "is_correct": false }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(75 - 28\\) là bao nhiêu?",
+        "explanation": "Thực hiện phép trừ: \\(75 - 28 = 47\\)",
+        "choices": [
+          { "content": "46", "is_correct": false },
+          { "content": "47", "is_correct": true },
+          { "content": "48", "is_correct": false },
+          { "content": "49", "is_correct": false }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(11 \\times 12\\) là bao nhiêu?",
+        "explanation": "Thực hiện phép nhân: \\(11 \\times 12 = 132\\)",
+        "choices": [
+          { "content": "130", "is_correct": false },
+          { "content": "131", "is_correct": false },
+          { "content": "132", "is_correct": true },
+          { "content": "133", "is_correct": false }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(144 \\div 12\\) là bao nhiêu?",
+        "explanation": "Thực hiện phép chia: \\(144 \\div 12 = 12\\)",
+        "choices": [
+          { "content": "11", "is_correct": false },
+          { "content": "12", "is_correct": true },
+          { "content": "13", "is_correct": false },
+          { "content": "14", "is_correct": false }
+        ]
+      },
+      {
+        "content": "Số liền sau của \\(250\\) là số nào?",
+        "explanation": "Số liền sau của \\(250\\) là \\(251\\)",
+        "choices": [
+          { "content": "249", "is_correct": false },
+          { "content": "250", "is_correct": false },
+          { "content": "251", "is_correct": true },
+          { "content": "252", "is_correct": false }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(33 + 67\\) là bao nhiêu?",
+        "explanation": "Thực hiện phép cộng: \\(33 + 67 = 100\\)",
+        "choices": [
+          { "content": "99", "is_correct": false },
+          { "content": "100", "is_correct": true },
+          { "content": "101", "is_correct": false },
+          { "content": "102", "is_correct": false }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(500 - 123\\) là bao nhiêu?",
+        "explanation": "Thực hiện phép trừ: \\(500 - 123 = 377\\)",
+        "choices": [
+          { "content": "376", "is_correct": false },
+          { "content": "377", "is_correct": true },
+          { "content": "378", "is_correct": false },
+          { "content": "379", "is_correct": false }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(25 \\times 4\\) là bao nhiêu?",
+        "explanation": "Thực hiện phép nhân: \\(25 \\times 4 = 100\\)",
+        "choices": [
+          { "content": "98", "is_correct": false },
+          { "content": "99", "is_correct": false },
+          { "content": "100", "is_correct": true },
+          { "content": "101", "is_correct": false }
+        ]
+      },
+      {
+        "content": "Kết quả của phép tính \\(225 \\div 15\\) là bao nhiêu?",
+        "explanation": "Thực hiện phép chia: \\(225 \\div 15 = 15\\)",
+        "choices": [
+          { "content": "14", "is_correct": false },
+          { "content": "15", "is_correct": true },
+          { "content": "16", "is_correct": false },
+          { "content": "17", "is_correct": false }
+        ]
+      },
+      {
+        "content": "Số liền trước của \\(1000\\) là số nào?",
+        "explanation": "Số liền trước của \\(1000\\) là \\(999\\)",
+        "choices": [
+          { "content": "998", "is_correct": false },
+          { "content": "999", "is_correct": true },
+          { "content": "1000", "is_correct": false },
+          { "content": "1001", "is_correct": false }
         ]
       }
     ]
