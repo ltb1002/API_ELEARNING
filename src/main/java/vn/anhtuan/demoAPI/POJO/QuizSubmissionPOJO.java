@@ -1,34 +1,42 @@
 package vn.anhtuan.demoAPI.POJO;
 
+import com.fasterxml.jackson.annotation.JsonSetter;
+
+import java.util.List;
 import java.util.Map;
 
 public class QuizSubmissionPOJO {
-    private Integer userId;
-    private Integer quizId;
-    private Map<String, Integer> answers; // questionId -> choiceId
+    private Long userId;
+    private Map<Integer, List<Integer>> answers; // questionId -> list of choiceIds
 
-    // Getters and setters
-    public Integer getUserId() {
+    public QuizSubmissionPOJO() {}
+
+    public QuizSubmissionPOJO(Long userId, Map<Integer, List<Integer>> answers) {
+        this.userId = userId;
+        this.answers = answers;
+    }
+
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 
-    public Integer getQuizId() {
-        return quizId;
-    }
-
-    public void setQuizId(Integer quizId) {
-        this.quizId = quizId;
-    }
-
-    public Map<String, Integer> getAnswers() {
+    public Map<Integer, List<Integer>> getAnswers() {
         return answers;
     }
 
-    public void setAnswers(Map<String, Integer> answers) {
+    public void setAnswers(Map<Integer, List<Integer>> answers) {
         this.answers = answers;
+    }
+
+    @Override
+    public String toString() {
+        return "QuizSubmissionPOJO{" +
+                "userId=" + userId +
+                ", answers=" + answers +
+                '}';
     }
 }

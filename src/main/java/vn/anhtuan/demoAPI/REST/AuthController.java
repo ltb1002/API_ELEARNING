@@ -1,12 +1,8 @@
 package vn.anhtuan.demoAPI.REST;
 
-
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import vn.anhtuan.demoAPI.Entity.PasswordResetToken;
 import vn.anhtuan.demoAPI.Entity.User;
 import vn.anhtuan.demoAPI.Service.PasswordResetService;
@@ -19,6 +15,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/auth")
+@CrossOrigin(origins = "*")
 public class AuthController {
 
     private final UserService userService;
@@ -37,19 +34,32 @@ public class AuthController {
     public ResponseEntity<Map<String,Object>> register(@RequestBody Map<String,String> body){
         String email = body.get("email");
         String password = body.get("password");
+        String username = body.get("username");
 
-        if(email==null || email.isBlank() || password==null || password.isBlank()){
-            return ResponseEntity.badRequest().body(Map.of("success",false,"message","Email & password cannot be empty"));
+        if(email==null || email.isBlank() || password==null || password.isBlank() || username==null || username.isBlank()){
+            return ResponseEntity.badRequest().body(Map.of("success",false,"message","Email, username & password cannot be empty"));
         }
 
         if(userService.findByEmailIgnoreCase(email).isPresent()){
             return ResponseEntity.badRequest().body(Map.of("success",false,"message","Email already exists"));
         }
 
-        User user = new User(email.trim().toLowerCase(), passwordEncoder.encode(password));
+        if(userService.findByUsername(username).isPresent()){
+            return ResponseEntity.badRequest().body(Map.of("success",false,"message","Username already exists"));
+        }
+
+        User user = new User(email.trim().toLowerCase(), passwordEncoder.encode(password), username.trim());
         userService.save(user);
 
-        return ResponseEntity.ok(Map.of("success",true,"message","User registered successfully"));
+        return ResponseEntity.ok(Map.of(
+                "success", true,
+                "message", "User registered successfully",
+                "user", Map.of(
+                        "id", user.getId(),
+                        "email", user.getEmail(),
+                        "username", user.getUsername()
+                )
+        ));
     }
 
     @PostMapping("/login")
@@ -78,7 +88,8 @@ public class AuthController {
                 "success", true,
                 "message", "Login successful",
                 "token", token,
-                "username", user.getEmail()
+                "username", user.getUsername(),
+                "userId", user.getId()
         ));
     }
 
@@ -126,6 +137,78 @@ public class AuthController {
             return ResponseEntity.ok(Map.of("success",true,"message","Password reset successfully"));
         } catch(RuntimeException e){
             return ResponseEntity.badRequest().body(Map.of("success",false,"message",e.getMessage()));
+        }
+    }
+
+    @GetMapping("/user-profile")
+    public ResponseEntity<Map<String, Object>> getUserProfile(@RequestHeader("Authorization") String token) {
+        // Extract user ID from token (simplified implementation)
+        // In a real application, you would decode the JWT token
+        try {
+            // This is a simplified approach - in a real app, you'd use JWT
+            String userIdStr = token.replace("Bearer ", "");
+            Long userId = Long.parseLong(userIdStr);
+
+            Optional<User> userOpt = userService.findById(userId);
+            if (userOpt.isEmpty()) {
+                return ResponseEntity.status(404).body(Map.of("success", false, "message", "User not found"));
+            }
+
+            User user = userOpt.get();
+            return ResponseEntity.ok(Map.of(
+                    "success", true,
+                    "user", Map.of(
+                            "id", user.getId(),
+                            "email", user.getEmail(),
+                            "username", user.getUsername()
+                    )
+            ));
+        } catch (Exception e) {
+            return ResponseEntity.status(401).body(Map.of("success", false, "message", "Invalid token"));
+        }
+    }
+
+    @PostMapping("/change-password")
+    public ResponseEntity<Map<String, Object>> changePassword(
+            @RequestHeader("Authorization") String token,
+            @RequestBody Map<String, String> body) {
+
+        try {
+            String userIdStr = token.replace("Bearer ", "");
+            Long userId = Long.parseLong(userIdStr);
+
+            String currentPassword = body.get("currentPassword");
+            String newPassword = body.get("newPassword");
+
+            if (currentPassword == null || newPassword == null) {
+                return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Current and new password are required"));
+            }
+
+            boolean success = userService.changePassword(userId, currentPassword, newPassword);
+            if (success) {
+                return ResponseEntity.ok(Map.of("success", true, "message", "Password changed successfully"));
+            } else {
+                return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Current password is incorrect"));
+            }
+        } catch (Exception e) {
+            return ResponseEntity.status(401).body(Map.of("success", false, "message", "Invalid token"));
+        }
+    }
+
+    @GetMapping("/validate-token")
+    public ResponseEntity<Map<String, Object>> validateToken(@RequestHeader("Authorization") String token) {
+        try {
+            String userIdStr = token.replace("Bearer ", "");
+            Long userId = Long.parseLong(userIdStr);
+
+            Optional<User> userOpt = userService.findById(userId);
+            if (userOpt.isEmpty()) {
+                return ResponseEntity.status(401).body(Map.of("success", false, "message", "Invalid token"));
+            }
+
+            return ResponseEntity.ok(Map.of("success", true, "message", "Token is valid"));
+        } catch (Exception e) {
+            return ResponseEntity.status(401).body(Map.of("success", false, "message", "Invalid token"));
         }
     }
 }

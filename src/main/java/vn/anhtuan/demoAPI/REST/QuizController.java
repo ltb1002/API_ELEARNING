@@ -1,14 +1,13 @@
 package vn.anhtuan.demoAPI.REST;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import vn.anhtuan.demoAPI.Entity.Quiz;
 import vn.anhtuan.demoAPI.Entity.QuizResult;
-import vn.anhtuan.demoAPI.POJO.ChoicePOJO;
-import vn.anhtuan.demoAPI.POJO.QuestionPOJO;
-import vn.anhtuan.demoAPI.POJO.QuizPOJO;
-import vn.anhtuan.demoAPI.POJO.QuizSubmissionPOJO;
+import vn.anhtuan.demoAPI.POJO.*;
 import vn.anhtuan.demoAPI.Service.QuizResultService;
 import vn.anhtuan.demoAPI.Service.QuizService;
 
@@ -27,6 +26,9 @@ public class QuizController {
 
     @Autowired
     private QuizResultService quizResultService;
+
+    @Autowired
+    private ObjectMapper mapper;
 
     /**
      * Lấy tất cả quiz (chỉ thông tin cơ bản, không kèm câu hỏi/đáp án)
@@ -113,26 +115,26 @@ public class QuizController {
     /**
      * Nộp quiz
      */
+
     @PostMapping("/{quizId}/submit")
     public ResponseEntity<Map<String, Object>> submitQuiz(
             @PathVariable Integer quizId,
-            @RequestParam Long userId,
-            @RequestBody Map<String, Integer> userAnswers) {
+            @RequestBody QuizSubmissionPOJO submission) {
 
         try {
-            Map<Integer, Integer> integerKeyMap = new HashMap<>();
-            for (Map.Entry<String, Integer> entry : userAnswers.entrySet()) {
-                integerKeyMap.put(Integer.parseInt(entry.getKey()), entry.getValue());
-            }
-
-            QuizResult result = quizResultService.submitQuiz(userId, quizId, integerKeyMap);
+            QuizResult result = quizResultService.submitQuiz(
+                    submission.getUserId(),
+                    quizId,
+                    submission.getAnswers()
+            );
 
             Map<String, Object> response = new HashMap<>();
             response.put("success", true);
             response.put("score", result.getScore());
             response.put("correctAnswers", result.getCorrectAnswers());
             response.put("totalQuestions", result.getTotalQuestions());
-            response.put("quizResult", result);
+            response.put("passed", result.getScore() >= 5.0);
+            response.put("completedAt", result.getCompletedAt());
 
             return ResponseEntity.ok(response);
 
@@ -142,9 +144,9 @@ public class QuizController {
                     "error", e.getMessage()
             ));
         } catch (Exception e) {
-            return ResponseEntity.internalServerError().body(Map.of(
+            return ResponseEntity.status(500).body(Map.of(
                     "success", false,
-                    "error", "Internal server error"
+                    "error", "Internal server error: " + e.getMessage()
             ));
         }
     }

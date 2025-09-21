@@ -13,6 +13,7 @@ import vn.anhtuan.demoAPI.Repository.*;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
@@ -114,7 +115,17 @@ public class QuizService {
     }
 
     public List<Choice> getCorrectChoicesForQuestion(Integer questionId) {
+        // Sửa thành phương thức có sẵn trong repository
         return choiceRepository.findCorrectChoicesByQuestionId(questionId);
+    }
+
+    public Map<Integer, Set<Integer>> getCorrectChoiceIdsForQuestions(List<Integer> questionIds) {
+        List<Choice> correctChoices = choiceRepository.findCorrectChoicesByQuestionIds(questionIds);
+        return correctChoices.stream()
+                .collect(Collectors.groupingBy(
+                        choice -> choice.getQuestion().getId(),
+                        Collectors.mapping(Choice::getId, Collectors.toSet())
+                ));
     }
 
     public Grade getGradeById(Integer id) {
@@ -150,12 +161,6 @@ public class QuizService {
         return quizTypeRepository.findAll();
     }
 
-    public Map<Integer, List<Choice>> getCorrectChoicesForQuestions(List<Integer> questionIds) {
-        List<Choice> correctChoices = choiceRepository.findCorrectChoicesByQuestionIds(questionIds);
-        return correctChoices.stream()
-                .collect(Collectors.groupingBy(choice -> choice.getQuestion().getId()));
-    }
-
     public QuizPOJO convertToQuizPOJO(Quiz quiz) {
         QuizPOJO pojo = new QuizPOJO();
         pojo.setId(quiz.getId());
@@ -177,6 +182,7 @@ public class QuizService {
 
     public QuestionPOJO convertToQuestionPOJO(Question question) {
         QuestionPOJO pojo = new QuestionPOJO();
+        pojo.setId(question.getId()); // Thêm ID của câu hỏi
         pojo.setContent(question.getContent());
         pojo.setExplanation(question.getExplanation());
 
@@ -191,8 +197,9 @@ public class QuizService {
 
     public ChoicePOJO convertToChoicePOJO(Choice choice) {
         ChoicePOJO pojo = new ChoicePOJO();
+        pojo.setId(choice.getId()); // Thêm ID của lựa chọn
         pojo.setContent(choice.getContent());
-        pojo.setIsCorrect(choice.getIsCorrect()); // dùng getter thay vì field trực tiếp
+        pojo.setIsCorrect(choice.getIsCorrect());
         return pojo;
     }
 
@@ -205,12 +212,11 @@ public class QuizService {
         pojo.setQuizType(quiz.getQuizType().getName());
         pojo.setDuration(quiz.getQuizType().getDurationMinutes());
 
-        // Chuyển đổi List<Question> thành List<QuestionPOJO>
         List<QuestionPOJO> questionPOJOs = questionRepository.findQuestionsByQuizIdOrdered(quiz.getId())
                 .stream()
-                .map(this::convertToQuestionPOJO) // Sử dụng phương thức convert có sẵn
+                .map(this::convertToQuestionPOJO)
                 .collect(Collectors.toList());
-        pojo.setQuestions(questionPOJOs); // Giờ đây kiểu dữ liệu khớp nhau
+        pojo.setQuestions(questionPOJOs);
 
         return pojo;
     }
@@ -222,10 +228,8 @@ public class QuizService {
         pojo.setSubjectId(quiz.getSubject().getId());
         pojo.setChapterId(quiz.getChapter().getId());
         pojo.setChapterTitle(quiz.getChapter().getTitle());
-        // Lấy tên chapter
         pojo.setQuizTypeId(quiz.getQuizType().getId());
         pojo.setCode(quiz.getCode());
-        // Có thể thêm questions nếu cần
         return pojo;
     }
 }

@@ -1,6 +1,5 @@
 package vn.anhtuan.demoAPI.Service;
 
-
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,10 +7,7 @@ import vn.anhtuan.demoAPI.Entity.*;
 import vn.anhtuan.demoAPI.Repository.QuizResultRepository;
 import vn.anhtuan.demoAPI.Repository.UserRepository;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -56,7 +52,16 @@ public class QuizResultService {
     }
 
     @Transactional
-    public QuizResult submitQuiz(Long userId, Integer quizId, Map<Integer, Integer> userAnswers) {
+    public QuizResult submitQuiz(Long userId, Integer quizId, Map<Integer, List<Integer>> userAnswers) {
+        // Validation
+        if (userId == null) {
+            throw new IllegalArgumentException("User ID cannot be null");
+        }
+
+        if (userAnswers == null) {
+            throw new IllegalArgumentException("User answers cannot be null");
+        }
+
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new IllegalArgumentException("User not found with id: " + userId));
 
@@ -65,51 +70,51 @@ public class QuizResultService {
             throw new IllegalArgumentException("Quiz not found with id: " + quizId);
         }
 
-        // Lấy tất cả câu hỏi của quiz
         List<Question> questions = quizService.getQuizQuestions(quizId);
+        if (questions.isEmpty()) {
+            throw new IllegalArgumentException("Quiz has no questions");
+        }
+
         int totalQuestions = questions.size();
         int correctAnswers = 0;
 
-        // Preload tất cả correct choices cho tất cả câu hỏi trong quiz
-        Map<Integer, List<Integer>> correctChoicesMap = new HashMap<>();
-        for (Question question : questions) {
-            List<Choice> correctChoices = quizService.getCorrectChoicesForQuestion(question.getId());
-            correctChoicesMap.put(question.getId(),
-                    correctChoices.stream().map(Choice::getId).collect(Collectors.toList()));
-        }
+        // Lấy tất cả đáp án đúng cho tất cả câu hỏi trong một lần truy vấn
+        List<Integer> questionIds = questions.stream().map(Question::getId).collect(Collectors.toList());
+        Map<Integer, Set<Integer>> correctChoiceIdsMap = quizService.getCorrectChoiceIdsForQuestions(questionIds);
 
-        // Tính điểm
         for (Question question : questions) {
-            Integer selectedChoiceId = userAnswers.get(question.getId());
-
-            // Nếu user không trả lời, bỏ qua
-            if (selectedChoiceId == null) {
-                continue;
+            List<Integer> userSelectedChoices = userAnswers.get(question.getId());
+            Set<Integer> correctChoiceIds = correctChoiceIdsMap.get(question.getId());
+            if (correctChoiceIds == null) {
+                correctChoiceIds = new HashSet<>(); // Xử lý câu hỏi không có đáp án đúng
             }
 
-            List<Integer> correctChoiceIds = correctChoicesMap.get(question.getId());
+            Set<Integer> userSelectedIds = userSelectedChoices != null ?
+                    new HashSet<>(userSelectedChoices) : new HashSet<>();
 
-            // Kiểm tra nếu selected choice nằm trong danh sách correct choices
-            if (correctChoiceIds.contains(selectedChoiceId)) {
-                correctAnswers++;
+            if (correctChoiceIds.isEmpty()) {
+                // Nếu không có đáp án đúng, người dùng phải không chọn gì mới tính đúng
+                if (userSelectedIds.isEmpty()) {
+                    correctAnswers++;
+                }
+            } else {
+                // So sánh đáp án người dùng với đáp án đúng
+                if (correctChoiceIds.equals(userSelectedIds)) {
+                    correctAnswers++;
+                }
             }
         }
 
+        // Tính score và tránh chia cho zero
         float score = totalQuestions > 0 ? (float) correctAnswers / totalQuestions * 10 : 0;
 
-        // Create or update quiz result
-        QuizResult existingResult = quizResultRepository.findByUserIdAndQuizId(userId, quizId);
-        QuizResult quizResult;
-
-        if (existingResult != null) {
-            quizResult = existingResult;
-            quizResult.setScore(score);
-            quizResult.setCorrectAnswers(correctAnswers);
-            quizResult.setTotalQuestions(totalQuestions);
-            quizResult.setStatus(QuizResult.QuizStatus.COMPLETED);
-        } else {
+        // Cập nhật hoặc tạo mới QuizResult
+        QuizResult quizResult = quizResultRepository.findByUserIdAndQuizId(userId, quizId);
+        if (quizResult == null) {
             quizResult = new QuizResult(user, quiz, score, correctAnswers, totalQuestions,
                     QuizResult.QuizStatus.COMPLETED);
+        } else {
+            quizResult.updateResult(score, correctAnswers, totalQuestions);
         }
 
         return quizResultRepository.save(quizResult);
@@ -173,6 +178,4 @@ public class QuizResultService {
 
         return stats;
     }
-
-
 }

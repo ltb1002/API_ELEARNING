@@ -12,7 +12,6 @@ import java.util.List;
 public interface QuizResultRepository extends JpaRepository<QuizResult, Integer> {
     List<QuizResult> findByUserId(Long userId);
     List<QuizResult> findByQuizId(Integer quizId);
-    QuizResult findByUserIdAndQuizId(Long userId, Integer quizId);
 
     @Query("SELECT qr FROM QuizResult qr WHERE qr.user.id = :userId AND qr.quiz.grade.id = :gradeId")
     List<QuizResult> findByUserIdAndGradeId(@Param("userId") Long userId, @Param("gradeId") Integer gradeId);
@@ -22,4 +21,7 @@ public interface QuizResultRepository extends JpaRepository<QuizResult, Integer>
 
     @Query("SELECT AVG(qr.score) FROM QuizResult qr WHERE qr.user.id = :userId AND qr.quiz.subject.id = :subjectId")
     Double findAverageScoreByUserIdAndSubjectId(@Param("userId") Long userId, @Param("subjectId") Integer subjectId);
+
+    @Query("SELECT qr FROM QuizResult qr WHERE qr.user.id = :userId AND qr.quiz.id = :quizId")
+    QuizResult findByUserIdAndQuizId(@Param("userId") Long userId, @Param("quizId") Integer quizId);
 }

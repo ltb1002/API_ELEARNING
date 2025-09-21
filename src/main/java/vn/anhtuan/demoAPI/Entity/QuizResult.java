@@ -1,5 +1,6 @@
 package vn.anhtuan.demoAPI.Entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -33,9 +34,11 @@ public class QuizResult {
     private QuizStatus status = QuizStatus.INCOMPLETE;
 
     @Column(name = "completed_at")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss")
     private LocalDateTime completedAt;
 
     @Column(name = "created_at")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss")
     private LocalDateTime createdAt;
 
     // Constructors
@@ -50,10 +53,28 @@ public class QuizResult {
         this.score = score;
         this.correctAnswers = correctAnswers;
         this.totalQuestions = totalQuestions;
-        this.status = status;
         this.createdAt = LocalDateTime.now();
-        if (status == QuizStatus.COMPLETED) {
-            this.completedAt = LocalDateTime.now();
+        setStatus(status); // Sử dụng setter để đảm bảo completedAt được thiết lập đúng
+    }
+
+    public void updateResult(float score, int correctAnswers, int totalQuestions) {
+        validateResultData(score, correctAnswers, totalQuestions);
+
+        this.score = score;
+        this.correctAnswers = correctAnswers;
+        this.totalQuestions = totalQuestions;
+        setStatus(QuizStatus.COMPLETED); // Sử dụng setter để tự động set completedAt
+    }
+
+    private void validateResultData(float score, int correctAnswers, int totalQuestions) {
+        if (correctAnswers > totalQuestions) {
+            throw new IllegalArgumentException("correctAnswers cannot exceed totalQuestions");
+        }
+        if (score < 0 || score > 10) { // Điểm số nên nằm trong khoảng 0-10
+            throw new IllegalArgumentException("Score must be between 0 and 10");
+        }
+        if (totalQuestions <= 0) {
+            throw new IllegalArgumentException("Total questions must be greater than 0");
         }
     }
 
@@ -92,6 +113,9 @@ public class QuizResult {
     }
 
     public void setScore(Float score) {
+        if (score != null && (score < 0 || score > 10)) {
+            throw new IllegalArgumentException("Score must be between 0 and 10");
+        }
         this.score = score;
     }
 
@@ -100,6 +124,9 @@ public class QuizResult {
     }
 
     public void setCorrectAnswers(Integer correctAnswers) {
+        if (correctAnswers != null && totalQuestions != null && correctAnswers > totalQuestions) {
+            throw new IllegalArgumentException("correctAnswers cannot exceed totalQuestions");
+        }
         this.correctAnswers = correctAnswers;
     }
 
@@ -108,6 +135,9 @@ public class QuizResult {
     }
 
     public void setTotalQuestions(Integer totalQuestions) {
+        if (totalQuestions != null && totalQuestions <= 0) {
+            throw new IllegalArgumentException("Total questions must be greater than 0");
+        }
         this.totalQuestions = totalQuestions;
     }
 
