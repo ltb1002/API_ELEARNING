@@ -3,12 +3,14 @@ package vn.anhtuan.demoAPI.Service;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 import vn.anhtuan.demoAPI.Entity.*;
 import vn.anhtuan.demoAPI.Repository.*;
 
 @Component
+@Order(1) // Thứ tự thực thi ưu tiên cao nhất
 public class DataLoaderService implements CommandLineRunner {
 
     private final SubjectRepository subjectRepo;
@@ -34,8 +36,8 @@ public class DataLoaderService implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        String[] subjects = {"toan", "nguvan", "tienganh", "khoahoctunhien"}; // thêm môn nếu cần
-        int[] grades = {6,7,8,9}; // thêm lớp nếu cần
+        String[] subjects = {"toan", "nguvan", "tienganh", "khoahoctunhien"};
+        int[] grades = {6,7,8,9};
 
         ObjectMapper mapper = new ObjectMapper();
 
@@ -43,7 +45,10 @@ public class DataLoaderService implements CommandLineRunner {
             for (int grade : grades) {
                 try {
                     // Kiểm tra dữ liệu đã load chưa
-                    if (!subjectRepo.findByCodeAndGrade(subjectName.toLowerCase(), grade).isEmpty()) continue;
+                    if (!subjectRepo.findByCodeAndGrade(subjectName.toLowerCase(), grade).isEmpty()) {
+                        System.out.println("ℹ️ Data already loaded for " + subjectName + " grade " + grade + ", skipping");
+                        continue;
+                    }
 
                     // Đọc file JSON
                     String fileName = getFileName(subjectName, grade);
@@ -68,14 +73,14 @@ public class DataLoaderService implements CommandLineRunner {
                                 lesson.setTitle(lessonNode.get("title").asText());
                                 lesson.setVideoUrl(lessonNode.path("videoUrl").asText(""));
                                 lesson.setChapter(chapter);
-                                lessonRepo.saveAndFlush(lesson); // cần ID để map exercise
+                                lessonRepo.saveAndFlush(lesson);
 
                                 // Load lesson contents
                                 int contentOrder = 1;
                                 for (JsonNode contentNode : lessonNode.path("contents")) {
                                     LessonContent content = new LessonContent();
                                     content.setLesson(lesson);
-                                    content.setContentType(ContentType.valueOf(contentNode.get("type").asText()));
+                                    content.setContentType(ContentType.valueOf(contentNode.get("type").asText().toUpperCase()));
                                     content.setContentValue(contentNode.get("value").asText());
                                     content.setContentOrder(contentOrder++);
                                     lessonContentRepo.save(content);
@@ -94,7 +99,7 @@ public class DataLoaderService implements CommandLineRunner {
                                     for (JsonNode solutionNode : exerciseNode.path("solutions")) {
                                         ExerciseSolution solution = new ExerciseSolution();
                                         solution.setExercise(exercise);
-                                        solution.setSolutionType(ContentType.valueOf(solutionNode.get("type").asText()));
+                                        solution.setSolutionType(ContentType.valueOf(solutionNode.get("type").asText().toUpperCase()));
                                         solution.setSolutionValue(solutionNode.get("value").asText());
                                         solution.setSolutionOrder(solutionOrder++);
                                         exerciseSolutionRepo.save(solution);

@@ -13,34 +13,34 @@
               "title": "Bài học 1: Bài học đường đời đầu tiên",
               "videoUrl": "https://example.com/videos/nguvan6_bai1_baihocduongdoi.mp4",
               "contents": [
-                { "type": "text", "value": "Truyện đồng thoại của Tô Hoài, kể về bài học đầu tiên của Dế Mèn, nhấn mạnh tính kiêu ngạo và hậu quả." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
-                { "type": "text", "value": "Truyện đồng thoại của Tô Hoài, kể về bài học đầu tiên của Dế Mèn, nhấn mạnh tính kiêu ngạo và hậu quả." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
-                { "type": "text", "value": "Truyện đồng thoại của Tô Hoài, kể về bài học đầu tiên của Dế Mèn, nhấn mạnh tính kiêu ngạo và hậu quả." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
-                { "type": "text", "value": "Truyện đồng thoại của Tô Hoài, kể về bài học đầu tiên của Dế Mèn, nhấn mạnh tính kiêu ngạo và hậu quả." },
-                { "type": "text", "value": "Truyện đồng thoại của Tô Hoài, kể về bài học đầu tiên của Dế Mèn, nhấn mạnh tính kiêu ngạo và hậu quả." }
+                { "type": "TEXT", "value": "Truyện đồng thoại của Tô Hoài, kể về bài học đầu tiên của Dế Mèn, nhấn mạnh tính kiêu ngạo và hậu quả." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
+                { "type": "TEXT", "value": "Truyện đồng thoại của Tô Hoài, kể về bài học đầu tiên của Dế Mèn, nhấn mạnh tính kiêu ngạo và hậu quả." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
+                { "type": "TEXT", "value": "Truyện đồng thoại của Tô Hoài, kể về bài học đầu tiên của Dế Mèn, nhấn mạnh tính kiêu ngạo và hậu quả." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
+                { "type": "TEXT", "value": "Truyện đồng thoại của Tô Hoài, kể về bài học đầu tiên của Dế Mèn, nhấn mạnh tính kiêu ngạo và hậu quả." },
+                { "type": "TEXT", "value": "Truyện đồng thoại của Tô Hoài, kể về bài học đầu tiên của Dế Mèn, nhấn mạnh tính kiêu ngạo và hậu quả." }
               ],
               "exercises": [
                 {
                   "question": "Viết một đoạn văn ngắn (5–7 câu) tả cảnh sân trường em trong giờ ra chơi.",
                   "solutions": [
-                    { "type": "text", "value": "Trong giờ ra chơi, sân trường em rộn ràng tiếng cười nói. Các bạn học sinh chạy nhảy, vui đùa khắp nơi. Những tà áo trắng tung bay trong gió. Hàng cây phượng đỏ rực như ngọn lửa. Sân trường thật náo nhiệt và đầy sức sống." },
-                    { "type": "text", "value": "Một đoạn văn miêu tả cần có câu mở đoạn, các câu triển khai và câu kết đoạn." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
-                    { "type": "text", "value": "Khi viết, nên sử dụng nhiều từ ngữ gợi tả để bài văn sinh động." },
-                    { "type": "text", "value": "Có thể thêm cảm xúc cá nhân để đoạn văn giàu tình cảm hơn." }
+                    { "type": "TEXT", "value": "Trong giờ ra chơi, sân trường em rộn ràng tiếng cười nói. Các bạn học sinh chạy nhảy, vui đùa khắp nơi. Những tà áo trắng tung bay trong gió. Hàng cây phượng đỏ rực như ngọn lửa. Sân trường thật náo nhiệt và đầy sức sống." },
+                    { "type": "TEXT", "value": "Một đoạn văn miêu tả cần có câu mở đoạn, các câu triển khai và câu kết đoạn." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
+                    { "type": "TEXT", "value": "Khi viết, nên sử dụng nhiều từ ngữ gợi tả để bài văn sinh động." },
+                    { "type": "TEXT", "value": "Có thể thêm cảm xúc cá nhân để đoạn văn giàu tình cảm hơn." }
                   ]
                 },
                 {
                   "question": "Tìm và ghi lại ba hình ảnh so sánh trong một bài thơ em đã học ở lớp 6.",
                   "solutions": [
-                    { "type": "text", "value": "Ví dụ trong bài thơ 'Mưa': 'Hạt mưa rơi như ngọc', 'Tiếng mưa rơi như tiếng đàn', 'Mưa đến như lời ru'." },
-                    { "type": "text", "value": "So sánh là biện pháp tu từ giúp câu văn, câu thơ trở nên sinh động, gợi hình, gợi cảm." },
-                    { "type": "text", "value": "Khi ghi lại, cần trích dẫn đúng nguyên văn từ tác phẩm." },
-                    { "type": "text", "value": "Có thể chọn các bài thơ quen thuộc như 'Đêm nay Bác không ngủ' hoặc 'Mưa'." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "Ví dụ trong bài thơ 'Mưa': 'Hạt mưa rơi như ngọc', 'Tiếng mưa rơi như tiếng đàn', 'Mưa đến như lời ru'." },
+                    { "type": "TEXT", "value": "So sánh là biện pháp tu từ giúp câu văn, câu thơ trở nên sinh động, gợi hình, gợi cảm." },
+                    { "type": "TEXT", "value": "Khi ghi lại, cần trích dẫn đúng nguyên văn từ tác phẩm." },
+                    { "type": "TEXT", "value": "Có thể chọn các bài thơ quen thuộc như 'Đêm nay Bác không ngủ' hoặc 'Mưa'." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -49,31 +49,31 @@
               "title": "Bài học 2: Nếu cậu muốn có một người bạn",
               "videoUrl": "https://example.com/videos/nguvan6_bai2_nguoiban.mp4",
               "contents": [
-                { "type": "text", "value": "Truyện của T. Lêvis, nhấn mạnh giá trị của tình bạn và sự sẻ chia." },
-                { "type": "text", "value": "Truyện đồng thoại của Tô Hoài, kể về bài học đầu tiên của Dế Mèn, nhấn mạnh tính kiêu ngạo và hậu quả." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
-                { "type": "text", "value": "Truyện đồng thoại của Tô Hoài, kể về bài học đầu tiên của Dế Mèn, nhấn mạnh tính kiêu ngạo và hậu quả." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                { "type": "TEXT", "value": "Truyện của T. Lêvis, nhấn mạnh giá trị của tình bạn và sự sẻ chia." },
+                { "type": "TEXT", "value": "Truyện đồng thoại của Tô Hoài, kể về bài học đầu tiên của Dế Mèn, nhấn mạnh tính kiêu ngạo và hậu quả." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
+                { "type": "TEXT", "value": "Truyện đồng thoại của Tô Hoài, kể về bài học đầu tiên của Dế Mèn, nhấn mạnh tính kiêu ngạo và hậu quả." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
               ],
               "exercises": [
                 {
                   "question": "Viết một đoạn văn ngắn (5–7 câu) tả cảnh sân trường em trong giờ ra chơi.",
                   "solutions": [
-                    { "type": "text", "value": "Trong giờ ra chơi, sân trường em rộn ràng tiếng cười nói. Các bạn học sinh chạy nhảy, vui đùa khắp nơi. Những tà áo trắng tung bay trong gió. Hàng cây phượng đỏ rực như ngọn lửa. Sân trường thật náo nhiệt và đầy sức sống." },
-                    { "type": "text", "value": "Một đoạn văn miêu tả cần có câu mở đoạn, các câu triển khai và câu kết đoạn." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
-                    { "type": "text", "value": "Khi viết, nên sử dụng nhiều từ ngữ gợi tả để bài văn sinh động." },
-                    { "type": "text", "value": "Có thể thêm cảm xúc cá nhân để đoạn văn giàu tình cảm hơn." }
+                    { "type": "TEXT", "value": "Trong giờ ra chơi, sân trường em rộn ràng tiếng cười nói. Các bạn học sinh chạy nhảy, vui đùa khắp nơi. Những tà áo trắng tung bay trong gió. Hàng cây phượng đỏ rực như ngọn lửa. Sân trường thật náo nhiệt và đầy sức sống." },
+                    { "type": "TEXT", "value": "Một đoạn văn miêu tả cần có câu mở đoạn, các câu triển khai và câu kết đoạn." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
+                    { "type": "TEXT", "value": "Khi viết, nên sử dụng nhiều từ ngữ gợi tả để bài văn sinh động." },
+                    { "type": "TEXT", "value": "Có thể thêm cảm xúc cá nhân để đoạn văn giàu tình cảm hơn." }
                   ]
                 },
                 {
                   "question": "Tìm và ghi lại ba hình ảnh so sánh trong một bài thơ em đã học ở lớp 6.",
                   "solutions": [
-                    { "type": "text", "value": "Ví dụ trong bài thơ 'Mưa': 'Hạt mưa rơi như ngọc', 'Tiếng mưa rơi như tiếng đàn', 'Mưa đến như lời ru'." },
-                    { "type": "text", "value": "So sánh là biện pháp tu từ giúp câu văn, câu thơ trở nên sinh động, gợi hình, gợi cảm." },
-                    { "type": "text", "value": "Khi ghi lại, cần trích dẫn đúng nguyên văn từ tác phẩm." },
-                    { "type": "text", "value": "Có thể chọn các bài thơ quen thuộc như 'Đêm nay Bác không ngủ' hoặc 'Mưa'." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "Ví dụ trong bài thơ 'Mưa': 'Hạt mưa rơi như ngọc', 'Tiếng mưa rơi như tiếng đàn', 'Mưa đến như lời ru'." },
+                    { "type": "TEXT", "value": "So sánh là biện pháp tu từ giúp câu văn, câu thơ trở nên sinh động, gợi hình, gợi cảm." },
+                    { "type": "TEXT", "value": "Khi ghi lại, cần trích dẫn đúng nguyên văn từ tác phẩm." },
+                    { "type": "TEXT", "value": "Có thể chọn các bài thơ quen thuộc như 'Đêm nay Bác không ngủ' hoặc 'Mưa'." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -82,27 +82,27 @@
               "title": "Bài học 3: Bắt nạt",
               "videoUrl": "https://example.com/videos/nguvan6_bai3_batnat.mp4",
               "contents": [
-                { "type": "text", "value": "Văn bản nghị luận về hiện tượng bắt nạt học đường và cách ứng xử." }
+                { "type": "TEXT", "value": "Văn bản nghị luận về hiện tượng bắt nạt học đường và cách ứng xử." }
               ],
               "exercises": [
                 {
                   "question": "Viết một đoạn văn ngắn (5–7 câu) tả cảnh sân trường em trong giờ ra chơi.",
                   "solutions": [
-                    { "type": "text", "value": "Trong giờ ra chơi, sân trường em rộn ràng tiếng cười nói. Các bạn học sinh chạy nhảy, vui đùa khắp nơi. Những tà áo trắng tung bay trong gió. Hàng cây phượng đỏ rực như ngọn lửa. Sân trường thật náo nhiệt và đầy sức sống." },
-                    { "type": "text", "value": "Một đoạn văn miêu tả cần có câu mở đoạn, các câu triển khai và câu kết đoạn." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
-                    { "type": "text", "value": "Khi viết, nên sử dụng nhiều từ ngữ gợi tả để bài văn sinh động." },
-                    { "type": "text", "value": "Có thể thêm cảm xúc cá nhân để đoạn văn giàu tình cảm hơn." }
+                    { "type": "TEXT", "value": "Trong giờ ra chơi, sân trường em rộn ràng tiếng cười nói. Các bạn học sinh chạy nhảy, vui đùa khắp nơi. Những tà áo trắng tung bay trong gió. Hàng cây phượng đỏ rực như ngọn lửa. Sân trường thật náo nhiệt và đầy sức sống." },
+                    { "type": "TEXT", "value": "Một đoạn văn miêu tả cần có câu mở đoạn, các câu triển khai và câu kết đoạn." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
+                    { "type": "TEXT", "value": "Khi viết, nên sử dụng nhiều từ ngữ gợi tả để bài văn sinh động." },
+                    { "type": "TEXT", "value": "Có thể thêm cảm xúc cá nhân để đoạn văn giàu tình cảm hơn." }
                   ]
                 },
                 {
                   "question": "Tìm và ghi lại ba hình ảnh so sánh trong một bài thơ em đã học ở lớp 6.",
                   "solutions": [
-                    { "type": "text", "value": "Ví dụ trong bài thơ 'Mưa': 'Hạt mưa rơi như ngọc', 'Tiếng mưa rơi như tiếng đàn', 'Mưa đến như lời ru'." },
-                    { "type": "text", "value": "So sánh là biện pháp tu từ giúp câu văn, câu thơ trở nên sinh động, gợi hình, gợi cảm." },
-                    { "type": "text", "value": "Khi ghi lại, cần trích dẫn đúng nguyên văn từ tác phẩm." },
-                    { "type": "text", "value": "Có thể chọn các bài thơ quen thuộc như 'Đêm nay Bác không ngủ' hoặc 'Mưa'." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "Ví dụ trong bài thơ 'Mưa': 'Hạt mưa rơi như ngọc', 'Tiếng mưa rơi như tiếng đàn', 'Mưa đến như lời ru'." },
+                    { "type": "TEXT", "value": "So sánh là biện pháp tu từ giúp câu văn, câu thơ trở nên sinh động, gợi hình, gợi cảm." },
+                    { "type": "TEXT", "value": "Khi ghi lại, cần trích dẫn đúng nguyên văn từ tác phẩm." },
+                    { "type": "TEXT", "value": "Có thể chọn các bài thơ quen thuộc như 'Đêm nay Bác không ngủ' hoặc 'Mưa'." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -112,27 +112,27 @@
               "title": "Viết: Bài văn kể lại một trải nghiệm của em",
               "videoUrl": "https://example.com/videos/nguvan6_bai4_viettrainghiem.mp4",
               "contents": [
-                { "type": "text", "value": "Hướng dẫn viết bài văn kể lại một trải nghiệm cá nhân, tập trung vào yếu tố tự sự." }
+                { "type": "TEXT", "value": "Hướng dẫn viết bài văn kể lại một trải nghiệm cá nhân, tập trung vào yếu tố tự sự." }
               ],
               "exercises": [
                 {
                   "question": "Viết một đoạn văn ngắn (5–7 câu) tả cảnh sân trường em trong giờ ra chơi.",
                   "solutions": [
-                    { "type": "text", "value": "Trong giờ ra chơi, sân trường em rộn ràng tiếng cười nói. Các bạn học sinh chạy nhảy, vui đùa khắp nơi. Những tà áo trắng tung bay trong gió. Hàng cây phượng đỏ rực như ngọn lửa. Sân trường thật náo nhiệt và đầy sức sống." },
-                    { "type": "text", "value": "Một đoạn văn miêu tả cần có câu mở đoạn, các câu triển khai và câu kết đoạn." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
-                    { "type": "text", "value": "Khi viết, nên sử dụng nhiều từ ngữ gợi tả để bài văn sinh động." },
-                    { "type": "text", "value": "Có thể thêm cảm xúc cá nhân để đoạn văn giàu tình cảm hơn." }
+                    { "type": "TEXT", "value": "Trong giờ ra chơi, sân trường em rộn ràng tiếng cười nói. Các bạn học sinh chạy nhảy, vui đùa khắp nơi. Những tà áo trắng tung bay trong gió. Hàng cây phượng đỏ rực như ngọn lửa. Sân trường thật náo nhiệt và đầy sức sống." },
+                    { "type": "TEXT", "value": "Một đoạn văn miêu tả cần có câu mở đoạn, các câu triển khai và câu kết đoạn." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
+                    { "type": "TEXT", "value": "Khi viết, nên sử dụng nhiều từ ngữ gợi tả để bài văn sinh động." },
+                    { "type": "TEXT", "value": "Có thể thêm cảm xúc cá nhân để đoạn văn giàu tình cảm hơn." }
                   ]
                 },
                 {
                   "question": "Tìm và ghi lại ba hình ảnh so sánh trong một bài thơ em đã học ở lớp 6.",
                   "solutions": [
-                    { "type": "text", "value": "Ví dụ trong bài thơ 'Mưa': 'Hạt mưa rơi như ngọc', 'Tiếng mưa rơi như tiếng đàn', 'Mưa đến như lời ru'." },
-                    { "type": "text", "value": "So sánh là biện pháp tu từ giúp câu văn, câu thơ trở nên sinh động, gợi hình, gợi cảm." },
-                    { "type": "text", "value": "Khi ghi lại, cần trích dẫn đúng nguyên văn từ tác phẩm." },
-                    { "type": "text", "value": "Có thể chọn các bài thơ quen thuộc như 'Đêm nay Bác không ngủ' hoặc 'Mưa'." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "Ví dụ trong bài thơ 'Mưa': 'Hạt mưa rơi như ngọc', 'Tiếng mưa rơi như tiếng đàn', 'Mưa đến như lời ru'." },
+                    { "type": "TEXT", "value": "So sánh là biện pháp tu từ giúp câu văn, câu thơ trở nên sinh động, gợi hình, gợi cảm." },
+                    { "type": "TEXT", "value": "Khi ghi lại, cần trích dẫn đúng nguyên văn từ tác phẩm." },
+                    { "type": "TEXT", "value": "Có thể chọn các bài thơ quen thuộc như 'Đêm nay Bác không ngủ' hoặc 'Mưa'." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -148,27 +148,27 @@
               "title": "Bài học 1: Chuyện cổ tích về loài người",
               "videoUrl": "https://example.com/videos/nguvan6_bai5_chuyencotich.mp4",
               "contents": [
-                { "type": "text", "value": "Thơ của Cô-lét, kể về sự ra đời của loài người, nhấn mạnh tình yêu thương." }
+                { "type": "TEXT", "value": "Thơ của Cô-lét, kể về sự ra đời của loài người, nhấn mạnh tình yêu thương." }
               ],
               "exercises": [
                 {
                   "question": "Viết một đoạn văn ngắn (5–7 câu) tả cảnh sân trường em trong giờ ra chơi.",
                   "solutions": [
-                    { "type": "text", "value": "Trong giờ ra chơi, sân trường em rộn ràng tiếng cười nói. Các bạn học sinh chạy nhảy, vui đùa khắp nơi. Những tà áo trắng tung bay trong gió. Hàng cây phượng đỏ rực như ngọn lửa. Sân trường thật náo nhiệt và đầy sức sống." },
-                    { "type": "text", "value": "Một đoạn văn miêu tả cần có câu mở đoạn, các câu triển khai và câu kết đoạn." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
-                    { "type": "text", "value": "Khi viết, nên sử dụng nhiều từ ngữ gợi tả để bài văn sinh động." },
-                    { "type": "text", "value": "Có thể thêm cảm xúc cá nhân để đoạn văn giàu tình cảm hơn." }
+                    { "type": "TEXT", "value": "Trong giờ ra chơi, sân trường em rộn ràng tiếng cười nói. Các bạn học sinh chạy nhảy, vui đùa khắp nơi. Những tà áo trắng tung bay trong gió. Hàng cây phượng đỏ rực như ngọn lửa. Sân trường thật náo nhiệt và đầy sức sống." },
+                    { "type": "TEXT", "value": "Một đoạn văn miêu tả cần có câu mở đoạn, các câu triển khai và câu kết đoạn." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
+                    { "type": "TEXT", "value": "Khi viết, nên sử dụng nhiều từ ngữ gợi tả để bài văn sinh động." },
+                    { "type": "TEXT", "value": "Có thể thêm cảm xúc cá nhân để đoạn văn giàu tình cảm hơn." }
                   ]
                 },
                 {
                   "question": "Tìm và ghi lại ba hình ảnh so sánh trong một bài thơ em đã học ở lớp 6.",
                   "solutions": [
-                    { "type": "text", "value": "Ví dụ trong bài thơ 'Mưa': 'Hạt mưa rơi như ngọc', 'Tiếng mưa rơi như tiếng đàn', 'Mưa đến như lời ru'." },
-                    { "type": "text", "value": "So sánh là biện pháp tu từ giúp câu văn, câu thơ trở nên sinh động, gợi hình, gợi cảm." },
-                    { "type": "text", "value": "Khi ghi lại, cần trích dẫn đúng nguyên văn từ tác phẩm." },
-                    { "type": "text", "value": "Có thể chọn các bài thơ quen thuộc như 'Đêm nay Bác không ngủ' hoặc 'Mưa'." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "Ví dụ trong bài thơ 'Mưa': 'Hạt mưa rơi như ngọc', 'Tiếng mưa rơi như tiếng đàn', 'Mưa đến như lời ru'." },
+                    { "type": "TEXT", "value": "So sánh là biện pháp tu từ giúp câu văn, câu thơ trở nên sinh động, gợi hình, gợi cảm." },
+                    { "type": "TEXT", "value": "Khi ghi lại, cần trích dẫn đúng nguyên văn từ tác phẩm." },
+                    { "type": "TEXT", "value": "Có thể chọn các bài thơ quen thuộc như 'Đêm nay Bác không ngủ' hoặc 'Mưa'." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -178,27 +178,27 @@
               "title": "Bài học 2: Mây và sóng",
               "videoUrl": "https://example.com/videos/nguvan6_bai6_mayvasong.mp4",
               "contents": [
-                { "type": "text", "value": "Thơ của Ta-go, thể hiện tình mẫu tử thiêng liêng qua hình ảnh mây và sóng." }
+                { "type": "TEXT", "value": "Thơ của Ta-go, thể hiện tình mẫu tử thiêng liêng qua hình ảnh mây và sóng." }
               ],
               "exercises": [
                 {
                   "question": "Viết một đoạn văn ngắn (5–7 câu) tả cảnh sân trường em trong giờ ra chơi.",
                   "solutions": [
-                    { "type": "text", "value": "Trong giờ ra chơi, sân trường em rộn ràng tiếng cười nói. Các bạn học sinh chạy nhảy, vui đùa khắp nơi. Những tà áo trắng tung bay trong gió. Hàng cây phượng đỏ rực như ngọn lửa. Sân trường thật náo nhiệt và đầy sức sống." },
-                    { "type": "text", "value": "Một đoạn văn miêu tả cần có câu mở đoạn, các câu triển khai và câu kết đoạn." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
-                    { "type": "text", "value": "Khi viết, nên sử dụng nhiều từ ngữ gợi tả để bài văn sinh động." },
-                    { "type": "text", "value": "Có thể thêm cảm xúc cá nhân để đoạn văn giàu tình cảm hơn." }
+                    { "type": "TEXT", "value": "Trong giờ ra chơi, sân trường em rộn ràng tiếng cười nói. Các bạn học sinh chạy nhảy, vui đùa khắp nơi. Những tà áo trắng tung bay trong gió. Hàng cây phượng đỏ rực như ngọn lửa. Sân trường thật náo nhiệt và đầy sức sống." },
+                    { "type": "TEXT", "value": "Một đoạn văn miêu tả cần có câu mở đoạn, các câu triển khai và câu kết đoạn." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
+                    { "type": "TEXT", "value": "Khi viết, nên sử dụng nhiều từ ngữ gợi tả để bài văn sinh động." },
+                    { "type": "TEXT", "value": "Có thể thêm cảm xúc cá nhân để đoạn văn giàu tình cảm hơn." }
                   ]
                 },
                 {
                   "question": "Tìm và ghi lại ba hình ảnh so sánh trong một bài thơ em đã học ở lớp 6.",
                   "solutions": [
-                    { "type": "text", "value": "Ví dụ trong bài thơ 'Mưa': 'Hạt mưa rơi như ngọc', 'Tiếng mưa rơi như tiếng đàn', 'Mưa đến như lời ru'." },
-                    { "type": "text", "value": "So sánh là biện pháp tu từ giúp câu văn, câu thơ trở nên sinh động, gợi hình, gợi cảm." },
-                    { "type": "text", "value": "Khi ghi lại, cần trích dẫn đúng nguyên văn từ tác phẩm." },
-                    { "type": "text", "value": "Có thể chọn các bài thơ quen thuộc như 'Đêm nay Bác không ngủ' hoặc 'Mưa'." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "Ví dụ trong bài thơ 'Mưa': 'Hạt mưa rơi như ngọc', 'Tiếng mưa rơi như tiếng đàn', 'Mưa đến như lời ru'." },
+                    { "type": "TEXT", "value": "So sánh là biện pháp tu từ giúp câu văn, câu thơ trở nên sinh động, gợi hình, gợi cảm." },
+                    { "type": "TEXT", "value": "Khi ghi lại, cần trích dẫn đúng nguyên văn từ tác phẩm." },
+                    { "type": "TEXT", "value": "Có thể chọn các bài thơ quen thuộc như 'Đêm nay Bác không ngủ' hoặc 'Mưa'." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -208,27 +208,27 @@
               "title": "Bài học 3: Bức tranh của em gái tôi",
               "videoUrl": "https://example.com/videos/nguvan6_bai7_buctranh.mp4",
               "contents": [
-                { "type": "text", "value": "Truyện của Tạ Duy Anh, kể về tình cảm anh em và sự thấu hiểu trong gia đình." }
+                { "type": "TEXT", "value": "Truyện của Tạ Duy Anh, kể về tình cảm anh em và sự thấu hiểu trong gia đình." }
               ],
               "exercises": [
                 {
                   "question": "Viết một đoạn văn ngắn (5–7 câu) tả cảnh sân trường em trong giờ ra chơi.",
                   "solutions": [
-                    { "type": "text", "value": "Trong giờ ra chơi, sân trường em rộn ràng tiếng cười nói. Các bạn học sinh chạy nhảy, vui đùa khắp nơi. Những tà áo trắng tung bay trong gió. Hàng cây phượng đỏ rực như ngọn lửa. Sân trường thật náo nhiệt và đầy sức sống." },
-                    { "type": "text", "value": "Một đoạn văn miêu tả cần có câu mở đoạn, các câu triển khai và câu kết đoạn." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
-                    { "type": "text", "value": "Khi viết, nên sử dụng nhiều từ ngữ gợi tả để bài văn sinh động." },
-                    { "type": "text", "value": "Có thể thêm cảm xúc cá nhân để đoạn văn giàu tình cảm hơn." }
+                    { "type": "TEXT", "value": "Trong giờ ra chơi, sân trường em rộn ràng tiếng cười nói. Các bạn học sinh chạy nhảy, vui đùa khắp nơi. Những tà áo trắng tung bay trong gió. Hàng cây phượng đỏ rực như ngọn lửa. Sân trường thật náo nhiệt và đầy sức sống." },
+                    { "type": "TEXT", "value": "Một đoạn văn miêu tả cần có câu mở đoạn, các câu triển khai và câu kết đoạn." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
+                    { "type": "TEXT", "value": "Khi viết, nên sử dụng nhiều từ ngữ gợi tả để bài văn sinh động." },
+                    { "type": "TEXT", "value": "Có thể thêm cảm xúc cá nhân để đoạn văn giàu tình cảm hơn." }
                   ]
                 },
                 {
                   "question": "Tìm và ghi lại ba hình ảnh so sánh trong một bài thơ em đã học ở lớp 6.",
                   "solutions": [
-                    { "type": "text", "value": "Ví dụ trong bài thơ 'Mưa': 'Hạt mưa rơi như ngọc', 'Tiếng mưa rơi như tiếng đàn', 'Mưa đến như lời ru'." },
-                    { "type": "text", "value": "So sánh là biện pháp tu từ giúp câu văn, câu thơ trở nên sinh động, gợi hình, gợi cảm." },
-                    { "type": "text", "value": "Khi ghi lại, cần trích dẫn đúng nguyên văn từ tác phẩm." },
-                    { "type": "text", "value": "Có thể chọn các bài thơ quen thuộc như 'Đêm nay Bác không ngủ' hoặc 'Mưa'." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "Ví dụ trong bài thơ 'Mưa': 'Hạt mưa rơi như ngọc', 'Tiếng mưa rơi như tiếng đàn', 'Mưa đến như lời ru'." },
+                    { "type": "TEXT", "value": "So sánh là biện pháp tu từ giúp câu văn, câu thơ trở nên sinh động, gợi hình, gợi cảm." },
+                    { "type": "TEXT", "value": "Khi ghi lại, cần trích dẫn đúng nguyên văn từ tác phẩm." },
+                    { "type": "TEXT", "value": "Có thể chọn các bài thơ quen thuộc như 'Đêm nay Bác không ngủ' hoặc 'Mưa'." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -237,14 +237,14 @@
               "title": "Viết: Đoạn văn ghi lại cảm xúc về một bài thơ có yếu tố tự sự và miêu tả",
               "videoUrl": "https://example.com/videos/nguvan6_bai8_vietdoanvan.mp4",
               "contents": [
-                { "type": "text", "value": "Hướng dẫn viết đoạn văn thể hiện cảm xúc về một bài thơ tự sự hoặc miêu tả." }
+                { "type": "TEXT", "value": "Hướng dẫn viết đoạn văn thể hiện cảm xúc về một bài thơ tự sự hoặc miêu tả." }
               ]
             },
             {
               "title": "Nói và nghe: Trình bày ý kiến về một vấn đề trong đời sống gia đình",
               "videoUrl": "https://example.com/videos/nguvan6_bai9_noivanghe.mp4",
               "contents": [
-                { "type": "text", "value": "Hướng dẫn trình bày ý kiến về các vấn đề gia đình, rèn kỹ năng nói và nghe." }
+                { "type": "TEXT", "value": "Hướng dẫn trình bày ý kiến về các vấn đề gia đình, rèn kỹ năng nói và nghe." }
               ]
             }
           ]
@@ -257,28 +257,28 @@
               "title": "Bài học 1: Cô bé bán diêm",
               "videoUrl": "https://example.com/videos/nguvan6_bai10_cobebandiem.mp4",
               "contents": [
-                { "type": "text", "value": "Truyện của An-đéc-xen, kể về số phận cô bé nghèo và lòng trắc ẩn." }
+                { "type": "TEXT", "value": "Truyện của An-đéc-xen, kể về số phận cô bé nghèo và lòng trắc ẩn." }
               ]
             },
             {
               "title": "Bài học 2: Gió lạnh đầu mùa",
               "videoUrl": "https://example.com/videos/nguvan6_bai11_giolanh.mp4",
               "contents": [
-                { "type": "text", "value": "Truyện của Thạch Lam, nhấn mạnh lòng nhân ái và sự sẻ chia." }
+                { "type": "TEXT", "value": "Truyện của Thạch Lam, nhấn mạnh lòng nhân ái và sự sẻ chia." }
               ]
             },
             {
               "title": "Bài học 3: Con chào mào",
               "videoUrl": "https://example.com/videos/nguvan6_bai12_conchaomao.mp4",
               "contents": [
-                { "type": "text", "value": "Truyện của Nguyễn Quang Thiều, kể về tình yêu thiên nhiên và sự gắn bó." }
+                { "type": "TEXT", "value": "Truyện của Nguyễn Quang Thiều, kể về tình yêu thiên nhiên và sự gắn bó." }
               ]
             },
             {
               "title": "Viết: Bài văn kể lại một trải nghiệm của em",
               "videoUrl": "https://example.com/videos/nguvan6_bai13_viettrainghiem.mp4",
               "contents": [
-                { "type": "text", "value": "Hướng dẫn viết bài văn kể lại trải nghiệm, nhấn mạnh yếu tố cảm xúc." }
+                { "type": "TEXT", "value": "Hướng dẫn viết bài văn kể lại trải nghiệm, nhấn mạnh yếu tố cảm xúc." }
               ]
             }
           ]
@@ -291,35 +291,35 @@
               "title": "Bài học 1: Chùm ca dao về quê hương đất nước",
               "videoUrl": "https://example.com/videos/nguvan6_bai14_cadao.mp4",
               "contents": [
-                { "type": "text", "value": "Chùm ca dao thể hiện tình yêu quê hương, đất nước qua hình ảnh gần gũi." }
+                { "type": "TEXT", "value": "Chùm ca dao thể hiện tình yêu quê hương, đất nước qua hình ảnh gần gũi." }
               ]
             },
             {
               "title": "Bài học 2: Cây tre Việt Nam",
               "videoUrl": "https://example.com/videos/nguvan6_bai15_caytre.mp4",
               "contents": [
-                { "type": "text", "value": "Tùy bút của Thép Mới, biểu tượng cây tre gắn bó với văn hóa Việt." }
+                { "type": "TEXT", "value": "Tùy bút của Thép Mới, biểu tượng cây tre gắn bó với văn hóa Việt." }
               ]
             },
             {
               "title": "Bài học 3: Chuyện cổ nước mình",
               "videoUrl": "https://example.com/videos/nguvan6_bai16_chuyenco.mp4",
               "contents": [
-                { "type": "text", "value": "Thơ của Lương Thế Vinh, ca ngợi giá trị văn hóa cổ tích Việt Nam." }
+                { "type": "TEXT", "value": "Thơ của Lương Thế Vinh, ca ngợi giá trị văn hóa cổ tích Việt Nam." }
               ]
             },
             {
               "title": "Viết: Đoạn văn thể hiện cảm xúc về một bài thơ lục bát",
               "videoUrl": "https://example.com/videos/nguvan6_bai17_vietlucbat.mp4",
               "contents": [
-                { "type": "text", "value": "Hướng dẫn viết đoạn văn thể hiện cảm xúc về thơ lục bát." }
+                { "type": "TEXT", "value": "Hướng dẫn viết đoạn văn thể hiện cảm xúc về thơ lục bát." }
               ]
             },
             {
               "title": "Nói và nghe: Trình bày suy nghĩ về tình cảm của con người với quê hương",
               "videoUrl": "https://example.com/videos/nguvan6_bai18_noiquehuong.mp4",
               "contents": [
-                { "type": "text", "value": "Hướng dẫn trình bày suy nghĩ về tình yêu quê hương, rèn kỹ năng nói nghe." }
+                { "type": "TEXT", "value": "Hướng dẫn trình bày suy nghĩ về tình yêu quê hương, rèn kỹ năng nói nghe." }
               ]
             }
           ]
@@ -332,28 +332,28 @@
               "title": "Bài học 1: Cô Tô",
               "videoUrl": "https://example.com/videos/nguvan6_bai19_coto.mp4",
               "contents": [
-                { "type": "text", "value": "Tùy bút của Nguyễn Tuân, miêu tả vẻ đẹp thiên nhiên và con người Cô Tô." }
+                { "type": "TEXT", "value": "Tùy bút của Nguyễn Tuân, miêu tả vẻ đẹp thiên nhiên và con người Cô Tô." }
               ]
             },
             {
               "title": "Bài học 2: Hang Én",
               "videoUrl": "https://example.com/videos/nguvan6_bai20_hangen.mp4",
               "contents": [
-                { "type": "text", "value": "Văn bản của Trần Hoàng, miêu tả vẻ đẹp hùng vĩ của hang Én." }
+                { "type": "TEXT", "value": "Văn bản của Trần Hoàng, miêu tả vẻ đẹp hùng vĩ của hang Én." }
               ]
             },
             {
               "title": "Bài học 3: Cửu Long Giang ta ơi",
               "videoUrl": "https://example.com/videos/nguvan6_bai21_cuuonggiang.mp4",
               "contents": [
-                { "type": "text", "value": "Thơ của Nguyễn Đình Thi, ca ngợi vẻ đẹp sông Cửu Long." }
+                { "type": "TEXT", "value": "Thơ của Nguyễn Đình Thi, ca ngợi vẻ đẹp sông Cửu Long." }
               ]
             },
             {
               "title": "Viết: Bài văn tả cảnh sinh hoạt",
               "videoUrl": "https://example.com/videos/nguvan6_bai22_viettanh.mp4",
               "contents": [
-                { "type": "text", "value": "Hướng dẫn viết bài văn tả cảnh sinh hoạt, tập trung yếu tố miêu tả." }
+                { "type": "TEXT", "value": "Hướng dẫn viết bài văn tả cảnh sinh hoạt, tập trung yếu tố miêu tả." }
               ]
             }
           ]
@@ -366,28 +366,28 @@
               "title": "Bài học 1: Thánh Gióng",
               "videoUrl": "https://example.com/videos/nguvan6_bai23_thanhgiong.mp4",
               "contents": [
-                { "type": "text", "value": "Truyện cổ tích về Thánh Gióng, biểu tượng sức mạnh và lòng yêu nước." }
+                { "type": "TEXT", "value": "Truyện cổ tích về Thánh Gióng, biểu tượng sức mạnh và lòng yêu nước." }
               ]
             },
             {
               "title": "Bài học 2: Sơn Tinh, Thủy Tinh",
               "videoUrl": "https://example.com/videos/nguvan6_bai24_sontinh.mp4",
               "contents": [
-                { "type": "text", "value": "Truyện cổ tích về Sơn Tinh, Thủy Tinh, phản ánh khát vọng chế ngự thiên nhiên." }
+                { "type": "TEXT", "value": "Truyện cổ tích về Sơn Tinh, Thủy Tinh, phản ánh khát vọng chế ngự thiên nhiên." }
               ]
             },
             {
               "title": "Bài học 3: Ai ơi mồng chín tháng tư",
               "videoUrl": "https://example.com/videos/nguvan6_bai25_mongchinthangtu.mp4",
               "contents": [
-                { "type": "text", "value": "Ca dao về lễ hội đền Hùng, thể hiện lòng biết ơn tổ tiên." }
+                { "type": "TEXT", "value": "Ca dao về lễ hội đền Hùng, thể hiện lòng biết ơn tổ tiên." }
               ]
             },
             {
               "title": "Viết: Bài văn thuyết minh thuật lại một sự kiện",
               "videoUrl": "https://example.com/videos/nguvan6_bai26_vietthuyetminh.mp4",
               "contents": [
-                { "type": "text", "value": "Hướng dẫn viết bài văn thuyết minh về một sự kiện lịch sử hoặc văn hóa." }
+                { "type": "TEXT", "value": "Hướng dẫn viết bài văn thuyết minh về một sự kiện lịch sử hoặc văn hóa." }
               ]
             }
           ]
@@ -400,28 +400,28 @@
               "title": "Bài học 1: Thạch Sanh",
               "videoUrl": "https://example.com/videos/nguvan6_bai27_thachsanh.mp4",
               "contents": [
-                { "type": "text", "value": "Truyện cổ tích về Thạch Sanh, ca ngợi lòng dũng cảm và nhân ái." }
+                { "type": "TEXT", "value": "Truyện cổ tích về Thạch Sanh, ca ngợi lòng dũng cảm và nhân ái." }
               ]
             },
             {
               "title": "Bài học 2: Cây khế",
               "videoUrl": "https://example.com/videos/nguvan6_bai28_caykhe.mp4",
               "contents": [
-                { "type": "text", "value": "Truyện cổ tích về lòng tham và bài học về sự công bằng." }
+                { "type": "TEXT", "value": "Truyện cổ tích về lòng tham và bài học về sự công bằng." }
               ]
             },
             {
               "title": "Bài học 3: Vua chích chòe",
               "videoUrl": "https://example.com/videos/nguvan6_bai29_vuachichchoe.mp4",
               "contents": [
-                { "type": "text", "value": "Truyện cổ tích về bài học khiêm tốn và đoàn kết." }
+                { "type": "TEXT", "value": "Truyện cổ tích về bài học khiêm tốn và đoàn kết." }
               ]
             },
             {
               "title": "Viết: Bài văn đóng vai nhân vật kể lại một truyện cổ tích",
               "videoUrl": "https://example.com/videos/nguvan6_bai30_vietdongvai.mp4",
               "contents": [
-                { "type": "text", "value": "Hướng dẫn viết bài văn đóng vai nhân vật trong truyện cổ tích." }
+                { "type": "TEXT", "value": "Hướng dẫn viết bài văn đóng vai nhân vật trong truyện cổ tích." }
               ]
             }
           ]
@@ -434,28 +434,28 @@
               "title": "Bài học 1: Xem người ta kìa!",
               "videoUrl": "https://example.com/videos/nguvan6_bai31_xemnguoitakia.mp4",
               "contents": [
-                { "type": "text", "value": "Văn bản của Đặng Thùy Trâm, nhấn mạnh sự tôn trọng sự khác biệt." }
+                { "type": "TEXT", "value": "Văn bản của Đặng Thùy Trâm, nhấn mạnh sự tôn trọng sự khác biệt." }
               ]
             },
             {
               "title": "Bài học 2: Hai loại khác biệt",
               "videoUrl": "https://example.com/videos/nguvan6_bai32_haikhoacbiet.mp4",
               "contents": [
-                { "type": "text", "value": "Văn bản nghị luận về sự khác biệt tích cực và tiêu cực trong xã hội." }
+                { "type": "TEXT", "value": "Văn bản nghị luận về sự khác biệt tích cực và tiêu cực trong xã hội." }
               ]
             },
             {
               "title": "Bài học 3: Tiếng cười không muốn nghe",
               "videoUrl": "https://example.com/videos/nguvan6_bai33_tiengcuoi.mp4",
               "contents": [
-                { "type": "text", "value": "Văn bản nghị luận về sự đồng cảm và tránh phân biệt đối xử." }
+                { "type": "TEXT", "value": "Văn bản nghị luận về sự đồng cảm và tránh phân biệt đối xử." }
               ]
             },
             {
               "title": "Viết: Bài văn trình bày ý kiến về một hiện tượng (vấn đề) mà em quan tâm",
               "videoUrl": "https://example.com/videos/nguvan6_bai34_vietnghiluan.mp4",
               "contents": [
-                { "type": "text", "value": "Hướng dẫn viết bài văn nghị luận về một hiện tượng xã hội." }
+                { "type": "TEXT", "value": "Hướng dẫn viết bài văn nghị luận về một hiện tượng xã hội." }
               ]
             }
           ]
@@ -468,28 +468,28 @@
               "title": "Bài học 1: Trái Đất - cái nôi của sự sống",
               "videoUrl": "https://example.com/videos/nguvan6_bai35_traidat.mp4",
               "contents": [
-                { "type": "text", "value": "Văn bản thuyết minh về vai trò của Trái Đất với sự sống." }
+                { "type": "TEXT", "value": "Văn bản thuyết minh về vai trò của Trái Đất với sự sống." }
               ]
             },
             {
               "title": "Bài học 2: Các loài chung sống với nhau như thế nào?",
               "videoUrl": "https://example.com/videos/nguvan6_bai36_chungsong.mp4",
               "contents": [
-                { "type": "text", "value": "Văn bản nghị luận về sự chung sống hài hòa giữa các loài." }
+                { "type": "TEXT", "value": "Văn bản nghị luận về sự chung sống hài hòa giữa các loài." }
               ]
             },
             {
               "title": "Bài học 3: Trái Đất",
               "videoUrl": "https://example.com/videos/nguvan6_bai37_traidattho.mp4",
               "contents": [
-                { "type": "text", "value": "Thơ của Trần Đăng Khoa, ca ngợi vẻ đẹp và giá trị của Trái Đất." }
+                { "type": "TEXT", "value": "Thơ của Trần Đăng Khoa, ca ngợi vẻ đẹp và giá trị của Trái Đất." }
               ]
             },
             {
               "title": "Viết: Bài văn thuyết minh về một vấn đề thuộc lĩnh vực môi trường",
               "videoUrl": "https://example.com/videos/nguvan6_bai38_vietmoitruong.mp4",
               "contents": [
-                { "type": "text", "value": "Hướng dẫn viết bài văn thuyết minh về một vấn đề môi trường." }
+                { "type": "TEXT", "value": "Hướng dẫn viết bài văn thuyết minh về một vấn đề môi trường." }
               ]
             }
           ]

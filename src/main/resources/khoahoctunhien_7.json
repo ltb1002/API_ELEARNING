@@ -13,18 +13,18 @@
               "title": "Bài 1: Khoa học tự nhiên và vai trò của nó trong đời sống",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Giới thiệu về khoa học tự nhiên, vai trò của nó trong việc giải thích các hiện tượng tự nhiên và ứng dụng trong đời sống." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
-                { "type": "text", "value": "Giới thiệu về khoa học tự nhiên, vai trò của nó trong việc giải thích các hiện tượng tự nhiên và ứng dụng trong đời sống." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                { "type": "TEXT", "value": "Giới thiệu về khoa học tự nhiên, vai trò của nó trong việc giải thích các hiện tượng tự nhiên và ứng dụng trong đời sống." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
+                { "type": "TEXT", "value": "Giới thiệu về khoa học tự nhiên, vai trò của nó trong việc giải thích các hiện tượng tự nhiên và ứng dụng trong đời sống." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
               ],
               "exercises": [
                 {
                   "question": "Hãy nêu 3 ví dụ về ứng dụng của khoa học tự nhiên trong đời sống hàng ngày.",
                   "solutions": [
-                    { "type": "text", "value": "1. Dự báo thời tiết giúp chuẩn bị cho các hoạt động ngoài trời. 2. Sử dụng điện năng từ năng lượng mặt trời. 3. Phát triển thuốc chữa bệnh từ nghiên cứu sinh học." },
-                    { "type": "text", "value": "Câu trả lời cần nêu rõ ví dụ cụ thể và liên hệ với đời sống." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "1. Dự báo thời tiết giúp chuẩn bị cho các hoạt động ngoài trời. 2. Sử dụng điện năng từ năng lượng mặt trời. 3. Phát triển thuốc chữa bệnh từ nghiên cứu sinh học." },
+                    { "type": "TEXT", "value": "Câu trả lời cần nêu rõ ví dụ cụ thể và liên hệ với đời sống." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -33,20 +33,20 @@
               "title": "Bài 2: Một số phương pháp nghiên cứu khoa học tự nhiên",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Giới thiệu các phương pháp nghiên cứu khoa học như quan sát, thực nghiệm, mô hình hóa." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" },
-                { "type": "text", "value": "Giới thiệu về khoa học tự nhiên, vai trò của nó trong việc giải thích các hiện tượng tự nhiên và ứng dụng trong đời sống." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
-                { "type": "text", "value": "Giới thiệu về khoa học tự nhiên, vai trò của nó trong việc giải thích các hiện tượng tự nhiên và ứng dụng trong đời sống." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                { "type": "TEXT", "value": "Giới thiệu các phương pháp nghiên cứu khoa học như quan sát, thực nghiệm, mô hình hóa." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" },
+                { "type": "TEXT", "value": "Giới thiệu về khoa học tự nhiên, vai trò của nó trong việc giải thích các hiện tượng tự nhiên và ứng dụng trong đời sống." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
+                { "type": "TEXT", "value": "Giới thiệu về khoa học tự nhiên, vai trò của nó trong việc giải thích các hiện tượng tự nhiên và ứng dụng trong đời sống." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
               ],
               "exercises": [
                 {
                   "question": "Phương pháp quan sát khác với phương pháp thực nghiệm như thế nào?",
                   "solutions": [
-                    { "type": "text", "value": "Quan sát là thu thập thông tin bằng giác quan hoặc dụng cụ mà không can thiệp vào đối tượng. Thực nghiệm là chủ động tác động vào đối tượng để kiểm tra giả thuyết." },
-                    { "type": "text", "value": "Cần phân biệt rõ hai phương pháp dựa trên tính chất can thiệp." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
+                    { "type": "TEXT", "value": "Quan sát là thu thập thông tin bằng giác quan hoặc dụng cụ mà không can thiệp vào đối tượng. Thực nghiệm là chủ động tác động vào đối tượng để kiểm tra giả thuyết." },
+                    { "type": "TEXT", "value": "Cần phân biệt rõ hai phương pháp dựa trên tính chất can thiệp." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
                   ]
                 }
               ]
@@ -55,16 +55,16 @@
               "title": "Bài 3: Đo lường trong khoa học tự nhiên",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Khái niệm đo lường, các đại lượng cơ bản như độ dài, khối lượng, thời gian, và dụng cụ đo." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1580983561371-7f4b242d9d2f" }
+                { "type": "TEXT", "value": "Khái niệm đo lường, các đại lượng cơ bản như độ dài, khối lượng, thời gian, và dụng cụ đo." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1580983561371-7f4b242d9d2f" }
               ],
               "exercises": [
                 {
                   "question": "Hãy nêu tên 3 dụng cụ đo độ dài và cách sử dụng chúng.",
                   "solutions": [
-                    { "type": "text", "value": "1. Thước kẻ: đo các đoạn thẳng nhỏ. 2. Thước dây: đo khoảng cách dài hơn. 3. Thước kẹp: đo chính xác các vật nhỏ." },
-                    { "type": "text", "value": "Cần nêu đúng tên dụng cụ và cách sử dụng cơ bản." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1580983561371-7f4b242d9d2f" }
+                    { "type": "TEXT", "value": "1. Thước kẻ: đo các đoạn thẳng nhỏ. 2. Thước dây: đo khoảng cách dài hơn. 3. Thước kẹp: đo chính xác các vật nhỏ." },
+                    { "type": "TEXT", "value": "Cần nêu đúng tên dụng cụ và cách sử dụng cơ bản." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1580983561371-7f4b242d9d2f" }
                   ]
                 }
               ]
@@ -73,16 +73,16 @@
               "title": "Bài 4: An toàn trong phòng thí nghiệm",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Quy tắc an toàn khi làm thí nghiệm, cách sử dụng dụng cụ và xử lý sự cố trong phòng thí nghiệm." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1548407260-da850faa41e3" }
+                { "type": "TEXT", "value": "Quy tắc an toàn khi làm thí nghiệm, cách sử dụng dụng cụ và xử lý sự cố trong phòng thí nghiệm." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1548407260-da850faa41e3" }
               ],
               "exercises": [
                 {
                   "question": "Tại sao cần đeo kính bảo hộ khi làm thí nghiệm hóa học?",
                   "solutions": [
-                    { "type": "text", "value": "Đeo kính bảo hộ để bảo vệ mắt khỏi hóa chất văng bắn hoặc phản ứng nguy hiểm." },
-                    { "type": "text", "value": "Cần nhấn mạnh vai trò của kính bảo hộ trong an toàn thí nghiệm." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1548407260-da850faa41e3" }
+                    { "type": "TEXT", "value": "Đeo kính bảo hộ để bảo vệ mắt khỏi hóa chất văng bắn hoặc phản ứng nguy hiểm." },
+                    { "type": "TEXT", "value": "Cần nhấn mạnh vai trò của kính bảo hộ trong an toàn thí nghiệm." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1548407260-da850faa41e3" }
                   ]
                 }
               ]
@@ -91,16 +91,16 @@
               "title": "Bài 5: Vật thể và chuyển động",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Khái niệm vật thể, chuyển động, đứng yên, và cách mô tả chuyển động." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                { "type": "TEXT", "value": "Khái niệm vật thể, chuyển động, đứng yên, và cách mô tả chuyển động." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
               ],
               "exercises": [
                 {
                   "question": "Hãy nêu ví dụ về một vật chuyển động và một vật đứng yên so với mặt đất.",
                   "solutions": [
-                    { "type": "text", "value": "Ví dụ: Xe đạp đang chạy là vật chuyển động, cây cối đứng yên là vật đứng yên so với mặt đất." },
-                    { "type": "text", "value": "Cần xác định rõ vật tham chiếu là mặt đất." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "Ví dụ: Xe đạp đang chạy là vật chuyển động, cây cối đứng yên là vật đứng yên so với mặt đất." },
+                    { "type": "TEXT", "value": "Cần xác định rõ vật tham chiếu là mặt đất." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -115,16 +115,16 @@
               "title": "Bài 6: Vật chất và năng lượng",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Khái niệm vật chất, năng lượng, và mối liên hệ giữa chúng trong tự nhiên." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                { "type": "TEXT", "value": "Khái niệm vật chất, năng lượng, và mối liên hệ giữa chúng trong tự nhiên." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
               ],
               "exercises": [
                 {
                   "question": "Vật chất và năng lượng có mối liên hệ như thế nào?",
                   "solutions": [
-                    { "type": "text", "value": "Vật chất chứa năng lượng, năng lượng có thể chuyển hóa giữa các dạng khác nhau trong vật chất." },
-                    { "type": "text", "value": "Cần nêu ví dụ như năng lượng mặt trời chuyển hóa thành năng lượng hóa học trong cây." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "Vật chất chứa năng lượng, năng lượng có thể chuyển hóa giữa các dạng khác nhau trong vật chất." },
+                    { "type": "TEXT", "value": "Cần nêu ví dụ như năng lượng mặt trời chuyển hóa thành năng lượng hóa học trong cây." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -133,16 +133,16 @@
               "title": "Bài 7: Nhiệt và sự truyền nhiệt",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Khái niệm nhiệt, các dạng truyền nhiệt: dẫn nhiệt, đối lưu, bức xạ." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
+                { "type": "TEXT", "value": "Khái niệm nhiệt, các dạng truyền nhiệt: dẫn nhiệt, đối lưu, bức xạ." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
               ],
               "exercises": [
                 {
                   "question": "Nêu một ví dụ về sự truyền nhiệt bằng đối lưu trong đời sống.",
                   "solutions": [
-                    { "type": "text", "value": "Ví dụ: Nước sôi trong nồi, nước nóng di chuyển lên trên và nước lạnh chìm xuống." },
-                    { "type": "text", "value": "Cần giải thích rõ cơ chế đối lưu." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
+                    { "type": "TEXT", "value": "Ví dụ: Nước sôi trong nồi, nước nóng di chuyển lên trên và nước lạnh chìm xuống." },
+                    { "type": "TEXT", "value": "Cần giải thích rõ cơ chế đối lưu." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
                   ]
                 }
               ]
@@ -151,16 +151,16 @@
               "title": "Bài 8: Các dạng năng lượng",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Giới thiệu các dạng năng lượng: cơ năng, nhiệt năng, điện năng, hóa năng." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                { "type": "TEXT", "value": "Giới thiệu các dạng năng lượng: cơ năng, nhiệt năng, điện năng, hóa năng." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
               ],
               "exercises": [
                 {
                   "question": "Hãy nêu 2 ví dụ về năng lượng hóa học trong đời sống.",
                   "solutions": [
-                    { "type": "text", "value": "1. Năng lượng trong pin cung cấp điện cho đèn. 2. Năng lượng từ thức ăn giúp cơ thể hoạt động." },
-                    { "type": "text", "value": "Cần nêu ví dụ cụ thể và đúng về năng lượng hóa học." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "1. Năng lượng trong pin cung cấp điện cho đèn. 2. Năng lượng từ thức ăn giúp cơ thể hoạt động." },
+                    { "type": "TEXT", "value": "Cần nêu ví dụ cụ thể và đúng về năng lượng hóa học." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -169,16 +169,16 @@
               "title": "Bài 9: Sự bảo toàn và chuyển hóa năng lượng",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Lý thuyết về sự bảo toàn năng lượng và cách năng lượng chuyển hóa giữa các dạng." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                { "type": "TEXT", "value": "Lý thuyết về sự bảo toàn năng lượng và cách năng lượng chuyển hóa giữa các dạng." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
               ],
               "exercises": [
                 {
                   "question": "Hãy mô tả quá trình chuyển hóa năng lượng trong một chiếc xe đạp điện.",
                   "solutions": [
-                    { "type": "text", "value": "Năng lượng hóa học trong pin chuyển thành điện năng, rồi thành cơ năng để xe chuyển động." },
-                    { "type": "text", "value": "Cần nêu rõ các dạng năng lượng và thứ tự chuyển hóa." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "Năng lượng hóa học trong pin chuyển thành điện năng, rồi thành cơ năng để xe chuyển động." },
+                    { "type": "TEXT", "value": "Cần nêu rõ các dạng năng lượng và thứ tự chuyển hóa." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -187,16 +187,16 @@
               "title": "Bài 10: Chất và sự biến đổi chất",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Khái niệm chất, phân loại chất (đơn chất, hợp chất), và các hiện tượng biến đổi chất." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1548407260-da850faa41e3" }
+                { "type": "TEXT", "value": "Khái niệm chất, phân loại chất (đơn chất, hợp chất), và các hiện tượng biến đổi chất." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1548407260-da850faa41e3" }
               ],
               "exercises": [
                 {
                   "question": "Phân biệt hiện tượng vật lý và hiện tượng hóa học, cho ví dụ.",
                   "solutions": [
-                    { "type": "text", "value": "Hiện tượng vật lý: thay đổi trạng thái, ví dụ nước sôi thành hơi. Hiện tượng hóa học: tạo chất mới, ví dụ đốt cháy gỗ tạo tro." },
-                    { "type": "text", "value": "Cần nêu rõ sự khác biệt về bản chất của hai loại hiện tượng." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1548407260-da850faa41e3" }
+                    { "type": "TEXT", "value": "Hiện tượng vật lý: thay đổi trạng thái, ví dụ nước sôi thành hơi. Hiện tượng hóa học: tạo chất mới, ví dụ đốt cháy gỗ tạo tro." },
+                    { "type": "TEXT", "value": "Cần nêu rõ sự khác biệt về bản chất của hai loại hiện tượng." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1548407260-da850faa41e3" }
                   ]
                 }
               ]
@@ -211,16 +211,16 @@
               "title": "Bài 11: Đặc điểm của cơ thể sống",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Các đặc điểm của cơ thể sống: trao đổi chất, sinh sản, sinh trưởng, cảm ứng." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
+                { "type": "TEXT", "value": "Các đặc điểm của cơ thể sống: trao đổi chất, sinh sản, sinh trưởng, cảm ứng." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
               ],
               "exercises": [
                 {
                   "question": "Nêu 3 đặc điểm của cơ thể sống và giải thích.",
                   "solutions": [
-                    { "type": "text", "value": "1. Trao đổi chất: hấp thụ và sử dụng chất dinh dưỡng. 2. Sinh trưởng: cơ thể phát triển lớn lên. 3. Sinh sản: tạo ra thế hệ mới." },
-                    { "type": "text", "value": "Cần giải thích rõ mỗi đặc điểm." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
+                    { "type": "TEXT", "value": "1. Trao đổi chất: hấp thụ và sử dụng chất dinh dưỡng. 2. Sinh trưởng: cơ thể phát triển lớn lên. 3. Sinh sản: tạo ra thế hệ mới." },
+                    { "type": "TEXT", "value": "Cần giải thích rõ mỗi đặc điểm." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
                   ]
                 }
               ]
@@ -229,16 +229,16 @@
               "title": "Bài 12: Tế bào - đơn vị cấu tạo của cơ thể sống",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Khái niệm tế bào, cấu tạo cơ bản của tế bào thực vật và động vật." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                { "type": "TEXT", "value": "Khái niệm tế bào, cấu tạo cơ bản của tế bào thực vật và động vật." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
               ],
               "exercises": [
                 {
                   "question": "Tế bào thực vật và tế bào động vật khác nhau ở điểm nào?",
                   "solutions": [
-                    { "type": "text", "value": "Tế bào thực vật có vách tế bào, lục lạp, không bào lớn; tế bào động vật không có các thành phần này." },
-                    { "type": "text", "value": "Cần nêu rõ ít nhất 2 điểm khác biệt." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "Tế bào thực vật có vách tế bào, lục lạp, không bào lớn; tế bào động vật không có các thành phần này." },
+                    { "type": "TEXT", "value": "Cần nêu rõ ít nhất 2 điểm khác biệt." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -247,16 +247,16 @@
               "title": "Bài 13: Sự lớn lên và phân chia của tế bào",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Quá trình lớn lên và phân chia tế bào, vai trò trong sự phát triển của cơ thể sống." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                { "type": "TEXT", "value": "Quá trình lớn lên và phân chia tế bào, vai trò trong sự phát triển của cơ thể sống." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
               ],
               "exercises": [
                 {
                   "question": "Tại sao tế bào cần phân chia?",
                   "solutions": [
-                    { "type": "text", "value": "Tế bào phân chia để thay thế tế bào cũ, giúp cơ thể sinh trưởng và tái tạo." },
-                    { "type": "text", "value": "Cần giải thích rõ vai trò của phân chia tế bào." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "Tế bào phân chia để thay thế tế bào cũ, giúp cơ thể sinh trưởng và tái tạo." },
+                    { "type": "TEXT", "value": "Cần giải thích rõ vai trò của phân chia tế bào." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -265,16 +265,16 @@
               "title": "Bài 14: Cấu tạo cơ thể thực vật",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Cấu tạo cơ thể thực vật: rễ, thân, lá, hoa, quả, hạt." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
+                { "type": "TEXT", "value": "Cấu tạo cơ thể thực vật: rễ, thân, lá, hoa, quả, hạt." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
               ],
               "exercises": [
                 {
                   "question": "Chức năng chính của lá cây là gì?",
                   "solutions": [
-                    { "type": "text", "value": "Lá cây thực hiện quang hợp, hô hấp và thoát hơi nước." },
-                    { "type": "text", "value": "Cần nêu rõ ít nhất 2 chức năng chính của lá." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
+                    { "type": "TEXT", "value": "Lá cây thực hiện quang hợp, hô hấp và thoát hơi nước." },
+                    { "type": "TEXT", "value": "Cần nêu rõ ít nhất 2 chức năng chính của lá." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
                   ]
                 }
               ]
@@ -283,16 +283,16 @@
               "title": "Bài 15: Sự lớn lên và sinh sản của thực vật",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Quá trình sinh trưởng, sinh sản hữu tính và vô tính của thực vật." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                { "type": "TEXT", "value": "Quá trình sinh trưởng, sinh sản hữu tính và vô tính của thực vật." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
               ],
               "exercises": [
                 {
                   "question": "Phân biệt sinh sản hữu tính và vô tính ở thực vật, cho ví dụ.",
                   "solutions": [
-                    { "type": "text", "value": "Sinh sản hữu tính qua hoa và hạt (ví dụ: cây lúa). Sinh sản vô tính qua thân, lá (ví dụ: cây khoai lang)." },
-                    { "type": "text", "value": "Cần nêu rõ sự khác biệt và ví dụ cụ thể." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "Sinh sản hữu tính qua hoa và hạt (ví dụ: cây lúa). Sinh sản vô tính qua thân, lá (ví dụ: cây khoai lang)." },
+                    { "type": "TEXT", "value": "Cần nêu rõ sự khác biệt và ví dụ cụ thể." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -301,16 +301,16 @@
               "title": "Bài 16: Vai trò của thực vật đối với sự sống trên Trái Đất",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Vai trò của thực vật trong việc cung cấp oxy, thức ăn, và bảo vệ môi trường." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                { "type": "TEXT", "value": "Vai trò của thực vật trong việc cung cấp oxy, thức ăn, và bảo vệ môi trường." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
               ],
               "exercises": [
                 {
                   "question": "Tại sao thực vật được gọi là lá phổi của Trái Đất?",
                   "solutions": [
-                    { "type": "text", "value": "Thực vật sản sinh oxy qua quang hợp, giúp duy trì sự sống và làm sạch không khí." },
-                    { "type": "text", "value": "Cần giải thích rõ vai trò quang hợp của thực vật." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "Thực vật sản sinh oxy qua quang hợp, giúp duy trì sự sống và làm sạch không khí." },
+                    { "type": "TEXT", "value": "Cần giải thích rõ vai trò quang hợp của thực vật." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -325,16 +325,16 @@
               "title": "Bài 17: Hệ Mặt Trời và Ngân Hà",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Khái niệm Hệ Mặt Trời, các hành tinh, và vị trí của Trái Đất trong Ngân Hà." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1548407260-da850faa41e3" }
+                { "type": "TEXT", "value": "Khái niệm Hệ Mặt Trời, các hành tinh, và vị trí của Trái Đất trong Ngân Hà." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1548407260-da850faa41e3" }
               ],
               "exercises": [
                 {
                   "question": "Nêu tên 4 hành tinh trong Hệ Mặt Trời.",
                   "solutions": [
-                    { "type": "text", "value": "Ví dụ: Sao Thủy, Sao Kim, Trái Đất, Sao Hỏa." },
-                    { "type": "text", "value": "Cần nêu đúng tên các hành tinh thuộc Hệ Mặt Trời." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1548407260-da850faa41e3" }
+                    { "type": "TEXT", "value": "Ví dụ: Sao Thủy, Sao Kim, Trái Đất, Sao Hỏa." },
+                    { "type": "TEXT", "value": "Cần nêu đúng tên các hành tinh thuộc Hệ Mặt Trời." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1548407260-da850faa41e3" }
                   ]
                 }
               ]
@@ -343,16 +343,16 @@
               "title": "Bài 18: Trái Đất trong Hệ Mặt Trời",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Cấu trúc của Trái Đất, vị trí và vai trò trong Hệ Mặt Trời." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                { "type": "TEXT", "value": "Cấu trúc của Trái Đất, vị trí và vai trò trong Hệ Mặt Trời." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
               ],
               "exercises": [
                 {
                   "question": "Trái Đất nằm ở vị trí thứ mấy trong Hệ Mặt Trời?",
                   "solutions": [
-                    { "type": "text", "value": "Trái Đất là hành tinh thứ ba tính từ Mặt Trời." },
-                    { "type": "text", "value": "Cần nêu rõ vị trí của Trái Đất so với Mặt Trời." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "Trái Đất là hành tinh thứ ba tính từ Mặt Trời." },
+                    { "type": "TEXT", "value": "Cần nêu rõ vị trí của Trái Đất so với Mặt Trời." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -361,16 +361,16 @@
               "title": "Bài 19: Sự chuyển động của Trái Đất",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Chuyển động tự quay quanh trục và chuyển động quay quanh Mặt Trời của Trái Đất." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                { "type": "TEXT", "value": "Chuyển động tự quay quanh trục và chuyển động quay quanh Mặt Trời của Trái Đất." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
               ],
               "exercises": [
                 {
                   "question": "Chuyển động tự quay của Trái Đất gây ra hiện tượng gì?",
                   "solutions": [
-                    { "type": "text", "value": "Chuyển động tự quay gây ra hiện tượng ngày và đêm." },
-                    { "type": "text", "value": "Cần giải thích rõ hiện tượng liên quan đến chuyển động tự quay." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+                    { "type": "TEXT", "value": "Chuyển động tự quay gây ra hiện tượng ngày và đêm." },
+                    { "type": "TEXT", "value": "Cần giải thích rõ hiện tượng liên quan đến chuyển động tự quay." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
                   ]
                 }
               ]
@@ -379,16 +379,16 @@
               "title": "Bài 20: Các hiện tượng tự nhiên liên quan đến Trái Đất và bầu trời",
               "videoUrl": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
               "contents": [
-                { "type": "text", "value": "Các hiện tượng như nhật thực, nguyệt thực, thủy triều, và mùa trong năm." },
-                { "type": "image", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
+                { "type": "TEXT", "value": "Các hiện tượng như nhật thực, nguyệt thực, thủy triều, và mùa trong năm." },
+                { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
               ],
               "exercises": [
                 {
                   "question": "Nhật thực xảy ra khi nào?",
                   "solutions": [
-                    { "type": "text", "value": "Nhật thực xảy ra khi Mặt Trăng che khuất ánh sáng Mặt Trời chiếu tới Trái Đất." },
-                    { "type": "text", "value": "Cần giải thích rõ điều kiện xảy ra nhật thực." },
-                    { "type": "image", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
+                    { "type": "TEXT", "value": "Nhật thực xảy ra khi Mặt Trăng che khuất ánh sáng Mặt Trời chiếu tới Trái Đất." },
+                    { "type": "TEXT", "value": "Cần giải thích rõ điều kiện xảy ra nhật thực." },
+                    { "type": "IMAGE", "value": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3" }
                   ]
                 }
               ]

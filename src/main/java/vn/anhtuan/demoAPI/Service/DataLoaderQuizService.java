@@ -2,11 +2,11 @@ package vn.anhtuan.demoAPI.Service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jakarta.annotation.PostConstruct;
 import jakarta.transaction.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
@@ -22,7 +22,8 @@ import java.io.InputStream;
 import java.util.List;
 
 @Service
-public class DataLoaderQuizService {
+@Order(2) // Thứ tự thực thi sau DataLoaderService
+public class DataLoaderQuizService implements CommandLineRunner {
 
     private static final Logger logger = LoggerFactory.getLogger(DataLoaderQuizService.class);
 
@@ -55,18 +56,11 @@ public class DataLoaderQuizService {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    @PostConstruct
-    public void init() {
-        loadInitialData();
-    }
-
-    public void loadInitialData() {
-        try {
-            loadQuizzes();
-            logger.info("Initial quiz data loaded successfully");
-        } catch (Exception e) {
-            logger.error("Error loading initial quiz data: {}", e.getMessage(), e);
-        }
+    @Override
+    public void run(String... args) {
+        logger.info("🔄 Starting quiz data loading...");
+        loadQuizzes();
+        logger.info("✅ Quiz data loading completed");
     }
 
     @Transactional
