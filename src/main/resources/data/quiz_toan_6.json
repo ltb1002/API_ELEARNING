@@ -7,203 +7,551 @@
     "code": "TOAN6_15_01_MD001",
     "questions": [
       {
-        "content": "Kết quả của phép tính \\(12 + 15\\) là bao nhiêu?",
-        "explanation": "Thực hiện phép cộng: \\(12 + 15 = 27\\)",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Các điểm B, C lần lượt biểu diễn những số hữu tỉ nào?"
+          },
+          {
+            "content_type": "IMAGE",
+            "content_value": "https://vietjack.com/toan-7-kn/images/trac-nghiem-bai-1-tap-hop-cac-so-huu-ti.PNG"
+          }
+        ],
+        "explanation": "Đoạn thẳng từ điểm \\(O\\) đến \\(1\\) được chia thành 6 phần bằng nhau.\\\\\nĐoạn thẳng \\(OB\\) chiếm 2 phần; \\(B\\) nằm trước \\(O\\) nên biểu diễn số hữu tỉ âm.\\\\\nVậy điểm \\(B\\) biểu diễn số hữu tỉ là \\(-\\frac{2}{6} = -\\frac{1}{3}\\).\\\\\nĐoạn thẳng \\(OC\\) chiếm 3 phần; \\(C\\) nằm sau \\(O\\) nên biểu diễn số hữu tỉ dương.\\\\\nVậy điểm \\(C\\) biểu diễn số hữu tỉ là \\(\\frac{3}{6} = \\frac{1}{2}\\).",
         "choices": [
-          { "content": "25", "is_correct": false },
-          { "content": "26", "is_correct": false },
-          { "content": "27", "is_correct": true },
-          { "content": "28", "is_correct": false }
+          {
+            "content": "\\(\\frac{1}{3},\\ \\frac{1}{2}\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(-\\frac{1}{3},\\ \\frac{1}{4}\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(-\\frac{1}{3},\\ \\frac{1}{2}\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(-\\frac{1}{3},\\ \\frac{1}{6}\\)",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(50 - 17\\) là bao nhiêu?",
-        "explanation": "Thực hiện phép trừ: \\(50 - 17 = 33\\)",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Điểm biểu diễn số đối của số hữu tỉ \\(-\\frac{1}{2}\\) là gì?"
+          },
+          {
+            "content_type": "IMAGE",
+            "content_value": "https://vietjack.com/toan-7-kn/images/trac-nghiem-bai-1-tap-hop-cac-so-huu-ti-1.PNG"
+          }
+        ],
+        "explanation": "Điểm biểu diễn số hữu tỉ đối của \\(-\\tfrac{1}{2}\\) nằm khác phía với \\(-\\tfrac{1}{2}\\) so với điểm \\(O\\). Như vậy điểm này nằm sau \\(O\\).\\\\\nKhoảng cách từ \\(O\\) đến \\(-\\tfrac{1}{2}\\) là 3 đoạn nên khoảng cách từ \\(O\\) đến điểm đó cũng là 3 đoạn.\\\\\nVậy điểm biểu diễn số hữu tỉ đối của \\(-\\tfrac{1}{2}\\) là điểm \\(C\\).",
         "choices": [
-          { "content": "32", "is_correct": false },
-          { "content": "33", "is_correct": true },
-          { "content": "34", "is_correct": false },
-          { "content": "35", "is_correct": false }
+          {
+            "content": "điểm A",
+            "is_correct": false
+          },
+          {
+            "content": "điểm B",
+            "is_correct": false
+          },
+          {
+            "content": "điểm C",
+            "is_correct": true
+          },
+          {
+            "content": "điểm D",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(8 \\times 7\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(8 \\times 7\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Thực hiện phép nhân: \\(8 \\times 7 = 56\\)",
         "choices": [
-          { "content": "54", "is_correct": false },
-          { "content": "55", "is_correct": false },
-          { "content": "56", "is_correct": true },
-          { "content": "57", "is_correct": false }
+          {
+            "content": "54",
+            "is_correct": false
+          },
+          {
+            "content": "55",
+            "is_correct": false
+          },
+          {
+            "content": "56",
+            "is_correct": true
+          },
+          {
+            "content": "57",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(81 \\div 9\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(81 \\div 9\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Thực hiện phép chia: \\(81 \\div 9 = 9\\)",
         "choices": [
-          { "content": "8", "is_correct": false },
-          { "content": "9", "is_correct": true },
-          { "content": "10", "is_correct": false },
-          { "content": "11", "is_correct": false }
+          {
+            "content": "8",
+            "is_correct": false
+          },
+          {
+            "content": "9",
+            "is_correct": true
+          },
+          {
+            "content": "10",
+            "is_correct": false
+          },
+          {
+            "content": "11",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Số liền sau của \\(99\\) là số nào?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số liền sau của \\(99\\) là số nào?"
+          }
+        ],
         "explanation": "Số liền sau của \\(99\\) là \\(100\\)",
         "choices": [
-          { "content": "99", "is_correct": false },
-          { "content": "100", "is_correct": true },
-          { "content": "101", "is_correct": false },
-          { "content": "98", "is_correct": false }
+          {
+            "content": "99",
+            "is_correct": false
+          },
+          {
+            "content": "100",
+            "is_correct": true
+          },
+          {
+            "content": "101",
+            "is_correct": false
+          },
+          {
+            "content": "98",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(45 + 27\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(45 + 27\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Thực hiện phép cộng: \\(45 + 27 = 72\\)",
         "choices": [
-          { "content": "71", "is_correct": false },
-          { "content": "72", "is_correct": true },
-          { "content": "73", "is_correct": false },
-          { "content": "74", "is_correct": false }
+          {
+            "content": "71",
+            "is_correct": false
+          },
+          {
+            "content": "72",
+            "is_correct": true
+          },
+          {
+            "content": "73",
+            "is_correct": false
+          },
+          {
+            "content": "74",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(120 - 45\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(120 - 45\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Thực hiện phép trừ: \\(120 - 45 = 75\\)",
         "choices": [
-          { "content": "74", "is_correct": false },
-          { "content": "75", "is_correct": true },
-          { "content": "76", "is_correct": false },
-          { "content": "77", "is_correct": false }
+          {
+            "content": "74",
+            "is_correct": false
+          },
+          {
+            "content": "75",
+            "is_correct": true
+          },
+          {
+            "content": "76",
+            "is_correct": false
+          },
+          {
+            "content": "77",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(9 \\times 9\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(9 \\times 9\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Thực hiện phép nhân: \\(9 \\times 9 = 81\\)",
         "choices": [
-          { "content": "80", "is_correct": false },
-          { "content": "81", "is_correct": true },
-          { "content": "82", "is_correct": false },
-          { "content": "83", "is_correct": false }
+          {
+            "content": "80",
+            "is_correct": false
+          },
+          {
+            "content": "81",
+            "is_correct": true
+          },
+          {
+            "content": "82",
+            "is_correct": false
+          },
+          {
+            "content": "83",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(100 \\div 4\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(100 \\div 4\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Thực hiện phép chia: \\(100 \\div 4 = 25\\)",
         "choices": [
-          { "content": "24", "is_correct": false },
-          { "content": "25", "is_correct": true },
-          { "content": "26", "is_correct": false },
-          { "content": "27", "is_correct": false }
+          {
+            "content": "24",
+            "is_correct": false
+          },
+          {
+            "content": "25",
+            "is_correct": true
+          },
+          {
+            "content": "26",
+            "is_correct": false
+          },
+          {
+            "content": "27",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Số liền trước của \\(50\\) là số nào?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số liền trước của \\(50\\) là số nào?"
+          }
+        ],
         "explanation": "Số liền trước của \\(50\\) là \\(49\\)",
         "choices": [
-          { "content": "48", "is_correct": false },
-          { "content": "49", "is_correct": true },
-          { "content": "50", "is_correct": false },
-          { "content": "51", "is_correct": false }
+          {
+            "content": "48",
+            "is_correct": false
+          },
+          {
+            "content": "49",
+            "is_correct": true
+          },
+          {
+            "content": "50",
+            "is_correct": false
+          },
+          {
+            "content": "51",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(200 + 150\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(200 + 150\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Thực hiện phép cộng: \\(200 + 150 = 350\\)",
         "choices": [
-          { "content": "348", "is_correct": false },
-          { "content": "349", "is_correct": false },
-          { "content": "350", "is_correct": true },
-          { "content": "351", "is_correct": false }
+          {
+            "content": "348",
+            "is_correct": false
+          },
+          {
+            "content": "349",
+            "is_correct": false
+          },
+          {
+            "content": "350",
+            "is_correct": true
+          },
+          {
+            "content": "351",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(75 - 28\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(75 - 28\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Thực hiện phép trừ: \\(75 - 28 = 47\\)",
         "choices": [
-          { "content": "46", "is_correct": false },
-          { "content": "47", "is_correct": true },
-          { "content": "48", "is_correct": false },
-          { "content": "49", "is_correct": false }
+          {
+            "content": "46",
+            "is_correct": false
+          },
+          {
+            "content": "47",
+            "is_correct": true
+          },
+          {
+            "content": "48",
+            "is_correct": false
+          },
+          {
+            "content": "49",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(11 \\times 12\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(11 \\times 12\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Thực hiện phép nhân: \\(11 \\times 12 = 132\\)",
         "choices": [
-          { "content": "130", "is_correct": false },
-          { "content": "131", "is_correct": false },
-          { "content": "132", "is_correct": true },
-          { "content": "133", "is_correct": false }
+          {
+            "content": "130",
+            "is_correct": false
+          },
+          {
+            "content": "131",
+            "is_correct": false
+          },
+          {
+            "content": "132",
+            "is_correct": true
+          },
+          {
+            "content": "133",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(144 \\div 12\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(144 \\div 12\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Thực hiện phép chia: \\(144 \\div 12 = 12\\)",
         "choices": [
-          { "content": "11", "is_correct": false },
-          { "content": "12", "is_correct": true },
-          { "content": "13", "is_correct": false },
-          { "content": "14", "is_correct": false }
+          {
+            "content": "11",
+            "is_correct": false
+          },
+          {
+            "content": "12",
+            "is_correct": true
+          },
+          {
+            "content": "13",
+            "is_correct": false
+          },
+          {
+            "content": "14",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Số liền sau của \\(250\\) là số nào?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số liền sau của \\(250\\) là số nào?"
+          }
+        ],
         "explanation": "Số liền sau của \\(250\\) là \\(251\\)",
         "choices": [
-          { "content": "249", "is_correct": false },
-          { "content": "250", "is_correct": false },
-          { "content": "251", "is_correct": true },
-          { "content": "252", "is_correct": false }
+          {
+            "content": "249",
+            "is_correct": false
+          },
+          {
+            "content": "250",
+            "is_correct": false
+          },
+          {
+            "content": "251",
+            "is_correct": true
+          },
+          {
+            "content": "252",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(33 + 67\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(33 + 67\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Thực hiện phép cộng: \\(33 + 67 = 100\\)",
         "choices": [
-          { "content": "99", "is_correct": false },
-          { "content": "100", "is_correct": true },
-          { "content": "101", "is_correct": false },
-          { "content": "102", "is_correct": false }
+          {
+            "content": "99",
+            "is_correct": false
+          },
+          {
+            "content": "100",
+            "is_correct": true
+          },
+          {
+            "content": "101",
+            "is_correct": false
+          },
+          {
+            "content": "102",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(500 - 123\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(500 - 123\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Thực hiện phép trừ: \\(500 - 123 = 377\\)",
         "choices": [
-          { "content": "376", "is_correct": false },
-          { "content": "377", "is_correct": true },
-          { "content": "378", "is_correct": false },
-          { "content": "379", "is_correct": false }
+          {
+            "content": "376",
+            "is_correct": false
+          },
+          {
+            "content": "377",
+            "is_correct": true
+          },
+          {
+            "content": "378",
+            "is_correct": false
+          },
+          {
+            "content": "379",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(25 \\times 4\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(25 \\times 4\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Thực hiện phép nhân: \\(25 \\times 4 = 100\\)",
         "choices": [
-          { "content": "98", "is_correct": false },
-          { "content": "99", "is_correct": false },
-          { "content": "100", "is_correct": true },
-          { "content": "101", "is_correct": false }
+          {
+            "content": "98",
+            "is_correct": false
+          },
+          {
+            "content": "99",
+            "is_correct": false
+          },
+          {
+            "content": "100",
+            "is_correct": true
+          },
+          {
+            "content": "101",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(225 \\div 15\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(225 \\div 15\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Thực hiện phép chia: \\(225 \\div 15 = 15\\)",
         "choices": [
-          { "content": "14", "is_correct": false },
-          { "content": "15", "is_correct": true },
-          { "content": "16", "is_correct": false },
-          { "content": "17", "is_correct": false }
+          {
+            "content": "14",
+            "is_correct": false
+          },
+          {
+            "content": "15",
+            "is_correct": true
+          },
+          {
+            "content": "16",
+            "is_correct": false
+          },
+          {
+            "content": "17",
+            "is_correct": false
+          }
         ]
       },
       {
-        "content": "Số liền trước của \\(1000\\) là số nào?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số liền trước của \\(1000\\) là số nào?"
+          }
+        ],
         "explanation": "Số liền trước của \\(1000\\) là \\(999\\)",
         "choices": [
-          { "content": "998", "is_correct": false },
-          { "content": "999", "is_correct": true },
-          { "content": "1000", "is_correct": false },
-          { "content": "1001", "is_correct": false }
+          {
+            "content": "998",
+            "is_correct": false
+          },
+          {
+            "content": "999",
+            "is_correct": true
+          },
+          {
+            "content": "1000",
+            "is_correct": false
+          },
+          {
+            "content": "1001",
+            "is_correct": false
+          }
         ]
       }
     ]
@@ -216,7 +564,12 @@
     "code": "TOAN6_30_01_MD001",
     "questions": [
       {
-        "content": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "\\(3^2 = 9\\), \\(4^2 = 16\\). Vậy \\(9 + 16 = 25\\)",
         "choices": [
           {
@@ -238,7 +591,12 @@
         ]
       },
       {
-        "content": "Số nguyên tố nhỏ nhất là số nào?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số nguyên tố nhỏ nhất là số nào?"
+          }
+        ],
         "explanation": "Số nguyên tố là số tự nhiên lớn hơn 1 và chỉ có hai ước số là 1 và chính nó. Số nguyên tố nhỏ nhất là 2",
         "choices": [
           {
@@ -260,7 +618,12 @@
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Quy đồng mẫu số: \\(\\frac{3}{4} + \\frac{2}{4} = \\frac{5}{4} = 1\\frac{1}{4}\\)",
         "choices": [
           {
@@ -282,7 +645,12 @@
         ]
       },
       {
-        "content": "Tìm ước chung lớn nhất của 12 và 18",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm ước chung lớn nhất của 12 và 18"
+          }
+        ],
         "explanation": "Ư(12) = {1,2,3,4,6,12}, Ư(18) = {1,2,3,6,9,18}. ƯCLN(12,18) = 6",
         "choices": [
           {
@@ -304,23 +672,460 @@
         ]
       },
       {
-        "content": "Một hình chữ nhật có chiều dài \\(8cm\\), chiều rộng \\(5cm\\). Tính chu vi hình chữ nhật",
-        "explanation": "Chu vi hình chữ nhật = (dài + rộng) × 2 = \\((8 + 5) \\times 2 = 26cm\\)",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Chu vi hình chữ nhật có chiều dài 8cm, chiều rộng 5cm là bao nhiêu?"
+          }
+        ],
+        "explanation": "Chu vi = (dài + rộng) × 2 = (8 + 5) × 2 = 26cm",
         "choices": [
           {
-            "content": "\\(20cm\\)",
+            "content": "20cm",
             "is_correct": false
           },
           {
-            "content": "\\(26cm\\)",
+            "content": "26cm",
             "is_correct": true
           },
           {
-            "content": "\\(30cm\\)",
+            "content": "30cm",
             "is_correct": false
           },
           {
-            "content": "\\(40cm\\)",
+            "content": "40cm",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số thập phân nào bằng \\(\\frac{3}{5}\\)?"
+          }
+        ],
+        "explanation": "\\(\\frac{3}{5} = 0.6\\)",
+        "choices": [
+          {
+            "content": "0.3",
+            "is_correct": false
+          },
+          {
+            "content": "0.5",
+            "is_correct": false
+          },
+          {
+            "content": "0.6",
+            "is_correct": true
+          },
+          {
+            "content": "0.8",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị tuyệt đối của \\(-15\\) là bao nhiêu?"
+          }
+        ],
+        "explanation": "Giá trị tuyệt đối của số âm là số dương tương ứng: \\(|-15| = 15\\)",
+        "choices": [
+          {
+            "content": "-15",
+            "is_correct": false
+          },
+          {
+            "content": "0",
+            "is_correct": false
+          },
+          {
+            "content": "15",
+            "is_correct": true
+          },
+          {
+            "content": "30",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các số sau, số nào chia hết cho 9?"
+          }
+        ],
+        "explanation": "Số chia hết cho 9 thì tổng chữ số cũng chia hết cho 9. 234: 2+3+4=9 chia hết cho 9",
+        "choices": [
+          {
+            "content": "123",
+            "is_correct": false
+          },
+          {
+            "content": "234",
+            "is_correct": true
+          },
+          {
+            "content": "345",
+            "is_correct": false
+          },
+          {
+            "content": "456",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Thể tích hình lập phương cạnh 4cm là bao nhiêu?"
+          }
+        ],
+        "explanation": "Thể tích = a³ = 4³ = 64 cm³",
+        "choices": [
+          {
+            "content": "16 cm³",
+            "is_correct": false
+          },
+          {
+            "content": "32 cm³",
+            "is_correct": false
+          },
+          {
+            "content": "64 cm³",
+            "is_correct": true
+          },
+          {
+            "content": "128 cm³",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm x: 2x + 5 = 15"
+          }
+        ],
+        "explanation": "2x = 15 - 5 = 10 ⇒ x = 5",
+        "choices": [
+          {
+            "content": "3",
+            "is_correct": false
+          },
+          {
+            "content": "5",
+            "is_correct": true
+          },
+          {
+            "content": "7",
+            "is_correct": false
+          },
+          {
+            "content": "10",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị của \\(7^2 - 4^2\\) là bao nhiêu?"
+          }
+        ],
+        "explanation": "7² = 49, 4² = 16 ⇒ 49 - 16 = 33",
+        "choices": [
+          {
+            "content": "21",
+            "is_correct": false
+          },
+          {
+            "content": "25",
+            "is_correct": false
+          },
+          {
+            "content": "33",
+            "is_correct": true
+          },
+          {
+            "content": "35",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các phân số sau, phân số nào bằng \\(\\frac{2}{3}\\)?"
+          }
+        ],
+        "explanation": "\\(\\frac{4}{6} = \\frac{2}{3}\\)",
+        "choices": [
+          {
+            "content": "\\(\\frac{3}{5}\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(\\frac{4}{6}\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(\\frac{5}{8}\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(\\frac{6}{10}\\)",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nếu \\(x = 3\\) thì giá trị của biểu thức \\(2x^2\\) là bao nhiêu?"
+          }
+        ],
+        "explanation": "x=3 ⇒ 2×3²=2×9=18",
+        "choices": [
+          {
+            "content": "6",
+            "is_correct": false
+          },
+          {
+            "content": "9",
+            "is_correct": false
+          },
+          {
+            "content": "18",
+            "is_correct": true
+          },
+          {
+            "content": "27",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số nào là bội của 12?"
+          }
+        ],
+        "explanation": "36 chia hết cho 12",
+        "choices": [
+          {
+            "content": "20",
+            "is_correct": false
+          },
+          {
+            "content": "24",
+            "is_correct": false
+          },
+          {
+            "content": "30",
+            "is_correct": false
+          },
+          {
+            "content": "36",
+            "is_correct": true
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm bội chung nhỏ nhất của 6 và 8"
+          }
+        ],
+        "explanation": "BCNN(6,8)=24",
+        "choices": [
+          {
+            "content": "12",
+            "is_correct": false
+          },
+          {
+            "content": "18",
+            "is_correct": false
+          },
+          {
+            "content": "24",
+            "is_correct": true
+          },
+          {
+            "content": "36",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm x: \\(3x - 7 = 11\\)"
+          }
+        ],
+        "explanation": "3x=11+7=18 ⇒ x=6",
+        "choices": [
+          {
+            "content": "4",
+            "is_correct": false
+          },
+          {
+            "content": "5",
+            "is_correct": false
+          },
+          {
+            "content": "6",
+            "is_correct": true
+          },
+          {
+            "content": "7",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính diện tích hình vuông cạnh 9cm"
+          }
+        ],
+        "explanation": "Diện tích = a² = 9² = 81 cm²",
+        "choices": [
+          {
+            "content": "18 cm²",
+            "is_correct": false
+          },
+          {
+            "content": "45 cm²",
+            "is_correct": false
+          },
+          {
+            "content": "72 cm²",
+            "is_correct": false
+          },
+          {
+            "content": "81 cm²",
+            "is_correct": true
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm ước chung lớn nhất của 20 và 30"
+          }
+        ],
+        "explanation": "ƯCLN(20,30)=10",
+        "choices": [
+          {
+            "content": "5",
+            "is_correct": false
+          },
+          {
+            "content": "10",
+            "is_correct": true
+          },
+          {
+            "content": "15",
+            "is_correct": false
+          },
+          {
+            "content": "20",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các số sau, số nào là số chính phương?"
+          }
+        ],
+        "explanation": "36=6² là số chính phương",
+        "choices": [
+          {
+            "content": "30",
+            "is_correct": false
+          },
+          {
+            "content": "32",
+            "is_correct": false
+          },
+          {
+            "content": "34",
+            "is_correct": false
+          },
+          {
+            "content": "36",
+            "is_correct": true
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(12 + 15\\) là bao nhiêu?"
+          }
+        ],
+        "explanation": "12+15=27",
+        "choices": [
+          {
+            "content": "25",
+            "is_correct": false
+          },
+          {
+            "content": "26",
+            "is_correct": false
+          },
+          {
+            "content": "27",
+            "is_correct": true
+          },
+          {
+            "content": "28",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: x + 8 = 20"
+          }
+        ],
+        "explanation": "x=20-8=12",
+        "choices": [
+          {
+            "content": "10",
+            "is_correct": false
+          },
+          {
+            "content": "11",
+            "is_correct": false
+          },
+          {
+            "content": "12",
+            "is_correct": true
+          },
+          {
+            "content": "13",
             "is_correct": false
           }
         ]
@@ -335,7 +1140,12 @@
     "code": "TOAN6_15_02_MD001",
     "questions": [
       {
-        "content": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "\\(3^2 = 9\\), \\(4^2 = 16\\). Vậy \\(9 + 16 = 25\\)",
         "choices": [
           {
@@ -357,7 +1167,12 @@
         ]
       },
       {
-        "content": "Số nguyên tố nhỏ nhất là số nào?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số nguyên tố nhỏ nhất là số nào?"
+          }
+        ],
         "explanation": "Số nguyên tố là số tự nhiên lớn hơn 1 và chỉ có hai ước số là 1 và chính nó. Số nguyên tố nhỏ nhất là 2",
         "choices": [
           {
@@ -379,7 +1194,12 @@
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Quy đồng mẫu số: \\(\\frac{3}{4} + \\frac{2}{4} = \\frac{5}{4} = 1\\frac{1}{4}\\)",
         "choices": [
           {
@@ -401,7 +1221,12 @@
         ]
       },
       {
-        "content": "Tìm ước chung lớn nhất của 12 và 18",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm ước chung lớn nhất của 12 và 18"
+          }
+        ],
         "explanation": "Ư(12) = {1,2,3,4,6,12}, Ư(18) = {1,2,3,6,9,18}. ƯCLN(12,18) = 6",
         "choices": [
           {
@@ -423,7 +1248,12 @@
         ]
       },
       {
-        "content": "Một hình chữ nhật có chiều dài \\(8cm\\), chiều rộng \\(5cm\\). Tính chu vi hình chữ nhật",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Một hình chữ nhật có chiều dài \\(8cm\\), chiều rộng \\(5cm\\). Tính chu vi hình chữ nhật"
+          }
+        ],
         "explanation": "Chu vi hình chữ nhật = (dài + rộng) × 2 = \\((8 + 5) \\times 2 = 26cm\\)",
         "choices": [
           {
@@ -454,7 +1284,12 @@
     "code": "TOAN6_30_02_MD001",
     "questions": [
       {
-        "content": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "\\(3^2 = 9\\), \\(4^2 = 16\\). Vậy \\(9 + 16 = 25\\)",
         "choices": [
           {
@@ -476,7 +1311,12 @@
         ]
       },
       {
-        "content": "Số nguyên tố nhỏ nhất là số nào?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số nguyên tố nhỏ nhất là số nào?"
+          }
+        ],
         "explanation": "Số nguyên tố là số tự nhiên lớn hơn 1 và chỉ có hai ước số là 1 và chính nó. Số nguyên tố nhỏ nhất là 2",
         "choices": [
           {
@@ -498,7 +1338,12 @@
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Quy đồng mẫu số: \\(\\frac{3}{4} + \\frac{2}{4} = \\frac{5}{4} = 1\\frac{1}{4}\\)",
         "choices": [
           {
@@ -520,7 +1365,12 @@
         ]
       },
       {
-        "content": "Tìm ước chung lớn nhất của 12 và 18",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm ước chung lớn nhất của 12 và 18"
+          }
+        ],
         "explanation": "Ư(12) = {1,2,3,4,6,12}, Ư(18) = {1,2,3,6,9,18}. ƯCLN(12,18) = 6",
         "choices": [
           {
@@ -542,7 +1392,12 @@
         ]
       },
       {
-        "content": "Một hình chữ nhật có chiều dài \\(8cm\\), chiều rộng \\(5cm\\). Tính chu vi hình chữ nhật",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Một hình chữ nhật có chiều dài \\(8cm\\), chiều rộng \\(5cm\\). Tính chu vi hình chữ nhật"
+          }
+        ],
         "explanation": "Chu vi hình chữ nhật = (dài + rộng) × 2 = \\((8 + 5) \\times 2 = 26cm\\)",
         "choices": [
           {
@@ -573,7 +1428,12 @@
     "code": "TOAN6_30_02_MD002",
     "questions": [
       {
-        "content": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "\\(3^2 = 9\\), \\(4^2 = 16\\). Vậy \\(9 + 16 = 25\\)",
         "choices": [
           {
@@ -595,7 +1455,12 @@
         ]
       },
       {
-        "content": "Số nguyên tố nhỏ nhất là số nào?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số nguyên tố nhỏ nhất là số nào?"
+          }
+        ],
         "explanation": "Số nguyên tố là số tự nhiên lớn hơn 1 và chỉ có hai ước số là 1 và chính nó. Số nguyên tố nhỏ nhất là 2",
         "choices": [
           {
@@ -617,7 +1482,12 @@
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Quy đồng mẫu số: \\(\\frac{3}{4} + \\frac{2}{4} = \\frac{5}{4} = 1\\frac{1}{4}\\)",
         "choices": [
           {
@@ -639,7 +1509,12 @@
         ]
       },
       {
-        "content": "Tìm ước chung lớn nhất của 12 và 18",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm ước chung lớn nhất của 12 và 18"
+          }
+        ],
         "explanation": "Ư(12) = {1,2,3,4,6,12}, Ư(18) = {1,2,3,6,9,18}. ƯCLN(12,18) = 6",
         "choices": [
           {
@@ -661,7 +1536,12 @@
         ]
       },
       {
-        "content": "Một hình chữ nhật có chiều dài \\(8cm\\), chiều rộng \\(5cm\\). Tính chu vi hình chữ nhật",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Một hình chữ nhật có chiều dài \\(8cm\\), chiều rộng \\(5cm\\). Tính chu vi hình chữ nhật"
+          }
+        ],
         "explanation": "Chu vi hình chữ nhật = (dài + rộng) × 2 = \\((8 + 5) \\times 2 = 26cm\\)",
         "choices": [
           {
@@ -692,7 +1572,12 @@
     "code": "TOAN6_15_03_MD001",
     "questions": [
       {
-        "content": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "\\(3^2 = 9\\), \\(4^2 = 16\\). Vậy \\(9 + 16 = 25\\)",
         "choices": [
           {
@@ -714,7 +1599,12 @@
         ]
       },
       {
-        "content": "Số nguyên tố nhỏ nhất là số nào?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số nguyên tố nhỏ nhất là số nào?"
+          }
+        ],
         "explanation": "Số nguyên tố là số tự nhiên lớn hơn 1 và chỉ có hai ước số là 1 và chính nó. Số nguyên tố nhỏ nhất là 2",
         "choices": [
           {
@@ -736,7 +1626,12 @@
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Quy đồng mẫu số: \\(\\frac{3}{4} + \\frac{2}{4} = \\frac{5}{4} = 1\\frac{1}{4}\\)",
         "choices": [
           {
@@ -758,7 +1653,12 @@
         ]
       },
       {
-        "content": "Tìm ước chung lớn nhất của 12 và 18",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm ước chung lớn nhất của 12 và 18"
+          }
+        ],
         "explanation": "Ư(12) = {1,2,3,4,6,12}, Ư(18) = {1,2,3,6,9,18}. ƯCLN(12,18) = 6",
         "choices": [
           {
@@ -780,7 +1680,12 @@
         ]
       },
       {
-        "content": "Một hình chữ nhật có chiều dài \\(8cm\\), chiều rộng \\(5cm\\). Tính chu vi hình chữ nhật",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Một hình chữ nhật có chiều dài \\(8cm\\), chiều rộng \\(5cm\\). Tính chu vi hình chữ nhật"
+          }
+        ],
         "explanation": "Chu vi hình chữ nhật = (dài + rộng) × 2 = \\((8 + 5) \\times 2 = 26cm\\)",
         "choices": [
           {
@@ -811,7 +1716,12 @@
     "code": "TOAN6_30_03_MD001",
     "questions": [
       {
-        "content": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị của biểu thức \\(3^2 + 4^2\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "\\(3^2 = 9\\), \\(4^2 = 16\\). Vậy \\(9 + 16 = 25\\)",
         "choices": [
           {
@@ -833,7 +1743,12 @@
         ]
       },
       {
-        "content": "Số nguyên tố nhỏ nhất là số nào?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số nguyên tố nhỏ nhất là số nào?"
+          }
+        ],
         "explanation": "Số nguyên tố là số tự nhiên lớn hơn 1 và chỉ có hai ước số là 1 và chính nó. Số nguyên tố nhỏ nhất là 2",
         "choices": [
           {
@@ -855,7 +1770,12 @@
         ]
       },
       {
-        "content": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép tính \\(\\frac{3}{4} + \\frac{1}{2}\\) là bao nhiêu?"
+          }
+        ],
         "explanation": "Quy đồng mẫu số: \\(\\frac{3}{4} + \\frac{2}{4} = \\frac{5}{4} = 1\\frac{1}{4}\\)",
         "choices": [
           {
@@ -877,7 +1797,12 @@
         ]
       },
       {
-        "content": "Tìm ước chung lớn nhất của 12 và 18",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm ước chung lớn nhất của 12 và 18"
+          }
+        ],
         "explanation": "Ư(12) = {1,2,3,4,6,12}, Ư(18) = {1,2,3,6,9,18}. ƯCLN(12,18) = 6",
         "choices": [
           {
@@ -899,7 +1824,12 @@
         ]
       },
       {
-        "content": "Một hình chữ nhật có chiều dài \\(8cm\\), chiều rộng \\(5cm\\). Tính chu vi hình chữ nhật",
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Một hình chữ nhật có chiều dài \\(8cm\\), chiều rộng \\(5cm\\). Tính chu vi hình chữ nhật"
+          }
+        ],
         "explanation": "Chu vi hình chữ nhật = (dài + rộng) × 2 = \\((8 + 5) \\times 2 = 26cm\\)",
         "choices": [
           {

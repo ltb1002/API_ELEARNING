@@ -54,7 +54,7 @@ public class QuizResultService {
     }
 
     @Transactional
-    public QuizResult submitQuiz(Long userId, Integer quizId, Map<Integer, List<Integer>> userAnswers, Integer durationSeconds) {
+    public QuizResult submitQuiz(Long userId, Integer quizId, Map<Long, List<Long>> userAnswers, Integer durationSeconds) { // SỬA: Integer → Long
         // Validation
         if (userId == null) {
             throw new IllegalArgumentException("User ID cannot be null");
@@ -76,7 +76,7 @@ public class QuizResultService {
             throw new IllegalArgumentException("Quiz not found with id: " + quizId);
         }
 
-        List<Question> questions = quizService.getQuizQuestions(quizId);
+        List<Question> questions = quizService.getQuizQuestions(quizId.longValue());
         if (questions.isEmpty()) {
             throw new IllegalArgumentException("Quiz has no questions");
         }
@@ -84,18 +84,18 @@ public class QuizResultService {
         int totalQuestions = questions.size();
         int correctAnswers = 0;
 
-        // Lấy tất cả đáp án đúng cho tất cả câu hỏi trong một lần truy vấn
-        List<Integer> questionIds = questions.stream().map(Question::getId).collect(Collectors.toList());
-        Map<Integer, Set<Integer>> correctChoiceIdsMap = quizService.getCorrectChoiceIdsForQuestions(questionIds);
+        // SỬA: Đổi Integer thành Long cho questionIds
+        List<Long> questionIds = questions.stream().map(Question::getId).collect(Collectors.toList());
+        Map<Long, Set<Long>> correctChoiceIdsMap = quizService.getCorrectChoiceIdsForQuestions(questionIds);
 
         for (Question question : questions) {
-            List<Integer> userSelectedChoices = userAnswers.get(question.getId());
-            Set<Integer> correctChoiceIds = correctChoiceIdsMap.get(question.getId());
+            List<Long> userSelectedChoices = userAnswers.get(question.getId()); // SỬA: Integer → Long
+            Set<Long> correctChoiceIds = correctChoiceIdsMap.get(question.getId()); // SỬA: Integer → Long
             if (correctChoiceIds == null) {
                 correctChoiceIds = new HashSet<>(); // Xử lý câu hỏi không có đáp án đúng
             }
 
-            Set<Integer> userSelectedIds = userSelectedChoices != null ?
+            Set<Long> userSelectedIds = userSelectedChoices != null ? // SỬA: Integer → Long
                     new HashSet<>(userSelectedChoices) : new HashSet<>();
 
             if (correctChoiceIds.isEmpty()) {

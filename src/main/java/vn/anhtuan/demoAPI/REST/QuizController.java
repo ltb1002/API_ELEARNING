@@ -95,7 +95,7 @@ public class QuizController {
     @GetMapping("/{quizId}/questions")
     public ResponseEntity<List<QuestionPOJO>> getQuizQuestions(@PathVariable Integer quizId) {
         return ResponseEntity.ok(
-                quizService.getQuizQuestions(quizId).stream()
+                quizService.getQuizQuestions(quizId.longValue()).stream()
                         .map(quizService::convertToQuestionPOJO)
                         .collect(Collectors.toList())
         );
@@ -105,7 +105,7 @@ public class QuizController {
      * Lấy danh sách lựa chọn của 1 câu hỏi
      */
     @GetMapping("/questions/{questionId}/choices")
-    public ResponseEntity<List<ChoicePOJO>> getQuestionChoices(@PathVariable Integer questionId) {
+    public ResponseEntity<List<ChoicePOJO>> getQuestionChoices(@PathVariable Long questionId) {
         return ResponseEntity.ok(
                 quizService.getQuestionChoices(questionId).stream()
                         .map(quizService::convertToChoicePOJO)

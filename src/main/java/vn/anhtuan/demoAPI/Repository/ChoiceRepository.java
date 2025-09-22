@@ -9,15 +9,15 @@ import vn.anhtuan.demoAPI.Entity.Choice;
 import java.util.List;
 
 @Repository
-public interface ChoiceRepository extends JpaRepository<Choice, Integer> {
-    List<Choice> findByQuestionId(Integer questionId);
+public interface ChoiceRepository extends JpaRepository<Choice, Long> { // Đổi Integer -> Long
+    List<Choice> findByQuestionId(Long questionId); // Đổi Integer -> Long
 
     @Query("SELECT c FROM Choice c WHERE c.question.id IN :questionIds")
-    List<Choice> findByQuestionIds(@Param("questionIds") List<Integer> questionIds);
+    List<Choice> findByQuestionIds(@Param("questionIds") List<Long> questionIds); // Đổi Integer -> Long
 
     @Query("SELECT c FROM Choice c WHERE c.question.id = :questionId AND c.isCorrect = true")
-    List<Choice> findCorrectChoicesByQuestionId(@Param("questionId") Integer questionId);
+    List<Choice> findCorrectChoicesByQuestionId(@Param("questionId") Long questionId); // Đổi Integer -> Long
 
     @Query("SELECT c FROM Choice c WHERE c.question.id IN :questionIds AND c.isCorrect = true")
-    List<Choice> findCorrectChoicesByQuestionIds(@Param("questionIds") List<Integer> questionIds);
+    List<Choice> findCorrectChoicesByQuestionIds(@Param("questionIds") List<Long> questionIds); // Đổi Integer -> Long
 }

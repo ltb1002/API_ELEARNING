@@ -3,27 +3,27 @@ package vn.anhtuan.demoAPI.POJO;
 import java.util.List;
 
 public class QuestionPOJO {
-    private Integer id; // Thêm trường id
-    private String content;
+    private Long id;
+    private List<QuestionContentPOJO> contents; // Thay thế content bằng contents
     private String explanation;
     private List<ChoicePOJO> choices;
 
     // Constructors
     public QuestionPOJO() {}
 
-    public QuestionPOJO(Integer id, String content, String explanation, List<ChoicePOJO> choices) {
+    public QuestionPOJO(Long id, List<QuestionContentPOJO> contents, String explanation, List<ChoicePOJO> choices) {
         this.id = id;
-        this.content = content;
+        this.contents = contents;
         this.explanation = explanation;
         this.choices = choices;
     }
 
     // Getters & Setters
-    public Integer getId() { return id; }
-    public void setId(Integer id) { this.id = id; }
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
 
-    public String getContent() { return content; }
-    public void setContent(String content) { this.content = content; }
+    public List<QuestionContentPOJO> getContents() { return contents; }
+    public void setContents(List<QuestionContentPOJO> contents) { this.contents = contents; }
 
     public String getExplanation() { return explanation; }
     public void setExplanation(String explanation) { this.explanation = explanation; }

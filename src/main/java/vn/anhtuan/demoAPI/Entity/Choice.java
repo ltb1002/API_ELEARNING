@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class Choice {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "question_id", nullable = false)
@@ -20,7 +20,8 @@ public class Choice {
     private Boolean isCorrect = false;
 
     // Constructors
-    public Choice() {}
+    public Choice() {
+    }
 
     public Choice(Question question, String content, Boolean isCorrect) {
         this.question = question;
@@ -29,11 +30,13 @@ public class Choice {
     }
 
     // Getters and Setters
-    public Integer getId() {
+
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -60,4 +63,5 @@ public class Choice {
     public void setIsCorrect(Boolean isCorrect) {
         this.isCorrect = isCorrect;
     }
+
 }

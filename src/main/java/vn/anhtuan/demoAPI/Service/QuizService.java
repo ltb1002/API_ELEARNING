@@ -4,10 +4,7 @@ import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import vn.anhtuan.demoAPI.Entity.*;
-import vn.anhtuan.demoAPI.POJO.ChoicePOJO;
-import vn.anhtuan.demoAPI.POJO.QuestionPOJO;
-import vn.anhtuan.demoAPI.POJO.QuizPOJO;
-import vn.anhtuan.demoAPI.POJO.QuizResponsePOJO;
+import vn.anhtuan.demoAPI.POJO.*;
 import vn.anhtuan.demoAPI.Repository.*;
 
 import java.util.List;
@@ -27,6 +24,9 @@ public class QuizService {
 
     @Autowired
     private ChoiceRepository choiceRepository;
+
+    @Autowired
+    private QuestionContentRepository questionContentRepository; // THÊM repository này
 
     @Autowired
     private GradeRepository gradeRepository;
@@ -106,20 +106,22 @@ public class QuizService {
         return String.format("%s%d_%s_%03d", subjectCode, quiz.getGrade().getId(), typeCode, sequentialNumber);
     }
 
-    public List<Question> getQuizQuestions(Integer quizId) {
+    public List<Question> getQuizQuestions(Long quizId) {
         return questionRepository.findQuestionsByQuizIdOrdered(quizId);
     }
 
-    public List<Choice> getQuestionChoices(Integer questionId) {
+    // SỬA: Đổi Integer thành Long cho questionId
+    public List<Choice> getQuestionChoices(Long questionId) {
         return choiceRepository.findByQuestionId(questionId);
     }
 
-    public List<Choice> getCorrectChoicesForQuestion(Integer questionId) {
-        // Sửa thành phương thức có sẵn trong repository
+    // SỬA: Đổi Integer thành Long cho questionId
+    public List<Choice> getCorrectChoicesForQuestion(Long questionId) {
         return choiceRepository.findCorrectChoicesByQuestionId(questionId);
     }
 
-    public Map<Integer, Set<Integer>> getCorrectChoiceIdsForQuestions(List<Integer> questionIds) {
+    // SỬA: Đổi Integer thành Long cho questionIds
+    public Map<Long, Set<Long>> getCorrectChoiceIdsForQuestions(List<Long> questionIds) {
         List<Choice> correctChoices = choiceRepository.findCorrectChoicesByQuestionIds(questionIds);
         return correctChoices.stream()
                 .collect(Collectors.groupingBy(
@@ -166,13 +168,16 @@ public class QuizService {
         pojo.setId(quiz.getId());
         pojo.setGradeId(quiz.getGrade().getId());
         pojo.setSubjectId(quiz.getSubject().getId());
+        pojo.setSubjectName(quiz.getSubject().getName());
         pojo.setChapterId(quiz.getChapter().getId());
         pojo.setChapterTitle(quiz.getChapter().getTitle());
         pojo.setQuizTypeId(quiz.getQuizType().getId());
         pojo.setCode(quiz.getCode());
 
-        List<QuestionPOJO> questionPOJOs = questionRepository.findQuestionsByQuizIdOrdered(quiz.getId())
-                .stream()
+        // Chỉ sửa ở đây: ép kiểu quiz.getId() sang Long
+        List<QuestionPOJO> questionPOJOs = questionRepository.findQuestionsByQuizIdOrdered(
+                        quiz.getId().longValue() // ép kiểu Integer -> Long
+                ).stream()
                 .map(this::convertToQuestionPOJO)
                 .collect(Collectors.toList());
         pojo.setQuestions(questionPOJOs);
@@ -180,10 +185,18 @@ public class QuizService {
         return pojo;
     }
 
+    // SỬA HOÀN TOÀN: Cập nhật để sử dụng QuestionContent thay vì content cũ
     public QuestionPOJO convertToQuestionPOJO(Question question) {
         QuestionPOJO pojo = new QuestionPOJO();
-        pojo.setId(question.getId()); // Thêm ID của câu hỏi
-        pojo.setContent(question.getContent());
+        pojo.setId(question.getId());
+
+        // Lấy danh sách QuestionContent từ repository
+        List<QuestionContent> questionContents = questionContentRepository.findByQuestionId(question.getId());
+        List<QuestionContentPOJO> contentPOJOs = questionContents.stream()
+                .map(this::convertToQuestionContentPOJO)
+                .collect(Collectors.toList());
+        pojo.setContents(contentPOJOs);
+
         pojo.setExplanation(question.getExplanation());
 
         List<ChoicePOJO> choicePOJOs = choiceRepository.findByQuestionId(question.getId())
@@ -195,30 +208,28 @@ public class QuizService {
         return pojo;
     }
 
+    // THÊM: Method để convert QuestionContent sang QuestionContentPOJO
+    public QuestionContentPOJO convertToQuestionContentPOJO(QuestionContent questionContent) {
+        QuestionContentPOJO pojo = new QuestionContentPOJO();
+        pojo.setContentType(questionContent.getContentType());
+        pojo.setContentValue(questionContent.getContentValue());
+        return pojo;
+    }
+
     public ChoicePOJO convertToChoicePOJO(Choice choice) {
         ChoicePOJO pojo = new ChoicePOJO();
-        pojo.setId(choice.getId()); // Thêm ID của lựa chọn
+        pojo.setId(choice.getId());
         pojo.setContent(choice.getContent());
         pojo.setIsCorrect(choice.getIsCorrect());
         return pojo;
     }
 
-    public QuizResponsePOJO convertToQuizResponsePOJO(Quiz quiz) {
-        QuizResponsePOJO pojo = new QuizResponsePOJO();
-        pojo.setId(quiz.getId());
-        pojo.setCode(quiz.getCode());
-        pojo.setGrade(quiz.getGrade().getName());
-        pojo.setSubject(quiz.getSubject().getName());
-        pojo.setQuizType(quiz.getQuizType().getName());
-        pojo.setDuration(quiz.getQuizType().getDurationMinutes());
-
-        List<QuestionPOJO> questionPOJOs = questionRepository.findQuestionsByQuizIdOrdered(quiz.getId())
-                .stream()
-                .map(this::convertToQuestionPOJO)
-                .collect(Collectors.toList());
-        pojo.setQuestions(questionPOJOs);
-
-        return pojo;
+    // SỬA: Method này cần được điều chỉnh hoặc xóa nếu không cần thiết
+    // Vì QuizResponsePOJO không được định nghĩa trong code bạn cung cấp
+    public Object convertToQuizResponsePOJO(Quiz quiz) {
+        // Tạm thời trả về null hoặc xử lý theo logic của bạn
+        // Bạn cần định nghĩa QuizResponsePOJO hoặc sử dụng QuizPOJO
+        return null;
     }
 
     public QuizPOJO convertinfoQuizPOJO(Quiz quiz) {

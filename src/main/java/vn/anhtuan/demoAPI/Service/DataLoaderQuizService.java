@@ -13,6 +13,7 @@ import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 import vn.anhtuan.demoAPI.Entity.*;
 import vn.anhtuan.demoAPI.POJO.ChoicePOJO;
+import vn.anhtuan.demoAPI.POJO.QuestionContentPOJO;
 import vn.anhtuan.demoAPI.POJO.QuestionPOJO;
 import vn.anhtuan.demoAPI.POJO.QuizPOJO;
 import vn.anhtuan.demoAPI.Repository.*;
@@ -53,6 +54,9 @@ public class DataLoaderQuizService implements CommandLineRunner {
 
     @Autowired
     private ChoiceRepository choiceRepository;
+
+    @Autowired
+    private QuestionContentRepository questionContentRepository;
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
@@ -107,22 +111,34 @@ public class DataLoaderQuizService implements CommandLineRunner {
                             Quiz quiz = new Quiz(gradeEntity, subjectEntity, chapterEntity, quizType, quizPOJO.getCode());
                             quiz = quizService.createQuiz(quiz);
 
-                            // Create questions and choices
+                            // Create questions, question contents and choices
                             for (QuestionPOJO questionPOJO : quizPOJO.getQuestions()) {
-                                Question question = new Question(
-                                        quiz,
-                                        questionPOJO.getContent(),
-                                        questionPOJO.getExplanation()
-                                );
+                                Question question = new Question();
+                                question.setQuiz(quiz);
+                                question.setExplanation(questionPOJO.getExplanation());
                                 question = questionRepository.save(question);
 
-                                for (ChoicePOJO choiceDTO : questionPOJO.getChoices()) {
-                                    Choice choice = new Choice(
-                                            question,
-                                            choiceDTO.getContent(),
-                                            choiceDTO.getIsCorrect()
-                                    );
-                                    choiceRepository.save(choice);
+                                // Save QuestionContent
+                                if (questionPOJO.getContents() != null) {
+                                    for (QuestionContentPOJO contentPOJO : questionPOJO.getContents()) {
+                                        QuestionContent content = new QuestionContent();
+                                        content.setQuestion(question);
+                                        content.setContentType(contentPOJO.getContentType());
+                                        content.setContentValue(contentPOJO.getContentValue());
+                                        questionContentRepository.save(content);
+                                    }
+                                }
+
+                                // Save Choices
+                                if (questionPOJO.getChoices() != null) {
+                                    for (ChoicePOJO choiceDTO : questionPOJO.getChoices()) {
+                                        Choice choice = new Choice(
+                                                question,
+                                                choiceDTO.getContent(),
+                                                choiceDTO.getIsCorrect()
+                                        );
+                                        choiceRepository.save(choice);
+                                    }
                                 }
                             }
 
@@ -168,6 +184,7 @@ public class DataLoaderQuizService implements CommandLineRunner {
         logger.info("Reloading all quiz data...");
 
         choiceRepository.deleteAll();
+        questionContentRepository.deleteAll();
         questionRepository.deleteAll();
         quizRepository.deleteAll();
 

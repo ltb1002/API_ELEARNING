@@ -1,7 +1,6 @@
 package vn.anhtuan.demoAPI.Entity;
 
 import jakarta.persistence.*;
-
 import java.util.List;
 
 @Entity
@@ -9,17 +8,17 @@ import java.util.List;
 public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "quiz_id", nullable = false)
     private Quiz quiz;
 
-    @Column(name = "content", nullable = false, columnDefinition = "TEXT")
-    private String content;
-
     @Column(name = "explanation", nullable = false, columnDefinition = "TEXT")
     private String explanation;
+
+    @OneToMany(mappedBy = "question", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<QuestionContent> contents; // Thêm quan hệ với QuestionContent
 
     @OneToMany(mappedBy = "question", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Choice> choices;
@@ -27,18 +26,17 @@ public class Question {
     // Constructors
     public Question() {}
 
-    public Question(Quiz quiz, String content, String explanation) {
+    public Question(Quiz quiz, String explanation) {
         this.quiz = quiz;
-        this.content = content;
         this.explanation = explanation;
     }
 
     // Getters and Setters
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -50,20 +48,20 @@ public class Question {
         this.quiz = quiz;
     }
 
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
     public String getExplanation() {
         return explanation;
     }
 
     public void setExplanation(String explanation) {
         this.explanation = explanation;
+    }
+
+    public List<QuestionContent> getContents() {
+        return contents;
+    }
+
+    public void setContents(List<QuestionContent> contents) {
+        this.contents = contents;
     }
 
     public List<Choice> getChoices() {
