@@ -1,0 +1,2687 @@
+[
+  {
+    "grade_id": 7,
+    "subject_id": 2,
+    "chapter_id": 7,
+    "quiz_type_id": 1,
+    "code": "TOAN7_15_01_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Cho hai số hữu tỉ a và b được biểu diễn trên trục số như sau"
+          },
+          {
+            "content_type": "IMAGE",
+            "content_value": "https://vietjack.com/toan-7-kn/images/trac-nghiem-bai-1-tap-hop-cac-so-huu-ti-2.PNG"
+          }
+        ],
+        "explanation": "Ta có: b nằm trước O nên b < 0; a nằm sau O nên a > 0. Do đó: b < 0 < a.",
+        "choices": [
+          { "content": "b > 0 > a", "is_correct": false },
+          { "content": "b > a", "is_correct": false },
+          { "content": "b < a < 0", "is_correct": false },
+          { "content": "b < 0 < a", "is_correct": true }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Ngăn đựng sách của một giá sách trong thư viện dài 120 cm (xem hình dưới). Người ta dự định xếp các cuốn sách dày khoảng 2,5 cm vào ngăn này. Hỏi ngăn sách đó có thể để được nhiều nhất bao nhiêu cuốn sách như vậy?"
+          },
+          {
+            "content_type": "IMAGE",
+            "content_value": "https://vietjack.com/toan-7-kn/images/trac-nghiem-bai-2-cong-tru-nhan-chia-so-huu-ti.PNG"
+          }
+        ],
+        "explanation": "120 / 2,5 = 48",
+        "choices": [
+          { "content": "50 cuốn sách", "is_correct": false },
+          { "content": "48 cuốn sách", "is_correct": true },
+          { "content": "40 cuốn sách", "is_correct": false },
+          { "content": "25 cuốn sách", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Sắp xếp các số sau theo thứ tự tăng dần: \\(-\\frac{2}{3},\\ \\frac{1}{4},\\ -\\frac{1}{2},\\ 0\\)."
+          }
+        ],
+        "explanation": "So sánh: \\(-\\frac{2}{3} < -\\frac{1}{2} < 0 < \\frac{1}{4}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{2}{3}, -\\frac{1}{2}, 0, \\frac{1}{4}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{2}, -\\frac{2}{3}, 0, \\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(0, -\\frac{1}{2}, -\\frac{2}{3}, \\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{4}, 0, -\\frac{1}{2}, -\\frac{2}{3}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị tuyệt đối của số hữu tỉ \\(-\\frac{5}{6}\\) là gì?"
+          }
+        ],
+        "explanation": "Giá trị tuyệt đối của một số hữu tỉ là khoảng cách của nó đến 0. Do đó \\(|-\\tfrac{5}{6}| = \\tfrac{5}{6}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{5}{6}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{6}\\)", "is_correct": true },
+          { "content": "\\(\\frac{6}{5}\\)", "is_correct": false },
+          { "content": "0", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép cộng: \\(-\\frac{3}{8} + \\frac{5}{12}\\) bằng bao nhiêu?"
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{3}{8} = -\\frac{9}{24},\\ \\frac{5}{12} = \\frac{10}{24}\\). Cộng lại: \\(-\\frac{9}{24} + \\frac{10}{24} = \\frac{1}{24}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{24}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{19}{24}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{19}{24}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính giá trị biểu thức: \\(\\frac{2}{5} - ( -\\frac{7}{10})\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{2}{5} - ( -\\frac{7}{10}) = \\frac{2}{5} + \\frac{7}{10} = \\frac{4}{10} + \\frac{7}{10} = \\frac{11}{10}\\).",
+        "choices": [
+          { "content": "\\(\\frac{9}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{11}{10}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{11}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Phân số nào bằng với số thập phân \\(0{,}125\\)?"
+          }
+        ],
+        "explanation": "\\(0{,}125 = \\frac{125}{1000} = \\frac{1}{8}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{8}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{6}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép nhân: \\(-\\frac{2}{3} \\times \\frac{9}{4}\\) là gì?"
+          }
+        ],
+        "explanation": "\\(-\\frac{2}{3} \\times \\frac{9}{4} = -\\frac{18}{12} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{18}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{2}{3}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(x - \\frac{2}{5} = \\frac{3}{10}\\)."
+          }
+        ],
+        "explanation": "Chuyển vế: \\(x = \\frac{3}{10} + \\frac{2}{5} = \\frac{3}{10} + \\frac{4}{10} = \\frac{7}{10}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{10}\\)", "is_correct": true },
+          { "content": "\\(\\frac{9}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{3}{5}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "So sánh hai số hữu tỉ: \\(-\\frac{4}{7}\\) và \\(-\\frac{5}{9}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{4}{7} = -\\frac{36}{63},\\ -\\frac{5}{9} = -\\frac{35}{63}\\). Vì \\(-36 < -35\\) nên \\(-\\frac{4}{7} < -\\frac{5}{9}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{4}{7} < -\\frac{5}{9}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{4}{7} > -\\frac{5}{9}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{4}{7} = -\\frac{5}{9}\\)", "is_correct": false },
+          { "content": "Không so sánh được", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 2,
+    "chapter_id": 7,
+    "quiz_type_id": 2,
+    "code": "TOAN7_30_01_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Cần thêm điều kiện gì để tam giác EAD trong hình vẽ dưới đây là tam giác cân"
+          },
+          {
+            "content_type": "IMAGE",
+            "content_value": "https://vietjack.com/toan-7-kn/images/trac-nghiem-bai-16-tam-giac-can-duong-trung-truc-cua-doan-thang-152063.PNG"
+          }
+        ],
+        "explanation": "Xét tam giác \\(EDA\\) có: \\(\\widehat{E} + \\widehat{A} + \\widehat{D} = 180^\\circ\\) (tổng 3 góc trong tam giác).\n\\(\\Rightarrow 68^\\circ + 44^\\circ + \\widehat{D} = 180^\\circ\\)\n\\(\\Rightarrow \\widehat{D} = 68^\\circ\\)\n\\(\\Rightarrow \\widehat{D} = \\widehat{E} (= 68^\\circ)\\)\n\\(\\Rightarrow\\) Tam giác \\(EDA\\) cân tại \\(A\\).\nVậy không cần thêm điều kiện gì.",
+        "choices": [
+          { "content": "Không cần thêm điều kiện gì", "is_correct": true },
+          { "content": "AE = AD", "is_correct": false },
+          { "content": "AE = DE", "is_correct": false },
+          { "content": "AD = DE", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Cho hình vẽ dưới đây. Tam giác \\(ABC\\) cân tại \\(B\\), \\(D\\) là trung điểm của \\(AC\\). Biết \\(\\widehat{AEC} = 110^\\circ\\), tổng \\(\\widehat{ABE} + \\widehat{BAE}\\) là"
+
+          },
+          {
+            "content_type": "IMAGE",
+            "content_value": "https://vietjack.com/toan-7-kn/images/trac-nghiem-bai-16-tam-giac-can-duong-trung-truc-cua-doan-thang-152066.PNG"
+          }
+        ],
+        "explanation": "Xét tam giác \\(BAD\\) và tam giác \\(BCD\\) có:\nBA = BC (\\(\\triangle ABC\\) cân tại B)\n\nAD là cạnh chung\n\nAD = CD (D là trung điểm của AC)\n\n\\(\\Rightarrow \\triangle BAD = \\triangle BCD\\) (c.c.c)\n\n\\(\\Rightarrow \\widehat{BAD} = \\widehat{BDC}\\) (hai góc tương ứng)\n\nMà \\(\\widehat{BDA} + \\widehat{BDC} = 180^\\circ\\) (hai góc kề bù)\n\nNên \\(\\widehat{BDA} = \\widehat{BDC} = 90^\\circ\\)\n\nXét tam giác \\(ADE\\) vuông tại D và tam giác \\(CDE\\) vuông tại D có:\n\nAD = CD\n\nDE là cạnh chung\n\n\\(\\Rightarrow \\triangle ADE = \\triangle CDE\\) (hai cạnh góc vuông)\n\n\\(\\Rightarrow \\widehat{AED} = \\widehat{CED}\\) (hai góc tương ứng)\n\nMà \\(\\widehat{AEC} = 110^\\circ\\)\n\n\\(\\Rightarrow \\widehat{AED} = \\widehat{CED} = \\tfrac{\\widehat{AEC}}{2} = 55^\\circ\\)\n\nTa có góc \\(AED\\) là góc ngoài tại đỉnh E của tam giác ABE nên\n\n\\(\\widehat{ABE} + \\widehat{BAE} = \\widehat{AED} = 55^\\circ\\).",
+        "choices": [
+          { "content": "20°", "is_correct": false },
+          { "content": "110°", "is_correct": false },
+          { "content": "55°", "is_correct": true },
+          { "content": "70°", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(-\\frac{7}{15} + \\frac{11}{30}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{7}{15} = -\\frac{14}{30}\\). Cộng lại: \\(-\\frac{14}{30} + \\frac{11}{30} = -\\frac{3}{30} = -\\frac{1}{10}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{1}{10}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{10}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{25}{30}\\)", "is_correct": false },
+          { "content": "\\(\\frac{25}{30}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\frac{5}{6} - \\frac{7}{12}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(\\frac{5}{6} = \\frac{10}{12}\\). Trừ: \\(\\frac{10}{12} - \\frac{7}{12} = \\frac{3}{12} = \\frac{1}{4}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{4}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{3}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị của biểu thức: \\(-\\frac{2}{5} \\times \\frac{15}{8}\\)."
+          }
+        ],
+        "explanation": "\\(-\\frac{2}{5} \\times \\frac{15}{8} = -\\frac{30}{40} = -\\frac{3}{4}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{4}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{4}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{15}{40}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{5}{8}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả phép chia: \\(\\frac{7}{9} \\div -\\frac{14}{27}\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{7}{9} \\times -\\frac{27}{14} = -\\frac{189}{126} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{27}{14}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{14}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(x + \\frac{3}{8} = \\frac{5}{12}\\)."
+          }
+        ],
+        "explanation": "Chuyển vế: \\(x = \\frac{5}{12} - \\frac{3}{8} = \\frac{10}{24} - \\frac{9}{24} = \\frac{1}{24}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{24}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{13}{24}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(2x - \\frac{5}{6} = \\frac{1}{3}\\)."
+          }
+        ],
+        "explanation": "\\(2x = \\frac{1}{3} + \\frac{5}{6} = \\frac{2}{6} + \\frac{5}{6} = \\frac{7}{6}\\). Do đó \\(x = \\frac{7}{12}\\).",
+        "choices": [
+          { "content": "\\(\\frac{7}{12}\\)", "is_correct": true },
+          { "content": "\\(\\frac{7}{6}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "So sánh: \\(\\frac{-11}{20}\\) và \\(\\frac{-9}{18}\\)."
+          }
+        ],
+        "explanation": "\\(-\\frac{9}{18} = -\\frac{1}{2} = -0.5\\). Còn \\(-\\frac{11}{20} = -0.55\\). Vì \\(-0.55 < -0.5\\), nên \\(-\\frac{11}{20} < -\\frac{9}{18}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{11}{20} < -\\frac{9}{18}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{11}{20} > -\\frac{9}{18}\\)", "is_correct": false },
+          { "content": "Hai số bằng nhau", "is_correct": false },
+          { "content": "Không so sánh được", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm giá trị của \\(y\\) biết: \\(\\frac{y}{4} = -\\frac{3}{8}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(y = 4 \\times -\\frac{3}{8} = -\\frac{12}{8} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{3}{8}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(-2\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\left| -\\frac{7}{9} \\right| + \\left| \\frac{-5}{6} \\right|\\)."
+          }
+        ],
+        "explanation": "\\(|-\\tfrac{7}{9}| = \\tfrac{7}{9},\\ | -\\tfrac{5}{6}| = \\tfrac{5}{6}. Quy đồng: \\(\\tfrac{7}{9} + \\tfrac{5}{6} = \\tfrac{14}{18} + \\tfrac{15}{18} = \\tfrac{29}{18}\\).",
+        "choices": [
+          { "content": "\\(\\frac{29}{18}\\)", "is_correct": true },
+          { "content": "\\(\\frac{22}{18}\\)", "is_correct": false },
+          { "content": "\\(\\frac{19}{18}\\)", "is_correct": false },
+          { "content": "\\(\\frac{13}{9}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số nào lớn hơn: \\(-\\frac{2}{7}\\) hay \\(-\\frac{3}{10}\\)?"
+          }
+        ],
+        "explanation": "So sánh: \\(-\\frac{2}{7} \\approx -0.285,\\ -\\frac{3}{10} = -0.3\\). Vì \\(-0.285 > -0.3\\), nên \\(-\\frac{2}{7} > -\\frac{3}{10}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{2}{7} > -\\frac{3}{10}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{2}{7} < -\\frac{3}{10}\\)", "is_correct": false },
+          { "content": "Hai số bằng nhau", "is_correct": false },
+          { "content": "Không xác định", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Phân số nào bằng số thập phân \\(0.375\\)?"
+          }
+        ],
+        "explanation": "\\(0.375 = \\frac{375}{1000} = \\frac{3}{8}\\).",
+        "choices": [
+          { "content": "\\(\\frac{3}{8}\\)", "is_correct": true },
+          { "content": "\\(\\frac{37}{100}\\)", "is_correct": false },
+          { "content": "\\(\\frac{375}{100}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Sắp xếp theo thứ tự tăng dần: \\(-\\frac{5}{6}, 0, \\frac{2}{9}, -\\frac{1}{3}\\)."
+          }
+        ],
+        "explanation": "Thứ tự: \\(-\\tfrac{5}{6} < -\\tfrac{1}{3} < 0 < \\tfrac{2}{9}\\).",
+        "choices": [
+          { "content": "\\(-\\tfrac{5}{6}, -\\tfrac{1}{3}, 0, \\tfrac{2}{9}\\)", "is_correct": true },
+          { "content": "\\(-\\tfrac{1}{3}, -\\tfrac{5}{6}, 0, \\tfrac{2}{9}\\)", "is_correct": false },
+          { "content": "\\(0, -\\tfrac{5}{6}, -\\tfrac{1}{3}, \\tfrac{2}{9}\\)", "is_correct": false },
+          { "content": "\\(\\tfrac{2}{9}, 0, -\\tfrac{1}{3}, -\\tfrac{5}{6}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm \\(x\\) biết: \\(\\frac{x}{3} + \\frac{1}{2} = 1\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{x}{3} = 1 - \\frac{1}{2} = \\frac{1}{2}\\). Do đó \\(x = \\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(2\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\frac{7}{12} - ( -\\frac{5}{18})\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(\\frac{7}{12} = \\frac{21}{36},\\ -\\frac{5}{18} = -\\frac{10}{36}\\). Cộng: \\(\\frac{21}{36} + \\frac{10}{36} = \\frac{31}{36}\\).",
+        "choices": [
+          { "content": "\\(\\frac{31}{36}\\)", "is_correct": true },
+          { "content": "\\(\\frac{11}{36}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{31}{36}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{18}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(\\frac{2}{5}x = -\\frac{3}{4}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(x = -\\frac{3}{4} : \\frac{2}{5} = -\\frac{3}{4} \\times \\frac{5}{2} = -\\frac{15}{8}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{15}{8}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{8}{15}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{5}{6}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{3}{10}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm nghiệm của phương trình: \\(\\frac{x - 1}{3} = \\frac{2}{5}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(x - 1 = \\frac{6}{5}\\). Do đó \\(x = \\frac{11}{5}\\).",
+        "choices": [
+          { "content": "\\(\\frac{11}{5}\\)", "is_correct": true },
+          { "content": "\\(\\frac{7}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{9}{5}\\)", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 2,
+    "chapter_id": 8,
+    "quiz_type_id": 1,
+    "code": "TOAN7_15_02_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Cho hai số hữu tỉ a và b được biểu diễn trên trục số như sau"
+          },
+          {
+            "content_type": "IMAGE",
+            "content_value": "https://vietjack.com/toan-7-kn/images/trac-nghiem-bai-1-tap-hop-cac-so-huu-ti-2.PNG"
+          }
+        ],
+        "explanation": "Ta có: b nằm trước O nên b < 0; a nằm sau O nên a > 0. Do đó: b < 0 < a.",
+        "choices": [
+          { "content": "b > 0 > a", "is_correct": false },
+          { "content": "b > a", "is_correct": false },
+          { "content": "b < a < 0", "is_correct": false },
+          { "content": "b < 0 < a", "is_correct": true }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Ngăn đựng sách của một giá sách trong thư viện dài 120 cm (xem hình dưới). Người ta dự định xếp các cuốn sách dày khoảng 2,5 cm vào ngăn này. Hỏi ngăn sách đó có thể để được nhiều nhất bao nhiêu cuốn sách như vậy?"
+          },
+          {
+            "content_type": "IMAGE",
+            "content_value": "https://vietjack.com/toan-7-kn/images/trac-nghiem-bai-2-cong-tru-nhan-chia-so-huu-ti.PNG"
+          }
+        ],
+        "explanation": "Ta rút gọn: \\(-\\frac{7}{21} = -\\frac{1}{3}\\).",
+        "choices": [
+          { "content": "50 cuốn sách", "is_correct": false },
+          { "content": "48 cuốn sách", "is_correct": true },
+          { "content": "40 cuốn sách", "is_correct": false },
+          { "content": "25 cuốn sách", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Sắp xếp các số sau theo thứ tự tăng dần: \\(-\\frac{2}{3},\\ \\frac{1}{4},\\ -\\frac{1}{2},\\ 0\\)."
+          }
+        ],
+        "explanation": "So sánh: \\(-\\frac{2}{3} < -\\frac{1}{2} < 0 < \\frac{1}{4}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{2}{3}, -\\frac{1}{2}, 0, \\frac{1}{4}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{2}, -\\frac{2}{3}, 0, \\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(0, -\\frac{1}{2}, -\\frac{2}{3}, \\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{4}, 0, -\\frac{1}{2}, -\\frac{2}{3}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị tuyệt đối của số hữu tỉ \\(-\\frac{5}{6}\\) là gì?"
+          }
+        ],
+        "explanation": "Giá trị tuyệt đối của một số hữu tỉ là khoảng cách của nó đến 0. Do đó \\(|-\\tfrac{5}{6}| = \\tfrac{5}{6}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{5}{6}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{6}\\)", "is_correct": true },
+          { "content": "\\(\\frac{6}{5}\\)", "is_correct": false },
+          { "content": "0", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép cộng: \\(-\\frac{3}{8} + \\frac{5}{12}\\) bằng bao nhiêu?"
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{3}{8} = -\\frac{9}{24},\\ \\frac{5}{12} = \\frac{10}{24}\\). Cộng lại: \\(-\\frac{9}{24} + \\frac{10}{24} = \\frac{1}{24}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{24}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{19}{24}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{19}{24}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính giá trị biểu thức: \\(\\frac{2}{5} - ( -\\frac{7}{10})\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{2}{5} - ( -\\frac{7}{10}) = \\frac{2}{5} + \\frac{7}{10} = \\frac{4}{10} + \\frac{7}{10} = \\frac{11}{10}\\).",
+        "choices": [
+          { "content": "\\(\\frac{9}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{11}{10}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{11}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Phân số nào bằng với số thập phân \\(0{,}125\\)?"
+          }
+        ],
+        "explanation": "\\(0{,}125 = \\frac{125}{1000} = \\frac{1}{8}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{8}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{6}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép nhân: \\(-\\frac{2}{3} \\times \\frac{9}{4}\\) là gì?"
+          }
+        ],
+        "explanation": "\\(-\\frac{2}{3} \\times \\frac{9}{4} = -\\frac{18}{12} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{18}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{2}{3}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(x - \\frac{2}{5} = \\frac{3}{10}\\)."
+          }
+        ],
+        "explanation": "Chuyển vế: \\(x = \\frac{3}{10} + \\frac{2}{5} = \\frac{3}{10} + \\frac{4}{10} = \\frac{7}{10}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{10}\\)", "is_correct": true },
+          { "content": "\\(\\frac{9}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{3}{5}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "So sánh hai số hữu tỉ: \\(-\\frac{4}{7}\\) và \\(-\\frac{5}{9}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{4}{7} = -\\frac{36}{63},\\ -\\frac{5}{9} = -\\frac{35}{63}\\). Vì \\(-36 < -35\\) nên \\(-\\frac{4}{7} < -\\frac{5}{9}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{4}{7} < -\\frac{5}{9}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{4}{7} > -\\frac{5}{9}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{4}{7} = -\\frac{5}{9}\\)", "is_correct": false },
+          { "content": "Không so sánh được", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 2,
+    "chapter_id": 8,
+    "quiz_type_id": 2,
+    "code": "TOAN7_30_02_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Rút gọn phân số \\(\\frac{-84}{126}\\)."
+          }
+        ],
+        "explanation": "Cả tử và mẫu đều chia hết cho 42: \\(\\frac{-84}{126} = \\frac{-2}{3}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{2}{3}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{4}{9}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{7}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{2}{3}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "So sánh hai số: \\(-\\frac{5}{12}\\) và \\(-\\frac{7}{18}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{5}{12} = -\\frac{15}{36},\\ -\\frac{7}{18} = -\\frac{14}{36}\\). Vì \\(-15 < -14\\) nên \\(-\\tfrac{5}{12} < -\\tfrac{7}{18}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{5}{12} < -\\frac{7}{18}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{5}{12} > -\\frac{7}{18}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{5}{12} = -\\frac{7}{18}\\)", "is_correct": false },
+          { "content": "Không so sánh được", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(-\\frac{7}{15} + \\frac{11}{30}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{7}{15} = -\\frac{14}{30}\\). Cộng lại: \\(-\\frac{14}{30} + \\frac{11}{30} = -\\frac{3}{30} = -\\frac{1}{10}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{1}{10}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{10}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{25}{30}\\)", "is_correct": false },
+          { "content": "\\(\\frac{25}{30}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\frac{5}{6} - \\frac{7}{12}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(\\frac{5}{6} = \\frac{10}{12}\\). Trừ: \\(\\frac{10}{12} - \\frac{7}{12} = \\frac{3}{12} = \\frac{1}{4}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{4}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{3}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị của biểu thức: \\(-\\frac{2}{5} \\times \\frac{15}{8}\\)."
+          }
+        ],
+        "explanation": "\\(-\\frac{2}{5} \\times \\frac{15}{8} = -\\frac{30}{40} = -\\frac{3}{4}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{4}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{4}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{15}{40}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{5}{8}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả phép chia: \\(\\frac{7}{9} \\div -\\frac{14}{27}\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{7}{9} \\times -\\frac{27}{14} = -\\frac{189}{126} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{27}{14}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{14}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(x + \\frac{3}{8} = \\frac{5}{12}\\)."
+          }
+        ],
+        "explanation": "Chuyển vế: \\(x = \\frac{5}{12} - \\frac{3}{8} = \\frac{10}{24} - \\frac{9}{24} = \\frac{1}{24}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{24}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{13}{24}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(2x - \\frac{5}{6} = \\frac{1}{3}\\)."
+          }
+        ],
+        "explanation": "\\(2x = \\frac{1}{3} + \\frac{5}{6} = \\frac{2}{6} + \\frac{5}{6} = \\frac{7}{6}\\). Do đó \\(x = \\frac{7}{12}\\).",
+        "choices": [
+          { "content": "\\(\\frac{7}{12}\\)", "is_correct": true },
+          { "content": "\\(\\frac{7}{6}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "So sánh: \\(\\frac{-11}{20}\\) và \\(\\frac{-9}{18}\\)."
+          }
+        ],
+        "explanation": "\\(-\\frac{9}{18} = -\\frac{1}{2} = -0.5\\). Còn \\(-\\frac{11}{20} = -0.55\\). Vì \\(-0.55 < -0.5\\), nên \\(-\\frac{11}{20} < -\\frac{9}{18}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{11}{20} < -\\frac{9}{18}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{11}{20} > -\\frac{9}{18}\\)", "is_correct": false },
+          { "content": "Hai số bằng nhau", "is_correct": false },
+          { "content": "Không so sánh được", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm giá trị của \\(y\\) biết: \\(\\frac{y}{4} = -\\frac{3}{8}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(y = 4 \\times -\\frac{3}{8} = -\\frac{12}{8} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{3}{8}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(-2\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\left| -\\frac{7}{9} \\right| + \\left| \\frac{-5}{6} \\right|\\)."
+          }
+        ],
+        "explanation": "\\(|-\\tfrac{7}{9}| = \\tfrac{7}{9},\\ | -\\tfrac{5}{6}| = \\tfrac{5}{6}. Quy đồng: \\(\\tfrac{7}{9} + \\tfrac{5}{6} = \\tfrac{14}{18} + \\tfrac{15}{18} = \\tfrac{29}{18}\\).",
+        "choices": [
+          { "content": "\\(\\frac{29}{18}\\)", "is_correct": true },
+          { "content": "\\(\\frac{22}{18}\\)", "is_correct": false },
+          { "content": "\\(\\frac{19}{18}\\)", "is_correct": false },
+          { "content": "\\(\\frac{13}{9}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số nào lớn hơn: \\(-\\frac{2}{7}\\) hay \\(-\\frac{3}{10}\\)?"
+          }
+        ],
+        "explanation": "So sánh: \\(-\\frac{2}{7} \\approx -0.285,\\ -\\frac{3}{10} = -0.3\\). Vì \\(-0.285 > -0.3\\), nên \\(-\\frac{2}{7} > -\\frac{3}{10}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{2}{7} > -\\frac{3}{10}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{2}{7} < -\\frac{3}{10}\\)", "is_correct": false },
+          { "content": "Hai số bằng nhau", "is_correct": false },
+          { "content": "Không xác định", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Phân số nào bằng số thập phân \\(0.375\\)?"
+          }
+        ],
+        "explanation": "\\(0.375 = \\frac{375}{1000} = \\frac{3}{8}\\).",
+        "choices": [
+          { "content": "\\(\\frac{3}{8}\\)", "is_correct": true },
+          { "content": "\\(\\frac{37}{100}\\)", "is_correct": false },
+          { "content": "\\(\\frac{375}{100}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Sắp xếp theo thứ tự tăng dần: \\(-\\frac{5}{6}, 0, \\frac{2}{9}, -\\frac{1}{3}\\)."
+          }
+        ],
+        "explanation": "Thứ tự: \\(-\\tfrac{5}{6} < -\\tfrac{1}{3} < 0 < \\tfrac{2}{9}\\).",
+        "choices": [
+          { "content": "\\(-\\tfrac{5}{6}, -\\tfrac{1}{3}, 0, \\tfrac{2}{9}\\)", "is_correct": true },
+          { "content": "\\(-\\tfrac{1}{3}, -\\tfrac{5}{6}, 0, \\tfrac{2}{9}\\)", "is_correct": false },
+          { "content": "\\(0, -\\tfrac{5}{6}, -\\tfrac{1}{3}, \\tfrac{2}{9}\\)", "is_correct": false },
+          { "content": "\\(\\tfrac{2}{9}, 0, -\\tfrac{1}{3}, -\\tfrac{5}{6}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm \\(x\\) biết: \\(\\frac{x}{3} + \\frac{1}{2} = 1\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{x}{3} = 1 - \\frac{1}{2} = \\frac{1}{2}\\). Do đó \\(x = \\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(2\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\frac{7}{12} - ( -\\frac{5}{18})\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(\\frac{7}{12} = \\frac{21}{36},\\ -\\frac{5}{18} = -\\frac{10}{36}\\). Cộng: \\(\\frac{21}{36} + \\frac{10}{36} = \\frac{31}{36}\\).",
+        "choices": [
+          { "content": "\\(\\frac{31}{36}\\)", "is_correct": true },
+          { "content": "\\(\\frac{11}{36}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{31}{36}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{18}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(\\frac{2}{5}x = -\\frac{3}{4}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(x = -\\frac{3}{4} : \\frac{2}{5} = -\\frac{3}{4} \\times \\frac{5}{2} = -\\frac{15}{8}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{15}{8}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{8}{15}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{5}{6}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{3}{10}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm nghiệm của phương trình: \\(\\frac{x - 1}{3} = \\frac{2}{5}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(x - 1 = \\frac{6}{5}\\). Do đó \\(x = \\frac{11}{5}\\).",
+        "choices": [
+          { "content": "\\(\\frac{11}{5}\\)", "is_correct": true },
+          { "content": "\\(\\frac{7}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{9}{5}\\)", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 2,
+    "chapter_id": 9,
+    "quiz_type_id": 1,
+    "code": "TOAN7_15_03_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Cho hai số hữu tỉ a và b được biểu diễn trên trục số như sau"
+          },
+          {
+            "content_type": "IMAGE",
+            "content_value": "https://vietjack.com/toan-7-kn/images/trac-nghiem-bai-1-tap-hop-cac-so-huu-ti-2.PNG"
+          }
+        ],
+        "explanation": "Ta có: b nằm trước O nên b < 0; a nằm sau O nên a > 0. Do đó: b < 0 < a.",
+        "choices": [
+          { "content": "b > 0 > a", "is_correct": false },
+          { "content": "b > a", "is_correct": false },
+          { "content": "b < a < 0", "is_correct": false },
+          { "content": "b < 0 < a", "is_correct": true }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Ngăn đựng sách của một giá sách trong thư viện dài 120 cm (xem hình dưới). Người ta dự định xếp các cuốn sách dày khoảng 2,5 cm vào ngăn này. Hỏi ngăn sách đó có thể để được nhiều nhất bao nhiêu cuốn sách như vậy?"
+          },
+          {
+            "content_type": "IMAGE",
+            "content_value": "https://vietjack.com/toan-7-kn/images/trac-nghiem-bai-2-cong-tru-nhan-chia-so-huu-ti.PNG"
+          }
+        ],
+        "explanation": "Ta rút gọn: \\(-\\frac{7}{21} = -\\frac{1}{3}\\).",
+        "choices": [
+          { "content": "50 cuốn sách", "is_correct": false },
+          { "content": "48 cuốn sách", "is_correct": true },
+          { "content": "40 cuốn sách", "is_correct": false },
+          { "content": "25 cuốn sách", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Sắp xếp các số sau theo thứ tự tăng dần: \\(-\\frac{2}{3},\\ \\frac{1}{4},\\ -\\frac{1}{2},\\ 0\\)."
+          }
+        ],
+        "explanation": "So sánh: \\(-\\frac{2}{3} < -\\frac{1}{2} < 0 < \\frac{1}{4}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{2}{3}, -\\frac{1}{2}, 0, \\frac{1}{4}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{2}, -\\frac{2}{3}, 0, \\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(0, -\\frac{1}{2}, -\\frac{2}{3}, \\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{4}, 0, -\\frac{1}{2}, -\\frac{2}{3}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị tuyệt đối của số hữu tỉ \\(-\\frac{5}{6}\\) là gì?"
+          }
+        ],
+        "explanation": "Giá trị tuyệt đối của một số hữu tỉ là khoảng cách của nó đến 0. Do đó \\(|-\\tfrac{5}{6}| = \\tfrac{5}{6}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{5}{6}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{6}\\)", "is_correct": true },
+          { "content": "\\(\\frac{6}{5}\\)", "is_correct": false },
+          { "content": "0", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép cộng: \\(-\\frac{3}{8} + \\frac{5}{12}\\) bằng bao nhiêu?"
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{3}{8} = -\\frac{9}{24},\\ \\frac{5}{12} = \\frac{10}{24}\\). Cộng lại: \\(-\\frac{9}{24} + \\frac{10}{24} = \\frac{1}{24}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{24}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{19}{24}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{19}{24}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính giá trị biểu thức: \\(\\frac{2}{5} - ( -\\frac{7}{10})\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{2}{5} - ( -\\frac{7}{10}) = \\frac{2}{5} + \\frac{7}{10} = \\frac{4}{10} + \\frac{7}{10} = \\frac{11}{10}\\).",
+        "choices": [
+          { "content": "\\(\\frac{9}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{11}{10}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{11}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Phân số nào bằng với số thập phân \\(0{,}125\\)?"
+          }
+        ],
+        "explanation": "\\(0{,}125 = \\frac{125}{1000} = \\frac{1}{8}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{8}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{6}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép nhân: \\(-\\frac{2}{3} \\times \\frac{9}{4}\\) là gì?"
+          }
+        ],
+        "explanation": "\\(-\\frac{2}{3} \\times \\frac{9}{4} = -\\frac{18}{12} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{18}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{2}{3}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(x - \\frac{2}{5} = \\frac{3}{10}\\)."
+          }
+        ],
+        "explanation": "Chuyển vế: \\(x = \\frac{3}{10} + \\frac{2}{5} = \\frac{3}{10} + \\frac{4}{10} = \\frac{7}{10}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{10}\\)", "is_correct": true },
+          { "content": "\\(\\frac{9}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{3}{5}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "So sánh hai số hữu tỉ: \\(-\\frac{4}{7}\\) và \\(-\\frac{5}{9}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{4}{7} = -\\frac{36}{63},\\ -\\frac{5}{9} = -\\frac{35}{63}\\). Vì \\(-36 < -35\\) nên \\(-\\frac{4}{7} < -\\frac{5}{9}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{4}{7} < -\\frac{5}{9}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{4}{7} > -\\frac{5}{9}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{4}{7} = -\\frac{5}{9}\\)", "is_correct": false },
+          { "content": "Không so sánh được", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 2,
+    "chapter_id": 9,
+    "quiz_type_id": 2,
+    "code": "TOAN7_30_03_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Rút gọn phân số \\(\\frac{-84}{126}\\)."
+          }
+        ],
+        "explanation": "Cả tử và mẫu đều chia hết cho 42: \\(\\frac{-84}{126} = \\frac{-2}{3}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{2}{3}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{4}{9}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{7}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{2}{3}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "So sánh hai số: \\(-\\frac{5}{12}\\) và \\(-\\frac{7}{18}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{5}{12} = -\\frac{15}{36},\\ -\\frac{7}{18} = -\\frac{14}{36}\\). Vì \\(-15 < -14\\) nên \\(-\\tfrac{5}{12} < -\\tfrac{7}{18}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{5}{12} < -\\frac{7}{18}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{5}{12} > -\\frac{7}{18}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{5}{12} = -\\frac{7}{18}\\)", "is_correct": false },
+          { "content": "Không so sánh được", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(-\\frac{7}{15} + \\frac{11}{30}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{7}{15} = -\\frac{14}{30}\\). Cộng lại: \\(-\\frac{14}{30} + \\frac{11}{30} = -\\frac{3}{30} = -\\frac{1}{10}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{1}{10}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{10}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{25}{30}\\)", "is_correct": false },
+          { "content": "\\(\\frac{25}{30}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\frac{5}{6} - \\frac{7}{12}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(\\frac{5}{6} = \\frac{10}{12}\\). Trừ: \\(\\frac{10}{12} - \\frac{7}{12} = \\frac{3}{12} = \\frac{1}{4}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{4}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{3}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị của biểu thức: \\(-\\frac{2}{5} \\times \\frac{15}{8}\\)."
+          }
+        ],
+        "explanation": "\\(-\\frac{2}{5} \\times \\frac{15}{8} = -\\frac{30}{40} = -\\frac{3}{4}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{4}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{4}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{15}{40}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{5}{8}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả phép chia: \\(\\frac{7}{9} \\div -\\frac{14}{27}\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{7}{9} \\times -\\frac{27}{14} = -\\frac{189}{126} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{27}{14}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{14}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(x + \\frac{3}{8} = \\frac{5}{12}\\)."
+          }
+        ],
+        "explanation": "Chuyển vế: \\(x = \\frac{5}{12} - \\frac{3}{8} = \\frac{10}{24} - \\frac{9}{24} = \\frac{1}{24}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{24}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{13}{24}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(2x - \\frac{5}{6} = \\frac{1}{3}\\)."
+          }
+        ],
+        "explanation": "\\(2x = \\frac{1}{3} + \\frac{5}{6} = \\frac{2}{6} + \\frac{5}{6} = \\frac{7}{6}\\). Do đó \\(x = \\frac{7}{12}\\).",
+        "choices": [
+          { "content": "\\(\\frac{7}{12}\\)", "is_correct": true },
+          { "content": "\\(\\frac{7}{6}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "So sánh: \\(\\frac{-11}{20}\\) và \\(\\frac{-9}{18}\\)."
+          }
+        ],
+        "explanation": "\\(-\\frac{9}{18} = -\\frac{1}{2} = -0.5\\). Còn \\(-\\frac{11}{20} = -0.55\\). Vì \\(-0.55 < -0.5\\), nên \\(-\\frac{11}{20} < -\\frac{9}{18}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{11}{20} < -\\frac{9}{18}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{11}{20} > -\\frac{9}{18}\\)", "is_correct": false },
+          { "content": "Hai số bằng nhau", "is_correct": false },
+          { "content": "Không so sánh được", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm giá trị của \\(y\\) biết: \\(\\frac{y}{4} = -\\frac{3}{8}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(y = 4 \\times -\\frac{3}{8} = -\\frac{12}{8} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{3}{8}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(-2\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\left| -\\frac{7}{9} \\right| + \\left| \\frac{-5}{6} \\right|\\)."
+          }
+        ],
+        "explanation": "\\(|-\\tfrac{7}{9}| = \\tfrac{7}{9},\\ | -\\tfrac{5}{6}| = \\tfrac{5}{6}. Quy đồng: \\(\\tfrac{7}{9} + \\tfrac{5}{6} = \\tfrac{14}{18} + \\tfrac{15}{18} = \\tfrac{29}{18}\\).",
+        "choices": [
+          { "content": "\\(\\frac{29}{18}\\)", "is_correct": true },
+          { "content": "\\(\\frac{22}{18}\\)", "is_correct": false },
+          { "content": "\\(\\frac{19}{18}\\)", "is_correct": false },
+          { "content": "\\(\\frac{13}{9}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số nào lớn hơn: \\(-\\frac{2}{7}\\) hay \\(-\\frac{3}{10}\\)?"
+          }
+        ],
+        "explanation": "So sánh: \\(-\\frac{2}{7} \\approx -0.285,\\ -\\frac{3}{10} = -0.3\\). Vì \\(-0.285 > -0.3\\), nên \\(-\\frac{2}{7} > -\\frac{3}{10}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{2}{7} > -\\frac{3}{10}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{2}{7} < -\\frac{3}{10}\\)", "is_correct": false },
+          { "content": "Hai số bằng nhau", "is_correct": false },
+          { "content": "Không xác định", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Phân số nào bằng số thập phân \\(0.375\\)?"
+          }
+        ],
+        "explanation": "\\(0.375 = \\frac{375}{1000} = \\frac{3}{8}\\).",
+        "choices": [
+          { "content": "\\(\\frac{3}{8}\\)", "is_correct": true },
+          { "content": "\\(\\frac{37}{100}\\)", "is_correct": false },
+          { "content": "\\(\\frac{375}{100}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Sắp xếp theo thứ tự tăng dần: \\(-\\frac{5}{6}, 0, \\frac{2}{9}, -\\frac{1}{3}\\)."
+          }
+        ],
+        "explanation": "Thứ tự: \\(-\\tfrac{5}{6} < -\\tfrac{1}{3} < 0 < \\tfrac{2}{9}\\).",
+        "choices": [
+          { "content": "\\(-\\tfrac{5}{6}, -\\tfrac{1}{3}, 0, \\tfrac{2}{9}\\)", "is_correct": true },
+          { "content": "\\(-\\tfrac{1}{3}, -\\tfrac{5}{6}, 0, \\tfrac{2}{9}\\)", "is_correct": false },
+          { "content": "\\(0, -\\tfrac{5}{6}, -\\tfrac{1}{3}, \\tfrac{2}{9}\\)", "is_correct": false },
+          { "content": "\\(\\tfrac{2}{9}, 0, -\\tfrac{1}{3}, -\\tfrac{5}{6}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm \\(x\\) biết: \\(\\frac{x}{3} + \\frac{1}{2} = 1\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{x}{3} = 1 - \\frac{1}{2} = \\frac{1}{2}\\). Do đó \\(x = \\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(2\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\frac{7}{12} - ( -\\frac{5}{18})\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(\\frac{7}{12} = \\frac{21}{36},\\ -\\frac{5}{18} = -\\frac{10}{36}\\). Cộng: \\(\\frac{21}{36} + \\frac{10}{36} = \\frac{31}{36}\\).",
+        "choices": [
+          { "content": "\\(\\frac{31}{36}\\)", "is_correct": true },
+          { "content": "\\(\\frac{11}{36}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{31}{36}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{18}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(\\frac{2}{5}x = -\\frac{3}{4}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(x = -\\frac{3}{4} : \\frac{2}{5} = -\\frac{3}{4} \\times \\frac{5}{2} = -\\frac{15}{8}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{15}{8}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{8}{15}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{5}{6}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{3}{10}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm nghiệm của phương trình: \\(\\frac{x - 1}{3} = \\frac{2}{5}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(x - 1 = \\frac{6}{5}\\). Do đó \\(x = \\frac{11}{5}\\).",
+        "choices": [
+          { "content": "\\(\\frac{11}{5}\\)", "is_correct": true },
+          { "content": "\\(\\frac{7}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{9}{5}\\)", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 2,
+    "chapter_id": 10,
+    "quiz_type_id": 1,
+    "code": "TOAN7_15_04_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Cho hai số hữu tỉ a và b được biểu diễn trên trục số như sau"
+          },
+          {
+            "content_type": "IMAGE",
+            "content_value": "https://vietjack.com/toan-7-kn/images/trac-nghiem-bai-1-tap-hop-cac-so-huu-ti-2.PNG"
+          }
+        ],
+        "explanation": "Ta có: b nằm trước O nên b < 0; a nằm sau O nên a > 0. Do đó: b < 0 < a.",
+        "choices": [
+          { "content": "b > 0 > a", "is_correct": false },
+          { "content": "b > a", "is_correct": false },
+          { "content": "b < a < 0", "is_correct": false },
+          { "content": "b < 0 < a", "is_correct": true }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Ngăn đựng sách của một giá sách trong thư viện dài 120 cm (xem hình dưới). Người ta dự định xếp các cuốn sách dày khoảng 2,5 cm vào ngăn này. Hỏi ngăn sách đó có thể để được nhiều nhất bao nhiêu cuốn sách như vậy?"
+          },
+          {
+            "content_type": "IMAGE",
+            "content_value": "https://vietjack.com/toan-7-kn/images/trac-nghiem-bai-2-cong-tru-nhan-chia-so-huu-ti.PNG"
+          }
+        ],
+        "explanation": "Ta rút gọn: \\(-\\frac{7}{21} = -\\frac{1}{3}\\).",
+        "choices": [
+          { "content": "50 cuốn sách", "is_correct": false },
+          { "content": "48 cuốn sách", "is_correct": true },
+          { "content": "40 cuốn sách", "is_correct": false },
+          { "content": "25 cuốn sách", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Sắp xếp các số sau theo thứ tự tăng dần: \\(-\\frac{2}{3},\\ \\frac{1}{4},\\ -\\frac{1}{2},\\ 0\\)."
+          }
+        ],
+        "explanation": "So sánh: \\(-\\frac{2}{3} < -\\frac{1}{2} < 0 < \\frac{1}{4}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{2}{3}, -\\frac{1}{2}, 0, \\frac{1}{4}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{2}, -\\frac{2}{3}, 0, \\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(0, -\\frac{1}{2}, -\\frac{2}{3}, \\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{4}, 0, -\\frac{1}{2}, -\\frac{2}{3}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị tuyệt đối của số hữu tỉ \\(-\\frac{5}{6}\\) là gì?"
+          }
+        ],
+        "explanation": "Giá trị tuyệt đối của một số hữu tỉ là khoảng cách của nó đến 0. Do đó \\(|-\\tfrac{5}{6}| = \\tfrac{5}{6}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{5}{6}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{6}\\)", "is_correct": true },
+          { "content": "\\(\\frac{6}{5}\\)", "is_correct": false },
+          { "content": "0", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép cộng: \\(-\\frac{3}{8} + \\frac{5}{12}\\) bằng bao nhiêu?"
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{3}{8} = -\\frac{9}{24},\\ \\frac{5}{12} = \\frac{10}{24}\\). Cộng lại: \\(-\\frac{9}{24} + \\frac{10}{24} = \\frac{1}{24}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{24}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{19}{24}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{19}{24}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính giá trị biểu thức: \\(\\frac{2}{5} - ( -\\frac{7}{10})\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{2}{5} - ( -\\frac{7}{10}) = \\frac{2}{5} + \\frac{7}{10} = \\frac{4}{10} + \\frac{7}{10} = \\frac{11}{10}\\).",
+        "choices": [
+          { "content": "\\(\\frac{9}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{11}{10}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{11}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Phân số nào bằng với số thập phân \\(0{,}125\\)?"
+          }
+        ],
+        "explanation": "\\(0{,}125 = \\frac{125}{1000} = \\frac{1}{8}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{8}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{6}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép nhân: \\(-\\frac{2}{3} \\times \\frac{9}{4}\\) là gì?"
+          }
+        ],
+        "explanation": "\\(-\\frac{2}{3} \\times \\frac{9}{4} = -\\frac{18}{12} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{18}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{2}{3}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(x - \\frac{2}{5} = \\frac{3}{10}\\)."
+          }
+        ],
+        "explanation": "Chuyển vế: \\(x = \\frac{3}{10} + \\frac{2}{5} = \\frac{3}{10} + \\frac{4}{10} = \\frac{7}{10}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{10}\\)", "is_correct": true },
+          { "content": "\\(\\frac{9}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{3}{5}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "So sánh hai số hữu tỉ: \\(-\\frac{4}{7}\\) và \\(-\\frac{5}{9}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{4}{7} = -\\frac{36}{63},\\ -\\frac{5}{9} = -\\frac{35}{63}\\). Vì \\(-36 < -35\\) nên \\(-\\frac{4}{7} < -\\frac{5}{9}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{4}{7} < -\\frac{5}{9}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{4}{7} > -\\frac{5}{9}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{4}{7} = -\\frac{5}{9}\\)", "is_correct": false },
+          { "content": "Không so sánh được", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 2,
+    "chapter_id": 10,
+    "quiz_type_id": 2,
+    "code": "TOAN7_30_04_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Rút gọn phân số \\(\\frac{-84}{126}\\)."
+          }
+        ],
+        "explanation": "Cả tử và mẫu đều chia hết cho 42: \\(\\frac{-84}{126} = \\frac{-2}{3}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{2}{3}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{4}{9}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{7}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{2}{3}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "So sánh hai số: \\(-\\frac{5}{12}\\) và \\(-\\frac{7}{18}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{5}{12} = -\\frac{15}{36},\\ -\\frac{7}{18} = -\\frac{14}{36}\\). Vì \\(-15 < -14\\) nên \\(-\\tfrac{5}{12} < -\\tfrac{7}{18}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{5}{12} < -\\frac{7}{18}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{5}{12} > -\\frac{7}{18}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{5}{12} = -\\frac{7}{18}\\)", "is_correct": false },
+          { "content": "Không so sánh được", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(-\\frac{7}{15} + \\frac{11}{30}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{7}{15} = -\\frac{14}{30}\\). Cộng lại: \\(-\\frac{14}{30} + \\frac{11}{30} = -\\frac{3}{30} = -\\frac{1}{10}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{1}{10}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{10}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{25}{30}\\)", "is_correct": false },
+          { "content": "\\(\\frac{25}{30}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\frac{5}{6} - \\frac{7}{12}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(\\frac{5}{6} = \\frac{10}{12}\\). Trừ: \\(\\frac{10}{12} - \\frac{7}{12} = \\frac{3}{12} = \\frac{1}{4}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{4}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{3}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị của biểu thức: \\(-\\frac{2}{5} \\times \\frac{15}{8}\\)."
+          }
+        ],
+        "explanation": "\\(-\\frac{2}{5} \\times \\frac{15}{8} = -\\frac{30}{40} = -\\frac{3}{4}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{4}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{4}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{15}{40}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{5}{8}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả phép chia: \\(\\frac{7}{9} \\div -\\frac{14}{27}\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{7}{9} \\times -\\frac{27}{14} = -\\frac{189}{126} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{27}{14}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{14}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(x + \\frac{3}{8} = \\frac{5}{12}\\)."
+          }
+        ],
+        "explanation": "Chuyển vế: \\(x = \\frac{5}{12} - \\frac{3}{8} = \\frac{10}{24} - \\frac{9}{24} = \\frac{1}{24}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{24}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{13}{24}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(2x - \\frac{5}{6} = \\frac{1}{3}\\)."
+          }
+        ],
+        "explanation": "\\(2x = \\frac{1}{3} + \\frac{5}{6} = \\frac{2}{6} + \\frac{5}{6} = \\frac{7}{6}\\). Do đó \\(x = \\frac{7}{12}\\).",
+        "choices": [
+          { "content": "\\(\\frac{7}{12}\\)", "is_correct": true },
+          { "content": "\\(\\frac{7}{6}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "So sánh: \\(\\frac{-11}{20}\\) và \\(\\frac{-9}{18}\\)."
+          }
+        ],
+        "explanation": "\\(-\\frac{9}{18} = -\\frac{1}{2} = -0.5\\). Còn \\(-\\frac{11}{20} = -0.55\\). Vì \\(-0.55 < -0.5\\), nên \\(-\\frac{11}{20} < -\\frac{9}{18}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{11}{20} < -\\frac{9}{18}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{11}{20} > -\\frac{9}{18}\\)", "is_correct": false },
+          { "content": "Hai số bằng nhau", "is_correct": false },
+          { "content": "Không so sánh được", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm giá trị của \\(y\\) biết: \\(\\frac{y}{4} = -\\frac{3}{8}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(y = 4 \\times -\\frac{3}{8} = -\\frac{12}{8} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{3}{8}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(-2\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\left| -\\frac{7}{9} \\right| + \\left| \\frac{-5}{6} \\right|\\)."
+          }
+        ],
+        "explanation": "\\(|-\\tfrac{7}{9}| = \\tfrac{7}{9},\\ | -\\tfrac{5}{6}| = \\tfrac{5}{6}. Quy đồng: \\(\\tfrac{7}{9} + \\tfrac{5}{6} = \\tfrac{14}{18} + \\tfrac{15}{18} = \\tfrac{29}{18}\\).",
+        "choices": [
+          { "content": "\\(\\frac{29}{18}\\)", "is_correct": true },
+          { "content": "\\(\\frac{22}{18}\\)", "is_correct": false },
+          { "content": "\\(\\frac{19}{18}\\)", "is_correct": false },
+          { "content": "\\(\\frac{13}{9}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số nào lớn hơn: \\(-\\frac{2}{7}\\) hay \\(-\\frac{3}{10}\\)?"
+          }
+        ],
+        "explanation": "So sánh: \\(-\\frac{2}{7} \\approx -0.285,\\ -\\frac{3}{10} = -0.3\\). Vì \\(-0.285 > -0.3\\), nên \\(-\\frac{2}{7} > -\\frac{3}{10}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{2}{7} > -\\frac{3}{10}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{2}{7} < -\\frac{3}{10}\\)", "is_correct": false },
+          { "content": "Hai số bằng nhau", "is_correct": false },
+          { "content": "Không xác định", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Phân số nào bằng số thập phân \\(0.375\\)?"
+          }
+        ],
+        "explanation": "\\(0.375 = \\frac{375}{1000} = \\frac{3}{8}\\).",
+        "choices": [
+          { "content": "\\(\\frac{3}{8}\\)", "is_correct": true },
+          { "content": "\\(\\frac{37}{100}\\)", "is_correct": false },
+          { "content": "\\(\\frac{375}{100}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Sắp xếp theo thứ tự tăng dần: \\(-\\frac{5}{6}, 0, \\frac{2}{9}, -\\frac{1}{3}\\)."
+          }
+        ],
+        "explanation": "Thứ tự: \\(-\\tfrac{5}{6} < -\\tfrac{1}{3} < 0 < \\tfrac{2}{9}\\).",
+        "choices": [
+          { "content": "\\(-\\tfrac{5}{6}, -\\tfrac{1}{3}, 0, \\tfrac{2}{9}\\)", "is_correct": true },
+          { "content": "\\(-\\tfrac{1}{3}, -\\tfrac{5}{6}, 0, \\tfrac{2}{9}\\)", "is_correct": false },
+          { "content": "\\(0, -\\tfrac{5}{6}, -\\tfrac{1}{3}, \\tfrac{2}{9}\\)", "is_correct": false },
+          { "content": "\\(\\tfrac{2}{9}, 0, -\\tfrac{1}{3}, -\\tfrac{5}{6}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm \\(x\\) biết: \\(\\frac{x}{3} + \\frac{1}{2} = 1\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{x}{3} = 1 - \\frac{1}{2} = \\frac{1}{2}\\). Do đó \\(x = \\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(2\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\frac{7}{12} - ( -\\frac{5}{18})\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(\\frac{7}{12} = \\frac{21}{36},\\ -\\frac{5}{18} = -\\frac{10}{36}\\). Cộng: \\(\\frac{21}{36} + \\frac{10}{36} = \\frac{31}{36}\\).",
+        "choices": [
+          { "content": "\\(\\frac{31}{36}\\)", "is_correct": true },
+          { "content": "\\(\\frac{11}{36}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{31}{36}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{18}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(\\frac{2}{5}x = -\\frac{3}{4}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(x = -\\frac{3}{4} : \\frac{2}{5} = -\\frac{3}{4} \\times \\frac{5}{2} = -\\frac{15}{8}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{15}{8}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{8}{15}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{5}{6}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{3}{10}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm nghiệm của phương trình: \\(\\frac{x - 1}{3} = \\frac{2}{5}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(x - 1 = \\frac{6}{5}\\). Do đó \\(x = \\frac{11}{5}\\).",
+        "choices": [
+          { "content": "\\(\\frac{11}{5}\\)", "is_correct": true },
+          { "content": "\\(\\frac{7}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{9}{5}\\)", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 2,
+    "chapter_id": 11,
+    "quiz_type_id": 1,
+    "code": "TOAN7_15_05_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Cho hai số hữu tỉ a và b được biểu diễn trên trục số như sau"
+          },
+          {
+            "content_type": "IMAGE",
+            "content_value": "https://vietjack.com/toan-7-kn/images/trac-nghiem-bai-1-tap-hop-cac-so-huu-ti-2.PNG"
+          }
+        ],
+        "explanation": "Ta có: b nằm trước O nên b < 0; a nằm sau O nên a > 0. Do đó: b < 0 < a.",
+        "choices": [
+          { "content": "b > 0 > a", "is_correct": false },
+          { "content": "b > a", "is_correct": false },
+          { "content": "b < a < 0", "is_correct": false },
+          { "content": "b < 0 < a", "is_correct": true }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Ngăn đựng sách của một giá sách trong thư viện dài 120 cm (xem hình dưới). Người ta dự định xếp các cuốn sách dày khoảng 2,5 cm vào ngăn này. Hỏi ngăn sách đó có thể để được nhiều nhất bao nhiêu cuốn sách như vậy?"
+          },
+          {
+            "content_type": "IMAGE",
+            "content_value": "https://vietjack.com/toan-7-kn/images/trac-nghiem-bai-2-cong-tru-nhan-chia-so-huu-ti.PNG"
+          }
+        ],
+        "explanation": "Ta rút gọn: \\(-\\frac{7}{21} = -\\frac{1}{3}\\).",
+        "choices": [
+          { "content": "50 cuốn sách", "is_correct": false },
+          { "content": "48 cuốn sách", "is_correct": true },
+          { "content": "40 cuốn sách", "is_correct": false },
+          { "content": "25 cuốn sách", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Sắp xếp các số sau theo thứ tự tăng dần: \\(-\\frac{2}{3},\\ \\frac{1}{4},\\ -\\frac{1}{2},\\ 0\\)."
+          }
+        ],
+        "explanation": "So sánh: \\(-\\frac{2}{3} < -\\frac{1}{2} < 0 < \\frac{1}{4}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{2}{3}, -\\frac{1}{2}, 0, \\frac{1}{4}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{2}, -\\frac{2}{3}, 0, \\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(0, -\\frac{1}{2}, -\\frac{2}{3}, \\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{4}, 0, -\\frac{1}{2}, -\\frac{2}{3}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị tuyệt đối của số hữu tỉ \\(-\\frac{5}{6}\\) là gì?"
+          }
+        ],
+        "explanation": "Giá trị tuyệt đối của một số hữu tỉ là khoảng cách của nó đến 0. Do đó \\(|-\\tfrac{5}{6}| = \\tfrac{5}{6}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{5}{6}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{6}\\)", "is_correct": true },
+          { "content": "\\(\\frac{6}{5}\\)", "is_correct": false },
+          { "content": "0", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép cộng: \\(-\\frac{3}{8} + \\frac{5}{12}\\) bằng bao nhiêu?"
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{3}{8} = -\\frac{9}{24},\\ \\frac{5}{12} = \\frac{10}{24}\\). Cộng lại: \\(-\\frac{9}{24} + \\frac{10}{24} = \\frac{1}{24}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{24}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{19}{24}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{19}{24}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính giá trị biểu thức: \\(\\frac{2}{5} - ( -\\frac{7}{10})\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{2}{5} - ( -\\frac{7}{10}) = \\frac{2}{5} + \\frac{7}{10} = \\frac{4}{10} + \\frac{7}{10} = \\frac{11}{10}\\).",
+        "choices": [
+          { "content": "\\(\\frac{9}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{11}{10}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{11}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Phân số nào bằng với số thập phân \\(0{,}125\\)?"
+          }
+        ],
+        "explanation": "\\(0{,}125 = \\frac{125}{1000} = \\frac{1}{8}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{8}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{6}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép nhân: \\(-\\frac{2}{3} \\times \\frac{9}{4}\\) là gì?"
+          }
+        ],
+        "explanation": "\\(-\\frac{2}{3} \\times \\frac{9}{4} = -\\frac{18}{12} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{18}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{2}{3}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(x - \\frac{2}{5} = \\frac{3}{10}\\)."
+          }
+        ],
+        "explanation": "Chuyển vế: \\(x = \\frac{3}{10} + \\frac{2}{5} = \\frac{3}{10} + \\frac{4}{10} = \\frac{7}{10}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{10}\\)", "is_correct": true },
+          { "content": "\\(\\frac{9}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{3}{5}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "So sánh hai số hữu tỉ: \\(-\\frac{4}{7}\\) và \\(-\\frac{5}{9}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{4}{7} = -\\frac{36}{63},\\ -\\frac{5}{9} = -\\frac{35}{63}\\). Vì \\(-36 < -35\\) nên \\(-\\frac{4}{7} < -\\frac{5}{9}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{4}{7} < -\\frac{5}{9}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{4}{7} > -\\frac{5}{9}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{4}{7} = -\\frac{5}{9}\\)", "is_correct": false },
+          { "content": "Không so sánh được", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 2,
+    "chapter_id": 11,
+    "quiz_type_id": 2,
+    "code": "TOAN7_30_05_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Rút gọn phân số \\(\\frac{-84}{126}\\)."
+          }
+        ],
+        "explanation": "Cả tử và mẫu đều chia hết cho 42: \\(\\frac{-84}{126} = \\frac{-2}{3}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{2}{3}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{4}{9}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{7}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{2}{3}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "So sánh hai số: \\(-\\frac{5}{12}\\) và \\(-\\frac{7}{18}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{5}{12} = -\\frac{15}{36},\\ -\\frac{7}{18} = -\\frac{14}{36}\\). Vì \\(-15 < -14\\) nên \\(-\\tfrac{5}{12} < -\\tfrac{7}{18}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{5}{12} < -\\frac{7}{18}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{5}{12} > -\\frac{7}{18}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{5}{12} = -\\frac{7}{18}\\)", "is_correct": false },
+          { "content": "Không so sánh được", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(-\\frac{7}{15} + \\frac{11}{30}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{7}{15} = -\\frac{14}{30}\\). Cộng lại: \\(-\\frac{14}{30} + \\frac{11}{30} = -\\frac{3}{30} = -\\frac{1}{10}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{1}{10}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{10}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{25}{30}\\)", "is_correct": false },
+          { "content": "\\(\\frac{25}{30}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\frac{5}{6} - \\frac{7}{12}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(\\frac{5}{6} = \\frac{10}{12}\\). Trừ: \\(\\frac{10}{12} - \\frac{7}{12} = \\frac{3}{12} = \\frac{1}{4}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{4}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{3}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị của biểu thức: \\(-\\frac{2}{5} \\times \\frac{15}{8}\\)."
+          }
+        ],
+        "explanation": "\\(-\\frac{2}{5} \\times \\frac{15}{8} = -\\frac{30}{40} = -\\frac{3}{4}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{4}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{4}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{15}{40}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{5}{8}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả phép chia: \\(\\frac{7}{9} \\div -\\frac{14}{27}\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{7}{9} \\times -\\frac{27}{14} = -\\frac{189}{126} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{27}{14}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{14}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(x + \\frac{3}{8} = \\frac{5}{12}\\)."
+          }
+        ],
+        "explanation": "Chuyển vế: \\(x = \\frac{5}{12} - \\frac{3}{8} = \\frac{10}{24} - \\frac{9}{24} = \\frac{1}{24}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{24}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{13}{24}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(2x - \\frac{5}{6} = \\frac{1}{3}\\)."
+          }
+        ],
+        "explanation": "\\(2x = \\frac{1}{3} + \\frac{5}{6} = \\frac{2}{6} + \\frac{5}{6} = \\frac{7}{6}\\). Do đó \\(x = \\frac{7}{12}\\).",
+        "choices": [
+          { "content": "\\(\\frac{7}{12}\\)", "is_correct": true },
+          { "content": "\\(\\frac{7}{6}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "So sánh: \\(\\frac{-11}{20}\\) và \\(\\frac{-9}{18}\\)."
+          }
+        ],
+        "explanation": "\\(-\\frac{9}{18} = -\\frac{1}{2} = -0.5\\). Còn \\(-\\frac{11}{20} = -0.55\\). Vì \\(-0.55 < -0.5\\), nên \\(-\\frac{11}{20} < -\\frac{9}{18}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{11}{20} < -\\frac{9}{18}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{11}{20} > -\\frac{9}{18}\\)", "is_correct": false },
+          { "content": "Hai số bằng nhau", "is_correct": false },
+          { "content": "Không so sánh được", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm giá trị của \\(y\\) biết: \\(\\frac{y}{4} = -\\frac{3}{8}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(y = 4 \\times -\\frac{3}{8} = -\\frac{12}{8} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{3}{8}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(-2\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\left| -\\frac{7}{9} \\right| + \\left| \\frac{-5}{6} \\right|\\)."
+          }
+        ],
+        "explanation": "\\(|-\\tfrac{7}{9}| = \\tfrac{7}{9},\\ | -\\tfrac{5}{6}| = \\tfrac{5}{6}. Quy đồng: \\(\\tfrac{7}{9} + \\tfrac{5}{6} = \\tfrac{14}{18} + \\tfrac{15}{18} = \\tfrac{29}{18}\\).",
+        "choices": [
+          { "content": "\\(\\frac{29}{18}\\)", "is_correct": true },
+          { "content": "\\(\\frac{22}{18}\\)", "is_correct": false },
+          { "content": "\\(\\frac{19}{18}\\)", "is_correct": false },
+          { "content": "\\(\\frac{13}{9}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số nào lớn hơn: \\(-\\frac{2}{7}\\) hay \\(-\\frac{3}{10}\\)?"
+          }
+        ],
+        "explanation": "So sánh: \\(-\\frac{2}{7} \\approx -0.285,\\ -\\frac{3}{10} = -0.3\\). Vì \\(-0.285 > -0.3\\), nên \\(-\\frac{2}{7} > -\\frac{3}{10}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{2}{7} > -\\frac{3}{10}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{2}{7} < -\\frac{3}{10}\\)", "is_correct": false },
+          { "content": "Hai số bằng nhau", "is_correct": false },
+          { "content": "Không xác định", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Phân số nào bằng số thập phân \\(0.375\\)?"
+          }
+        ],
+        "explanation": "\\(0.375 = \\frac{375}{1000} = \\frac{3}{8}\\).",
+        "choices": [
+          { "content": "\\(\\frac{3}{8}\\)", "is_correct": true },
+          { "content": "\\(\\frac{37}{100}\\)", "is_correct": false },
+          { "content": "\\(\\frac{375}{100}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Sắp xếp theo thứ tự tăng dần: \\(-\\frac{5}{6}, 0, \\frac{2}{9}, -\\frac{1}{3}\\)."
+          }
+        ],
+        "explanation": "Thứ tự: \\(-\\tfrac{5}{6} < -\\tfrac{1}{3} < 0 < \\tfrac{2}{9}\\).",
+        "choices": [
+          { "content": "\\(-\\tfrac{5}{6}, -\\tfrac{1}{3}, 0, \\tfrac{2}{9}\\)", "is_correct": true },
+          { "content": "\\(-\\tfrac{1}{3}, -\\tfrac{5}{6}, 0, \\tfrac{2}{9}\\)", "is_correct": false },
+          { "content": "\\(0, -\\tfrac{5}{6}, -\\tfrac{1}{3}, \\tfrac{2}{9}\\)", "is_correct": false },
+          { "content": "\\(\\tfrac{2}{9}, 0, -\\tfrac{1}{3}, -\\tfrac{5}{6}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm \\(x\\) biết: \\(\\frac{x}{3} + \\frac{1}{2} = 1\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{x}{3} = 1 - \\frac{1}{2} = \\frac{1}{2}\\). Do đó \\(x = \\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(2\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\frac{7}{12} - ( -\\frac{5}{18})\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(\\frac{7}{12} = \\frac{21}{36},\\ -\\frac{5}{18} = -\\frac{10}{36}\\). Cộng: \\(\\frac{21}{36} + \\frac{10}{36} = \\frac{31}{36}\\).",
+        "choices": [
+          { "content": "\\(\\frac{31}{36}\\)", "is_correct": true },
+          { "content": "\\(\\frac{11}{36}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{31}{36}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{18}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(\\frac{2}{5}x = -\\frac{3}{4}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(x = -\\frac{3}{4} : \\frac{2}{5} = -\\frac{3}{4} \\times \\frac{5}{2} = -\\frac{15}{8}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{15}{8}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{8}{15}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{5}{6}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{3}{10}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm nghiệm của phương trình: \\(\\frac{x - 1}{3} = \\frac{2}{5}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(x - 1 = \\frac{6}{5}\\). Do đó \\(x = \\frac{11}{5}\\).",
+        "choices": [
+          { "content": "\\(\\frac{11}{5}\\)", "is_correct": true },
+          { "content": "\\(\\frac{7}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{9}{5}\\)", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 2,
+    "chapter_id": 12,
+    "quiz_type_id": 1,
+    "code": "TOAN7_15_06_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Cho hai số hữu tỉ a và b được biểu diễn trên trục số như sau"
+          },
+          {
+            "content_type": "IMAGE",
+            "content_value": "https://vietjack.com/toan-7-kn/images/trac-nghiem-bai-1-tap-hop-cac-so-huu-ti-2.PNG"
+          }
+        ],
+        "explanation": "Ta có: b nằm trước O nên b < 0; a nằm sau O nên a > 0. Do đó: b < 0 < a.",
+        "choices": [
+          { "content": "b > 0 > a", "is_correct": false },
+          { "content": "b > a", "is_correct": false },
+          { "content": "b < a < 0", "is_correct": false },
+          { "content": "b < 0 < a", "is_correct": true }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Ngăn đựng sách của một giá sách trong thư viện dài 120 cm (xem hình dưới). Người ta dự định xếp các cuốn sách dày khoảng 2,5 cm vào ngăn này. Hỏi ngăn sách đó có thể để được nhiều nhất bao nhiêu cuốn sách như vậy?"
+          },
+          {
+            "content_type": "IMAGE",
+            "content_value": "https://vietjack.com/toan-7-kn/images/trac-nghiem-bai-2-cong-tru-nhan-chia-so-huu-ti.PNG"
+          }
+        ],
+        "explanation": "Ta rút gọn: \\(-\\frac{7}{21} = -\\frac{1}{3}\\).",
+        "choices": [
+          { "content": "50 cuốn sách", "is_correct": false },
+          { "content": "48 cuốn sách", "is_correct": true },
+          { "content": "40 cuốn sách", "is_correct": false },
+          { "content": "25 cuốn sách", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Sắp xếp các số sau theo thứ tự tăng dần: \\(-\\frac{2}{3},\\ \\frac{1}{4},\\ -\\frac{1}{2},\\ 0\\)."
+          }
+        ],
+        "explanation": "So sánh: \\(-\\frac{2}{3} < -\\frac{1}{2} < 0 < \\frac{1}{4}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{2}{3}, -\\frac{1}{2}, 0, \\frac{1}{4}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{2}, -\\frac{2}{3}, 0, \\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(0, -\\frac{1}{2}, -\\frac{2}{3}, \\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{4}, 0, -\\frac{1}{2}, -\\frac{2}{3}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị tuyệt đối của số hữu tỉ \\(-\\frac{5}{6}\\) là gì?"
+          }
+        ],
+        "explanation": "Giá trị tuyệt đối của một số hữu tỉ là khoảng cách của nó đến 0. Do đó \\(|-\\tfrac{5}{6}| = \\tfrac{5}{6}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{5}{6}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{6}\\)", "is_correct": true },
+          { "content": "\\(\\frac{6}{5}\\)", "is_correct": false },
+          { "content": "0", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép cộng: \\(-\\frac{3}{8} + \\frac{5}{12}\\) bằng bao nhiêu?"
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{3}{8} = -\\frac{9}{24},\\ \\frac{5}{12} = \\frac{10}{24}\\). Cộng lại: \\(-\\frac{9}{24} + \\frac{10}{24} = \\frac{1}{24}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{24}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{19}{24}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{19}{24}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính giá trị biểu thức: \\(\\frac{2}{5} - ( -\\frac{7}{10})\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{2}{5} - ( -\\frac{7}{10}) = \\frac{2}{5} + \\frac{7}{10} = \\frac{4}{10} + \\frac{7}{10} = \\frac{11}{10}\\).",
+        "choices": [
+          { "content": "\\(\\frac{9}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{11}{10}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{11}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Phân số nào bằng với số thập phân \\(0{,}125\\)?"
+          }
+        ],
+        "explanation": "\\(0{,}125 = \\frac{125}{1000} = \\frac{1}{8}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{8}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{6}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả của phép nhân: \\(-\\frac{2}{3} \\times \\frac{9}{4}\\) là gì?"
+          }
+        ],
+        "explanation": "\\(-\\frac{2}{3} \\times \\frac{9}{4} = -\\frac{18}{12} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{18}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{2}{3}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(x - \\frac{2}{5} = \\frac{3}{10}\\)."
+          }
+        ],
+        "explanation": "Chuyển vế: \\(x = \\frac{3}{10} + \\frac{2}{5} = \\frac{3}{10} + \\frac{4}{10} = \\frac{7}{10}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{10}\\)", "is_correct": true },
+          { "content": "\\(\\frac{9}{10}\\)", "is_correct": false },
+          { "content": "\\(\\frac{3}{5}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "So sánh hai số hữu tỉ: \\(-\\frac{4}{7}\\) và \\(-\\frac{5}{9}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{4}{7} = -\\frac{36}{63},\\ -\\frac{5}{9} = -\\frac{35}{63}\\). Vì \\(-36 < -35\\) nên \\(-\\frac{4}{7} < -\\frac{5}{9}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{4}{7} < -\\frac{5}{9}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{4}{7} > -\\frac{5}{9}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{4}{7} = -\\frac{5}{9}\\)", "is_correct": false },
+          { "content": "Không so sánh được", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 2,
+    "chapter_id": 12,
+    "quiz_type_id": 2,
+    "code": "TOAN7_30_06_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Rút gọn phân số \\(\\frac{-84}{126}\\)."
+          }
+        ],
+        "explanation": "Cả tử và mẫu đều chia hết cho 42: \\(\\frac{-84}{126} = \\frac{-2}{3}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{2}{3}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{4}{9}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{7}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{2}{3}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "So sánh hai số: \\(-\\frac{5}{12}\\) và \\(-\\frac{7}{18}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{5}{12} = -\\frac{15}{36},\\ -\\frac{7}{18} = -\\frac{14}{36}\\). Vì \\(-15 < -14\\) nên \\(-\\tfrac{5}{12} < -\\tfrac{7}{18}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{5}{12} < -\\frac{7}{18}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{5}{12} > -\\frac{7}{18}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{5}{12} = -\\frac{7}{18}\\)", "is_correct": false },
+          { "content": "Không so sánh được", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(-\\frac{7}{15} + \\frac{11}{30}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(-\\frac{7}{15} = -\\frac{14}{30}\\). Cộng lại: \\(-\\frac{14}{30} + \\frac{11}{30} = -\\frac{3}{30} = -\\frac{1}{10}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{1}{10}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{10}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{25}{30}\\)", "is_correct": false },
+          { "content": "\\(\\frac{25}{30}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\frac{5}{6} - \\frac{7}{12}\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(\\frac{5}{6} = \\frac{10}{12}\\). Trừ: \\(\\frac{10}{12} - \\frac{7}{12} = \\frac{3}{12} = \\frac{1}{4}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{4}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{4}\\)", "is_correct": false },
+          { "content": "\\(\\frac{3}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giá trị của biểu thức: \\(-\\frac{2}{5} \\times \\frac{15}{8}\\)."
+          }
+        ],
+        "explanation": "\\(-\\frac{2}{5} \\times \\frac{15}{8} = -\\frac{30}{40} = -\\frac{3}{4}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{4}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{4}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{15}{40}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{5}{8}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Kết quả phép chia: \\(\\frac{7}{9} \\div -\\frac{14}{27}\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{7}{9} \\times -\\frac{27}{14} = -\\frac{189}{126} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{27}{14}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{14}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(x + \\frac{3}{8} = \\frac{5}{12}\\)."
+          }
+        ],
+        "explanation": "Chuyển vế: \\(x = \\frac{5}{12} - \\frac{3}{8} = \\frac{10}{24} - \\frac{9}{24} = \\frac{1}{24}\\).",
+        "choices": [
+          { "content": "\\(\\frac{1}{24}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{1}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{24}\\)", "is_correct": false },
+          { "content": "\\(\\frac{13}{24}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(2x - \\frac{5}{6} = \\frac{1}{3}\\)."
+          }
+        ],
+        "explanation": "\\(2x = \\frac{1}{3} + \\frac{5}{6} = \\frac{2}{6} + \\frac{5}{6} = \\frac{7}{6}\\). Do đó \\(x = \\frac{7}{12}\\).",
+        "choices": [
+          { "content": "\\(\\frac{7}{12}\\)", "is_correct": true },
+          { "content": "\\(\\frac{7}{6}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "So sánh: \\(\\frac{-11}{20}\\) và \\(\\frac{-9}{18}\\)."
+          }
+        ],
+        "explanation": "\\(-\\frac{9}{18} = -\\frac{1}{2} = -0.5\\). Còn \\(-\\frac{11}{20} = -0.55\\). Vì \\(-0.55 < -0.5\\), nên \\(-\\frac{11}{20} < -\\frac{9}{18}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{11}{20} < -\\frac{9}{18}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{11}{20} > -\\frac{9}{18}\\)", "is_correct": false },
+          { "content": "Hai số bằng nhau", "is_correct": false },
+          { "content": "Không so sánh được", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm giá trị của \\(y\\) biết: \\(\\frac{y}{4} = -\\frac{3}{8}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(y = 4 \\times -\\frac{3}{8} = -\\frac{12}{8} = -\\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{3}{8}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(-2\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\left| -\\frac{7}{9} \\right| + \\left| \\frac{-5}{6} \\right|\\)."
+          }
+        ],
+        "explanation": "\\(|-\\tfrac{7}{9}| = \\tfrac{7}{9},\\ | -\\tfrac{5}{6}| = \\tfrac{5}{6}. Quy đồng: \\(\\tfrac{7}{9} + \\tfrac{5}{6} = \\tfrac{14}{18} + \\tfrac{15}{18} = \\tfrac{29}{18}\\).",
+        "choices": [
+          { "content": "\\(\\frac{29}{18}\\)", "is_correct": true },
+          { "content": "\\(\\frac{22}{18}\\)", "is_correct": false },
+          { "content": "\\(\\frac{19}{18}\\)", "is_correct": false },
+          { "content": "\\(\\frac{13}{9}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số nào lớn hơn: \\(-\\frac{2}{7}\\) hay \\(-\\frac{3}{10}\\)?"
+          }
+        ],
+        "explanation": "So sánh: \\(-\\frac{2}{7} \\approx -0.285,\\ -\\frac{3}{10} = -0.3\\). Vì \\(-0.285 > -0.3\\), nên \\(-\\frac{2}{7} > -\\frac{3}{10}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{2}{7} > -\\frac{3}{10}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{2}{7} < -\\frac{3}{10}\\)", "is_correct": false },
+          { "content": "Hai số bằng nhau", "is_correct": false },
+          { "content": "Không xác định", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Phân số nào bằng số thập phân \\(0.375\\)?"
+          }
+        ],
+        "explanation": "\\(0.375 = \\frac{375}{1000} = \\frac{3}{8}\\).",
+        "choices": [
+          { "content": "\\(\\frac{3}{8}\\)", "is_correct": true },
+          { "content": "\\(\\frac{37}{100}\\)", "is_correct": false },
+          { "content": "\\(\\frac{375}{100}\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{12}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Sắp xếp theo thứ tự tăng dần: \\(-\\frac{5}{6}, 0, \\frac{2}{9}, -\\frac{1}{3}\\)."
+          }
+        ],
+        "explanation": "Thứ tự: \\(-\\tfrac{5}{6} < -\\tfrac{1}{3} < 0 < \\tfrac{2}{9}\\).",
+        "choices": [
+          { "content": "\\(-\\tfrac{5}{6}, -\\tfrac{1}{3}, 0, \\tfrac{2}{9}\\)", "is_correct": true },
+          { "content": "\\(-\\tfrac{1}{3}, -\\tfrac{5}{6}, 0, \\tfrac{2}{9}\\)", "is_correct": false },
+          { "content": "\\(0, -\\tfrac{5}{6}, -\\tfrac{1}{3}, \\tfrac{2}{9}\\)", "is_correct": false },
+          { "content": "\\(\\tfrac{2}{9}, 0, -\\tfrac{1}{3}, -\\tfrac{5}{6}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm \\(x\\) biết: \\(\\frac{x}{3} + \\frac{1}{2} = 1\\)."
+          }
+        ],
+        "explanation": "\\(\\frac{x}{3} = 1 - \\frac{1}{2} = \\frac{1}{2}\\). Do đó \\(x = \\frac{3}{2}\\).",
+        "choices": [
+          { "content": "\\(\\frac{3}{2}\\)", "is_correct": true },
+          { "content": "\\(\\frac{1}{2}\\)", "is_correct": false },
+          { "content": "\\(2\\)", "is_correct": false },
+          { "content": "\\(\\frac{5}{2}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tính: \\(\\frac{7}{12} - ( -\\frac{5}{18})\\)."
+          }
+        ],
+        "explanation": "Quy đồng: \\(\\frac{7}{12} = \\frac{21}{36},\\ -\\frac{5}{18} = -\\frac{10}{36}\\). Cộng: \\(\\frac{21}{36} + \\frac{10}{36} = \\frac{31}{36}\\).",
+        "choices": [
+          { "content": "\\(\\frac{31}{36}\\)", "is_correct": true },
+          { "content": "\\(\\frac{11}{36}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{31}{36}\\)", "is_correct": false },
+          { "content": "\\(\\frac{7}{18}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Giải phương trình: \\(\\frac{2}{5}x = -\\frac{3}{4}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(x = -\\frac{3}{4} : \\frac{2}{5} = -\\frac{3}{4} \\times \\frac{5}{2} = -\\frac{15}{8}\\).",
+        "choices": [
+          { "content": "\\(-\\frac{15}{8}\\)", "is_correct": true },
+          { "content": "\\(-\\frac{8}{15}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{5}{6}\\)", "is_correct": false },
+          { "content": "\\(-\\frac{3}{10}\\)", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tìm nghiệm của phương trình: \\(\\frac{x - 1}{3} = \\frac{2}{5}\\)."
+          }
+        ],
+        "explanation": "Nhân chéo: \\(x - 1 = \\frac{6}{5}\\). Do đó \\(x = \\frac{11}{5}\\).",
+        "choices": [
+          { "content": "\\(\\frac{11}{5}\\)", "is_correct": true },
+          { "content": "\\(\\frac{7}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{1}{5}\\)", "is_correct": false },
+          { "content": "\\(\\frac{9}{5}\\)", "is_correct": false }
+        ]
+      }
+    ]
+  }
+]

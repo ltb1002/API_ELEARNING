@@ -11,14 +11,19 @@ public class Grade {
     @Column(name = "name", nullable = false, length = 10)
     private String name;
 
+    @Column(name = "code", nullable = false, length = 10, unique = true)
+    private String code;
+
     // Constructors
     public Grade() {}
 
-    public Grade(Integer id, String name) {
+    public Grade(Integer id, String name, String code) {
         this.id = id;
         this.name = name;
+        this.code = code;
     }
 
+    // Getters & Setters
     public Integer getId() {
         return id;
     }
@@ -33,5 +38,13 @@ public class Grade {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 }

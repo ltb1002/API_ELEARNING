@@ -5,16 +5,16 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import vn.anhtuan.demoAPI.Entity.Grade;
 import vn.anhtuan.demoAPI.Entity.Quiz;
 import vn.anhtuan.demoAPI.Entity.QuizResult;
+import vn.anhtuan.demoAPI.Entity.Subject;
 import vn.anhtuan.demoAPI.POJO.*;
 import vn.anhtuan.demoAPI.Service.QuizResultService;
 import vn.anhtuan.demoAPI.Service.QuizService;
 
 import java.math.BigDecimal;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @RestController
@@ -221,4 +221,127 @@ public class QuizController {
             return ResponseEntity.status(500).body(null);
         }
     }
+    @GetMapping("/grades")
+    public ResponseEntity<List<GradePOJO>> getAllGrades() {
+        try {
+            // Lấy tất cả subjects và extract grades duy nhất
+            List<Subject> subjects = quizService.getAllSubjects();
+            Set<Integer> gradeIds = subjects.stream()
+                    .map(Subject::getGrade)
+                    .collect(Collectors.toSet());
+
+            List<GradePOJO> gradePOJOs = gradeIds.stream()
+                    .map(gradeId -> {
+                        Grade grade = quizService.getGradeById(gradeId);
+                        return grade != null ? convertToGradePOJO(grade) :
+                                new GradePOJO(gradeId, "Lớp " + gradeId, "GRADE_" + gradeId);
+                    })
+                    .sorted(Comparator.comparing(GradePOJO::getId))
+                    .collect(Collectors.toList());
+
+            return ResponseEntity.ok(gradePOJOs);
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body(null);
+        }
+    }
+
+    /**
+     * Lấy danh sách môn học theo khối lớp
+     */
+    @GetMapping("/grades/{gradeId}/subjects")
+    public ResponseEntity<List<SubjectPOJO>> getSubjectsByGrade(@PathVariable Integer gradeId) {
+        try {
+            List<Subject> subjects = quizService.getAllSubjects().stream()
+                    .filter(subject -> subject.getGrade() == gradeId)
+                    .collect(Collectors.toList());
+
+            List<SubjectPOJO> subjectPOJOs = subjects.stream()
+                    .map(this::convertToSubjectPOJO)
+                    .collect(Collectors.toList());
+            return ResponseEntity.ok(subjectPOJOs);
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body(null);
+        }
+    }
+
+    /**
+     * Lấy danh sách quiz theo khối lớp và môn học
+     */
+    @GetMapping("/grades/{gradeId}/subjects/{subjectId}")
+    public ResponseEntity<List<QuizPOJO>> getQuizzesByGradeAndSubject(
+            @PathVariable Integer gradeId,
+            @PathVariable Integer subjectId) {
+
+        try {
+            // Verify subject belongs to grade
+            Subject subject = quizService.getSubjectById(subjectId);
+            if (subject == null || subject.getGrade() != gradeId) {
+                return ResponseEntity.notFound().build();
+            }
+
+            List<Quiz> quizzes = quizService.getQuizzesByGradeAndSubject(gradeId, subjectId);
+            List<QuizPOJO> quizPOJOs = quizzes.stream()
+                    .map(quizService::convertToQuizPOJO)
+                    .collect(Collectors.toList());
+            return ResponseEntity.ok(quizPOJOs);
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body(null);
+        }
+    }
+
+    /**
+     * Lấy danh sách quiz theo môn học (không cần grade vì subject đã có grade)
+     */
+    @GetMapping("/subjects/{subjectId}")
+    public ResponseEntity<List<QuizPOJO>> getQuizzesBySubject(@PathVariable Integer subjectId) {
+        try {
+            Subject subject = quizService.getSubjectById(subjectId);
+            if (subject == null) {
+                return ResponseEntity.notFound().build();
+            }
+
+            List<Quiz> quizzes = quizService.getQuizzesByGradeAndSubject(subject.getGrade(), subjectId);
+            List<QuizPOJO> quizPOJOs = quizzes.stream()
+                    .map(quizService::convertToQuizPOJO)
+                    .collect(Collectors.toList());
+            return ResponseEntity.ok(quizPOJOs);
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body(null);
+        }
+    }
+
+    /**
+     * Lấy thông tin chi tiết một quiz cụ thể
+     */
+    @GetMapping("/{quizId}/details")
+    public ResponseEntity<QuizPOJO> getQuizDetails(@PathVariable Integer quizId) {
+        try {
+            Quiz quiz = quizService.getQuizById(quizId);
+            if (quiz == null) {
+                return ResponseEntity.notFound().build();
+            }
+            return ResponseEntity.ok(quizService.convertToQuizPOJO(quiz));
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body(null);
+        }
+    }
+
+    // Các method convert POJO
+    private GradePOJO convertToGradePOJO(Grade grade) {
+        GradePOJO pojo = new GradePOJO();
+        pojo.setId(grade.getId());
+        pojo.setName(grade.getName());
+        pojo.setCode(grade.getCode());
+        return pojo;
+    }
+
+    private SubjectPOJO convertToSubjectPOJO(Subject subject) {
+        SubjectPOJO pojo = new SubjectPOJO();
+        pojo.setId(subject.getId());
+        pojo.setCode(subject.getCode());
+        pojo.setName(subject.getName());
+        pojo.setGrade(subject.getGrade());
+        return pojo;
+    }
+
 }

@@ -1,0 +1,1518 @@
+[
+  {
+    "grade_id": 6,
+    "subject_id": 13,
+    "chapter_id": 73,
+    "quiz_type_id": 1,
+    "code": "KHTN6_15_01_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong tự nhiên, lớp vỏ nào của Trái Đất chứa nhiều khoáng sản nhất?"
+          }
+        ],
+        "explanation": "Lớp vỏ Trái Đất (vỏ lục địa và vỏ đại dương) chứa nhiều loại khoáng sản phong phú như than đá, dầu mỏ, quặng kim loại,...",
+        "choices": [
+          {
+            "content": "Lớp nhân",
+            "is_correct": false
+          },
+          {
+            "content": "Lớp manti",
+            "is_correct": false
+          },
+          {
+            "content": "Lớp vỏ",
+            "is_correct": true
+          },
+          {
+            "content": "Khí quyển",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Quá trình nào sau đây giúp cây xanh tự tạo ra chất hữu cơ nuôi sống mình?"
+          }
+        ],
+        "explanation": "Quang hợp là quá trình cây xanh dùng ánh sáng mặt trời để tổng hợp chất hữu cơ từ nước và khí CO₂.",
+        "choices": [
+          {
+            "content": "Hô hấp",
+            "is_correct": false
+          },
+          {
+            "content": "Quang hợp",
+            "is_correct": true
+          },
+          {
+            "content": "Thoát hơi nước",
+            "is_correct": false
+          },
+          {
+            "content": "Nảy mầm",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Động vật nào dưới đây thuộc nhóm thú (lớp động vật có vú)?"
+          },
+          {
+            "content_type": "IMAGE",
+            "content_value": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Tiger_in_Ranthambhore.jpg"
+          }
+        ],
+        "explanation": "Hổ là loài thú (động vật có vú) vì chúng sinh con và nuôi con bằng sữa mẹ.",
+        "choices": [
+          {
+            "content": "Ếch",
+            "is_correct": false
+          },
+          {
+            "content": "Cá chép",
+            "is_correct": false
+          },
+          {
+            "content": "Hổ",
+            "is_correct": true
+          },
+          {
+            "content": "Chim sẻ",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên nhân chính tạo ra gió trên Trái Đất là gì?"
+          }
+        ],
+        "explanation": "Gió hình thành do sự chênh lệch áp suất không khí giữa các khu vực, mà nguyên nhân sâu xa là do sự nóng lên không đều của bề mặt Trái Đất bởi ánh sáng Mặt Trời.",
+        "choices": [
+          {
+            "content": "Do núi cao chắn gió",
+            "is_correct": false
+          },
+          {
+            "content": "Do sự chênh lệch nhiệt độ và áp suất",
+            "is_correct": true
+          },
+          {
+            "content": "Do thủy triều",
+            "is_correct": false
+          },
+          {
+            "content": "Do dòng chảy sông",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Hiện tượng nào sau đây là hiện tượng tự nhiên nội sinh?"
+          }
+        ],
+        "explanation": "Động đất, núi lửa phun trào là hiện tượng tự nhiên nội sinh vì chúng phát sinh từ bên trong Trái Đất.",
+        "choices": [
+          {
+            "content": "Mưa",
+            "is_correct": false
+          },
+          {
+            "content": "Lũ lụt",
+            "is_correct": false
+          },
+          {
+            "content": "Động đất",
+            "is_correct": true
+          },
+          {
+            "content": "Gió mùa",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Hiện tượng nào sau đây chứng minh sự tồn tại của không khí?"
+          }
+        ],
+        "explanation": "Không khí có khối lượng và chiếm chỗ. Ví dụ khi ta úp ngược cốc có tờ giấy xuống nước, giấy không ướt vì không khí trong cốc cản lại.",
+        "choices": [
+          {
+            "content": "Nước sôi tạo bọt",
+            "is_correct": false
+          },
+          {
+            "content": "Bóng bay phồng lên",
+            "is_correct": true
+          },
+          {
+            "content": "Lá cây rụng",
+            "is_correct": false
+          },
+          {
+            "content": "Sóng biển",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong chuỗi thức ăn: Cỏ → Thỏ → Cáo, sinh vật nào là sinh vật sản xuất?"
+          }
+        ],
+        "explanation": "Cỏ là thực vật, có khả năng tự tổng hợp chất hữu cơ từ ánh sáng mặt trời, nên là sinh vật sản xuất.",
+        "choices": [
+          {
+            "content": "Cỏ",
+            "is_correct": true
+          },
+          {
+            "content": "Thỏ",
+            "is_correct": false
+          },
+          {
+            "content": "Cáo",
+            "is_correct": false
+          },
+          {
+            "content": "Không có sinh vật sản xuất",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các hành tinh sau, hành tinh nào gần Mặt Trời nhất?"
+          }
+        ],
+        "explanation": "Thủy tinh (Sao Thủy) là hành tinh ở gần Mặt Trời nhất trong hệ Mặt Trời.",
+        "choices": [
+          {
+            "content": "Sao Hỏa",
+            "is_correct": false
+          },
+          {
+            "content": "Sao Kim",
+            "is_correct": false
+          },
+          {
+            "content": "Sao Thủy",
+            "is_correct": true
+          },
+          {
+            "content": "Trái Đất",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Âm thanh truyền trong môi trường nào nhanh nhất?"
+          }
+        ],
+        "explanation": "Âm thanh truyền nhanh nhất trong chất rắn, chậm hơn trong chất lỏng và chậm nhất trong chất khí.",
+        "choices": [
+          {
+            "content": "Không khí",
+            "is_correct": false
+          },
+          {
+            "content": "Nước",
+            "is_correct": false
+          },
+          {
+            "content": "Sắt",
+            "is_correct": true
+          },
+          {
+            "content": "Gỗ",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Lực nào giữ cho các hành tinh chuyển động quanh Mặt Trời?"
+          }
+        ],
+        "explanation": "Trọng lực (lực hấp dẫn) của Mặt Trời giữ cho các hành tinh quay quanh nó theo quỹ đạo.",
+        "choices": [
+          {
+            "content": "Lực ma sát",
+            "is_correct": false
+          },
+          {
+            "content": "Lực từ trường",
+            "is_correct": false
+          },
+          {
+            "content": "Lực hấp dẫn",
+            "is_correct": true
+          },
+          {
+            "content": "Lực điện",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 6,
+    "subject_id": 13,
+    "chapter_id": 73,
+    "quiz_type_id": 2,
+    "code": "KHTN6_30_01_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tại sao hiện tượng ngày đêm trên Trái Đất lại xảy ra?"
+          }
+        ],
+        "explanation": "Hiện tượng ngày đêm là do Trái Đất tự quay quanh trục của nó. Khi một nửa Trái Đất hướng về phía Mặt Trời thì có ngày, nửa còn lại khuất ánh sáng Mặt Trời thì có đêm.",
+        "choices": [
+          { "content": "Do Trái Đất quay quanh Mặt Trời", "is_correct": false },
+          { "content": "Do Mặt Trời quay quanh Trái Đất", "is_correct": false },
+          { "content": "Do Trái Đất tự quay quanh trục", "is_correct": true },
+          { "content": "Do Trái Đất nghiêng 23,5°", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên nhân chính gây ra hiện tượng thủy triều là gì?"
+          }
+        ],
+        "explanation": "Thủy triều xảy ra chủ yếu do lực hút hấp dẫn của Mặt Trăng, và ở mức độ ít hơn là của Mặt Trời, tác động lên các khối nước trên Trái Đất.",
+        "choices": [
+          { "content": "Do gió mạnh trên đại dương", "is_correct": false },
+          { "content": "Do lực hút của Mặt Trăng và Mặt Trời", "is_correct": true },
+          { "content": "Do dòng biển nóng - lạnh", "is_correct": false },
+          { "content": "Do sự quay quanh trục của Trái Đất", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Vì sao sa mạc thường có sự chênh lệch nhiệt độ ngày và đêm rất lớn?"
+          }
+        ],
+        "explanation": "Sa mạc có lớp đất cát, không giữ nhiệt tốt và ít hơi nước. Ban ngày nhiệt độ tăng nhanh, ban đêm nhiệt độ giảm nhanh.",
+        "choices": [
+          { "content": "Do có nhiều núi cao", "is_correct": false },
+          { "content": "Do lớp cát ít giữ nhiệt và không khí khô", "is_correct": true },
+          { "content": "Do gần xích đạo", "is_correct": false },
+          { "content": "Do lượng mưa lớn", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong hệ sinh thái rừng mưa nhiệt đới, sinh vật nào sau đây là sinh vật phân giải?"
+          }
+        ],
+        "explanation": "Sinh vật phân giải gồm vi khuẩn và nấm, có vai trò phân hủy xác động thực vật thành chất vô cơ trả lại môi trường.",
+        "choices": [
+          { "content": "Cây cổ thụ", "is_correct": false },
+          { "content": "Hổ", "is_correct": false },
+          { "content": "Nấm", "is_correct": true },
+          { "content": "Vẹt", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên nhân nào gây ra các mùa trong năm trên Trái Đất?"
+          }
+        ],
+        "explanation": "Các mùa hình thành do Trái Đất quay quanh Mặt Trời với trục quay nghiêng 23,5° so với mặt phẳng quỹ đạo.",
+        "choices": [
+          { "content": "Do Trái Đất tự quay quanh trục", "is_correct": false },
+          { "content": "Do Trái Đất nghiêng 23,5° và quay quanh Mặt Trời", "is_correct": true },
+          { "content": "Do Trái Đất ở gần hay xa Mặt Trời", "is_correct": false },
+          { "content": "Do Mặt Trời thay đổi vị trí", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Vì sao núi lửa phun trào thường đi kèm động đất?"
+          }
+        ],
+        "explanation": "Động đất xảy ra khi magma di chuyển và tạo áp lực lớn trong lòng đất, gây nứt gãy vỏ Trái Đất, dẫn đến phun trào núi lửa.",
+        "choices": [
+          { "content": "Do mưa lớn", "is_correct": false },
+          { "content": "Do magma di chuyển và gây áp lực trong lòng đất", "is_correct": true },
+          { "content": "Do gió mạnh", "is_correct": false },
+          { "content": "Do sông ngòi chảy xiết", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Lớp khí quyển nào của Trái Đất chứa tầng ozone giúp bảo vệ sinh vật khỏi tia tử ngoại?"
+          }
+        ],
+        "explanation": "Tầng ozone tập trung ở tầng bình lưu, hấp thụ phần lớn tia tử ngoại từ Mặt Trời.",
+        "choices": [
+          { "content": "Tầng đối lưu", "is_correct": false },
+          { "content": "Tầng bình lưu", "is_correct": true },
+          { "content": "Tầng trung lưu", "is_correct": false },
+          { "content": "Tầng điện ly", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên nhân nào tạo ra sự luân chuyển của các dòng biển nóng và lạnh?"
+          }
+        ],
+        "explanation": "Sự chênh lệch nhiệt độ, độ mặn và tác động của gió đã tạo ra các dòng biển nóng - lạnh.",
+        "choices": [
+          { "content": "Do sóng biển", "is_correct": false },
+          { "content": "Do thủy triều", "is_correct": false },
+          { "content": "Do sự chênh lệch nhiệt độ, độ mặn và gió", "is_correct": true },
+          { "content": "Do mưa nhiều", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tại sao vùng cực Trái Đất có ngày hoặc đêm dài tới 6 tháng?"
+          }
+        ],
+        "explanation": "Do trục Trái Đất nghiêng 23,5° nên tại vùng cực có những thời điểm cả ngày hoặc đêm đều hướng hoặc khuất Mặt Trời.",
+        "choices": [
+          { "content": "Do gần Mặt Trời", "is_correct": false },
+          { "content": "Do khí hậu lạnh", "is_correct": false },
+          { "content": "Do trục Trái Đất nghiêng 23,5°", "is_correct": true },
+          { "content": "Do gió mùa", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Vì sao rừng Amazon được gọi là 'lá phổi xanh của Trái Đất'?"
+          }
+        ],
+        "explanation": "Rừng Amazon có diện tích rộng lớn, quang hợp mạnh, tạo ra lượng oxy khổng lồ, góp phần điều hòa khí hậu Trái Đất.",
+        "choices": [
+          { "content": "Vì có nhiều loài động vật", "is_correct": false },
+          { "content": "Vì cung cấp nhiều oxy cho Trái Đất", "is_correct": true },
+          { "content": "Vì nằm gần xích đạo", "is_correct": false },
+          { "content": "Vì có nhiều sông ngòi", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 6,
+    "subject_id": 13,
+    "chapter_id": 74,
+    "quiz_type_id": 1,
+    "code": "KHTN6_15_02_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Chất tinh khiết là gì?"
+          }
+        ],
+        "explanation": "Chất tinh khiết là chất chỉ gồm một chất duy nhất, có tính chất nhất định và không lẫn tạp chất.",
+        "choices": [
+          {
+            "content": "Là chất được tạo thành từ nhiều chất khác nhau",
+            "is_correct": false
+          },
+          {
+            "content": "Là chất chỉ gồm một chất duy nhất, có tính chất nhất định",
+            "is_correct": true
+          },
+          {
+            "content": "Là hỗn hợp của hai hay nhiều chất",
+            "is_correct": false
+          },
+          {
+            "content": "Là chất có thể nhìn thấy bằng mắt thường",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Hỗn hợp là gì?"
+          }
+        ],
+        "explanation": "Hỗn hợp là sự pha trộn của hai hay nhiều chất, trong đó mỗi chất vẫn giữ nguyên tính chất riêng.",
+        "choices": [
+          {
+            "content": "Là chất chỉ gồm một chất duy nhất",
+            "is_correct": false
+          },
+          {
+            "content": "Là sự kết hợp của nhiều chất mà mất đi tính chất ban đầu",
+            "is_correct": false
+          },
+          {
+            "content": "Là sự pha trộn của hai hay nhiều chất nhưng vẫn giữ nguyên tính chất riêng",
+            "is_correct": true
+          },
+          {
+            "content": "Là chất tinh khiết có lẫn tạp chất",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các chất sau, chất nào là chất tinh khiết?"
+          }
+        ],
+        "explanation": "Nước cất là chất tinh khiết vì chỉ gồm phân tử H₂O, không lẫn tạp chất.",
+        "choices": [
+          {
+            "content": "Nước cất",
+            "is_correct": true
+          },
+          {
+            "content": "Nước khoáng",
+            "is_correct": false
+          },
+          {
+            "content": "Nước ao",
+            "is_correct": false
+          },
+          {
+            "content": "Nước biển",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Sự biến đổi hóa học là gì?"
+          }
+        ],
+        "explanation": "Sự biến đổi hóa học là quá trình biến đổi tạo ra chất mới có tính chất khác so với ban đầu.",
+        "choices": [
+          {
+            "content": "Là sự thay đổi trạng thái của chất",
+            "is_correct": false
+          },
+          {
+            "content": "Là sự thay đổi hình dạng nhưng không tạo chất mới",
+            "is_correct": false
+          },
+          {
+            "content": "Là quá trình tạo ra chất mới có tính chất khác",
+            "is_correct": true
+          },
+          {
+            "content": "Là quá trình làm lạnh hoặc đun nóng chất",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Hiện tượng nào sau đây là hiện tượng vật lí?"
+          }
+        ],
+        "explanation": "Nước đá tan là hiện tượng vật lí vì chỉ thay đổi trạng thái từ rắn sang lỏng, không tạo chất mới.",
+        "choices": [
+          {
+            "content": "Nước đá tan",
+            "is_correct": true
+          },
+          {
+            "content": "Sắt bị gỉ",
+            "is_correct": false
+          },
+          {
+            "content": "Giấy cháy",
+            "is_correct": false
+          },
+          {
+            "content": "Thức ăn bị ôi thiu",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Hiện tượng nào sau đây là hiện tượng hóa học?"
+          }
+        ],
+        "explanation": "Sắt bị gỉ là hiện tượng hóa học vì có chất mới (gỉ sắt) được tạo thành.",
+        "choices": [
+          {
+            "content": "Nước sôi",
+            "is_correct": false
+          },
+          {
+            "content": "Sắt bị gỉ",
+            "is_correct": true
+          },
+          {
+            "content": "Đường tan trong nước",
+            "is_correct": false
+          },
+          {
+            "content": "Băng tan",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Năng lượng là gì?"
+          }
+        ],
+        "explanation": "Năng lượng là khả năng sinh công hoặc gây ra sự biến đổi.",
+        "choices": [
+          {
+            "content": "Là vật chất tồn tại trong tự nhiên",
+            "is_correct": false
+          },
+          {
+            "content": "Là khả năng sinh công hoặc gây ra sự biến đổi",
+            "is_correct": true
+          },
+          {
+            "content": "Là trạng thái của các chất",
+            "is_correct": false
+          },
+          {
+            "content": "Là khối lượng của vật thể",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguồn năng lượng nào dưới đây là năng lượng tái tạo?"
+          }
+        ],
+        "explanation": "Năng lượng mặt trời là năng lượng tái tạo vì không cạn kiệt và có thể khai thác lâu dài.",
+        "choices": [
+          {
+            "content": "Than đá",
+            "is_correct": false
+          },
+          {
+            "content": "Dầu mỏ",
+            "is_correct": false
+          },
+          {
+            "content": "Khí đốt",
+            "is_correct": false
+          },
+          {
+            "content": "Năng lượng mặt trời",
+            "is_correct": true
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các loại năng lượng sau, loại nào không phải là năng lượng hóa thạch?"
+          }
+        ],
+        "explanation": "Năng lượng gió không phải là năng lượng hóa thạch, nó là năng lượng tái tạo.",
+        "choices": [
+          {
+            "content": "Than đá",
+            "is_correct": false
+          },
+          {
+            "content": "Dầu mỏ",
+            "is_correct": false
+          },
+          {
+            "content": "Khí đốt",
+            "is_correct": false
+          },
+          {
+            "content": "Năng lượng gió",
+            "is_correct": true
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Để tách muối ra khỏi nước biển, người ta thường dùng phương pháp nào?"
+          }
+        ],
+        "explanation": "Để tách muối ra khỏi nước biển, người ta thường dùng phương pháp bay hơi để muối kết tinh lại.",
+        "choices": [
+          {
+            "content": "Lọc",
+            "is_correct": false
+          },
+          {
+            "content": "Chiết",
+            "is_correct": false
+          },
+          {
+            "content": "Bay hơi",
+            "is_correct": true
+          },
+          {
+            "content": "Đóng băng",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 6,
+    "subject_id": 13,
+    "chapter_id": 74,
+    "quiz_type_id": 2,
+    "code": "KHTN6_30_02_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các phương án sau, đâu là đặc điểm phân biệt hiện tượng vật lí với hiện tượng hóa học?"
+          }
+        ],
+        "explanation": "Hiện tượng vật lí không tạo ra chất mới, chỉ thay đổi trạng thái hoặc hình dạng; trong khi hiện tượng hóa học tạo ra chất mới có tính chất khác.",
+        "choices": [
+          { "content": "Có sự thay đổi trạng thái nhưng không tạo chất mới", "is_correct": true },
+          { "content": "Có sự thay đổi nhiệt độ", "is_correct": false },
+          { "content": "Có sự thay đổi màu sắc", "is_correct": false },
+          { "content": "Có sự phân tách thành nhiều chất", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong thí nghiệm chưng cất nước biển, hiện tượng nào sau đây là hiện tượng vật lí?"
+          }
+        ],
+        "explanation": "Nước bay hơi rồi ngưng tụ thành nước cất là sự thay đổi trạng thái, không tạo ra chất mới nên là hiện tượng vật lí.",
+        "choices": [
+          { "content": "Muối đọng lại sau khi nước bay hơi", "is_correct": false },
+          { "content": "Nước bốc hơi và ngưng tụ thành nước cất", "is_correct": true },
+          { "content": "Sự thay đổi vị của nước biển", "is_correct": false },
+          { "content": "Sự kết tinh của muối", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Chất nào sau đây là hỗn hợp?"
+          }
+        ],
+        "explanation": "Không khí là hỗn hợp của nhiều chất khí khác nhau như O₂, N₂, CO₂…",
+        "choices": [
+          { "content": "Oxi tinh khiết", "is_correct": false },
+          { "content": "Nước cất", "is_correct": false },
+          { "content": "Không khí", "is_correct": true },
+          { "content": "Muối ăn tinh khiết", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các hiện tượng sau, hiện tượng nào chứng tỏ có phản ứng hóa học xảy ra?"
+          }
+        ],
+        "explanation": "Sắt bị gỉ tạo thành hợp chất mới (gỉ sắt) có tính chất khác so với sắt ban đầu.",
+        "choices": [
+          { "content": "Nước đá tan", "is_correct": false },
+          { "content": "Sắt bị gỉ", "is_correct": true },
+          { "content": "Đường tan trong nước", "is_correct": false },
+          { "content": "Nước sôi", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Đặc điểm nào sau đây đúng về năng lượng hóa thạch?"
+          }
+        ],
+        "explanation": "Năng lượng hóa thạch (than đá, dầu mỏ, khí đốt) có nguồn gốc từ xác sinh vật, không tái tạo và có nguy cơ cạn kiệt.",
+        "choices": [
+          { "content": "Là nguồn năng lượng tái tạo", "is_correct": false },
+          { "content": "Có nguồn gốc từ xác sinh vật cổ đại, không tái tạo", "is_correct": true },
+          { "content": "Được tạo thành từ nước và ánh sáng", "is_correct": false },
+          { "content": "Không gây ô nhiễm môi trường", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tại sao năng lượng mặt trời được coi là nguồn năng lượng sạch?"
+          }
+        ],
+        "explanation": "Năng lượng mặt trời không tạo khí thải độc hại, không gây ô nhiễm môi trường và có thể tái tạo.",
+        "choices": [
+          { "content": "Vì chỉ sử dụng vào ban ngày", "is_correct": false },
+          { "content": "Vì không tạo ra chất thải độc hại và có thể tái tạo", "is_correct": true },
+          { "content": "Vì dễ khai thác hơn dầu mỏ", "is_correct": false },
+          { "content": "Vì rẻ hơn điện than", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các cách sau, đâu là phương pháp vật lí để tách hỗn hợp?"
+          }
+        ],
+        "explanation": "Lọc nước sông để thu được nước trong là phương pháp vật lí vì chỉ tách chất dựa trên kích thước hạt.",
+        "choices": [
+          { "content": "Đốt cháy than để sinh nhiệt", "is_correct": false },
+          { "content": "Lọc nước sông để thu nước trong", "is_correct": true },
+          { "content": "Để sắt ngoài không khí cho gỉ đi", "is_correct": false },
+          { "content": "Cho giấm vào sữa để tách đạm", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Năng lượng trong thức ăn mà con người sử dụng thuộc dạng năng lượng nào?"
+          }
+        ],
+        "explanation": "Năng lượng trong thức ăn là năng lượng hóa học, được giải phóng khi thức ăn được chuyển hóa trong cơ thể.",
+        "choices": [
+          { "content": "Năng lượng cơ học", "is_correct": false },
+          { "content": "Năng lượng điện", "is_correct": false },
+          { "content": "Năng lượng hóa học", "is_correct": true },
+          { "content": "Năng lượng ánh sáng", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Năng lượng nào sau đây là không tái tạo?"
+          }
+        ],
+        "explanation": "Than đá là năng lượng hóa thạch, không tái tạo vì cần hàng triệu năm để hình thành.",
+        "choices": [
+          { "content": "Năng lượng gió", "is_correct": false },
+          { "content": "Năng lượng mặt trời", "is_correct": false },
+          { "content": "Than đá", "is_correct": true },
+          { "content": "Thủy năng", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các biến đổi sau, biến đổi nào giải phóng năng lượng ra môi trường?"
+          }
+        ],
+        "explanation": "Đốt cháy gỗ giải phóng nhiệt và ánh sáng ra môi trường, đó là sự giải phóng năng lượng.",
+        "choices": [
+          { "content": "Nước ngưng tụ thành sương", "is_correct": false },
+          { "content": "Đốt cháy gỗ", "is_correct": true },
+          { "content": "Nước đá tan thành nước lỏng", "is_correct": false },
+          { "content": "Nén khí trong xi lanh", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 6,
+    "subject_id": 13,
+    "chapter_id": 75,
+    "quiz_type_id": 1,
+    "code": "KHTN6_15_03_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các phương án sau, đâu là đặc điểm phân biệt hiện tượng vật lí với hiện tượng hóa học?"
+          }
+        ],
+        "explanation": "Hiện tượng vật lí không tạo ra chất mới, chỉ thay đổi trạng thái hoặc hình dạng; trong khi hiện tượng hóa học tạo ra chất mới có tính chất khác.",
+        "choices": [
+          { "content": "Có sự thay đổi trạng thái nhưng không tạo chất mới", "is_correct": true },
+          { "content": "Có sự thay đổi nhiệt độ", "is_correct": false },
+          { "content": "Có sự thay đổi màu sắc", "is_correct": false },
+          { "content": "Có sự phân tách thành nhiều chất", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong thí nghiệm chưng cất nước biển, hiện tượng nào sau đây là hiện tượng vật lí?"
+          }
+        ],
+        "explanation": "Nước bay hơi rồi ngưng tụ thành nước cất là sự thay đổi trạng thái, không tạo ra chất mới nên là hiện tượng vật lí.",
+        "choices": [
+          { "content": "Muối đọng lại sau khi nước bay hơi", "is_correct": false },
+          { "content": "Nước bốc hơi và ngưng tụ thành nước cất", "is_correct": true },
+          { "content": "Sự thay đổi vị của nước biển", "is_correct": false },
+          { "content": "Sự kết tinh của muối", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Chất nào sau đây là hỗn hợp?"
+          }
+        ],
+        "explanation": "Không khí là hỗn hợp của nhiều chất khí khác nhau như O₂, N₂, CO₂…",
+        "choices": [
+          { "content": "Oxi tinh khiết", "is_correct": false },
+          { "content": "Nước cất", "is_correct": false },
+          { "content": "Không khí", "is_correct": true },
+          { "content": "Muối ăn tinh khiết", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các hiện tượng sau, hiện tượng nào chứng tỏ có phản ứng hóa học xảy ra?"
+          }
+        ],
+        "explanation": "Sắt bị gỉ tạo thành hợp chất mới (gỉ sắt) có tính chất khác so với sắt ban đầu.",
+        "choices": [
+          { "content": "Nước đá tan", "is_correct": false },
+          { "content": "Sắt bị gỉ", "is_correct": true },
+          { "content": "Đường tan trong nước", "is_correct": false },
+          { "content": "Nước sôi", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Đặc điểm nào sau đây đúng về năng lượng hóa thạch?"
+          }
+        ],
+        "explanation": "Năng lượng hóa thạch (than đá, dầu mỏ, khí đốt) có nguồn gốc từ xác sinh vật, không tái tạo và có nguy cơ cạn kiệt.",
+        "choices": [
+          { "content": "Là nguồn năng lượng tái tạo", "is_correct": false },
+          { "content": "Có nguồn gốc từ xác sinh vật cổ đại, không tái tạo", "is_correct": true },
+          { "content": "Được tạo thành từ nước và ánh sáng", "is_correct": false },
+          { "content": "Không gây ô nhiễm môi trường", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tại sao năng lượng mặt trời được coi là nguồn năng lượng sạch?"
+          }
+        ],
+        "explanation": "Năng lượng mặt trời không tạo khí thải độc hại, không gây ô nhiễm môi trường và có thể tái tạo.",
+        "choices": [
+          { "content": "Vì chỉ sử dụng vào ban ngày", "is_correct": false },
+          { "content": "Vì không tạo ra chất thải độc hại và có thể tái tạo", "is_correct": true },
+          { "content": "Vì dễ khai thác hơn dầu mỏ", "is_correct": false },
+          { "content": "Vì rẻ hơn điện than", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các cách sau, đâu là phương pháp vật lí để tách hỗn hợp?"
+          }
+        ],
+        "explanation": "Lọc nước sông để thu được nước trong là phương pháp vật lí vì chỉ tách chất dựa trên kích thước hạt.",
+        "choices": [
+          { "content": "Đốt cháy than để sinh nhiệt", "is_correct": false },
+          { "content": "Lọc nước sông để thu nước trong", "is_correct": true },
+          { "content": "Để sắt ngoài không khí cho gỉ đi", "is_correct": false },
+          { "content": "Cho giấm vào sữa để tách đạm", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Năng lượng trong thức ăn mà con người sử dụng thuộc dạng năng lượng nào?"
+          }
+        ],
+        "explanation": "Năng lượng trong thức ăn là năng lượng hóa học, được giải phóng khi thức ăn được chuyển hóa trong cơ thể.",
+        "choices": [
+          { "content": "Năng lượng cơ học", "is_correct": false },
+          { "content": "Năng lượng điện", "is_correct": false },
+          { "content": "Năng lượng hóa học", "is_correct": true },
+          { "content": "Năng lượng ánh sáng", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Năng lượng nào sau đây là không tái tạo?"
+          }
+        ],
+        "explanation": "Than đá là năng lượng hóa thạch, không tái tạo vì cần hàng triệu năm để hình thành.",
+        "choices": [
+          { "content": "Năng lượng gió", "is_correct": false },
+          { "content": "Năng lượng mặt trời", "is_correct": false },
+          { "content": "Than đá", "is_correct": true },
+          { "content": "Thủy năng", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các biến đổi sau, biến đổi nào giải phóng năng lượng ra môi trường?"
+          }
+        ],
+        "explanation": "Đốt cháy gỗ giải phóng nhiệt và ánh sáng ra môi trường, đó là sự giải phóng năng lượng.",
+        "choices": [
+          { "content": "Nước ngưng tụ thành sương", "is_correct": false },
+          { "content": "Đốt cháy gỗ", "is_correct": true },
+          { "content": "Nước đá tan thành nước lỏng", "is_correct": false },
+          { "content": "Nén khí trong xi lanh", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 6,
+    "subject_id": 13,
+    "chapter_id": 75,
+    "quiz_type_id": 2,
+    "code": "KHTN6_30_03_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các phương án sau, đâu là đặc điểm phân biệt hiện tượng vật lí với hiện tượng hóa học?"
+          }
+        ],
+        "explanation": "Hiện tượng vật lí không tạo ra chất mới, chỉ thay đổi trạng thái hoặc hình dạng; trong khi hiện tượng hóa học tạo ra chất mới có tính chất khác.",
+        "choices": [
+          { "content": "Có sự thay đổi trạng thái nhưng không tạo chất mới", "is_correct": true },
+          { "content": "Có sự thay đổi nhiệt độ", "is_correct": false },
+          { "content": "Có sự thay đổi màu sắc", "is_correct": false },
+          { "content": "Có sự phân tách thành nhiều chất", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong thí nghiệm chưng cất nước biển, hiện tượng nào sau đây là hiện tượng vật lí?"
+          }
+        ],
+        "explanation": "Nước bay hơi rồi ngưng tụ thành nước cất là sự thay đổi trạng thái, không tạo ra chất mới nên là hiện tượng vật lí.",
+        "choices": [
+          { "content": "Muối đọng lại sau khi nước bay hơi", "is_correct": false },
+          { "content": "Nước bốc hơi và ngưng tụ thành nước cất", "is_correct": true },
+          { "content": "Sự thay đổi vị của nước biển", "is_correct": false },
+          { "content": "Sự kết tinh của muối", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Chất nào sau đây là hỗn hợp?"
+          }
+        ],
+        "explanation": "Không khí là hỗn hợp của nhiều chất khí khác nhau như O₂, N₂, CO₂…",
+        "choices": [
+          { "content": "Oxi tinh khiết", "is_correct": false },
+          { "content": "Nước cất", "is_correct": false },
+          { "content": "Không khí", "is_correct": true },
+          { "content": "Muối ăn tinh khiết", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các hiện tượng sau, hiện tượng nào chứng tỏ có phản ứng hóa học xảy ra?"
+          }
+        ],
+        "explanation": "Sắt bị gỉ tạo thành hợp chất mới (gỉ sắt) có tính chất khác so với sắt ban đầu.",
+        "choices": [
+          { "content": "Nước đá tan", "is_correct": false },
+          { "content": "Sắt bị gỉ", "is_correct": true },
+          { "content": "Đường tan trong nước", "is_correct": false },
+          { "content": "Nước sôi", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Đặc điểm nào sau đây đúng về năng lượng hóa thạch?"
+          }
+        ],
+        "explanation": "Năng lượng hóa thạch (than đá, dầu mỏ, khí đốt) có nguồn gốc từ xác sinh vật, không tái tạo và có nguy cơ cạn kiệt.",
+        "choices": [
+          { "content": "Là nguồn năng lượng tái tạo", "is_correct": false },
+          { "content": "Có nguồn gốc từ xác sinh vật cổ đại, không tái tạo", "is_correct": true },
+          { "content": "Được tạo thành từ nước và ánh sáng", "is_correct": false },
+          { "content": "Không gây ô nhiễm môi trường", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tại sao năng lượng mặt trời được coi là nguồn năng lượng sạch?"
+          }
+        ],
+        "explanation": "Năng lượng mặt trời không tạo khí thải độc hại, không gây ô nhiễm môi trường và có thể tái tạo.",
+        "choices": [
+          { "content": "Vì chỉ sử dụng vào ban ngày", "is_correct": false },
+          { "content": "Vì không tạo ra chất thải độc hại và có thể tái tạo", "is_correct": true },
+          { "content": "Vì dễ khai thác hơn dầu mỏ", "is_correct": false },
+          { "content": "Vì rẻ hơn điện than", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các cách sau, đâu là phương pháp vật lí để tách hỗn hợp?"
+          }
+        ],
+        "explanation": "Lọc nước sông để thu được nước trong là phương pháp vật lí vì chỉ tách chất dựa trên kích thước hạt.",
+        "choices": [
+          { "content": "Đốt cháy than để sinh nhiệt", "is_correct": false },
+          { "content": "Lọc nước sông để thu nước trong", "is_correct": true },
+          { "content": "Để sắt ngoài không khí cho gỉ đi", "is_correct": false },
+          { "content": "Cho giấm vào sữa để tách đạm", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Năng lượng trong thức ăn mà con người sử dụng thuộc dạng năng lượng nào?"
+          }
+        ],
+        "explanation": "Năng lượng trong thức ăn là năng lượng hóa học, được giải phóng khi thức ăn được chuyển hóa trong cơ thể.",
+        "choices": [
+          { "content": "Năng lượng cơ học", "is_correct": false },
+          { "content": "Năng lượng điện", "is_correct": false },
+          { "content": "Năng lượng hóa học", "is_correct": true },
+          { "content": "Năng lượng ánh sáng", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Năng lượng nào sau đây là không tái tạo?"
+          }
+        ],
+        "explanation": "Than đá là năng lượng hóa thạch, không tái tạo vì cần hàng triệu năm để hình thành.",
+        "choices": [
+          { "content": "Năng lượng gió", "is_correct": false },
+          { "content": "Năng lượng mặt trời", "is_correct": false },
+          { "content": "Than đá", "is_correct": true },
+          { "content": "Thủy năng", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các biến đổi sau, biến đổi nào giải phóng năng lượng ra môi trường?"
+          }
+        ],
+        "explanation": "Đốt cháy gỗ giải phóng nhiệt và ánh sáng ra môi trường, đó là sự giải phóng năng lượng.",
+        "choices": [
+          { "content": "Nước ngưng tụ thành sương", "is_correct": false },
+          { "content": "Đốt cháy gỗ", "is_correct": true },
+          { "content": "Nước đá tan thành nước lỏng", "is_correct": false },
+          { "content": "Nén khí trong xi lanh", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 6,
+    "subject_id": 13,
+    "chapter_id": 76,
+    "quiz_type_id": 1,
+    "code": "KHTN6_15_04_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các phương án sau, đâu là đặc điểm phân biệt hiện tượng vật lí với hiện tượng hóa học?"
+          }
+        ],
+        "explanation": "Hiện tượng vật lí không tạo ra chất mới, chỉ thay đổi trạng thái hoặc hình dạng; trong khi hiện tượng hóa học tạo ra chất mới có tính chất khác.",
+        "choices": [
+          { "content": "Có sự thay đổi trạng thái nhưng không tạo chất mới", "is_correct": true },
+          { "content": "Có sự thay đổi nhiệt độ", "is_correct": false },
+          { "content": "Có sự thay đổi màu sắc", "is_correct": false },
+          { "content": "Có sự phân tách thành nhiều chất", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong thí nghiệm chưng cất nước biển, hiện tượng nào sau đây là hiện tượng vật lí?"
+          }
+        ],
+        "explanation": "Nước bay hơi rồi ngưng tụ thành nước cất là sự thay đổi trạng thái, không tạo ra chất mới nên là hiện tượng vật lí.",
+        "choices": [
+          { "content": "Muối đọng lại sau khi nước bay hơi", "is_correct": false },
+          { "content": "Nước bốc hơi và ngưng tụ thành nước cất", "is_correct": true },
+          { "content": "Sự thay đổi vị của nước biển", "is_correct": false },
+          { "content": "Sự kết tinh của muối", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Chất nào sau đây là hỗn hợp?"
+          }
+        ],
+        "explanation": "Không khí là hỗn hợp của nhiều chất khí khác nhau như O₂, N₂, CO₂…",
+        "choices": [
+          { "content": "Oxi tinh khiết", "is_correct": false },
+          { "content": "Nước cất", "is_correct": false },
+          { "content": "Không khí", "is_correct": true },
+          { "content": "Muối ăn tinh khiết", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các hiện tượng sau, hiện tượng nào chứng tỏ có phản ứng hóa học xảy ra?"
+          }
+        ],
+        "explanation": "Sắt bị gỉ tạo thành hợp chất mới (gỉ sắt) có tính chất khác so với sắt ban đầu.",
+        "choices": [
+          { "content": "Nước đá tan", "is_correct": false },
+          { "content": "Sắt bị gỉ", "is_correct": true },
+          { "content": "Đường tan trong nước", "is_correct": false },
+          { "content": "Nước sôi", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Đặc điểm nào sau đây đúng về năng lượng hóa thạch?"
+          }
+        ],
+        "explanation": "Năng lượng hóa thạch (than đá, dầu mỏ, khí đốt) có nguồn gốc từ xác sinh vật, không tái tạo và có nguy cơ cạn kiệt.",
+        "choices": [
+          { "content": "Là nguồn năng lượng tái tạo", "is_correct": false },
+          { "content": "Có nguồn gốc từ xác sinh vật cổ đại, không tái tạo", "is_correct": true },
+          { "content": "Được tạo thành từ nước và ánh sáng", "is_correct": false },
+          { "content": "Không gây ô nhiễm môi trường", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tại sao năng lượng mặt trời được coi là nguồn năng lượng sạch?"
+          }
+        ],
+        "explanation": "Năng lượng mặt trời không tạo khí thải độc hại, không gây ô nhiễm môi trường và có thể tái tạo.",
+        "choices": [
+          { "content": "Vì chỉ sử dụng vào ban ngày", "is_correct": false },
+          { "content": "Vì không tạo ra chất thải độc hại và có thể tái tạo", "is_correct": true },
+          { "content": "Vì dễ khai thác hơn dầu mỏ", "is_correct": false },
+          { "content": "Vì rẻ hơn điện than", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các cách sau, đâu là phương pháp vật lí để tách hỗn hợp?"
+          }
+        ],
+        "explanation": "Lọc nước sông để thu được nước trong là phương pháp vật lí vì chỉ tách chất dựa trên kích thước hạt.",
+        "choices": [
+          { "content": "Đốt cháy than để sinh nhiệt", "is_correct": false },
+          { "content": "Lọc nước sông để thu nước trong", "is_correct": true },
+          { "content": "Để sắt ngoài không khí cho gỉ đi", "is_correct": false },
+          { "content": "Cho giấm vào sữa để tách đạm", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Năng lượng trong thức ăn mà con người sử dụng thuộc dạng năng lượng nào?"
+          }
+        ],
+        "explanation": "Năng lượng trong thức ăn là năng lượng hóa học, được giải phóng khi thức ăn được chuyển hóa trong cơ thể.",
+        "choices": [
+          { "content": "Năng lượng cơ học", "is_correct": false },
+          { "content": "Năng lượng điện", "is_correct": false },
+          { "content": "Năng lượng hóa học", "is_correct": true },
+          { "content": "Năng lượng ánh sáng", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Năng lượng nào sau đây là không tái tạo?"
+          }
+        ],
+        "explanation": "Than đá là năng lượng hóa thạch, không tái tạo vì cần hàng triệu năm để hình thành.",
+        "choices": [
+          { "content": "Năng lượng gió", "is_correct": false },
+          { "content": "Năng lượng mặt trời", "is_correct": false },
+          { "content": "Than đá", "is_correct": true },
+          { "content": "Thủy năng", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các biến đổi sau, biến đổi nào giải phóng năng lượng ra môi trường?"
+          }
+        ],
+        "explanation": "Đốt cháy gỗ giải phóng nhiệt và ánh sáng ra môi trường, đó là sự giải phóng năng lượng.",
+        "choices": [
+          { "content": "Nước ngưng tụ thành sương", "is_correct": false },
+          { "content": "Đốt cháy gỗ", "is_correct": true },
+          { "content": "Nước đá tan thành nước lỏng", "is_correct": false },
+          { "content": "Nén khí trong xi lanh", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 6,
+    "subject_id": 13,
+    "chapter_id": 76,
+    "quiz_type_id": 2,
+    "code": "KHTN6_30_04_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các phương án sau, đâu là đặc điểm phân biệt hiện tượng vật lí với hiện tượng hóa học?"
+          }
+        ],
+        "explanation": "Hiện tượng vật lí không tạo ra chất mới, chỉ thay đổi trạng thái hoặc hình dạng; trong khi hiện tượng hóa học tạo ra chất mới có tính chất khác.",
+        "choices": [
+          { "content": "Có sự thay đổi trạng thái nhưng không tạo chất mới", "is_correct": true },
+          { "content": "Có sự thay đổi nhiệt độ", "is_correct": false },
+          { "content": "Có sự thay đổi màu sắc", "is_correct": false },
+          { "content": "Có sự phân tách thành nhiều chất", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong thí nghiệm chưng cất nước biển, hiện tượng nào sau đây là hiện tượng vật lí?"
+          }
+        ],
+        "explanation": "Nước bay hơi rồi ngưng tụ thành nước cất là sự thay đổi trạng thái, không tạo ra chất mới nên là hiện tượng vật lí.",
+        "choices": [
+          { "content": "Muối đọng lại sau khi nước bay hơi", "is_correct": false },
+          { "content": "Nước bốc hơi và ngưng tụ thành nước cất", "is_correct": true },
+          { "content": "Sự thay đổi vị của nước biển", "is_correct": false },
+          { "content": "Sự kết tinh của muối", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Chất nào sau đây là hỗn hợp?"
+          }
+        ],
+        "explanation": "Không khí là hỗn hợp của nhiều chất khí khác nhau như O₂, N₂, CO₂…",
+        "choices": [
+          { "content": "Oxi tinh khiết", "is_correct": false },
+          { "content": "Nước cất", "is_correct": false },
+          { "content": "Không khí", "is_correct": true },
+          { "content": "Muối ăn tinh khiết", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các hiện tượng sau, hiện tượng nào chứng tỏ có phản ứng hóa học xảy ra?"
+          }
+        ],
+        "explanation": "Sắt bị gỉ tạo thành hợp chất mới (gỉ sắt) có tính chất khác so với sắt ban đầu.",
+        "choices": [
+          { "content": "Nước đá tan", "is_correct": false },
+          { "content": "Sắt bị gỉ", "is_correct": true },
+          { "content": "Đường tan trong nước", "is_correct": false },
+          { "content": "Nước sôi", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Đặc điểm nào sau đây đúng về năng lượng hóa thạch?"
+          }
+        ],
+        "explanation": "Năng lượng hóa thạch (than đá, dầu mỏ, khí đốt) có nguồn gốc từ xác sinh vật, không tái tạo và có nguy cơ cạn kiệt.",
+        "choices": [
+          { "content": "Là nguồn năng lượng tái tạo", "is_correct": false },
+          { "content": "Có nguồn gốc từ xác sinh vật cổ đại, không tái tạo", "is_correct": true },
+          { "content": "Được tạo thành từ nước và ánh sáng", "is_correct": false },
+          { "content": "Không gây ô nhiễm môi trường", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Tại sao năng lượng mặt trời được coi là nguồn năng lượng sạch?"
+          }
+        ],
+        "explanation": "Năng lượng mặt trời không tạo khí thải độc hại, không gây ô nhiễm môi trường và có thể tái tạo.",
+        "choices": [
+          { "content": "Vì chỉ sử dụng vào ban ngày", "is_correct": false },
+          { "content": "Vì không tạo ra chất thải độc hại và có thể tái tạo", "is_correct": true },
+          { "content": "Vì dễ khai thác hơn dầu mỏ", "is_correct": false },
+          { "content": "Vì rẻ hơn điện than", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các cách sau, đâu là phương pháp vật lí để tách hỗn hợp?"
+          }
+        ],
+        "explanation": "Lọc nước sông để thu được nước trong là phương pháp vật lí vì chỉ tách chất dựa trên kích thước hạt.",
+        "choices": [
+          { "content": "Đốt cháy than để sinh nhiệt", "is_correct": false },
+          { "content": "Lọc nước sông để thu nước trong", "is_correct": true },
+          { "content": "Để sắt ngoài không khí cho gỉ đi", "is_correct": false },
+          { "content": "Cho giấm vào sữa để tách đạm", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Năng lượng trong thức ăn mà con người sử dụng thuộc dạng năng lượng nào?"
+          }
+        ],
+        "explanation": "Năng lượng trong thức ăn là năng lượng hóa học, được giải phóng khi thức ăn được chuyển hóa trong cơ thể.",
+        "choices": [
+          { "content": "Năng lượng cơ học", "is_correct": false },
+          { "content": "Năng lượng điện", "is_correct": false },
+          { "content": "Năng lượng hóa học", "is_correct": true },
+          { "content": "Năng lượng ánh sáng", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Năng lượng nào sau đây là không tái tạo?"
+          }
+        ],
+        "explanation": "Than đá là năng lượng hóa thạch, không tái tạo vì cần hàng triệu năm để hình thành.",
+        "choices": [
+          { "content": "Năng lượng gió", "is_correct": false },
+          { "content": "Năng lượng mặt trời", "is_correct": false },
+          { "content": "Than đá", "is_correct": true },
+          { "content": "Thủy năng", "is_correct": false }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong các biến đổi sau, biến đổi nào giải phóng năng lượng ra môi trường?"
+          }
+        ],
+        "explanation": "Đốt cháy gỗ giải phóng nhiệt và ánh sáng ra môi trường, đó là sự giải phóng năng lượng.",
+        "choices": [
+          { "content": "Nước ngưng tụ thành sương", "is_correct": false },
+          { "content": "Đốt cháy gỗ", "is_correct": true },
+          { "content": "Nước đá tan thành nước lỏng", "is_correct": false },
+          { "content": "Nén khí trong xi lanh", "is_correct": false }
+        ]
+      }
+    ]
+  }
+]

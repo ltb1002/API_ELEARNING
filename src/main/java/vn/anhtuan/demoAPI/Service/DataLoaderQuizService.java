@@ -69,8 +69,8 @@ public class DataLoaderQuizService implements CommandLineRunner {
 
     @Transactional
     public void loadQuizzes() {
-        String[] subjects = {"toan"};
-        int[] grades = {6};
+        String[] subjects = {"toan", "khoahoctunhien"};
+        int[] grades = {6, 7};
 
         for (String subject : subjects) {
             for (int grade : grades) {

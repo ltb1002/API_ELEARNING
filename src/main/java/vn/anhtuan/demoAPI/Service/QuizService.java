@@ -140,6 +140,11 @@ public class QuizService {
         return subject.orElse(null);
     }
 
+    public List<Subject> getSubjectsByGrade(Integer gradeId) {
+        // Giả sử bạn có SubjectRepository với method findByGrade
+        return subjectRepository.findByGrade(gradeId);
+    }
+
     public QuizType getQuizTypeById(Integer id) {
         Optional<QuizType> quizType = quizTypeRepository.findById(id);
         return quizType.orElse(null);

@@ -1,0 +1,2234 @@
+[
+  {
+    "grade_id": 7,
+    "subject_id": 14,
+    "chapter_id": 77,
+    "quiz_type_id": 1,
+    "code": "KHTN7_15_01_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tử được cấu tạo từ những hạt cơ bản nào?"
+          }
+        ],
+        "explanation": "Nguyên tử gồm 3 loại hạt cơ bản: electron, proton và nơtron. Proton và nơtron tạo thành hạt nhân, electron chuyển động xung quanh hạt nhân.",
+        "choices": [
+          {
+            "content": "Proton, electron, photon",
+            "is_correct": false
+          },
+          {
+            "content": "Electron, proton, nơtron",
+            "is_correct": true
+          },
+          {
+            "content": "Electron, nơtron, photon",
+            "is_correct": false
+          },
+          {
+            "content": "Proton, nơtron, positron",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Điện tích của proton và electron lần lượt là bao nhiêu?"
+          }
+        ],
+        "explanation": "Proton mang điện tích dương \\(+1\\), electron mang điện tích âm \\(-1\\). Nơtron không mang điện.",
+        "choices": [
+          {
+            "content": "\\(+1\\) và \\(-1\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(-1\\) và \\(+1\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(+1\\) và \\(+1\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(-1\\) và \\(-1\\)",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số khối \\(A\\) của nguyên tử được tính bằng công thức nào?"
+          }
+        ],
+        "explanation": "Số khối \\(A\\) được tính bằng tổng số proton \\(Z\\) và số nơtron \\(N\\): \\(A = Z + N\\).",
+        "choices": [
+          {
+            "content": "\\(A = Z + N\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(A = Z - N\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(A = Z \\times N\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(A = Z / N\\)",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tử trung hòa về điện khi nào?"
+          }
+        ],
+        "explanation": "Nguyên tử trung hòa khi số proton (điện tích dương) bằng số electron (điện tích âm).",
+        "choices": [
+          {
+            "content": "Khi số proton = số electron",
+            "is_correct": true
+          },
+          {
+            "content": "Khi số proton = số nơtron",
+            "is_correct": false
+          },
+          {
+            "content": "Khi số electron = số nơtron",
+            "is_correct": false
+          },
+          {
+            "content": "Khi số khối = số electron",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tố hóa học được xác định bởi đại lượng nào?"
+          }
+        ],
+        "explanation": "Mỗi nguyên tố hóa học được xác định bởi số proton (số hiệu nguyên tử \\(Z\\)) trong hạt nhân.",
+        "choices": [
+          {
+            "content": "Số nơtron",
+            "is_correct": false
+          },
+          {
+            "content": "Số electron",
+            "is_correct": false
+          },
+          {
+            "content": "Số proton",
+            "is_correct": true
+          },
+          {
+            "content": "Số khối",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong bảng tuần hoàn, các nguyên tố được sắp xếp theo thứ tự nào?"
+          }
+        ],
+        "explanation": "Các nguyên tố trong bảng tuần hoàn được sắp xếp theo chiều tăng dần của số hiệu nguyên tử \\(Z\\).",
+        "choices": [
+          {
+            "content": "Theo số khối tăng dần",
+            "is_correct": false
+          },
+          {
+            "content": "Theo số hiệu nguyên tử tăng dần",
+            "is_correct": true
+          },
+          {
+            "content": "Theo khối lượng riêng tăng dần",
+            "is_correct": false
+          },
+          {
+            "content": "Theo bán kính nguyên tử tăng dần",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Một nguyên tố thuộc cùng một cột (nhóm) trong bảng tuần hoàn có đặc điểm gì giống nhau?"
+          }
+        ],
+        "explanation": "Các nguyên tố cùng nhóm có số electron hóa trị bằng nhau nên có tính chất hóa học tương tự nhau.",
+        "choices": [
+          {
+            "content": "Có cùng số nơtron",
+            "is_correct": false
+          },
+          {
+            "content": "Có cùng số electron hóa trị",
+            "is_correct": true
+          },
+          {
+            "content": "Có cùng số khối",
+            "is_correct": false
+          },
+          {
+            "content": "Có cùng khối lượng nguyên tử",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số electron lớp ngoài cùng quyết định đặc điểm nào của nguyên tố?"
+          }
+        ],
+        "explanation": "Số electron lớp ngoài cùng quyết định tính chất hóa học của nguyên tố.",
+        "choices": [
+          {
+            "content": "Khối lượng nguyên tử",
+            "is_correct": false
+          },
+          {
+            "content": "Số khối",
+            "is_correct": false
+          },
+          {
+            "content": "Tính chất hóa học",
+            "is_correct": true
+          },
+          {
+            "content": "Mật độ nguyên tử",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tố nào có số hiệu nguyên tử \\(Z = 1\\)?"
+          }
+        ],
+        "explanation": "Nguyên tố có số hiệu nguyên tử \\(Z = 1\\) là Hiđro (H).",
+        "choices": [
+          {
+            "content": "Heli",
+            "is_correct": false
+          },
+          {
+            "content": "Hiđro",
+            "is_correct": true
+          },
+          {
+            "content": "Oxi",
+            "is_correct": false
+          },
+          {
+            "content": "Natri",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tố nào có số hiệu nguyên tử \\(Z = 8\\)?"
+          }
+        ],
+        "explanation": "Nguyên tố có số hiệu nguyên tử \\(Z = 8\\) là Oxi (O).",
+        "choices": [
+          {
+            "content": "Cacbon",
+            "is_correct": false
+          },
+          {
+            "content": "Nitơ",
+            "is_correct": false
+          },
+          {
+            "content": "Oxi",
+            "is_correct": true
+          },
+          {
+            "content": "Flo",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 14,
+    "chapter_id": 77,
+    "quiz_type_id": 2,
+    "code": "KHTN7_30_01_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong nguyên tử, lực nào giữ electron quay quanh hạt nhân?"
+          }
+        ],
+        "explanation": "Electron mang điện tích âm bị hút bởi proton mang điện tích dương trong hạt nhân. Lực hút này là lực tĩnh điện Coulomb.",
+        "choices": [
+          {
+            "content": "Lực hấp dẫn",
+            "is_correct": false
+          },
+          {
+            "content": "Lực tĩnh điện Coulomb",
+            "is_correct": true
+          },
+          {
+            "content": "Lực hạt nhân",
+            "is_correct": false
+          },
+          {
+            "content": "Lực từ trường",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tử Oxi có số hiệu nguyên tử \\(Z = 8\\). Số electron lớp ngoài cùng của nó là bao nhiêu?"
+          }
+        ],
+        "explanation": "Cấu hình electron của Oxi: \\(1s^2 2s^2 2p^4\\). Lớp ngoài cùng (n=2) có 6 electron.",
+        "choices": [
+          {
+            "content": "2",
+            "is_correct": false
+          },
+          {
+            "content": "4",
+            "is_correct": false
+          },
+          {
+            "content": "6",
+            "is_correct": true
+          },
+          {
+            "content": "8",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Đồng vị là gì?"
+          }
+        ],
+        "explanation": "Đồng vị là các nguyên tử cùng số proton (cùng số hiệu nguyên tử \\(Z\\)) nhưng khác số nơtron nên có số khối \\(A\\) khác nhau.",
+        "choices": [
+          {
+            "content": "Nguyên tử có số proton khác nhau",
+            "is_correct": false
+          },
+          {
+            "content": "Nguyên tử có số nơtron giống nhau",
+            "is_correct": false
+          },
+          {
+            "content": "Nguyên tử có cùng số proton nhưng khác số nơtron",
+            "is_correct": true
+          },
+          {
+            "content": "Nguyên tử có cùng số khối",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Heli (\\(Z = 2\\)) nằm ở nhóm nào trong bảng tuần hoàn?"
+          }
+        ],
+        "explanation": "Heli có cấu hình electron \\(1s^2\\), lớp ngoài cùng đã bão hòa nên thuộc nhóm khí hiếm (nhóm VIII A hoặc nhóm 18).",
+        "choices": [
+          {
+            "content": "Nhóm I A",
+            "is_correct": false
+          },
+          {
+            "content": "Nhóm II A",
+            "is_correct": false
+          },
+          {
+            "content": "Nhóm VIII A (nhóm 18)",
+            "is_correct": true
+          },
+          {
+            "content": "Nhóm VII A",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong một chu kỳ của bảng tuần hoàn, khi đi từ trái sang phải, tính kim loại thay đổi như thế nào?"
+          }
+        ],
+        "explanation": "Khi đi từ trái sang phải trong một chu kỳ, bán kính nguyên tử giảm, lực hút hạt nhân tăng, nên tính kim loại giảm dần và tính phi kim tăng dần.",
+        "choices": [
+          {
+            "content": "Tính kim loại tăng",
+            "is_correct": false
+          },
+          {
+            "content": "Tính kim loại giảm",
+            "is_correct": true
+          },
+          {
+            "content": "Không thay đổi",
+            "is_correct": false
+          },
+          {
+            "content": "Lúc tăng, lúc giảm",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Một nguyên tử có \\(Z = 11\\). Nguyên tố này thuộc nhóm nào trong bảng tuần hoàn?"
+          }
+        ],
+        "explanation": "Nguyên tố có \\(Z = 11\\) là Na (Natri), cấu hình electron: \\(1s^2 2s^2 2p^6 3s^1\\). Lớp ngoài cùng có 1 electron nên thuộc nhóm I A (nhóm kim loại kiềm).",
+        "choices": [
+          {
+            "content": "Nhóm I A",
+            "is_correct": true
+          },
+          {
+            "content": "Nhóm II A",
+            "is_correct": false
+          },
+          {
+            "content": "Nhóm VII A",
+            "is_correct": false
+          },
+          {
+            "content": "Nhóm VIII A",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tử có \\(Z = 17\\) là nguyên tố nào?"
+          }
+        ],
+        "explanation": "Nguyên tố có \\(Z = 17\\) là Clo (Cl).",
+        "choices": [
+          {
+            "content": "Clo",
+            "is_correct": true
+          },
+          {
+            "content": "Lưu huỳnh",
+            "is_correct": false
+          },
+          {
+            "content": "Oxi",
+            "is_correct": false
+          },
+          {
+            "content": "Natri",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Khối lượng nguyên tử chủ yếu tập trung ở đâu?"
+          }
+        ],
+        "explanation": "Khối lượng nguyên tử chủ yếu tập trung ở hạt nhân, vì proton và nơtron có khối lượng lớn hơn electron nhiều lần.",
+        "choices": [
+          {
+            "content": "Ở lớp vỏ electron",
+            "is_correct": false
+          },
+          {
+            "content": "Ở hạt nhân",
+            "is_correct": true
+          },
+          {
+            "content": "Ở khoảng không giữa hạt nhân và electron",
+            "is_correct": false
+          },
+          {
+            "content": "Phân bố đều khắp nguyên tử",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tố nào có cấu hình electron lớp ngoài cùng là \\(ns^2 np^5\\)?"
+          }
+        ],
+        "explanation": "Cấu hình \\(ns^2 np^5\\) đặc trưng cho nhóm Halogen (nhóm VII A).",
+        "choices": [
+          {
+            "content": "Kim loại kiềm",
+            "is_correct": false
+          },
+          {
+            "content": "Kim loại kiềm thổ",
+            "is_correct": false
+          },
+          {
+            "content": "Halogen",
+            "is_correct": true
+          },
+          {
+            "content": "Khí hiếm",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số lớp electron trong nguyên tử bằng đại lượng nào trong bảng tuần hoàn?"
+          }
+        ],
+        "explanation": "Số lớp electron trong nguyên tử bằng số thứ tự chu kỳ mà nguyên tố đó thuộc về.",
+        "choices": [
+          {
+            "content": "Số hiệu nguyên tử",
+            "is_correct": false
+          },
+          {
+            "content": "Số khối",
+            "is_correct": false
+          },
+          {
+            "content": "Số thứ tự chu kỳ",
+            "is_correct": true
+          },
+          {
+            "content": "Số thứ tự nhóm",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 14,
+    "chapter_id": 78,
+    "quiz_type_id": 1,
+    "code": "KHTN7_15_02_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tử được cấu tạo từ những hạt cơ bản nào?"
+          }
+        ],
+        "explanation": "Nguyên tử gồm 3 loại hạt cơ bản: electron, proton và nơtron. Proton và nơtron tạo thành hạt nhân, electron chuyển động xung quanh hạt nhân.",
+        "choices": [
+          {
+            "content": "Proton, electron, photon",
+            "is_correct": false
+          },
+          {
+            "content": "Electron, proton, nơtron",
+            "is_correct": true
+          },
+          {
+            "content": "Electron, nơtron, photon",
+            "is_correct": false
+          },
+          {
+            "content": "Proton, nơtron, positron",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Điện tích của proton và electron lần lượt là bao nhiêu?"
+          }
+        ],
+        "explanation": "Proton mang điện tích dương \\(+1\\), electron mang điện tích âm \\(-1\\). Nơtron không mang điện.",
+        "choices": [
+          {
+            "content": "\\(+1\\) và \\(-1\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(-1\\) và \\(+1\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(+1\\) và \\(+1\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(-1\\) và \\(-1\\)",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số khối \\(A\\) của nguyên tử được tính bằng công thức nào?"
+          }
+        ],
+        "explanation": "Số khối \\(A\\) được tính bằng tổng số proton \\(Z\\) và số nơtron \\(N\\): \\(A = Z + N\\).",
+        "choices": [
+          {
+            "content": "\\(A = Z + N\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(A = Z - N\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(A = Z \\times N\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(A = Z / N\\)",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tử trung hòa về điện khi nào?"
+          }
+        ],
+        "explanation": "Nguyên tử trung hòa khi số proton (điện tích dương) bằng số electron (điện tích âm).",
+        "choices": [
+          {
+            "content": "Khi số proton = số electron",
+            "is_correct": true
+          },
+          {
+            "content": "Khi số proton = số nơtron",
+            "is_correct": false
+          },
+          {
+            "content": "Khi số electron = số nơtron",
+            "is_correct": false
+          },
+          {
+            "content": "Khi số khối = số electron",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tố hóa học được xác định bởi đại lượng nào?"
+          }
+        ],
+        "explanation": "Mỗi nguyên tố hóa học được xác định bởi số proton (số hiệu nguyên tử \\(Z\\)) trong hạt nhân.",
+        "choices": [
+          {
+            "content": "Số nơtron",
+            "is_correct": false
+          },
+          {
+            "content": "Số electron",
+            "is_correct": false
+          },
+          {
+            "content": "Số proton",
+            "is_correct": true
+          },
+          {
+            "content": "Số khối",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong bảng tuần hoàn, các nguyên tố được sắp xếp theo thứ tự nào?"
+          }
+        ],
+        "explanation": "Các nguyên tố trong bảng tuần hoàn được sắp xếp theo chiều tăng dần của số hiệu nguyên tử \\(Z\\).",
+        "choices": [
+          {
+            "content": "Theo số khối tăng dần",
+            "is_correct": false
+          },
+          {
+            "content": "Theo số hiệu nguyên tử tăng dần",
+            "is_correct": true
+          },
+          {
+            "content": "Theo khối lượng riêng tăng dần",
+            "is_correct": false
+          },
+          {
+            "content": "Theo bán kính nguyên tử tăng dần",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Một nguyên tố thuộc cùng một cột (nhóm) trong bảng tuần hoàn có đặc điểm gì giống nhau?"
+          }
+        ],
+        "explanation": "Các nguyên tố cùng nhóm có số electron hóa trị bằng nhau nên có tính chất hóa học tương tự nhau.",
+        "choices": [
+          {
+            "content": "Có cùng số nơtron",
+            "is_correct": false
+          },
+          {
+            "content": "Có cùng số electron hóa trị",
+            "is_correct": true
+          },
+          {
+            "content": "Có cùng số khối",
+            "is_correct": false
+          },
+          {
+            "content": "Có cùng khối lượng nguyên tử",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số electron lớp ngoài cùng quyết định đặc điểm nào của nguyên tố?"
+          }
+        ],
+        "explanation": "Số electron lớp ngoài cùng quyết định tính chất hóa học của nguyên tố.",
+        "choices": [
+          {
+            "content": "Khối lượng nguyên tử",
+            "is_correct": false
+          },
+          {
+            "content": "Số khối",
+            "is_correct": false
+          },
+          {
+            "content": "Tính chất hóa học",
+            "is_correct": true
+          },
+          {
+            "content": "Mật độ nguyên tử",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tố nào có số hiệu nguyên tử \\(Z = 1\\)?"
+          }
+        ],
+        "explanation": "Nguyên tố có số hiệu nguyên tử \\(Z = 1\\) là Hiđro (H).",
+        "choices": [
+          {
+            "content": "Heli",
+            "is_correct": false
+          },
+          {
+            "content": "Hiđro",
+            "is_correct": true
+          },
+          {
+            "content": "Oxi",
+            "is_correct": false
+          },
+          {
+            "content": "Natri",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tố nào có số hiệu nguyên tử \\(Z = 8\\)?"
+          }
+        ],
+        "explanation": "Nguyên tố có số hiệu nguyên tử \\(Z = 8\\) là Oxi (O).",
+        "choices": [
+          {
+            "content": "Cacbon",
+            "is_correct": false
+          },
+          {
+            "content": "Nitơ",
+            "is_correct": false
+          },
+          {
+            "content": "Oxi",
+            "is_correct": true
+          },
+          {
+            "content": "Flo",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 14,
+    "chapter_id": 78,
+    "quiz_type_id": 2,
+    "code": "KHTN7_30_02_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong nguyên tử, lực nào giữ electron quay quanh hạt nhân?"
+          }
+        ],
+        "explanation": "Electron mang điện tích âm bị hút bởi proton mang điện tích dương trong hạt nhân. Lực hút này là lực tĩnh điện Coulomb.",
+        "choices": [
+          {
+            "content": "Lực hấp dẫn",
+            "is_correct": false
+          },
+          {
+            "content": "Lực tĩnh điện Coulomb",
+            "is_correct": true
+          },
+          {
+            "content": "Lực hạt nhân",
+            "is_correct": false
+          },
+          {
+            "content": "Lực từ trường",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tử Oxi có số hiệu nguyên tử \\(Z = 8\\). Số electron lớp ngoài cùng của nó là bao nhiêu?"
+          }
+        ],
+        "explanation": "Cấu hình electron của Oxi: \\(1s^2 2s^2 2p^4\\). Lớp ngoài cùng (n=2) có 6 electron.",
+        "choices": [
+          {
+            "content": "2",
+            "is_correct": false
+          },
+          {
+            "content": "4",
+            "is_correct": false
+          },
+          {
+            "content": "6",
+            "is_correct": true
+          },
+          {
+            "content": "8",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Đồng vị là gì?"
+          }
+        ],
+        "explanation": "Đồng vị là các nguyên tử cùng số proton (cùng số hiệu nguyên tử \\(Z\\)) nhưng khác số nơtron nên có số khối \\(A\\) khác nhau.",
+        "choices": [
+          {
+            "content": "Nguyên tử có số proton khác nhau",
+            "is_correct": false
+          },
+          {
+            "content": "Nguyên tử có số nơtron giống nhau",
+            "is_correct": false
+          },
+          {
+            "content": "Nguyên tử có cùng số proton nhưng khác số nơtron",
+            "is_correct": true
+          },
+          {
+            "content": "Nguyên tử có cùng số khối",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Heli (\\(Z = 2\\)) nằm ở nhóm nào trong bảng tuần hoàn?"
+          }
+        ],
+        "explanation": "Heli có cấu hình electron \\(1s^2\\), lớp ngoài cùng đã bão hòa nên thuộc nhóm khí hiếm (nhóm VIII A hoặc nhóm 18).",
+        "choices": [
+          {
+            "content": "Nhóm I A",
+            "is_correct": false
+          },
+          {
+            "content": "Nhóm II A",
+            "is_correct": false
+          },
+          {
+            "content": "Nhóm VIII A (nhóm 18)",
+            "is_correct": true
+          },
+          {
+            "content": "Nhóm VII A",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong một chu kỳ của bảng tuần hoàn, khi đi từ trái sang phải, tính kim loại thay đổi như thế nào?"
+          }
+        ],
+        "explanation": "Khi đi từ trái sang phải trong một chu kỳ, bán kính nguyên tử giảm, lực hút hạt nhân tăng, nên tính kim loại giảm dần và tính phi kim tăng dần.",
+        "choices": [
+          {
+            "content": "Tính kim loại tăng",
+            "is_correct": false
+          },
+          {
+            "content": "Tính kim loại giảm",
+            "is_correct": true
+          },
+          {
+            "content": "Không thay đổi",
+            "is_correct": false
+          },
+          {
+            "content": "Lúc tăng, lúc giảm",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Một nguyên tử có \\(Z = 11\\). Nguyên tố này thuộc nhóm nào trong bảng tuần hoàn?"
+          }
+        ],
+        "explanation": "Nguyên tố có \\(Z = 11\\) là Na (Natri), cấu hình electron: \\(1s^2 2s^2 2p^6 3s^1\\). Lớp ngoài cùng có 1 electron nên thuộc nhóm I A (nhóm kim loại kiềm).",
+        "choices": [
+          {
+            "content": "Nhóm I A",
+            "is_correct": true
+          },
+          {
+            "content": "Nhóm II A",
+            "is_correct": false
+          },
+          {
+            "content": "Nhóm VII A",
+            "is_correct": false
+          },
+          {
+            "content": "Nhóm VIII A",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tử có \\(Z = 17\\) là nguyên tố nào?"
+          }
+        ],
+        "explanation": "Nguyên tố có \\(Z = 17\\) là Clo (Cl).",
+        "choices": [
+          {
+            "content": "Clo",
+            "is_correct": true
+          },
+          {
+            "content": "Lưu huỳnh",
+            "is_correct": false
+          },
+          {
+            "content": "Oxi",
+            "is_correct": false
+          },
+          {
+            "content": "Natri",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Khối lượng nguyên tử chủ yếu tập trung ở đâu?"
+          }
+        ],
+        "explanation": "Khối lượng nguyên tử chủ yếu tập trung ở hạt nhân, vì proton và nơtron có khối lượng lớn hơn electron nhiều lần.",
+        "choices": [
+          {
+            "content": "Ở lớp vỏ electron",
+            "is_correct": false
+          },
+          {
+            "content": "Ở hạt nhân",
+            "is_correct": true
+          },
+          {
+            "content": "Ở khoảng không giữa hạt nhân và electron",
+            "is_correct": false
+          },
+          {
+            "content": "Phân bố đều khắp nguyên tử",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tố nào có cấu hình electron lớp ngoài cùng là \\(ns^2 np^5\\)?"
+          }
+        ],
+        "explanation": "Cấu hình \\(ns^2 np^5\\) đặc trưng cho nhóm Halogen (nhóm VII A).",
+        "choices": [
+          {
+            "content": "Kim loại kiềm",
+            "is_correct": false
+          },
+          {
+            "content": "Kim loại kiềm thổ",
+            "is_correct": false
+          },
+          {
+            "content": "Halogen",
+            "is_correct": true
+          },
+          {
+            "content": "Khí hiếm",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số lớp electron trong nguyên tử bằng đại lượng nào trong bảng tuần hoàn?"
+          }
+        ],
+        "explanation": "Số lớp electron trong nguyên tử bằng số thứ tự chu kỳ mà nguyên tố đó thuộc về.",
+        "choices": [
+          {
+            "content": "Số hiệu nguyên tử",
+            "is_correct": false
+          },
+          {
+            "content": "Số khối",
+            "is_correct": false
+          },
+          {
+            "content": "Số thứ tự chu kỳ",
+            "is_correct": true
+          },
+          {
+            "content": "Số thứ tự nhóm",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 14,
+    "chapter_id": 79,
+    "quiz_type_id": 1,
+    "code": "KHTN7_15_03_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tử được cấu tạo từ những hạt cơ bản nào?"
+          }
+        ],
+        "explanation": "Nguyên tử gồm 3 loại hạt cơ bản: electron, proton và nơtron. Proton và nơtron tạo thành hạt nhân, electron chuyển động xung quanh hạt nhân.",
+        "choices": [
+          {
+            "content": "Proton, electron, photon",
+            "is_correct": false
+          },
+          {
+            "content": "Electron, proton, nơtron",
+            "is_correct": true
+          },
+          {
+            "content": "Electron, nơtron, photon",
+            "is_correct": false
+          },
+          {
+            "content": "Proton, nơtron, positron",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Điện tích của proton và electron lần lượt là bao nhiêu?"
+          }
+        ],
+        "explanation": "Proton mang điện tích dương \\(+1\\), electron mang điện tích âm \\(-1\\). Nơtron không mang điện.",
+        "choices": [
+          {
+            "content": "\\(+1\\) và \\(-1\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(-1\\) và \\(+1\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(+1\\) và \\(+1\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(-1\\) và \\(-1\\)",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số khối \\(A\\) của nguyên tử được tính bằng công thức nào?"
+          }
+        ],
+        "explanation": "Số khối \\(A\\) được tính bằng tổng số proton \\(Z\\) và số nơtron \\(N\\): \\(A = Z + N\\).",
+        "choices": [
+          {
+            "content": "\\(A = Z + N\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(A = Z - N\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(A = Z \\times N\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(A = Z / N\\)",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tử trung hòa về điện khi nào?"
+          }
+        ],
+        "explanation": "Nguyên tử trung hòa khi số proton (điện tích dương) bằng số electron (điện tích âm).",
+        "choices": [
+          {
+            "content": "Khi số proton = số electron",
+            "is_correct": true
+          },
+          {
+            "content": "Khi số proton = số nơtron",
+            "is_correct": false
+          },
+          {
+            "content": "Khi số electron = số nơtron",
+            "is_correct": false
+          },
+          {
+            "content": "Khi số khối = số electron",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tố hóa học được xác định bởi đại lượng nào?"
+          }
+        ],
+        "explanation": "Mỗi nguyên tố hóa học được xác định bởi số proton (số hiệu nguyên tử \\(Z\\)) trong hạt nhân.",
+        "choices": [
+          {
+            "content": "Số nơtron",
+            "is_correct": false
+          },
+          {
+            "content": "Số electron",
+            "is_correct": false
+          },
+          {
+            "content": "Số proton",
+            "is_correct": true
+          },
+          {
+            "content": "Số khối",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong bảng tuần hoàn, các nguyên tố được sắp xếp theo thứ tự nào?"
+          }
+        ],
+        "explanation": "Các nguyên tố trong bảng tuần hoàn được sắp xếp theo chiều tăng dần của số hiệu nguyên tử \\(Z\\).",
+        "choices": [
+          {
+            "content": "Theo số khối tăng dần",
+            "is_correct": false
+          },
+          {
+            "content": "Theo số hiệu nguyên tử tăng dần",
+            "is_correct": true
+          },
+          {
+            "content": "Theo khối lượng riêng tăng dần",
+            "is_correct": false
+          },
+          {
+            "content": "Theo bán kính nguyên tử tăng dần",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Một nguyên tố thuộc cùng một cột (nhóm) trong bảng tuần hoàn có đặc điểm gì giống nhau?"
+          }
+        ],
+        "explanation": "Các nguyên tố cùng nhóm có số electron hóa trị bằng nhau nên có tính chất hóa học tương tự nhau.",
+        "choices": [
+          {
+            "content": "Có cùng số nơtron",
+            "is_correct": false
+          },
+          {
+            "content": "Có cùng số electron hóa trị",
+            "is_correct": true
+          },
+          {
+            "content": "Có cùng số khối",
+            "is_correct": false
+          },
+          {
+            "content": "Có cùng khối lượng nguyên tử",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số electron lớp ngoài cùng quyết định đặc điểm nào của nguyên tố?"
+          }
+        ],
+        "explanation": "Số electron lớp ngoài cùng quyết định tính chất hóa học của nguyên tố.",
+        "choices": [
+          {
+            "content": "Khối lượng nguyên tử",
+            "is_correct": false
+          },
+          {
+            "content": "Số khối",
+            "is_correct": false
+          },
+          {
+            "content": "Tính chất hóa học",
+            "is_correct": true
+          },
+          {
+            "content": "Mật độ nguyên tử",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tố nào có số hiệu nguyên tử \\(Z = 1\\)?"
+          }
+        ],
+        "explanation": "Nguyên tố có số hiệu nguyên tử \\(Z = 1\\) là Hiđro (H).",
+        "choices": [
+          {
+            "content": "Heli",
+            "is_correct": false
+          },
+          {
+            "content": "Hiđro",
+            "is_correct": true
+          },
+          {
+            "content": "Oxi",
+            "is_correct": false
+          },
+          {
+            "content": "Natri",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tố nào có số hiệu nguyên tử \\(Z = 8\\)?"
+          }
+        ],
+        "explanation": "Nguyên tố có số hiệu nguyên tử \\(Z = 8\\) là Oxi (O).",
+        "choices": [
+          {
+            "content": "Cacbon",
+            "is_correct": false
+          },
+          {
+            "content": "Nitơ",
+            "is_correct": false
+          },
+          {
+            "content": "Oxi",
+            "is_correct": true
+          },
+          {
+            "content": "Flo",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 14,
+    "chapter_id": 79,
+    "quiz_type_id": 2,
+    "code": "KHTN7_30_03_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong nguyên tử, lực nào giữ electron quay quanh hạt nhân?"
+          }
+        ],
+        "explanation": "Electron mang điện tích âm bị hút bởi proton mang điện tích dương trong hạt nhân. Lực hút này là lực tĩnh điện Coulomb.",
+        "choices": [
+          {
+            "content": "Lực hấp dẫn",
+            "is_correct": false
+          },
+          {
+            "content": "Lực tĩnh điện Coulomb",
+            "is_correct": true
+          },
+          {
+            "content": "Lực hạt nhân",
+            "is_correct": false
+          },
+          {
+            "content": "Lực từ trường",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tử Oxi có số hiệu nguyên tử \\(Z = 8\\). Số electron lớp ngoài cùng của nó là bao nhiêu?"
+          }
+        ],
+        "explanation": "Cấu hình electron của Oxi: \\(1s^2 2s^2 2p^4\\). Lớp ngoài cùng (n=2) có 6 electron.",
+        "choices": [
+          {
+            "content": "2",
+            "is_correct": false
+          },
+          {
+            "content": "4",
+            "is_correct": false
+          },
+          {
+            "content": "6",
+            "is_correct": true
+          },
+          {
+            "content": "8",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Đồng vị là gì?"
+          }
+        ],
+        "explanation": "Đồng vị là các nguyên tử cùng số proton (cùng số hiệu nguyên tử \\(Z\\)) nhưng khác số nơtron nên có số khối \\(A\\) khác nhau.",
+        "choices": [
+          {
+            "content": "Nguyên tử có số proton khác nhau",
+            "is_correct": false
+          },
+          {
+            "content": "Nguyên tử có số nơtron giống nhau",
+            "is_correct": false
+          },
+          {
+            "content": "Nguyên tử có cùng số proton nhưng khác số nơtron",
+            "is_correct": true
+          },
+          {
+            "content": "Nguyên tử có cùng số khối",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Heli (\\(Z = 2\\)) nằm ở nhóm nào trong bảng tuần hoàn?"
+          }
+        ],
+        "explanation": "Heli có cấu hình electron \\(1s^2\\), lớp ngoài cùng đã bão hòa nên thuộc nhóm khí hiếm (nhóm VIII A hoặc nhóm 18).",
+        "choices": [
+          {
+            "content": "Nhóm I A",
+            "is_correct": false
+          },
+          {
+            "content": "Nhóm II A",
+            "is_correct": false
+          },
+          {
+            "content": "Nhóm VIII A (nhóm 18)",
+            "is_correct": true
+          },
+          {
+            "content": "Nhóm VII A",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong một chu kỳ của bảng tuần hoàn, khi đi từ trái sang phải, tính kim loại thay đổi như thế nào?"
+          }
+        ],
+        "explanation": "Khi đi từ trái sang phải trong một chu kỳ, bán kính nguyên tử giảm, lực hút hạt nhân tăng, nên tính kim loại giảm dần và tính phi kim tăng dần.",
+        "choices": [
+          {
+            "content": "Tính kim loại tăng",
+            "is_correct": false
+          },
+          {
+            "content": "Tính kim loại giảm",
+            "is_correct": true
+          },
+          {
+            "content": "Không thay đổi",
+            "is_correct": false
+          },
+          {
+            "content": "Lúc tăng, lúc giảm",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Một nguyên tử có \\(Z = 11\\). Nguyên tố này thuộc nhóm nào trong bảng tuần hoàn?"
+          }
+        ],
+        "explanation": "Nguyên tố có \\(Z = 11\\) là Na (Natri), cấu hình electron: \\(1s^2 2s^2 2p^6 3s^1\\). Lớp ngoài cùng có 1 electron nên thuộc nhóm I A (nhóm kim loại kiềm).",
+        "choices": [
+          {
+            "content": "Nhóm I A",
+            "is_correct": true
+          },
+          {
+            "content": "Nhóm II A",
+            "is_correct": false
+          },
+          {
+            "content": "Nhóm VII A",
+            "is_correct": false
+          },
+          {
+            "content": "Nhóm VIII A",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tử có \\(Z = 17\\) là nguyên tố nào?"
+          }
+        ],
+        "explanation": "Nguyên tố có \\(Z = 17\\) là Clo (Cl).",
+        "choices": [
+          {
+            "content": "Clo",
+            "is_correct": true
+          },
+          {
+            "content": "Lưu huỳnh",
+            "is_correct": false
+          },
+          {
+            "content": "Oxi",
+            "is_correct": false
+          },
+          {
+            "content": "Natri",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Khối lượng nguyên tử chủ yếu tập trung ở đâu?"
+          }
+        ],
+        "explanation": "Khối lượng nguyên tử chủ yếu tập trung ở hạt nhân, vì proton và nơtron có khối lượng lớn hơn electron nhiều lần.",
+        "choices": [
+          {
+            "content": "Ở lớp vỏ electron",
+            "is_correct": false
+          },
+          {
+            "content": "Ở hạt nhân",
+            "is_correct": true
+          },
+          {
+            "content": "Ở khoảng không giữa hạt nhân và electron",
+            "is_correct": false
+          },
+          {
+            "content": "Phân bố đều khắp nguyên tử",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tố nào có cấu hình electron lớp ngoài cùng là \\(ns^2 np^5\\)?"
+          }
+        ],
+        "explanation": "Cấu hình \\(ns^2 np^5\\) đặc trưng cho nhóm Halogen (nhóm VII A).",
+        "choices": [
+          {
+            "content": "Kim loại kiềm",
+            "is_correct": false
+          },
+          {
+            "content": "Kim loại kiềm thổ",
+            "is_correct": false
+          },
+          {
+            "content": "Halogen",
+            "is_correct": true
+          },
+          {
+            "content": "Khí hiếm",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số lớp electron trong nguyên tử bằng đại lượng nào trong bảng tuần hoàn?"
+          }
+        ],
+        "explanation": "Số lớp electron trong nguyên tử bằng số thứ tự chu kỳ mà nguyên tố đó thuộc về.",
+        "choices": [
+          {
+            "content": "Số hiệu nguyên tử",
+            "is_correct": false
+          },
+          {
+            "content": "Số khối",
+            "is_correct": false
+          },
+          {
+            "content": "Số thứ tự chu kỳ",
+            "is_correct": true
+          },
+          {
+            "content": "Số thứ tự nhóm",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 14,
+    "chapter_id": 80,
+    "quiz_type_id": 1,
+    "code": "KHTN7_15_04_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tử được cấu tạo từ những hạt cơ bản nào?"
+          }
+        ],
+        "explanation": "Nguyên tử gồm 3 loại hạt cơ bản: electron, proton và nơtron. Proton và nơtron tạo thành hạt nhân, electron chuyển động xung quanh hạt nhân.",
+        "choices": [
+          {
+            "content": "Proton, electron, photon",
+            "is_correct": false
+          },
+          {
+            "content": "Electron, proton, nơtron",
+            "is_correct": true
+          },
+          {
+            "content": "Electron, nơtron, photon",
+            "is_correct": false
+          },
+          {
+            "content": "Proton, nơtron, positron",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Điện tích của proton và electron lần lượt là bao nhiêu?"
+          }
+        ],
+        "explanation": "Proton mang điện tích dương \\(+1\\), electron mang điện tích âm \\(-1\\). Nơtron không mang điện.",
+        "choices": [
+          {
+            "content": "\\(+1\\) và \\(-1\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(-1\\) và \\(+1\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(+1\\) và \\(+1\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(-1\\) và \\(-1\\)",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số khối \\(A\\) của nguyên tử được tính bằng công thức nào?"
+          }
+        ],
+        "explanation": "Số khối \\(A\\) được tính bằng tổng số proton \\(Z\\) và số nơtron \\(N\\): \\(A = Z + N\\).",
+        "choices": [
+          {
+            "content": "\\(A = Z + N\\)",
+            "is_correct": true
+          },
+          {
+            "content": "\\(A = Z - N\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(A = Z \\times N\\)",
+            "is_correct": false
+          },
+          {
+            "content": "\\(A = Z / N\\)",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tử trung hòa về điện khi nào?"
+          }
+        ],
+        "explanation": "Nguyên tử trung hòa khi số proton (điện tích dương) bằng số electron (điện tích âm).",
+        "choices": [
+          {
+            "content": "Khi số proton = số electron",
+            "is_correct": true
+          },
+          {
+            "content": "Khi số proton = số nơtron",
+            "is_correct": false
+          },
+          {
+            "content": "Khi số electron = số nơtron",
+            "is_correct": false
+          },
+          {
+            "content": "Khi số khối = số electron",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tố hóa học được xác định bởi đại lượng nào?"
+          }
+        ],
+        "explanation": "Mỗi nguyên tố hóa học được xác định bởi số proton (số hiệu nguyên tử \\(Z\\)) trong hạt nhân.",
+        "choices": [
+          {
+            "content": "Số nơtron",
+            "is_correct": false
+          },
+          {
+            "content": "Số electron",
+            "is_correct": false
+          },
+          {
+            "content": "Số proton",
+            "is_correct": true
+          },
+          {
+            "content": "Số khối",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong bảng tuần hoàn, các nguyên tố được sắp xếp theo thứ tự nào?"
+          }
+        ],
+        "explanation": "Các nguyên tố trong bảng tuần hoàn được sắp xếp theo chiều tăng dần của số hiệu nguyên tử \\(Z\\).",
+        "choices": [
+          {
+            "content": "Theo số khối tăng dần",
+            "is_correct": false
+          },
+          {
+            "content": "Theo số hiệu nguyên tử tăng dần",
+            "is_correct": true
+          },
+          {
+            "content": "Theo khối lượng riêng tăng dần",
+            "is_correct": false
+          },
+          {
+            "content": "Theo bán kính nguyên tử tăng dần",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Một nguyên tố thuộc cùng một cột (nhóm) trong bảng tuần hoàn có đặc điểm gì giống nhau?"
+          }
+        ],
+        "explanation": "Các nguyên tố cùng nhóm có số electron hóa trị bằng nhau nên có tính chất hóa học tương tự nhau.",
+        "choices": [
+          {
+            "content": "Có cùng số nơtron",
+            "is_correct": false
+          },
+          {
+            "content": "Có cùng số electron hóa trị",
+            "is_correct": true
+          },
+          {
+            "content": "Có cùng số khối",
+            "is_correct": false
+          },
+          {
+            "content": "Có cùng khối lượng nguyên tử",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số electron lớp ngoài cùng quyết định đặc điểm nào của nguyên tố?"
+          }
+        ],
+        "explanation": "Số electron lớp ngoài cùng quyết định tính chất hóa học của nguyên tố.",
+        "choices": [
+          {
+            "content": "Khối lượng nguyên tử",
+            "is_correct": false
+          },
+          {
+            "content": "Số khối",
+            "is_correct": false
+          },
+          {
+            "content": "Tính chất hóa học",
+            "is_correct": true
+          },
+          {
+            "content": "Mật độ nguyên tử",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tố nào có số hiệu nguyên tử \\(Z = 1\\)?"
+          }
+        ],
+        "explanation": "Nguyên tố có số hiệu nguyên tử \\(Z = 1\\) là Hiđro (H).",
+        "choices": [
+          {
+            "content": "Heli",
+            "is_correct": false
+          },
+          {
+            "content": "Hiđro",
+            "is_correct": true
+          },
+          {
+            "content": "Oxi",
+            "is_correct": false
+          },
+          {
+            "content": "Natri",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tố nào có số hiệu nguyên tử \\(Z = 8\\)?"
+          }
+        ],
+        "explanation": "Nguyên tố có số hiệu nguyên tử \\(Z = 8\\) là Oxi (O).",
+        "choices": [
+          {
+            "content": "Cacbon",
+            "is_correct": false
+          },
+          {
+            "content": "Nitơ",
+            "is_correct": false
+          },
+          {
+            "content": "Oxi",
+            "is_correct": true
+          },
+          {
+            "content": "Flo",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "grade_id": 7,
+    "subject_id": 14,
+    "chapter_id": 80,
+    "quiz_type_id": 2,
+    "code": "KHTN7_30_04_MD001",
+    "questions": [
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong nguyên tử, lực nào giữ electron quay quanh hạt nhân?"
+          }
+        ],
+        "explanation": "Electron mang điện tích âm bị hút bởi proton mang điện tích dương trong hạt nhân. Lực hút này là lực tĩnh điện Coulomb.",
+        "choices": [
+          {
+            "content": "Lực hấp dẫn",
+            "is_correct": false
+          },
+          {
+            "content": "Lực tĩnh điện Coulomb",
+            "is_correct": true
+          },
+          {
+            "content": "Lực hạt nhân",
+            "is_correct": false
+          },
+          {
+            "content": "Lực từ trường",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tử Oxi có số hiệu nguyên tử \\(Z = 8\\). Số electron lớp ngoài cùng của nó là bao nhiêu?"
+          }
+        ],
+        "explanation": "Cấu hình electron của Oxi: \\(1s^2 2s^2 2p^4\\). Lớp ngoài cùng (n=2) có 6 electron.",
+        "choices": [
+          {
+            "content": "2",
+            "is_correct": false
+          },
+          {
+            "content": "4",
+            "is_correct": false
+          },
+          {
+            "content": "6",
+            "is_correct": true
+          },
+          {
+            "content": "8",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Đồng vị là gì?"
+          }
+        ],
+        "explanation": "Đồng vị là các nguyên tử cùng số proton (cùng số hiệu nguyên tử \\(Z\\)) nhưng khác số nơtron nên có số khối \\(A\\) khác nhau.",
+        "choices": [
+          {
+            "content": "Nguyên tử có số proton khác nhau",
+            "is_correct": false
+          },
+          {
+            "content": "Nguyên tử có số nơtron giống nhau",
+            "is_correct": false
+          },
+          {
+            "content": "Nguyên tử có cùng số proton nhưng khác số nơtron",
+            "is_correct": true
+          },
+          {
+            "content": "Nguyên tử có cùng số khối",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Heli (\\(Z = 2\\)) nằm ở nhóm nào trong bảng tuần hoàn?"
+          }
+        ],
+        "explanation": "Heli có cấu hình electron \\(1s^2\\), lớp ngoài cùng đã bão hòa nên thuộc nhóm khí hiếm (nhóm VIII A hoặc nhóm 18).",
+        "choices": [
+          {
+            "content": "Nhóm I A",
+            "is_correct": false
+          },
+          {
+            "content": "Nhóm II A",
+            "is_correct": false
+          },
+          {
+            "content": "Nhóm VIII A (nhóm 18)",
+            "is_correct": true
+          },
+          {
+            "content": "Nhóm VII A",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Trong một chu kỳ của bảng tuần hoàn, khi đi từ trái sang phải, tính kim loại thay đổi như thế nào?"
+          }
+        ],
+        "explanation": "Khi đi từ trái sang phải trong một chu kỳ, bán kính nguyên tử giảm, lực hút hạt nhân tăng, nên tính kim loại giảm dần và tính phi kim tăng dần.",
+        "choices": [
+          {
+            "content": "Tính kim loại tăng",
+            "is_correct": false
+          },
+          {
+            "content": "Tính kim loại giảm",
+            "is_correct": true
+          },
+          {
+            "content": "Không thay đổi",
+            "is_correct": false
+          },
+          {
+            "content": "Lúc tăng, lúc giảm",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Một nguyên tử có \\(Z = 11\\). Nguyên tố này thuộc nhóm nào trong bảng tuần hoàn?"
+          }
+        ],
+        "explanation": "Nguyên tố có \\(Z = 11\\) là Na (Natri), cấu hình electron: \\(1s^2 2s^2 2p^6 3s^1\\). Lớp ngoài cùng có 1 electron nên thuộc nhóm I A (nhóm kim loại kiềm).",
+        "choices": [
+          {
+            "content": "Nhóm I A",
+            "is_correct": true
+          },
+          {
+            "content": "Nhóm II A",
+            "is_correct": false
+          },
+          {
+            "content": "Nhóm VII A",
+            "is_correct": false
+          },
+          {
+            "content": "Nhóm VIII A",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tử có \\(Z = 17\\) là nguyên tố nào?"
+          }
+        ],
+        "explanation": "Nguyên tố có \\(Z = 17\\) là Clo (Cl).",
+        "choices": [
+          {
+            "content": "Clo",
+            "is_correct": true
+          },
+          {
+            "content": "Lưu huỳnh",
+            "is_correct": false
+          },
+          {
+            "content": "Oxi",
+            "is_correct": false
+          },
+          {
+            "content": "Natri",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Khối lượng nguyên tử chủ yếu tập trung ở đâu?"
+          }
+        ],
+        "explanation": "Khối lượng nguyên tử chủ yếu tập trung ở hạt nhân, vì proton và nơtron có khối lượng lớn hơn electron nhiều lần.",
+        "choices": [
+          {
+            "content": "Ở lớp vỏ electron",
+            "is_correct": false
+          },
+          {
+            "content": "Ở hạt nhân",
+            "is_correct": true
+          },
+          {
+            "content": "Ở khoảng không giữa hạt nhân và electron",
+            "is_correct": false
+          },
+          {
+            "content": "Phân bố đều khắp nguyên tử",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Nguyên tố nào có cấu hình electron lớp ngoài cùng là \\(ns^2 np^5\\)?"
+          }
+        ],
+        "explanation": "Cấu hình \\(ns^2 np^5\\) đặc trưng cho nhóm Halogen (nhóm VII A).",
+        "choices": [
+          {
+            "content": "Kim loại kiềm",
+            "is_correct": false
+          },
+          {
+            "content": "Kim loại kiềm thổ",
+            "is_correct": false
+          },
+          {
+            "content": "Halogen",
+            "is_correct": true
+          },
+          {
+            "content": "Khí hiếm",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "contents": [
+          {
+            "content_type": "TEXT",
+            "content_value": "Số lớp electron trong nguyên tử bằng đại lượng nào trong bảng tuần hoàn?"
+          }
+        ],
+        "explanation": "Số lớp electron trong nguyên tử bằng số thứ tự chu kỳ mà nguyên tố đó thuộc về.",
+        "choices": [
+          {
+            "content": "Số hiệu nguyên tử",
+            "is_correct": false
+          },
+          {
+            "content": "Số khối",
+            "is_correct": false
+          },
+          {
+            "content": "Số thứ tự chu kỳ",
+            "is_correct": true
+          },
+          {
+            "content": "Số thứ tự nhóm",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  }
+]

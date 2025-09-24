@@ -8,4 +8,7 @@ import java.util.Optional;
 
 public interface SubjectRepository extends JpaRepository<Subject, Integer> {
     List<Subject> findByCodeAndGrade(String code, int grade);
+
+    // Thêm method mới
+    List<Subject> findByGrade(int grade);
 }
