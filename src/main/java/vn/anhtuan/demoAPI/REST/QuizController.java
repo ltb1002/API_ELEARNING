@@ -325,6 +325,38 @@ public class QuizController {
             return ResponseEntity.status(500).body(null);
         }
     }
+    /**
+     * Lấy điểm cao nhất của một người dùng cho một quiz cụ thể
+     */
+    @GetMapping("/{quizId}/users/{userId}/best-score")
+    public ResponseEntity<Map<String, Object>> getBestScoreForUser(
+            @PathVariable Integer quizId,
+            @PathVariable Long userId) {
+
+        try {
+            QuizResult bestResult = quizResultService.getBestQuizResultForUser(userId, quizId);
+
+            if (bestResult == null) {
+                return ResponseEntity.notFound().build();
+            }
+
+            Map<String, Object> response = new HashMap<>();
+            response.put("bestScore", bestResult.getScore());
+            response.put("bestCorrectAnswers", bestResult.getCorrectAnswers());
+            response.put("totalQuestions", bestResult.getTotalQuestions());
+            response.put("attemptNo", bestResult.getAttemptNo());
+            response.put("durationSeconds", bestResult.getDurationSeconds());
+            response.put("completedAt", bestResult.getCompletedAt());
+            response.put("passed", bestResult.getScore().compareTo(new BigDecimal("5.0")) >= 0);
+
+            return ResponseEntity.ok(response);
+
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body(Map.of(
+                    "error", "Internal server error: " + e.getMessage()
+            ));
+        }
+    }
 
     // Các method convert POJO
     private GradePOJO convertToGradePOJO(Grade grade) {

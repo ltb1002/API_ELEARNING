@@ -214,4 +214,17 @@ public class QuizResultService {
 
         return stats;
     }
+
+    public QuizResult getBestQuizResultForUser(Long userId, Integer quizId) {
+        List<QuizResult> results = getUserQuizResultsForQuiz(userId, quizId);
+
+        if (results.isEmpty()) {
+            return null;
+        }
+
+        return results.stream()
+                .max(Comparator.comparing(QuizResult::getScore)
+                        .thenComparing(QuizResult::getCorrectAnswers))
+                .orElse(null);
+    }
 }
