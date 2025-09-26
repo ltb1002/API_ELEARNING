@@ -19,6 +19,13 @@ public class User {
     @Column(nullable = false)
     private String username;
 
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private Role role = Role.USER; // Mặc định là USER
+
+    public enum Role {
+        USER, ADMIN
+    }
     public User() {
     }
 
@@ -26,6 +33,7 @@ public class User {
         this.email = email;
         this.password = password;
         this.username = username;
+        this.role = Role.USER; // Mặc định là USER
     }
 
     public Long getId() {
@@ -59,4 +67,7 @@ public class User {
     public void setUsername(String username) {
         this.username = username;
     }
+
+    public Role getRole() { return role; }
+    public void setRole(Role role) { this.role = role; }
 }

@@ -1,17 +1,19 @@
 package vn.anhtuan.demoAPI.REST;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import vn.anhtuan.demoAPI.Entity.PasswordResetToken;
 import vn.anhtuan.demoAPI.Entity.User;
+import vn.anhtuan.demoAPI.Security.JwtTokenProvider;
 import vn.anhtuan.demoAPI.Service.PasswordResetService;
 import vn.anhtuan.demoAPI.Service.UserService;
 
 import java.time.LocalDateTime;
 import java.util.Map;
 import java.util.Optional;
-import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -21,13 +23,16 @@ public class AuthController {
     private final UserService userService;
     private final PasswordResetService passwordResetService;
     private final PasswordEncoder passwordEncoder;
+    private final JwtTokenProvider jwtTokenProvider; // Thêm dòng này
 
     public AuthController(UserService userService,
                           PasswordResetService passwordResetService,
-                          PasswordEncoder passwordEncoder) {
+                          PasswordEncoder passwordEncoder,
+                          JwtTokenProvider jwtTokenProvider) { // Thêm parameter
         this.userService = userService;
         this.passwordResetService = passwordResetService;
         this.passwordEncoder = passwordEncoder;
+        this.jwtTokenProvider = jwtTokenProvider; // Gán giá trị
     }
 
     @PostMapping("/register")
@@ -81,15 +86,16 @@ public class AuthController {
             return ResponseEntity.badRequest().body(Map.of("success",false,"message","Password incorrect"));
         }
 
-        // Generate dummy token (JWT nên tạo thực tế)
-        String token = UUID.randomUUID().toString();
+        // Sử dụng JWT token
+        String token = jwtTokenProvider.generateToken(user);
 
         return ResponseEntity.ok(Map.of(
                 "success", true,
                 "message", "Login successful",
                 "token", token,
                 "username", user.getUsername(),
-                "userId", user.getId()
+                "userId", user.getId(),
+                "role", user.getRole().name()
         ));
     }
 
@@ -106,12 +112,7 @@ public class AuthController {
         }
 
         // Generate token
-        String token = UUID.randomUUID().toString();
-        PasswordResetToken resetToken = new PasswordResetToken();
-        resetToken.setEmail(email);
-        resetToken.setToken(token);
-        resetToken.setExpiryDate(LocalDateTime.now().plusHours(1));
-        passwordResetService.saveToken(resetToken);
+        String token = jwtTokenProvider.createPasswordResetToken(email); // Sử dụng service
 
         // TODO: Send email here
 
@@ -132,7 +133,6 @@ public class AuthController {
         }
 
         try {
-            // Chỉ gửi raw password, service sẽ encode
             passwordResetService.resetPassword(token, newPassword.trim());
             return ResponseEntity.ok(Map.of("success",true,"message","Password reset successfully"));
         } catch(RuntimeException e){
@@ -140,75 +140,63 @@ public class AuthController {
         }
     }
 
+    // XÓA METHOD getUserProfile CŨ (có @RequestHeader) VÀ GIỮ LẠI METHOD MỚI DƯỚI ĐÂY
     @GetMapping("/user-profile")
-    public ResponseEntity<Map<String, Object>> getUserProfile(@RequestHeader("Authorization") String token) {
-        // Extract user ID from token (simplified implementation)
-        // In a real application, you would decode the JWT token
-        try {
-            // This is a simplified approach - in a real app, you'd use JWT
-            String userIdStr = token.replace("Bearer ", "");
-            Long userId = Long.parseLong(userIdStr);
+    public ResponseEntity<Map<String, Object>> getUserProfile() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
-            Optional<User> userOpt = userService.findById(userId);
-            if (userOpt.isEmpty()) {
-                return ResponseEntity.status(404).body(Map.of("success", false, "message", "User not found"));
-            }
-
-            User user = userOpt.get();
-            return ResponseEntity.ok(Map.of(
-                    "success", true,
-                    "user", Map.of(
-                            "id", user.getId(),
-                            "email", user.getEmail(),
-                            "username", user.getUsername()
-                    )
-            ));
-        } catch (Exception e) {
-            return ResponseEntity.status(401).body(Map.of("success", false, "message", "Invalid token"));
+        if (authentication == null || !authentication.isAuthenticated() ||
+                authentication.getPrincipal().equals("anonymousUser")) {
+            return ResponseEntity.status(401).body(Map.of("success", false, "message", "Not authenticated"));
         }
+
+        User user = (User) authentication.getPrincipal();
+
+        return ResponseEntity.ok(Map.of(
+                "success", true,
+                "user", Map.of(
+                        "id", user.getId(),
+                        "email", user.getEmail(),
+                        "username", user.getUsername(),
+                        "role", user.getRole().name()
+                )
+        ));
     }
 
     @PostMapping("/change-password")
-    public ResponseEntity<Map<String, Object>> changePassword(
-            @RequestHeader("Authorization") String token,
-            @RequestBody Map<String, String> body) {
+    public ResponseEntity<Map<String, Object>> changePassword(@RequestBody Map<String, String> body) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
-        try {
-            String userIdStr = token.replace("Bearer ", "");
-            Long userId = Long.parseLong(userIdStr);
+        if (authentication == null || !authentication.isAuthenticated()) {
+            return ResponseEntity.status(401).body(Map.of("success", false, "message", "Not authenticated"));
+        }
 
-            String currentPassword = body.get("currentPassword");
-            String newPassword = body.get("newPassword");
+        User user = (User) authentication.getPrincipal();
 
-            if (currentPassword == null || newPassword == null) {
-                return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Current and new password are required"));
-            }
+        String currentPassword = body.get("currentPassword");
+        String newPassword = body.get("newPassword");
 
-            boolean success = userService.changePassword(userId, currentPassword, newPassword);
-            if (success) {
-                return ResponseEntity.ok(Map.of("success", true, "message", "Password changed successfully"));
-            } else {
-                return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Current password is incorrect"));
-            }
-        } catch (Exception e) {
-            return ResponseEntity.status(401).body(Map.of("success", false, "message", "Invalid token"));
+        if (currentPassword == null || newPassword == null) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Current and new password are required"));
+        }
+
+        boolean success = userService.changePassword(user.getId(), currentPassword, newPassword);
+        if (success) {
+            return ResponseEntity.ok(Map.of("success", true, "message", "Password changed successfully"));
+        } else {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Current password is incorrect"));
         }
     }
 
     @GetMapping("/validate-token")
-    public ResponseEntity<Map<String, Object>> validateToken(@RequestHeader("Authorization") String token) {
-        try {
-            String userIdStr = token.replace("Bearer ", "");
-            Long userId = Long.parseLong(userIdStr);
+    public ResponseEntity<Map<String, Object>> validateToken() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
-            Optional<User> userOpt = userService.findById(userId);
-            if (userOpt.isEmpty()) {
-                return ResponseEntity.status(401).body(Map.of("success", false, "message", "Invalid token"));
-            }
-
-            return ResponseEntity.ok(Map.of("success", true, "message", "Token is valid"));
-        } catch (Exception e) {
+        if (authentication == null || !authentication.isAuthenticated() ||
+                authentication.getPrincipal().equals("anonymousUser")) {
             return ResponseEntity.status(401).body(Map.of("success", false, "message", "Invalid token"));
         }
+
+        return ResponseEntity.ok(Map.of("success", true, "message", "Token is valid"));
     }
 }
