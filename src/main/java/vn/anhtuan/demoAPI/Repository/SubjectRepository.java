@@ -11,4 +11,5 @@ public interface SubjectRepository extends JpaRepository<Subject, Integer> {
 
     // Thêm method mới
     List<Subject> findByGrade(int grade);
+
 }

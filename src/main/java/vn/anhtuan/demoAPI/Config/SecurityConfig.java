@@ -62,7 +62,10 @@ public class SecurityConfig {
                         ).permitAll()
 
                         // ADMIN ENDPOINTS
-                        .requestMatchers("/api/admin/**").hasRole("ADMIN")
+                        .requestMatchers(
+                                "/api/admin/**",
+                                "/api/progress/admin/**"  // THÊM ENDPOINT ADMIN CỦA PROGRESS
+                        ).hasRole("ADMIN")
 
                         // AUTHENTICATED ENDPOINTS (require login)
                         .requestMatchers(
@@ -70,11 +73,17 @@ public class SecurityConfig {
                                 "/api/auth/change-password",
                                 "/api/auth/validate-token",
                                 "/api/users/**",
+
                                 "/api/quizzes/*/submit",
                                 "/api/quizzes/*/history",
                                 "/api/quizzes/*/users/*/history",
                                 "/api/quizzes/*/users/*/best-score",
-                                "/api/quizzes/*/questions"
+                                "/api/quizzes/*/questions",
+
+                                "/api/progress/complete-lesson",
+                                "/api/progress/uncomplete-lesson/**",
+                                "/api/progress/check-completion/**",
+                                "/api/progress/user/**"
                         ).authenticated()
 
                         .anyRequest().authenticated()

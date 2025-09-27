@@ -1,6 +1,10 @@
 package vn.anhtuan.demoAPI.Entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -22,6 +26,13 @@ public class User {
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private Role role = Role.USER; // Mặc định là USER
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonIgnore // THÊM DÒNG NÀY
+    private List<LessonCompletion> lessonCompletions = new ArrayList<>();
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Progress> progresses = new ArrayList<>();
 
     public enum Role {
         USER, ADMIN
@@ -70,4 +81,20 @@ public class User {
 
     public Role getRole() { return role; }
     public void setRole(Role role) { this.role = role; }
+
+    public List<LessonCompletion> getLessonCompletions() {
+        return lessonCompletions;
+    }
+
+    public void setLessonCompletions(List<LessonCompletion> lessonCompletions) {
+        this.lessonCompletions = lessonCompletions;
+    }
+
+    public List<Progress> getProgresses() {
+        return progresses;
+    }
+
+    public void setProgresses(List<Progress> progresses) {
+        this.progresses = progresses;
+    }
 }

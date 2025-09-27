@@ -4,11 +4,18 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import vn.anhtuan.demoAPI.Entity.Lesson;
+import vn.anhtuan.demoAPI.Entity.Subject;
 
 import java.util.List;
 
 public interface LessonRepository extends JpaRepository<Lesson, Long> {
     List<Lesson> findByChapterId(Long chapterId);
+    @Query("SELECT COUNT(l) FROM Lesson l WHERE l.chapter.subject = :subject")
+    long countByChapterSubject(@Param("subject") Subject subject);
+
+    // Hoặc sử dụng subjectId
+    @Query("SELECT COUNT(l) FROM Lesson l WHERE l.chapter.subject.id = :subjectId")
+    long countByChapterSubjectId(@Param("subjectId") Integer subjectId);
 
     // Phiên bản tối ưu cho tiếng Việt - thêm tham số grade
     @Query("SELECT l FROM Lesson l JOIN l.chapter c JOIN c.subject s " +
