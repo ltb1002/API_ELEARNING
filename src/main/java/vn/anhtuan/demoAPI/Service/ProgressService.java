@@ -30,4 +30,5 @@ public interface ProgressService {
 
     // Chuyển đổi Progress sang DTO
     ProgressResponsePOJO convertToProgressResponseDTO(Progress progress);
+
 }

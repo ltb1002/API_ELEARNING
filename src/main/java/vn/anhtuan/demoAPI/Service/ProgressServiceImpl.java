@@ -27,6 +27,10 @@ public class ProgressServiceImpl implements ProgressService {
     private LessonRepository lessonRepository;
 
     @Autowired
+    private UserStreakService streakService; // ✅ thêm streak service
+
+
+    @Autowired
     private SubjectRepository subjectRepository;
 
     @Override
