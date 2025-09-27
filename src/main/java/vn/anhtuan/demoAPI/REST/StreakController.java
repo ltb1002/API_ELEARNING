@@ -25,7 +25,9 @@ public class StreakController {
     @PostMapping("/update")
     public ResponseEntity<UserStreakPOJO> updateStreak(@RequestParam Long userId) {
         UserStreak s = streakService.updateStreak(userId);
-        return ResponseEntity.ok(toPOJO(s));
+        return ResponseEntity.ok(new UserStreakPOJO(
+                s.getStreakCount(), s.getBestStreak(), s.getTotalDays(), s.getLastActiveDate()
+        ));
     }
 
     private UserStreakPOJO toPOJO(UserStreak s) {
