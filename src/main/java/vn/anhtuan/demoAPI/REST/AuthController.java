@@ -1,17 +1,18 @@
 package vn.anhtuan.demoAPI.REST;
 
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
-import vn.anhtuan.demoAPI.Entity.PasswordResetToken;
 import vn.anhtuan.demoAPI.Entity.User;
+import vn.anhtuan.demoAPI.POJO.ChangePasswordPOJO;
+import vn.anhtuan.demoAPI.POJO.UpdateProfileRequestPOJO;
 import vn.anhtuan.demoAPI.Security.JwtTokenProvider;
 import vn.anhtuan.demoAPI.Service.PasswordResetService;
 import vn.anhtuan.demoAPI.Service.UserService;
 
-import java.time.LocalDateTime;
 import java.util.Map;
 import java.util.Optional;
 
@@ -23,33 +24,33 @@ public class AuthController {
     private final UserService userService;
     private final PasswordResetService passwordResetService;
     private final PasswordEncoder passwordEncoder;
-    private final JwtTokenProvider jwtTokenProvider; // Thêm dòng này
+    private final JwtTokenProvider jwtTokenProvider;
 
     public AuthController(UserService userService,
                           PasswordResetService passwordResetService,
                           PasswordEncoder passwordEncoder,
-                          JwtTokenProvider jwtTokenProvider) { // Thêm parameter
+                          JwtTokenProvider jwtTokenProvider) {
         this.userService = userService;
         this.passwordResetService = passwordResetService;
         this.passwordEncoder = passwordEncoder;
-        this.jwtTokenProvider = jwtTokenProvider; // Gán giá trị
+        this.jwtTokenProvider = jwtTokenProvider;
     }
 
+    // ===== REGISTER =====
     @PostMapping("/register")
     public ResponseEntity<Map<String,Object>> register(@RequestBody Map<String,String> body){
         String email = body.get("email");
         String password = body.get("password");
         String username = body.get("username");
 
-        if(email==null || email.isBlank() || password==null || password.isBlank() || username==null || username.isBlank()){
+        if (email==null || email.isBlank() || password==null || password.isBlank() || username==null || username.isBlank()) {
             return ResponseEntity.badRequest().body(Map.of("success",false,"message","Email, username & password cannot be empty"));
         }
 
-        if(userService.findByEmailIgnoreCase(email).isPresent()){
+        if (userService.findByEmailIgnoreCase(email).isPresent()) {
             return ResponseEntity.badRequest().body(Map.of("success",false,"message","Email already exists"));
         }
-
-        if(userService.findByUsername(username).isPresent()){
+        if (userService.findByUsername(username).isPresent()) {
             return ResponseEntity.badRequest().body(Map.of("success",false,"message","Username already exists"));
         }
 
@@ -67,26 +68,26 @@ public class AuthController {
         ));
     }
 
+    // ===== LOGIN =====
     @PostMapping("/login")
     public ResponseEntity<Map<String,Object>> login(@RequestBody Map<String,String> body){
         String email = body.get("email");
         String password = body.get("password");
 
-        if(email==null || email.isBlank() || password==null || password.isBlank()){
+        if (email==null || email.isBlank() || password==null || password.isBlank()){
             return ResponseEntity.badRequest().body(Map.of("success",false,"message","Email & password cannot be empty"));
         }
 
         Optional<User> userOpt = userService.findByEmailIgnoreCase(email.trim());
-        if(userOpt.isEmpty()){
+        if (userOpt.isEmpty()){
             return ResponseEntity.badRequest().body(Map.of("success",false,"message","Email not found"));
         }
 
         User user = userOpt.get();
-        if(!passwordEncoder.matches(password, user.getPassword())){
+        if (!passwordEncoder.matches(password, user.getPassword())){
             return ResponseEntity.badRequest().body(Map.of("success",false,"message","Password incorrect"));
         }
 
-        // Sử dụng JWT token
         String token = jwtTokenProvider.generateToken(user);
 
         return ResponseEntity.ok(Map.of(
@@ -99,22 +100,20 @@ public class AuthController {
         ));
     }
 
+    // ===== FORGOT PASSWORD =====
     @PostMapping("/forgot-password")
     public ResponseEntity<Map<String,Object>> forgotPassword(@RequestBody Map<String,String> body){
         String email = body.get("email");
-        if(email==null || email.isBlank()){
+        if (email==null || email.isBlank()){
             return ResponseEntity.badRequest().body(Map.of("success",false,"message","Email cannot be empty"));
         }
 
-        Optional<User> userOpt = userService.findByEmailIgnoreCase(email);
-        if(userOpt.isEmpty()){
+        if (userService.findByEmailIgnoreCase(email).isEmpty()){
             return ResponseEntity.badRequest().body(Map.of("success",false,"message","Email not found"));
         }
 
-        // Generate token
-        String token = jwtTokenProvider.createPasswordResetToken(email); // Sử dụng service
-
-        // TODO: Send email here
+        String token = jwtTokenProvider.createPasswordResetToken(email);
+        // TODO: gửi email token
 
         return ResponseEntity.ok(Map.of(
                 "success", true,
@@ -128,7 +127,7 @@ public class AuthController {
         String token = body.get("token");
         String newPassword = body.get("newPassword");
 
-        if(token==null || token.isBlank() || newPassword==null || newPassword.isBlank()){
+        if (token==null || token.isBlank() || newPassword==null || newPassword.isBlank()){
             return ResponseEntity.badRequest().body(Map.of("success",false,"message","Token & newPassword required"));
         }
 
@@ -140,63 +139,109 @@ public class AuthController {
         }
     }
 
-    // XÓA METHOD getUserProfile CŨ (có @RequestHeader) VÀ GIỮ LẠI METHOD MỚI DƯỚI ĐÂY
-    @GetMapping("/user-profile")
-    public ResponseEntity<Map<String, Object>> getUserProfile() {
+    // ===== TOKEN CHECK =====
+    @GetMapping("/validate-token")
+    public ResponseEntity<Map<String, Object>> validateToken() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        if (authentication == null || !authentication.isAuthenticated() || "anonymousUser".equals(authentication.getPrincipal())) {
+            return ResponseEntity.status(401).body(Map.of("success", false, "message", "Invalid token"));
+        }
+        return ResponseEntity.ok(Map.of("success", true, "message", "Token is valid"));
+    }
 
-        if (authentication == null || !authentication.isAuthenticated() ||
-                authentication.getPrincipal().equals("anonymousUser")) {
+    // ===== GET PROFILE (DUY NHẤT 1 METHOD) =====
+    @GetMapping("/user-profile")
+    public ResponseEntity<Map<String, Object>> userProfile() {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        if (auth == null || !auth.isAuthenticated() || "anonymousUser".equals(auth.getPrincipal())) {
             return ResponseEntity.status(401).body(Map.of("success", false, "message", "Not authenticated"));
         }
-
-        User user = (User) authentication.getPrincipal();
+        User u = (auth.getPrincipal() instanceof User)
+                ? (User) auth.getPrincipal()
+                : userService.findByEmailIgnoreCase(auth.getName())
+                .or(() -> userService.findByUsername(auth.getName()))
+                .orElseThrow(() -> new RuntimeException("User not found"));
 
         return ResponseEntity.ok(Map.of(
                 "success", true,
                 "user", Map.of(
-                        "id", user.getId(),
-                        "email", user.getEmail(),
-                        "username", user.getUsername(),
-                        "role", user.getRole().name()
+                        "id", u.getId(),
+                        "email", u.getEmail(),
+                        "username", u.getUsername(),
+                        "role", u.getRole().name()
                 )
         ));
     }
 
-    @PostMapping("/change-password")
-    public ResponseEntity<Map<String, Object>> changePassword(@RequestBody Map<String, String> body) {
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-
-        if (authentication == null || !authentication.isAuthenticated()) {
+    // ===== UPDATE PROFILE (username + email, và TÙY CHỌN đổi mật khẩu tại đây) =====
+    @PutMapping("/user-profile")
+    public ResponseEntity<Map<String, Object>> updateUserProfile(@Valid @RequestBody UpdateProfileRequestPOJO body) {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        if (auth == null || !auth.isAuthenticated() || "anonymousUser".equals(auth.getPrincipal())) {
             return ResponseEntity.status(401).body(Map.of("success", false, "message", "Not authenticated"));
         }
+        User u = (User) auth.getPrincipal();
 
-        User user = (User) authentication.getPrincipal();
+        String newEmail = body.getEmail().trim().toLowerCase();
+        String newUsername = body.getUsername().trim();
 
-        String currentPassword = body.get("currentPassword");
-        String newPassword = body.get("newPassword");
-
-        if (currentPassword == null || newPassword == null) {
-            return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Current and new password are required"));
+        // unique email nếu đổi
+        var emailOwner = userService.findByEmailIgnoreCase(newEmail);
+        if (!u.getEmail().equalsIgnoreCase(newEmail) && emailOwner.isPresent()) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Email already exists"));
+        }
+        // unique username nếu đổi
+        var userByName = userService.findByUsername(newUsername);
+        if (!u.getUsername().equalsIgnoreCase(newUsername) && userByName.isPresent()) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Username already exists"));
         }
 
-        boolean success = userService.changePassword(user.getId(), currentPassword, newPassword);
-        if (success) {
-            return ResponseEntity.ok(Map.of("success", true, "message", "Password changed successfully"));
-        } else {
-            return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Current password is incorrect"));
+        u.setEmail(newEmail);
+        u.setUsername(newUsername);
+
+        // Nếu client gửi newPassword -> yêu cầu currentPassword khớp rồi mới đổi
+        if (body.getNewPassword() != null && !body.getNewPassword().isBlank()) {
+            if (body.getCurrentPassword() == null || !passwordEncoder.matches(body.getCurrentPassword(), u.getPassword())) {
+                return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Current password incorrect"));
+            }
+            if (body.getNewPassword().length() < 6) {
+                return ResponseEntity.badRequest().body(Map.of("success", false, "message", "New password must be at least 6 characters"));
+            }
+            u.setPassword(passwordEncoder.encode(body.getNewPassword()));
         }
+
+        userService.save(u);
+
+        return ResponseEntity.ok(Map.of(
+                "success", true,
+                "user", Map.of(
+                        "id", u.getId(),
+                        "email", u.getEmail(),
+                        "username", u.getUsername(),
+                        "role", u.getRole().name()
+                )
+        ));
     }
 
-    @GetMapping("/validate-token")
-    public ResponseEntity<Map<String, Object>> validateToken() {
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+    // ===== CHANGE PASSWORD (endpoint riêng, nếu bạn muốn tách biệt với update profile) =====
+    @PutMapping("/change-password")
+    public ResponseEntity<Map<String, Object>> changePassword(@Valid @RequestBody ChangePasswordPOJO req) {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        if (auth == null || !auth.isAuthenticated() || "anonymousUser".equals(auth.getPrincipal())) {
+            return ResponseEntity.status(401).body(Map.of("success", false, "message", "Not authenticated"));
+        }
+        User u = (User) auth.getPrincipal();
 
-        if (authentication == null || !authentication.isAuthenticated() ||
-                authentication.getPrincipal().equals("anonymousUser")) {
-            return ResponseEntity.status(401).body(Map.of("success", false, "message", "Invalid token"));
+        if (!passwordEncoder.matches(req.getCurrentPassword(), u.getPassword())) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Current password incorrect"));
+        }
+        if (req.getNewPassword().length() < 8) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", "New password must be at least 8 characters"));
         }
 
-        return ResponseEntity.ok(Map.of("success", true, "message", "Token is valid"));
+        u.setPassword(passwordEncoder.encode(req.getNewPassword()));
+        userService.save(u);
+
+        return ResponseEntity.ok(Map.of("success", true, "message", "Password changed successfully"));
     }
 }
