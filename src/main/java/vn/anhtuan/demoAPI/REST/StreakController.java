@@ -16,23 +16,30 @@ public class StreakController {
         this.streakService = streakService;
     }
 
+    // Lấy thông tin streak hiện tại
     @GetMapping("/{userId}")
     public ResponseEntity<UserStreakPOJO> getStreak(@PathVariable Long userId) {
         UserStreak s = streakService.getStreak(userId);
         return ResponseEntity.ok(toPOJO(s));
     }
 
-    @PostMapping("/update")
-    public ResponseEntity<UserStreakPOJO> updateStreak(@RequestParam Long userId) {
-        UserStreak s = streakService.updateStreak(userId);
-        return ResponseEntity.ok(new UserStreakPOJO(
-                s.getStreakCount(), s.getBestStreak(), s.getTotalDays(), s.getLastActiveDate()
-        ));
+    // "Chạm" vào streak hôm nay (đồng bộ với FE: POST /api/streak/{userId}/touch)
+    @PostMapping("/{userId}/touch")
+    public ResponseEntity<UserStreakPOJO> touch(@PathVariable Long userId) {
+        UserStreak s = streakService.touch(userId);
+        return ResponseEntity.ok(toPOJO(s));
     }
 
-    private UserStreakPOJO toPOJO(UserStreak s) {
+    // Giữ endpoint cũ nếu nơi khác còn dùng: POST /api/streak/update?userId=8
+    @PostMapping("/update")
+    public ResponseEntity<UserStreakPOJO> updateStreak(@RequestParam Long userId) {
+        UserStreak s = streakService.touch(userId); // dùng chung logic touch
+        return ResponseEntity.ok(toPOJO(s));
+    }
+
+    private static UserStreakPOJO toPOJO(UserStreak s) {
         return new UserStreakPOJO(
-                s.getStreakCount(),     // dùng streakCount thay cho currentStreak
+                s.getStreakCount(),
                 s.getBestStreak(),
                 s.getTotalDays(),
                 s.getLastActiveDate()

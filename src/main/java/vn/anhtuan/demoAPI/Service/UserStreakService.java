@@ -28,33 +28,47 @@ public class UserStreakService {
         return getOrCreate(userId);
     }
 
-    /** Gọi khi người dùng có hoạt động trong ngày (mở app, hoàn thành bài, nộp quiz, v.v.) */
+    /** Ghi nhận hoạt động hôm nay (mở app, hoàn thành bài, v.v.) */
     @Transactional
-    public UserStreak updateStreak(Long userId) {
-        UserStreak s = getOrCreate(userId);
+    public UserStreak touch(Long userId) {
+        User user = userRepo.findById(userId)
+                .orElseThrow(() -> new IllegalArgumentException("User not found: " + userId));
+
+        UserStreak s = streakRepo.findByUser_Id(userId)
+                .orElseGet(() -> {
+                    LocalDate today = LocalDate.now(appClock);
+                    UserStreak ns = new UserStreak();
+                    ns.setUser(user);                      // <-- bổ sung bắt buộc
+                    ns.setStreakCount(0);
+                    ns.setBestStreak(0);
+                    ns.setTotalDays(0);
+                    ns.setLastActiveDate(today.minusDays(1));
+                    return streakRepo.save(ns);
+                });
+
         LocalDate today = LocalDate.now(appClock);
         LocalDate last  = s.getLastActiveDate();
 
-        // Nếu đã ghi nhận hôm nay thì bỏ qua
-        if (last != null && last.isEqual(today)) {
-            return s;
-        }
-
-        // Liền ngày → +1; Đứt quãng → reset về 1
-        if (last != null && last.plusDays(1).isEqual(today)) {
-            s.setStreakCount(s.getStreakCount() + 1);
+        if (last != null) {
+            if (last.isEqual(today)) {
+                // đã ghi nhận hôm nay -> không tăng
+                return s;
+            } else if (last.isEqual(today.minusDays(1))) {
+                // liền ngày -> +1
+                s.setStreakCount(s.getStreakCount() + 1);
+            } else {
+                // đứt quãng -> reset về 1
+                s.setStreakCount(1);
+            }
         } else {
+            // phòng hờ trường hợp last null
             s.setStreakCount(1);
         }
 
-        // Mỗi lần hoạt động hợp lệ đều +1 tổng ngày học
+        s.setLastActiveDate(today);
+        s.setBestStreak(Math.max(s.getBestStreak(), s.getStreakCount()));
         s.setTotalDays(s.getTotalDays() + 1);
 
-        if (s.getStreakCount() > s.getBestStreak()) {
-            s.setBestStreak(s.getStreakCount());
-        }
-
-        s.setLastActiveDate(today);
         return streakRepo.save(s);
     }
 
@@ -66,13 +80,12 @@ public class UserStreakService {
 
             LocalDate today = LocalDate.now(appClock);
 
-            // Khởi tạo mặc định để lần update đầu tiên tăng đúng về 1 ngày
             UserStreak s = new UserStreak();
+            s.setUser(user);                              // <-- bổ sung bắt buộc
             s.setStreakCount(0);
             s.setBestStreak(0);
             s.setTotalDays(0);
             s.setLastActiveDate(today.minusDays(1));
-
             return streakRepo.save(s);
         });
     }

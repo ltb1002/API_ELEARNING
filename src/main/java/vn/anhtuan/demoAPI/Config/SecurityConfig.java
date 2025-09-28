@@ -39,9 +39,6 @@ public class SecurityConfig {
 
 
 
-                                "/api/streak/**",
-
-
                                 // Quizzes - public
                                 "/api/quizzes",
                                 "/api/quizzes/*",
@@ -51,7 +48,7 @@ public class SecurityConfig {
                                 "/api/quizzes/grades/**",
                                 "/api/quizzes/grades/*/subjects/**",
                                 "/api/quizzes/subjects/**",
-
+                                "/ping",
                                 // Search
                                 "/api/search/**",
 
@@ -78,6 +75,9 @@ public class SecurityConfig {
                                 "/api/auth/change-password",
                                 "/api/auth/validate-token",
                                 "/api/users/**",
+
+//streak
+                                "/api/streak/**",
 
                                 "/api/quizzes/*/submit",
                                 "/api/quizzes/*/history",
