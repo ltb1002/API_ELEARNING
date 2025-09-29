@@ -6,6 +6,8 @@ import org.springframework.transaction.annotation.Transactional;
 import vn.anhtuan.demoAPI.Entity.*;
 import vn.anhtuan.demoAPI.POJO.ProgressResponsePOJO;
 import vn.anhtuan.demoAPI.Repository.*;
+import org.springframework.dao.DataIntegrityViolationException;
+
 
 import java.util.List;
 import java.util.Optional;
@@ -27,7 +29,7 @@ public class ProgressServiceImpl implements ProgressService {
     private LessonRepository lessonRepository;
 
     @Autowired
-    private UserStreakService streakService; // ✅ thêm streak service
+    private UserStreakService userStreakService; // ✅ thêm streak service
 
 
     @Autowired
@@ -40,18 +42,28 @@ public class ProgressServiceImpl implements ProgressService {
         Lesson lesson = lessonRepository.findById(lessonId)
                 .orElseThrow(() -> new RuntimeException("Lesson not found with id: " + lessonId));
 
-        // Kiểm tra nếu đã hoàn thành rồi thì return
+        // Nếu đã hoàn thành rồi -> vẫn "touch" streak cho idempotent theo ngày
         Optional<LessonCompletion> existingCompletion = lessonCompletionRepository.findByUserAndLesson(user, lesson);
         if (existingCompletion.isPresent()) {
+            // ✅ đảm bảo ghi nhận hoạt động hôm nay
+            userStreakService.touch(userId);
             return existingCompletion.get();
         }
 
         // Tạo mới lesson completion
         LessonCompletion lessonCompletion = new LessonCompletion(user, lesson);
-        lessonCompletionRepository.save(lessonCompletion);
+        try {
+            lessonCompletionRepository.save(lessonCompletion);
+        } catch (DataIntegrityViolationException e) {
+            // Trong TH hiếm có race-condition -> coi như đã có record
+            // vẫn tiếp tục update progress + touch streak
+        }
 
         // Cập nhật progress
         updateProgress(user, lesson.getChapter().getSubject());
+
+        // ✅ ghi nhận streak (idempotent theo ngày – không cộng trùng)
+        userStreakService.touch(userId);
 
         return lessonCompletion;
     }

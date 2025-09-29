@@ -12,7 +12,6 @@ public class TimeConfig {
 
     @Bean
     public Clock appClock() {
-        // Không còn đọc app.time.override -> luôn dùng clock hệ thống
-        return Clock.system(ZoneId.of("Asia/Ho_Chi_Minh"));
+        return Clock.system(java.time.ZoneId.of("Asia/Ho_Chi_Minh"));
     }
 }

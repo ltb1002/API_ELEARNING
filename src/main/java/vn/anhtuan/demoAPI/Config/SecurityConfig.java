@@ -59,6 +59,9 @@ public class SecurityConfig {
                                 "/api/lessons/**",
                                 "/api/exercises/**",
 
+                                "/api/progress/accuracy",
+                                "/api/progress/accuracy/daily",
+
                                 // H2 Console
                                 "/h2-console/**"
                         ).permitAll()

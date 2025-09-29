@@ -1,43 +1,45 @@
 package vn.anhtuan.demoAPI.POJO;
 
+import java.time.LocalDateTime;
+
 public class QuizProgressPOJO {
     // ---- filter input ----
     private Long userId;          // id của user
     private Integer gradeId;      // nullable
     private Integer subjectId;    // nullable
     private Integer quizTypeId;   // nullable
-    private Long chapterId;       // nullable
 
     // ---- output result ----
-    private final long total;     // tổng số quiz
-    private final long completed; // số quiz đã làm (COMPLETED)
-    private final double percent; // % hoàn thành
+    private final long correctSum;        // tổng số câu đúng
+    private final long totalSum;          // tổng số câu đã làm
+    private final double percentAccuracy; // % chính xác = correctSum / totalSum * 100
+    private final LocalDateTime updatedAt; // thời gian cập nhật cuối
 
-    // Constructor cho phần output (total + completed)
-    public QuizProgressPOJO(long total, long completed) {
-        this.total = total;
-        this.completed = completed;
-        double raw = (total == 0) ? 0.0 : (completed * 100.0) / total;
-        this.percent = Math.round(raw * 100.0) / 100.0;
+    // Constructor cho output
+    public QuizProgressPOJO(long correctSum, long totalSum, double percentAccuracy, LocalDateTime updatedAt) {
+        this.correctSum = correctSum;
+        this.totalSum = totalSum;
+        this.percentAccuracy = percentAccuracy;
+        this.updatedAt = updatedAt;
     }
 
-    // Constructor full (filter + output)
+    // Constructor full (bao gồm filter input)
     public QuizProgressPOJO(Long userId,
                             Integer gradeId,
                             Integer subjectId,
                             Integer quizTypeId,
-                            Long chapterId,
-                            long total,
-                            long completed) {
+                            long correctSum,
+                            long totalSum,
+                            double percentAccuracy,
+                            LocalDateTime updatedAt) {
         this.userId = userId;
         this.gradeId = gradeId;
         this.subjectId = subjectId;
         this.quizTypeId = quizTypeId;
-        this.chapterId = chapterId;
-        this.total = total;
-        this.completed = completed;
-        double raw = (total == 0) ? 0.0 : (completed * 100.0) / total;
-        this.percent = Math.round(raw * 100.0) / 100.0;
+        this.correctSum = correctSum;
+        this.totalSum = totalSum;
+        this.percentAccuracy = percentAccuracy;
+        this.updatedAt = updatedAt;
     }
 
     // ---- getter & setter ----
@@ -53,10 +55,8 @@ public class QuizProgressPOJO {
     public Integer getQuizTypeId() { return quizTypeId; }
     public void setQuizTypeId(Integer quizTypeId) { this.quizTypeId = quizTypeId; }
 
-    public Long getChapterId() { return chapterId; }
-    public void setChapterId(Long chapterId) { this.chapterId = chapterId; }
-
-    public long getTotal() { return total; }
-    public long getCompleted() { return completed; }
-    public double getPercent() { return percent; }
+    public long getCorrectSum() { return correctSum; }
+    public long getTotalSum() { return totalSum; }
+    public double getPercentAccuracy() { return percentAccuracy; }
+    public LocalDateTime getUpdatedAt() { return updatedAt; }
 }

@@ -18,16 +18,16 @@ public class QuizProgressController {
         this.service = service;
         this.historyService = historyService;}
 
-    @GetMapping("/progress")
-    public ResponseEntity<QuizProgressPOJO> progress(
-            @RequestParam Long userId,
-            @RequestParam(required = false) Integer gradeId,
-            @RequestParam(required = false) Integer subjectId,
-            @RequestParam(required = false) Integer quizTypeId,
-            @RequestParam(required = false) Long chapterId
-    ) {
-        return ResponseEntity.ok(service.getProgress(userId, gradeId, subjectId, quizTypeId, chapterId));
-    }
+//    @GetMapping("/progress")
+//    public ResponseEntity<QuizProgressPOJO> progress(
+//            @RequestParam Long userId,
+//            @RequestParam(required = false) Integer gradeId,
+//            @RequestParam(required = false) Integer subjectId,
+//            @RequestParam(required = false) Integer quizTypeId,
+//            @RequestParam(required = false) Long chapterId
+//    ) {
+//        return ResponseEntity.ok(service.getProgress(userId, gradeId, subjectId, quizTypeId, chapterId));
+//    }
 
     @GetMapping("/history")
     public ResponseEntity<java.util.List<vn.anhtuan.demoAPI.POJO.QuizDailyStatPOJO>> history(

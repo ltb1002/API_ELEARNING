@@ -4,11 +4,14 @@ import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import vn.anhtuan.demoAPI.Entity.*;
+import vn.anhtuan.demoAPI.POJO.QuizProgressPOJO;
 import vn.anhtuan.demoAPI.Repository.QuizResultRepository;
 import vn.anhtuan.demoAPI.Repository.UserRepository;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -54,64 +57,43 @@ public class QuizResultService {
     }
 
     @Transactional
-    public QuizResult submitQuiz(Long userId, Integer quizId, Map<Long, List<Long>> userAnswers, Integer durationSeconds) { // SỬA: Integer → Long
-        // Validation
-        if (userId == null) {
-            throw new IllegalArgumentException("User ID cannot be null");
-        }
+    public QuizResult submitQuiz(Long userId, Integer quizId,
+                                 Map<Long, List<Long>> userAnswers,
+                                 Integer durationSeconds) {
 
-        if (userAnswers == null) {
-            throw new IllegalArgumentException("User answers cannot be null");
-        }
-
-        if (durationSeconds == null || durationSeconds < 0) {
+        if (userId == null) throw new IllegalArgumentException("User ID cannot be null");
+        if (userAnswers == null) throw new IllegalArgumentException("User answers cannot be null");
+        if (durationSeconds == null || durationSeconds < 0)
             throw new IllegalArgumentException("Duration must be a positive value");
-        }
 
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new IllegalArgumentException("User not found with id: " + userId));
 
         Quiz quiz = quizService.getQuizById(quizId);
-        if (quiz == null) {
-            throw new IllegalArgumentException("Quiz not found with id: " + quizId);
-        }
+        if (quiz == null) throw new IllegalArgumentException("Quiz not found with id: " + quizId);
 
         List<Question> questions = quizService.getQuizQuestions(quizId.longValue());
-        if (questions.isEmpty()) {
-            throw new IllegalArgumentException("Quiz has no questions");
-        }
+        if (questions.isEmpty()) throw new IllegalArgumentException("Quiz has no questions");
 
         int totalQuestions = questions.size();
         int correctAnswers = 0;
 
-        // SỬA: Đổi Integer thành Long cho questionIds
+        // Chuẩn bị đáp án đúng
         List<Long> questionIds = questions.stream().map(Question::getId).collect(Collectors.toList());
         Map<Long, Set<Long>> correctChoiceIdsMap = quizService.getCorrectChoiceIdsForQuestions(questionIds);
 
-        for (Question question : questions) {
-            List<Long> userSelectedChoices = userAnswers.get(question.getId()); // SỬA: Integer → Long
-            Set<Long> correctChoiceIds = correctChoiceIdsMap.get(question.getId()); // SỬA: Integer → Long
-            if (correctChoiceIds == null) {
-                correctChoiceIds = new HashSet<>(); // Xử lý câu hỏi không có đáp án đúng
-            }
+        for (Question q : questions) {
+            List<Long> picked = userAnswers.get(q.getId());
+            Set<Long> correct = correctChoiceIdsMap.getOrDefault(q.getId(), Collections.emptySet());
+            Set<Long> pickedSet = picked != null ? new HashSet<>(picked) : Collections.emptySet();
 
-            Set<Long> userSelectedIds = userSelectedChoices != null ? // SỬA: Integer → Long
-                    new HashSet<>(userSelectedChoices) : new HashSet<>();
-
-            if (correctChoiceIds.isEmpty()) {
-                // Nếu không có đáp án đúng, người dùng phải không chọn gì mới tính đúng
-                if (userSelectedIds.isEmpty()) {
-                    correctAnswers++;
-                }
-            } else {
-                // So sánh đáp án người dùng với đáp án đúng
-                if (correctChoiceIds.equals(userSelectedIds)) {
-                    correctAnswers++;
-                }
+            if (correct.isEmpty()) {
+                if (pickedSet.isEmpty()) correctAnswers++;
+            } else if (correct.equals(pickedSet)) {
+                correctAnswers++;
             }
         }
 
-        // Tính score và tránh chia cho zero
         BigDecimal score = totalQuestions > 0
                 ? new BigDecimal(correctAnswers)
                 .divide(new BigDecimal(totalQuestions), 4, RoundingMode.HALF_UP)
@@ -119,24 +101,24 @@ public class QuizResultService {
                 .setScale(2, RoundingMode.HALF_UP)
                 : BigDecimal.ZERO;
 
-        // Tìm attempt number tiếp theo
-        List<QuizResult> existingResults = quizResultRepository.findByUserIdAndQuizId(userId, quizId);
-        int attemptNo = existingResults.isEmpty() ? 1 : existingResults.size() + 1;
+        int attemptNo = quizResultRepository.findByUserIdAndQuizId(userId, quizId).size() + 1;
 
-        // Tạo mới QuizResult
         QuizResult quizResult = new QuizResult(
-                user,
-                quiz,
-                attemptNo,
-                score,
-                correctAnswers,
-                totalQuestions,
-                durationSeconds,
-                QuizStatus.COMPLETED
+                user, quiz, attemptNo, score, correctAnswers, totalQuestions,
+                durationSeconds, QuizStatus.COMPLETED
         );
 
-        return quizResultRepository.save(quizResult);
+        // LƯU + ép ghi xuống DB
+        QuizResult savedResult = quizResultRepository.save(quizResult);
+        quizResultRepository.flush();
+
+        // TÍNH LẠI VÀ UPSERT TOÀN BỘ vào quiz_progress (gộp theo user/subject/grade/type)
+        quizResultRepository.recomputeProgressForUser(userId);
+
+        // Trả về kết quả vừa nộp; client nếu cần % theo ngày sẽ lấy qua endpoint daily
+        return savedResult;
     }
+
 
     public Map<String, Object> getQuizStatistics(Integer quizId) {
         List<QuizResult> results = quizResultRepository.findByQuizId(quizId);
@@ -182,7 +164,7 @@ public class QuizResultService {
             double averageScore = results.stream()
                     .mapToDouble(r -> r.getScore().doubleValue())
                     .average()
-                    .orElse(0.0);
+                    .orElse(0.0) * 10;
             stats.put("averageScore", averageScore);
 
             long completedCount = results.stream()
@@ -226,5 +208,87 @@ public class QuizResultService {
                 .max(Comparator.comparing(QuizResult::getScore)
                         .thenComparing(QuizResult::getCorrectAnswers))
                 .orElse(null);
+    }
+
+    public Optional<QuizProgressPOJO> getAccuracyFromProgress(Long userId,
+                                                              Integer gradeId,
+                                                              Integer subjectId,
+                                                              Integer quizTypeId) {
+        java.util.List<Object[]> rows = quizResultRepository.findAccuracyRows(userId, gradeId, subjectId, quizTypeId);
+        if (rows == null || rows.isEmpty()) {
+            return Optional.empty();
+        }
+
+        long correctSum = 0L;
+        long totalSum   = 0L;
+        java.time.LocalDateTime newest = null;
+
+        Double cachedPercent = null;
+
+        for (Object[] r : rows) {
+            long c = (r[0] == null) ? 0L : ((Number) r[0]).longValue();
+            long t = (r[1] == null) ? 0L : ((Number) r[1]).longValue();
+            correctSum += c;
+            totalSum   += t;
+
+            java.time.LocalDateTime thisTs = null;
+            if (r[3] instanceof java.sql.Timestamp ts) thisTs = ts.toLocalDateTime();
+            else if (r[3] instanceof java.time.LocalDateTime ldt) thisTs = ldt;
+            if (thisTs != null && (newest == null || thisTs.isAfter(newest))) newest = thisTs;
+
+            if (rows.size() == 1 && r[2] != null) {
+                cachedPercent = ((Number) r[2]).doubleValue();
+            }
+        }
+
+        double percent = (totalSum == 0) ? 0.0
+                : (cachedPercent != null ? cachedPercent : (correctSum * 100.0 / totalSum));
+        percent = Math.round(percent * 100.0) / 100.0;
+
+        return Optional.of(new QuizProgressPOJO(correctSum, totalSum, percent, newest));
+    }
+
+    public List<Map<String, Object>> getDailyAccuracy(Long userId,
+                                                      LocalDateTime fromDate,
+                                                      Integer gradeId,
+                                                      Integer subjectId,
+                                                      Integer quizTypeId,
+                                                      Long chapterId) {
+        List<Object[]> rows = quizResultRepository.aggregateDailyAccuracyNative(
+                userId, fromDate, gradeId, subjectId, quizTypeId, chapterId);
+
+        // Gom dữ liệu theo ngày
+        Map<LocalDate, long[]> dailyTotals = new LinkedHashMap<>();
+        for (Object[] r : rows) {
+            LocalDate day = (r[0] instanceof java.sql.Date d) ? d.toLocalDate() : LocalDate.parse(r[0].toString());
+            long correct = ((Number) r[1]).longValue();
+            long total   = ((Number) r[2]).longValue();
+
+            dailyTotals.compute(day, (k, v) -> {
+                if (v == null) v = new long[]{0, 0};
+                v[0] += correct;
+                v[1] += total;
+                return v;
+            });
+        }
+
+        // Tính % theo tổng đúng/tổng câu
+        List<Map<String, Object>> result = new ArrayList<>();
+        for (var entry : dailyTotals.entrySet()) {
+            LocalDate day = entry.getKey();
+            long correct = entry.getValue()[0];
+            long total   = entry.getValue()[1];
+            double percent = (total == 0) ? 0.0 : (correct * 100.0 / total);
+            percent = Math.round(percent * 100.0) / 100.0;
+
+            result.add(Map.of(
+                    "day", day,
+                    "correctSum", correct,
+                    "totalSum", total,
+                    "percentAccuracy", percent
+            ));
+        }
+
+        return result;
     }
 }

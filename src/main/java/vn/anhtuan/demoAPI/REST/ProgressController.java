@@ -1,15 +1,18 @@
 package vn.anhtuan.demoAPI.REST;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import vn.anhtuan.demoAPI.Entity.LessonCompletion;
 import vn.anhtuan.demoAPI.Entity.Progress;
 import vn.anhtuan.demoAPI.POJO.LessonCompletionRequestPOJO;
 import vn.anhtuan.demoAPI.POJO.LessonCompletionResponsePOJO;
 import vn.anhtuan.demoAPI.POJO.ProgressResponsePOJO;
+import vn.anhtuan.demoAPI.POJO.QuizProgressPOJO;
 import vn.anhtuan.demoAPI.Service.ProgressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,6 +25,8 @@ public class ProgressController {
 
     @Autowired
     private ProgressService progressService;
+    @Autowired
+    private vn.anhtuan.demoAPI.Service.QuizResultService quizResultService;
 
     /**
      * Đánh dấu bài học đã hoàn thành
@@ -170,6 +175,57 @@ public class ProgressController {
                     new ApiResponse(false, e.getMessage(), null)
             );
         }
+    }
+
+    @PostMapping("/lessons/{lessonId}/complete")
+    public ResponseEntity<Void> complete(@RequestParam Long userId,
+                                         @PathVariable Long lessonId) {
+        progressService.completeLesson(userId, lessonId);
+        return ResponseEntity.ok().build();
+    }
+
+    @GetMapping("/accuracy")
+    public ResponseEntity<?> getAccuracy(
+            @RequestParam Long userId,
+            @RequestParam(required = false) Integer gradeId,
+            @RequestParam(required = false) Integer subjectId,
+            @RequestParam(required = false) Integer quizTypeId
+    ) {
+        var dtoOpt = quizResultService.getAccuracyFromProgress(userId, gradeId, subjectId, quizTypeId);
+
+        var response = dtoOpt.orElseGet(() ->
+                new QuizProgressPOJO(0, 0, 0.0, null)
+        );
+
+        Map<String, Object> data = new HashMap<>();
+        data.put("userId", userId);
+        data.put("gradeId", gradeId);
+        data.put("subjectId", subjectId);
+        data.put("quizTypeId", quizTypeId);
+        data.put("correctSum", response.getCorrectSum());
+        data.put("totalSum", response.getTotalSum());
+        data.put("percentAccuracy", response.getPercentAccuracy());
+        data.put("updatedAt", response.getUpdatedAt());
+
+        return ResponseEntity.ok(
+                new ApiResponse(true, "Thành công", data)
+        );
+    }
+    @GetMapping("/accuracy/daily")
+    public ResponseEntity<?> getDailyAccuracy(
+            @RequestParam Long userId,
+            @RequestParam(required = false) Integer gradeId,
+            @RequestParam(required = false) Integer subjectId,
+            @RequestParam(required = false) Integer quizTypeId,
+            @RequestParam(required = false) Long chapterId,
+            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime fromDate
+    ) {
+        if (fromDate == null) {
+            fromDate = LocalDateTime.now().minusDays(30); // mặc định lấy 30 ngày gần nhất
+        }
+
+        var data = quizResultService.getDailyAccuracy(userId, fromDate, gradeId, subjectId, quizTypeId, chapterId);
+        return ResponseEntity.ok(new ApiResponse(true, "Thành công", data));
     }
 
     // ===== DTO Classes for Response =====

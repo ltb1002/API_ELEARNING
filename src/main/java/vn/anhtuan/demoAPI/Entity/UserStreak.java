@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "user_streaks")
+@Table(name = "user_streaks", uniqueConstraints = @UniqueConstraint(name="uk_user_streak_user", columnNames="user_id"))
 public class UserStreak {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,7 +23,7 @@ public class UserStreak {
     @Column(nullable = true)
     private int totalDays = 0;     // tổng số ngày học
 
-    @Column(nullable = true)
+    @Column(name="last_active_date", columnDefinition="date") // loại DATE, không DATETIME/TIMESTAMP
     private LocalDate lastActiveDate;
 
     public UserStreak() {}

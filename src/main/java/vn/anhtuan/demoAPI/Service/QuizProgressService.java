@@ -2,7 +2,6 @@ package vn.anhtuan.demoAPI.Service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import vn.anhtuan.demoAPI.Entity.QuizStatus;
 import vn.anhtuan.demoAPI.POJO.QuizProgressPOJO;
 import vn.anhtuan.demoAPI.Repository.QuizRepository;
 import vn.anhtuan.demoAPI.Repository.QuizResultRepository;
@@ -20,8 +19,9 @@ public class QuizProgressService {
     }
 
     /**
-     * Tính tiến độ bằng COUNT trực tiếp ở DB (khuyên dùng).
-     * Auto-fill gradeId nếu client không truyền, dựa theo dữ liệu quizzes/quiz_results.
+     * Trả tiến độ theo % số câu đúng/tổng số câu (accuracy),
+     * KHÔNG còn đếm "số quiz đã hoàn thành".
+     * Giữ nguyên chữ ký method để không phá cấu trúc cũ.
      */
     @Transactional(readOnly = true)
     public QuizProgressPOJO getProgress(Long userId,
@@ -30,29 +30,26 @@ public class QuizProgressService {
                                         Integer quizTypeId,
                                         Long chapterId) {
 
-        // --- AUTO-FILL gradeId nếu thiếu ---
-        if (gradeId == null) {
-            // 1) Ưu tiên khối lớp mà user tương tác nhiều nhất
-            var userTopGrades = quizResultRepository.findUserTopGradeIds(userId);
-            if (userTopGrades != null && !userTopGrades.isEmpty()) {
-                gradeId = userTopGrades.get(0);
-            } else {
-                // 2) Fallback: khối có nhiều quiz nhất trong toàn bộ quizzes
-                var topGradesByQuiz = quizRepository.findTopGradeIdsByQuizCount();
-                if (topGradesByQuiz != null && !topGradesByQuiz.isEmpty()) {
-                    gradeId = topGradesByQuiz.get(0);
-                }
-                // 3) Nếu vẫn null -> để null (tính trên toàn bộ)
-            }
-        }
-
-        final long total = quizRepository.countByFilters(gradeId, subjectId, quizTypeId, chapterId);
-        if (total == 0) return new QuizProgressPOJO(0, 0);
-
-        final long completed = quizResultRepository.countCompletedDistinctQuizForUser(
-                userId, QuizStatus.COMPLETED, gradeId, subjectId, quizTypeId, chapterId
+        // Gộp tổng đúng/tổng câu từ quiz_results theo các bộ lọc
+        // (hàm sumCorrectAndTotalByUserAndFilters hiện chưa có chapter, nên ta chỉ filter theo grade/subject/quizType)
+        Object[] sums = quizResultRepository.sumCorrectAndTotalByUserAndFilters(
+                userId,
+                gradeId,
+                subjectId,
+                quizTypeId
         );
 
-        return new QuizProgressPOJO(total, completed);
+        long correctSum = 0L;
+        long totalSum = 0L;
+        if (sums != null && sums.length >= 2) {
+            if (sums[0] instanceof Number) correctSum = ((Number) sums[0]).longValue();
+            if (sums[1] instanceof Number) totalSum   = ((Number) sums[1]).longValue();
+        }
+
+        double percent = (totalSum == 0) ? 0.0 : (correctSum * 100.0 / totalSum);
+        percent = Math.round(percent * 100.0) / 100.0;
+
+        // updatedAt: nếu muốn chính xác, có thể đọc từ bảng quiz_progress; ở đây để null cho đơn giản
+        return new QuizProgressPOJO(correctSum, totalSum, percent, null);
     }
 }

@@ -23,9 +23,15 @@ public class StreakController {
         return ResponseEntity.ok(toPOJO(s));
     }
 
-    // "Chạm" vào streak hôm nay (đồng bộ với FE: POST /api/streak/{userId}/touch)
+    // StreakController
     @PostMapping("/{userId}/touch")
     public ResponseEntity<UserStreakPOJO> touch(@PathVariable Long userId) {
+        UserStreak s = streakService.touch(userId);  // dùng chung service
+        return ResponseEntity.ok(toPOJO(s));
+    }
+
+    @PostMapping("/{userId}/online")   // => FE gọi **chỉ khi đủ 15 phút foreground trong NGÀY**
+    public ResponseEntity<UserStreakPOJO> online(@PathVariable Long userId) {
         UserStreak s = streakService.touch(userId);
         return ResponseEntity.ok(toPOJO(s));
     }
