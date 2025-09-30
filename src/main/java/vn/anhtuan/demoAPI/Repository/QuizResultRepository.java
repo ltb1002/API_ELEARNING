@@ -114,6 +114,9 @@ public interface QuizResultRepository extends JpaRepository<QuizResult, Integer>
                                                     @Param("subjectId") Integer subjectId,
                                                     @Param("quizTypeId") Integer quizTypeId);
 
+
+
+
     // QuizResultRepository.java
 
     @Query(value = """

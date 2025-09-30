@@ -84,7 +84,7 @@ public class QuizResultController {
         Double avg = quizResultService.getAverageDailyAccuracy(userId);
         Map<String, Object> data = Map.of(
                 "userId", userId,
-                "averageDailyPercentage", avg
+                "averageDailyPercentage", avg == null ? 0.0 : Math.round(avg * 100.0) / 100.0
         );
         return ResponseEntity.ok(new ApiResponse(true, "OK", data));
     }

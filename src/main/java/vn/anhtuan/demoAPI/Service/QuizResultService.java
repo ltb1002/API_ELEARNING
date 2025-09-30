@@ -186,28 +186,30 @@ public class QuizResultService {
                 .orElse(null);
     }
 
-    // QuizResultService.java (bên trong getAccuracyFromProgress)
-
+    /** OVERALL accuracy: tính trực tiếp từ quiz_results */
     public Optional<QuizProgressPOJO> getAccuracyFromProgress(Long userId,
                                                               Integer gradeId,
                                                               Integer subjectId,
                                                               Integer quizTypeId) {
-        List<Object[]> rows = quizResultRepository.aggregateOverallByUserAndFilters(
-                userId, gradeId, subjectId, quizTypeId);
+        Object[] row = quizResultRepository.aggregateOverallByUserAndFilters(
+                userId, gradeId, subjectId, quizTypeId).toArray();
 
-        if (rows == null || rows.isEmpty()) {
+        if (row == null) {
             return Optional.of(new QuizProgressPOJO(0L, 0L, 0.0, null));
         }
 
-        Object[] row = rows.get(0); // <-- lấy dòng đầu
         long correctSum = ((Number) row[0]).longValue();
         long totalSum   = ((Number) row[1]).longValue();
 
         LocalDateTime updatedAt = null;
         Object tsObj = row[2];
-        if (tsObj instanceof java.sql.Timestamp ts)      updatedAt = ts.toLocalDateTime();
-        else if (tsObj instanceof LocalDateTime ldt)     updatedAt = ldt;
-        else if (tsObj instanceof java.sql.Date d)       updatedAt = d.toLocalDate().atStartOfDay();
+        if (tsObj instanceof Timestamp ts) {
+            updatedAt = ts.toLocalDateTime();
+        } else if (tsObj instanceof LocalDateTime ldt) {
+            updatedAt = ldt;
+        } else if (tsObj instanceof java.sql.Date d) {
+            updatedAt = d.toLocalDate().atStartOfDay();
+        }
 
         double percent = (totalSum == 0)
                 ? 0.0
