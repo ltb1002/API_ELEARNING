@@ -108,6 +108,7 @@ public class UserActivityController {
 
         try {
             UserStreakResponsePOJO streakData = userActivityService.getUserStreakAndCalendar(userId, months);
+            System.out.println("DEBUG streakData = " + streakData); // hoặc log JSON
 
             Map<String, Object> response = new HashMap<>();
             response.put("success", true);

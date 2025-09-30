@@ -84,7 +84,7 @@ public class SecurityConfig {
 
 
 //streak
-                                "/api/streak/**",
+//                                "/api/streak/**",
 
                                 "/api/quizzes/*/submit",
                                 "/api/quizzes/*/history",
