@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import org.hibernate.annotations.Generated;
+import org.hibernate.annotations.GenerationTime;
 
 @Entity
 @Table(name = "quiz_results")
@@ -47,6 +49,10 @@ public class QuizResult {
     @Column(name = "created_at")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss")
     private LocalDateTime createdAt;
+
+    @Column(name = "percentage", precision = 5, scale = 2, insertable = false, updatable = false)
+    @Generated(GenerationTime.ALWAYS)
+    private BigDecimal percentage;
 
     // Constructors
     public QuizResult() {

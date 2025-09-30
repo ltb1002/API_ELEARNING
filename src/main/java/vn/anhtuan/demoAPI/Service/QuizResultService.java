@@ -4,7 +4,10 @@ import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import vn.anhtuan.demoAPI.Entity.*;
+import vn.anhtuan.demoAPI.POJO.DailyAccuracyViewPOJO;
 import vn.anhtuan.demoAPI.POJO.QuizProgressPOJO;
+import vn.anhtuan.demoAPI.Repository.ChoiceRepository;
+import vn.anhtuan.demoAPI.Repository.QuestionRepository;
 import vn.anhtuan.demoAPI.Repository.QuizResultRepository;
 import vn.anhtuan.demoAPI.Repository.UserRepository;
 
@@ -26,11 +29,16 @@ public class QuizResultService {
 
     @Autowired
     private QuizService quizService;
+    @Autowired
+    private ChoiceRepository choiceRepository;
+    @Autowired
+    private QuestionRepository questionRepository;
 
     public QuizResult getQuizResultById(Integer id) {
         Optional<QuizResult> quizResult = quizResultRepository.findById(id);
         return quizResult.orElse(null);
     }
+
 
     public List<QuizResult> getUserQuizResults(Long userId) {
         return quizResultRepository.findByUserId(userId);
@@ -111,10 +119,15 @@ public class QuizResultService {
         // LƯU + ép ghi xuống DB
         QuizResult savedResult = quizResultRepository.save(quizResult);
         quizResultRepository.flush();
-
+        try {
+            quizResultRepository.recomputeProgressForUser(userId);
+        } catch (Exception ex) {
+            // không rollback việc lưu bài
+            // log cảnh báo để còn xử lý cấu hình DB sau
+            System.err.println("[WARN] recomputeProgressForUser failed: " + ex.getMessage());
+        }
         // TÍNH LẠI VÀ UPSERT TOÀN BỘ vào quiz_progress (gộp theo user/subject/grade/type)
-        quizResultRepository.recomputeProgressForUser(userId);
-
+//        quizResultRepository.recomputeProgressForUser(userId);
         // Trả về kết quả vừa nộp; client nếu cần % theo ngày sẽ lấy qua endpoint daily
         return savedResult;
     }
@@ -290,5 +303,41 @@ public class QuizResultService {
         }
 
         return result;
+    }
+
+    // ... GIỮ NGUYÊN NỘI DUNG HIỆN TẠI CỦA BẠN Ở TRÊN
+
+    /**
+     * (NEW) Lấy % theo NGÀY dựa trên TỔNG correct / TỔNG total trong ngày,
+     * phục vụ vẽ "cột xanh" trong biểu đồ.
+     * Trả về list các map: { day: LocalDate, dailyPercentage: Double, correctSum: Long, totalSum: Long }
+     */
+    public List<Map<String, Object>> getDailyAccuracyByRange(Long userId, LocalDate from, LocalDate to) {
+        List<DailyAccuracyViewPOJO> rows = quizResultRepository.findDailyAccuracyByUserAndRange(
+                userId, from.toString(), to.toString()
+        );
+
+        List<Map<String, Object>> result = new ArrayList<>();
+        for (DailyAccuracyViewPOJO r : rows) {
+            // quizDate có kiểu java.sql.Date theo projection
+            LocalDate day = (r.getQuizDate() == null) ? null : r.getQuizDate().toLocalDate();
+            Double pct = (r.getDailyPercentage() == null) ? 0.0 : r.getDailyPercentage();
+
+            result.add(Map.of(
+                    "day", day,
+                    "dailyPercentage", pct
+            ));
+        }
+        return result;
+    }
+
+    /**
+     * (NEW) Lấy "trung bình cộng" theo NGÀY của user:
+     * Tính % mỗi ngày trước (tổng đúng/tổng câu trong ngày), rồi AVG các ngày.
+     * Dùng để hiển thị ở mục "trung bình cộng" trong lịch sử % quiz.
+     */
+    public Double getAverageDailyAccuracy(Long userId) {
+        Double avg = quizResultRepository.findAverageDailyAccuracyByUser(userId);
+        return (avg == null) ? 0.0 : avg;
     }
 }

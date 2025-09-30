@@ -7,14 +7,19 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import vn.anhtuan.demoAPI.Entity.QuizResult;
+import vn.anhtuan.demoAPI.POJO.DailyAccuracyViewPOJO;
 
 import java.util.List;
+import java.util.Map;
 
 @Repository
 public interface QuizResultRepository extends JpaRepository<QuizResult, Integer> {
 
     List<QuizResult> findByUserId(Long userId);
     List<QuizResult> findByQuizId(Integer quizId);
+
+//    List<QuizResult> findByUser_Id(Long userId);      // ✅
+//    List<QuizResult> findByQuiz_Id(Integer quizId);
 
     @Query("SELECT qr FROM QuizResult qr WHERE qr.user.id = :userId AND qr.quiz.grade.id = :gradeId")
     List<QuizResult> findByUserIdAndGradeId(@Param("userId") Long userId, @Param("gradeId") Integer gradeId);
@@ -74,29 +79,6 @@ public interface QuizResultRepository extends JpaRepository<QuizResult, Integer>
                                                 @Param("subjectId") Integer subjectId,
                                                 @Param("quizTypeId") Integer quizTypeId);
 
-//    // ====== Upsert vào bảng quiz_progress (đã đổi tên cột) ======
-//    @Modifying
-//    @Transactional
-//    @Query(value = """
-//    INSERT INTO quiz_progress (user_id, subject_id, grade_id, quiz_type_id,
-//                               correct_sum, total_sum, progress_percent, updated_at)
-//    VALUES (:userId, :subjectId, :gradeId, :quizTypeId,
-//            :correctSum, :totalSum, :progressPercent, NOW())
-//    ON DUPLICATE KEY UPDATE
-//        correct_sum = VALUES(correct_sum),
-//        total_sum = VALUES(total_sum),
-//        progress_percent = VALUES(progress_percent),
-//        updated_at = NOW()
-//    """, nativeQuery = true)
-//    void upsertQuizProgress(@Param("userId") Long userId,
-//                            @Param("subjectId") Integer subjectId,
-//                            @Param("gradeId") Integer gradeId,
-//                            @Param("quizTypeId") Integer quizTypeId,
-//                            @Param("correctSum") int correctSum,
-//                            @Param("totalSum") int totalSum,
-//                            @Param("progressPercent") double progressPercent);
-
-    // ====== Đọc accuracy từ bảng quiz_progress để trả cho endpoint mới ======
     @Transactional(readOnly = true)
     @Query(value = """
         SELECT correct_sum, total_sum, progress_percent, updated_at
@@ -138,6 +120,40 @@ public interface QuizResultRepository extends JpaRepository<QuizResult, Integer>
 """, nativeQuery = true)
     void recomputeProgressForUser(@Param("userId") Long userId);
 
+    // (1) % theo NGÀY của 1 user trong khoảng ngày
+    @Query(value = """
+        SELECT 
+          DATE(completed_at)    AS quizDate,
+          ROUND(SUM(correct_answers) * 100.0 / NULLIF(SUM(total_questions), 0), 2) AS dailyPercentage
+        FROM quiz_results
+        WHERE status = 'COMPLETED'
+          AND completed_at IS NOT NULL
+          AND user_id = :userId
+          AND DATE(completed_at) BETWEEN :fromDate AND :toDate
+        GROUP BY DATE(completed_at)
+        ORDER BY quizDate
+    """, nativeQuery = true)
+    List<DailyAccuracyViewPOJO> findDailyAccuracyByUserAndRange(
+            @Param("userId") Long userId,
+            @Param("fromDate") String fromDate,  // "YYYY-MM-DD"
+            @Param("toDate") String toDate       // "YYYY-MM-DD"
+    );
+
+    // (2) Trung bình cộng theo NGÀY của user (bình quân % các ngày)
+    @Query(value = """
+        SELECT ROUND(AVG(pct), 2) AS average_daily_percentage
+        FROM (
+          SELECT 
+            SUM(correct_answers) * 100.0 / NULLIF(SUM(total_questions), 0) AS pct
+          FROM quiz_results
+          WHERE status = 'COMPLETED' 
+            AND completed_at IS NOT NULL
+            AND user_id = :userId
+          GROUP BY DATE(completed_at)
+        ) t
+    """, nativeQuery = true)
+    Double findAverageDailyAccuracyByUser(@Param("userId") Long userId);
 }
+
 
 

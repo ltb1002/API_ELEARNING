@@ -78,6 +78,8 @@ public class SecurityConfig {
                                 "/api/auth/change-password",
                                 "/api/auth/validate-token",
                                 "/api/users/**",
+                                "/api/quizresults/accuracy",
+                                "/api/quizresults/accuracy/daily",
 
 //streak
                                 "/api/streak/**",
