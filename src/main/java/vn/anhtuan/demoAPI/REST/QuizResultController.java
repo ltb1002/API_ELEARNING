@@ -3,12 +3,14 @@ package vn.anhtuan.demoAPI.REST;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import vn.anhtuan.demoAPI.Entity.QuizResult;
 import vn.anhtuan.demoAPI.POJO.QuizProgressPOJO;
 import vn.anhtuan.demoAPI.Service.QuizResultService;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -67,6 +69,13 @@ public class QuizResultController {
     ) {
         var data = quizResultService.getDailyAccuracyByRange(userId, fromDate, toDate);
         return ResponseEntity.ok(new ApiResponse(true, "OK", data));
+    }
+    @GetMapping("/quizresults/quiz/{quizId}/history")
+    public ResponseEntity<?> getHistory(
+            @RequestParam Long userId,
+            @PathVariable Integer quizId) {
+        List<QuizResult> results = quizResultService.getUserQuizResultsForQuiz(userId, quizId);
+        return ResponseEntity.ok(Map.of("success", true, "data", results));
     }
 
     // 4) Average of daily percentages (trung bình cộng theo ngày)
