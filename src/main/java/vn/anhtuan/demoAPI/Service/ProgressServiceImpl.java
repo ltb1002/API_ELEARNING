@@ -29,10 +29,6 @@ public class ProgressServiceImpl implements ProgressService {
     private LessonRepository lessonRepository;
 
     @Autowired
-    private UserStreakService userStreakService; // ✅ thêm streak service
-
-
-    @Autowired
     private SubjectRepository subjectRepository;
 
     @Override
@@ -46,28 +42,17 @@ public class ProgressServiceImpl implements ProgressService {
         Optional<LessonCompletion> existingCompletion = lessonCompletionRepository.findByUserAndLesson(user, lesson);
         if (existingCompletion.isPresent()) {
             // ✅ đảm bảo ghi nhận hoạt động hôm nay
-            userStreakService.touch(userId);
             return existingCompletion.get();
         }
-
         // Tạo mới lesson completion
         LessonCompletion lessonCompletion = new LessonCompletion(user, lesson);
         try {
             lessonCompletionRepository.save(lessonCompletion);
         } catch (DataIntegrityViolationException e) {
-            // Trong TH hiếm có race-condition -> coi như đã có record
-            // vẫn tiếp tục update progress + touch streak
         }
-
-        // Cập nhật progress
         updateProgress(user, lesson.getChapter().getSubject());
-
-        // ✅ ghi nhận streak (idempotent theo ngày – không cộng trùng)
-        userStreakService.touch(userId);
-
         return lessonCompletion;
     }
-
     @Override
     public void uncompleteLesson(Long userId, Long lessonId) {
         User user = userRepository.findById(userId)
@@ -84,7 +69,6 @@ public class ProgressServiceImpl implements ProgressService {
             updateProgress(user, lesson.getChapter().getSubject());
         }
     }
-
     @Override
     public boolean isLessonCompleted(Long userId, Long lessonId) {
         User user = userRepository.findById(userId)
@@ -113,7 +97,6 @@ public class ProgressServiceImpl implements ProgressService {
 
         progressRepository.save(progress);
     }
-
     @Override
     public Progress getProgressByUserAndSubject(Long userId, Integer subjectId) {
         User user = userRepository.findById(userId)

@@ -133,4 +133,62 @@ public interface QuizResultRepository extends JpaRepository<QuizResult, Integer>
 """, nativeQuery = true)
     Double findAverageDailyAccuracyByUser(@Param("userId") Long userId);
 
+    /** (A) % THEO NGÀY cho widget (chỉ các ngày có làm bài), có filter & khoảng ngày tùy chọn */
+    @Query(value = """
+        SELECT 
+          DATE(qr.completed_at) AS quizDate,
+          ROUND(SUM(qr.correct_answers) * 100.0 / NULLIF(SUM(qr.total_questions), 0), 2) AS dailyPercentage
+        FROM quiz_results qr
+        JOIN quizzes q ON q.id = qr.quiz_id
+        WHERE qr.status = 'COMPLETED'
+          AND qr.completed_at IS NOT NULL
+          AND qr.user_id = :userId
+          AND (:gradeId    IS NULL OR q.grade_id     = :gradeId)
+          AND (:subjectId  IS NULL OR q.subject_id   = :subjectId)
+          AND (:quizTypeId IS NULL OR q.quiz_type_id = :quizTypeId)
+          AND (:chapterId  IS NULL OR q.chapter_id   = :chapterId)
+          AND (:fromDate   IS NULL OR DATE(qr.completed_at) >= :fromDate)
+          AND (:toDate     IS NULL OR DATE(qr.completed_at) <= :toDate)
+        GROUP BY DATE(qr.completed_at)
+        ORDER BY quizDate
+    """, nativeQuery = true)
+    List<Object[]> findDailyAccuracySeries(
+            @Param("userId") Long userId,
+            @Param("gradeId") Integer gradeId,
+            @Param("subjectId") Integer subjectId,
+            @Param("quizTypeId") Integer quizTypeId,
+            @Param("chapterId") Long chapterId,
+            @Param("fromDate") java.time.LocalDate fromDate,   // có thể truyền null
+            @Param("toDate")   java.time.LocalDate toDate      // có thể truyền null
+    );
+
+    /** (B) ĐIỂM TRUNG BÌNH cho widget: trung bình cộng theo NGÀY (không tính ngày trống) */
+    @Query(value = """
+        SELECT ROUND(AVG(pct), 2) AS average_daily_percentage
+        FROM (
+          SELECT 
+            SUM(qr.correct_answers) * 100.0 / NULLIF(SUM(qr.total_questions), 0) AS pct
+          FROM quiz_results qr
+          JOIN quizzes q ON q.id = qr.quiz_id
+          WHERE qr.status = 'COMPLETED'
+            AND qr.completed_at IS NOT NULL
+            AND qr.user_id = :userId
+            AND (:gradeId    IS NULL OR q.grade_id     = :gradeId)
+            AND (:subjectId  IS NULL OR q.subject_id   = :subjectId)
+            AND (:quizTypeId IS NULL OR q.quiz_type_id = :quizTypeId)
+            AND (:chapterId  IS NULL OR q.chapter_id   = :chapterId)
+            AND (:fromDate   IS NULL OR DATE(qr.completed_at) >= :fromDate)
+            AND (:toDate     IS NULL OR DATE(qr.completed_at) <= :toDate)
+          GROUP BY DATE(qr.completed_at)
+        ) t
+    """, nativeQuery = true)
+    Double findAverageDailyAccuracyForWidget(
+            @Param("userId") Long userId,
+            @Param("gradeId") Integer gradeId,
+            @Param("subjectId") Integer subjectId,
+            @Param("quizTypeId") Integer quizTypeId,
+            @Param("chapterId") Long chapterId,
+            @Param("fromDate") java.time.LocalDate fromDate,   // có thể truyền null
+            @Param("toDate")   java.time.LocalDate toDate      // có thể truyền null
+    );
 }

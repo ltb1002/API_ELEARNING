@@ -37,6 +37,7 @@ public class SecurityConfig {
                                 // PDF
                                 "/api/pdf/**",
 
+                                "/api/user-activity/**",
 
 
                                 // Quizzes - public

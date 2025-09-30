@@ -107,7 +107,6 @@ public class QuizResultService {
                 user, quiz, attemptNo, score, correctAnswers, totalQuestions,
                 durationSeconds, QuizStatus.COMPLETED
         );
-
         QuizResult saved = quizResultRepository.save(quizResult);
         quizResultRepository.flush();
         return saved;
