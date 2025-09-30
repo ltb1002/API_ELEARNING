@@ -52,15 +52,15 @@ public class SecurityConfig {
                                 // Search
                                 "/api/search/**",
 
+                                "/api/quizresults/accuracy",
+                                "/api/quizresults/accuracy/daily",
+
                                 // Subjects & Content - public
                                 "/api/subjects/**",
                                 "/api/grades/**",
                                 "/api/chapters/**",
                                 "/api/lessons/**",
                                 "/api/exercises/**",
-
-//                                "/api/progress/accuracy",
-//                                "/api/progress/accuracy/daily",
 
                                 // H2 Console
                                 "/h2-console/**"
@@ -78,8 +78,7 @@ public class SecurityConfig {
                                 "/api/auth/change-password",
                                 "/api/auth/validate-token",
                                 "/api/users/**",
-                                "/api/quizresults/accuracy",
-                                "/api/quizresults/accuracy/daily",
+
 
 //streak
                                 "/api/streak/**",

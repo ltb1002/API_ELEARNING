@@ -184,50 +184,6 @@ public class ProgressController {
         return ResponseEntity.ok().build();
     }
 
-//    @GetMapping("/accuracy")
-//    public ResponseEntity<?> getAccuracy(
-//            @RequestParam Long userId,
-//            @RequestParam(required = false) Integer gradeId,
-//            @RequestParam(required = false) Integer subjectId,
-//            @RequestParam(required = false) Integer quizTypeId
-//    ) {
-//        var dtoOpt = quizResultService.getAccuracyFromProgress(userId, gradeId, subjectId, quizTypeId);
-//
-//        var response = dtoOpt.orElseGet(() ->
-//                new QuizProgressPOJO(0, 0, 0.0, null)
-//        );
-//
-//        Map<String, Object> data = new HashMap<>();
-//        data.put("userId", userId);
-//        data.put("gradeId", gradeId);
-//        data.put("subjectId", subjectId);
-//        data.put("quizTypeId", quizTypeId);
-//        data.put("correctSum", response.getCorrectSum());
-//        data.put("totalSum", response.getTotalSum());
-//        data.put("percentAccuracy", response.getPercentAccuracy());
-//        data.put("updatedAt", response.getUpdatedAt());
-//
-//        return ResponseEntity.ok(
-//                new ApiResponse(true, "Thành công", data)
-//        );
-//    }
-//    @GetMapping("/accuracy/daily")
-//    public ResponseEntity<?> getDailyAccuracy(
-//            @RequestParam Long userId,
-//            @RequestParam(required = false) Integer gradeId,
-//            @RequestParam(required = false) Integer subjectId,
-//            @RequestParam(required = false) Integer quizTypeId,
-//            @RequestParam(required = false) Long chapterId,
-//            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime fromDate
-//    ) {
-//        if (fromDate == null) {
-//            fromDate = LocalDateTime.now().minusDays(30); // mặc định lấy 30 ngày gần nhất
-//        }
-//
-//        var data = quizResultService.getDailyAccuracy(userId, fromDate, gradeId, subjectId, quizTypeId, chapterId);
-//        return ResponseEntity.ok(new ApiResponse(true, "Thành công", data));
-//    }
-
     // ===== DTO Classes for Response =====
 
     public static class ApiResponse {
