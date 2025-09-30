@@ -52,6 +52,8 @@ public class SecurityConfig {
                                 // Search
                                 "/api/search/**",
 
+                                "/api/quizresults/accuracy/**",
+                                "/api/quizresults/**",
                                 "/api/quizresults/accuracy",
                                 "/api/quizresults/accuracy/daily",
 

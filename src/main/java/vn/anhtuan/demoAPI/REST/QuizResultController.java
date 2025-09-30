@@ -1,4 +1,4 @@
-package vn.anhtuan.demoAPI.REST;// package vn.anhtuan.demoAPI.REST;
+package vn.anhtuan.demoAPI.REST;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import vn.anhtuan.demoAPI.POJO.QuizProgressPOJO;
 import vn.anhtuan.demoAPI.Service.QuizResultService;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
@@ -21,7 +22,7 @@ public class QuizResultController {
         this.quizResultService = quizResultService;
     }
 
-    // Overall accuracy: trả JSON có trường correctSum/totalSum/percentAccuracy, giống /api/progress/accuracy hiện tại
+    // 1) Overall accuracy (tổng đúng/tổng câu, % tổng)
     @GetMapping("/accuracy")
     public ResponseEntity<?> overall(
             @RequestParam Long userId,
@@ -29,8 +30,9 @@ public class QuizResultController {
             @RequestParam(required = false) Integer subjectId,
             @RequestParam(required = false) Integer quizTypeId
     ) {
-        var dtoOpt = quizResultService.getAccuracyFromProgress(userId, gradeId, subjectId, quizTypeId);
-        var dto = dtoOpt.orElseGet(() -> new QuizProgressPOJO(0, 0, 0.0, null));
+        var dto = quizResultService
+                .getAccuracyFromProgress(userId, gradeId, subjectId, quizTypeId)
+                .orElseGet(() -> new QuizProgressPOJO(0, 0, 0.0, null));
 
         Map<String, Object> data = new HashMap<>();
         data.put("userId", userId);
@@ -45,26 +47,39 @@ public class QuizResultController {
         return ResponseEntity.ok(new ApiResponse(true, "OK", data));
     }
 
-    // Daily accuracy: trả "day/correctSum/totalSum/percentAccuracy" (y chang /api/progress/accuracy/daily)
+    // 2) Daily accuracy (từ 1 mốc thời gian)
     @GetMapping("/accuracy/daily")
     public ResponseEntity<?> daily(
             @RequestParam Long userId,
-            @RequestParam(required = false) Integer gradeId,
-            @RequestParam(required = false) Integer subjectId,
-            @RequestParam(required = false) Integer quizTypeId,
-            @RequestParam(required = false) Long chapterId,
-            @RequestParam(required = false)
+            @RequestParam
             @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime fromDate
     ) {
-        if (fromDate == null) fromDate = LocalDateTime.now().minusDays(30);
-        var data = quizResultService.getDailyAccuracy(userId, fromDate, gradeId, subjectId, quizTypeId, chapterId);
+        var data = quizResultService.getDailyAccuracy(userId, fromDate, null, null, null, null);
         return ResponseEntity.ok(new ApiResponse(true, "OK", data));
     }
 
-    // Dùng lại class ApiResponse như trong ProgressController để đồng nhất shape
-    public static class ApiResponse {
-        private boolean success; private String message; private Object data;
-        public ApiResponse(boolean s, String m, Object d){ this.success=s; this.message=m; this.data=d; }
-        public boolean isSuccess(){return success;} public String getMessage(){return message;} public Object getData(){return data;}
+    // 3) Daily accuracy theo khoảng ngày (YYYY-MM-DD)
+    @GetMapping("/accuracy/daily/range")
+    public ResponseEntity<?> dailyRange(
+            @RequestParam Long userId,
+            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate fromDate,
+            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate toDate
+    ) {
+        var data = quizResultService.getDailyAccuracyByRange(userId, fromDate, toDate);
+        return ResponseEntity.ok(new ApiResponse(true, "OK", data));
     }
+
+    // 4) Average of daily percentages (trung bình cộng theo ngày)
+    @GetMapping("/accuracy/daily/average")
+    public ResponseEntity<?> getAverageDailyAccuracy(@RequestParam Long userId) {
+        Double avg = quizResultService.getAverageDailyAccuracy(userId);
+        Map<String, Object> data = Map.of(
+                "userId", userId,
+                "averageDailyPercentage", avg
+        );
+        return ResponseEntity.ok(new ApiResponse(true, "OK", data));
+    }
+
+    public record ApiResponse(boolean success, String message, Object data) {}
 }
+
