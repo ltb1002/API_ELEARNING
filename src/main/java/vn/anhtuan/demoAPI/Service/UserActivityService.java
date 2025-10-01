@@ -3,13 +3,16 @@ package vn.anhtuan.demoAPI.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import vn.anhtuan.demoAPI.Entity.UserActivity;
+import vn.anhtuan.demoAPI.Entity.UserSession;
 import vn.anhtuan.demoAPI.POJO.CalendarDayPOJO;
 import vn.anhtuan.demoAPI.POJO.UserActivityPOJO;
 import vn.anhtuan.demoAPI.POJO.UserStreakResponsePOJO;
 import vn.anhtuan.demoAPI.REST.UserActivityController;
 import vn.anhtuan.demoAPI.Repository.UserActivityRepository;
+import vn.anhtuan.demoAPI.Repository.UserSessionRepository;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -21,23 +24,49 @@ public class UserActivityService {
 
     @Autowired
     private UserActivityRepository userActivityRepository;
+    @Autowired
+    private UserSessionRepository userSessionRepository;
 
 
     // Tạo hoặc cập nhật activity (CỘNG DỒN PHÚT)
+    public UserActivity saveNewActivity(Long userId, LocalDate activityDate, Integer minutes) {
+        UserActivity newActivity = new UserActivity(userId, activityDate, minutes);
+        return userActivityRepository.save(newActivity);
+    }
     public UserActivity saveOrUpdateActivity(Long userId, LocalDate activityDate, Integer additionalMinutes) {
         Optional<UserActivity> existingActivity = userActivityRepository.findByUserIdAndActivityDate(userId, activityDate);
-
+        UserActivity activity;
         if (existingActivity.isPresent()) {
-            UserActivity activity = existingActivity.get();
+            activity = existingActivity.get();
             int currentMinutes = activity.getMinutesUsed();
             activity.setMinutesUsed(currentMinutes + additionalMinutes);
-            return userActivityRepository.save(activity);
+            activity = userActivityRepository.save(activity);
         } else {
-            UserActivity newActivity = new UserActivity(userId, activityDate, additionalMinutes);
-            return userActivityRepository.save(newActivity);
+            activity = new UserActivity(userId, activityDate, additionalMinutes);
+            activity = userActivityRepository.save(activity);
         }
-    }
+        // 🔹 Ghi thêm vào user_session (mỗi lần học là 1 session riêng)
+        UserSession session = new UserSession();
+        session.setUserId(userId);
+        session.setActivityDate(activityDate);
+        session.setMinutesUsed(additionalMinutes);
+        session.setStartTime(LocalDateTime.now());
+        session.setEndTime(LocalDateTime.now().plusMinutes(additionalMinutes));
+        userSessionRepository.save(session);
 
+        return activity;
+    }
+// ✅ Tính tổng phút học mỗi ngày
+    public Map<LocalDate, Integer> getDailyTotals(Long userId, LocalDate startDate, LocalDate endDate) {
+    List<Object[]> results = userActivityRepository.getDailyTotalMinutes(userId, startDate, endDate);
+    Map<LocalDate, Integer> dailyTotals = new HashMap<>();
+    for (Object[] row : results) {
+        LocalDate date = (LocalDate) row[0];
+        Long totalMinutes = (Long) row[1];
+        dailyTotals.put(date, totalMinutes.intValue());
+    }
+    return dailyTotals;
+}
     // ⚠️ SỬA: ≥ 15 phút mới được tính là đã học (trước đó bạn dùng > 15)
     public boolean isStudiedDay(Integer minutesUsed) {
         return minutesUsed != null && minutesUsed >= MIN_STUDY_MINUTES;

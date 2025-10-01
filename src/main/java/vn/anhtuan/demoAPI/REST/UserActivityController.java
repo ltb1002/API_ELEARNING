@@ -43,8 +43,9 @@ public class UserActivityController {
             UserActivity activity = userActivityService.saveOrUpdateActivity(userId, activityDate, additionalMinutes);
 
             // Kiểm tra xem có được tính là đã học không
-            boolean isStudied = userActivityService.isStudiedDay(additionalMinutes);
             boolean wasStudiedBefore = userActivityService.isStudiedDay(currentTotalMinutes);
+            boolean isStudied = userActivityService.isStudiedDay(activity.getMinutesUsed());
+
 
 
             // Convert entity to DTO for response

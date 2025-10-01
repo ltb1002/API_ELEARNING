@@ -41,4 +41,10 @@ public interface UserActivityRepository extends JpaRepository<UserActivity, Long
     // Kiểm tra xem user có học trong ngày cụ thể không
     @Query("SELECT COUNT(ua) > 0 FROM UserActivity ua WHERE ua.userId = :userId AND ua.activityDate = :date")
     boolean existsByUserIdAndActivityDate(@Param("userId") Long userId, @Param("date") LocalDate date);
+    @Query("SELECT ua.activityDate, SUM(ua.minutesUsed) " +
+            "FROM UserActivity ua " +
+            "WHERE ua.userId = :userId AND ua.activityDate BETWEEN :startDate AND :endDate " +
+            "GROUP BY ua.activityDate")
+    List<Object[]> getDailyTotalMinutes(Long userId, LocalDate startDate, LocalDate endDate);
+
 }
